@@ -1,14 +1,36 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.collabsvito" name="Collabsvito REPO for KODI Add-ons" version="2.0.1" provider-name="Collabsvito">
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="repository.collabsvito" name="Collabsvito that's my AiO REPO" version="3.3.3" provider-name="Collabsvito">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
 	<extension point="xbmc.addon.repository" name="Collabsvito Repository">
-		<info compressed="false">https://raw.githubusercontent.com/Collabsvito/Repo/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/Collabsvito/Repo/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/Collabsvito/Repo/master/packages/</datadir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/REPOSITORIES/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/REPOSITORIES/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/REPOSITORIES/</datadir>
+		</dir>
+		<dir minversion="18.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/MATRIX/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/MATRIX/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/MATRIX/</datadir>
+		</dir>
+		<dir minversion="16.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/KRYPTON_LEIA/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/KRYPTON_LEIA/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/KRYPTON_LEIA/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>Some ADDONS created by @Collabsvito</summary>
-		<description>Download And Install Addons Developed By Collabsvito.[CR]These Addons Should Not Missed.</description>
+		<summary>Some nice ADDONS created by @Collabsvito</summary>
+		<description>Download And Install Addons developed By Collabsvito.[CR]These Addons Should Not Missed.</description>
 		<disclaimer>The owner and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
 		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 3.3.3  (04.04.2020)[/COLOR][/B][CR]
+- created NEW REPO AiO PY2/PY3 compatible - New Fans are welcome...
+		</news>
 	</extension>
 </addon>

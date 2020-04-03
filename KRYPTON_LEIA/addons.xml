@@ -1,1 +1,241 @@
-from __future__ import print_function
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.3plus_ch" name="3plus TV [COLOR FF00EE00](neu)[/COLOR]" version="1.0.3" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.common.plugin.cache" version="2.6.0" optional="true"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Videoportal von 3plus.tv</summary>
+		<summary lang="en_GB">Videoportal of 3plus.tv</summary>
+		<description lang="de_DE">3 Plus (3+) ist ein überregionaler privater Fernsehsender aus der Schweiz.[CR]Das abwechslungsreiche Programm von 3+ bietet Unterhaltung mit Schweizer-Eigenproduktionen.</description>
+		<description lang="en_GB">3 Plus (3+) is a nationwide private television station from Switzerland.[CR]The varied program of 3+ offers entertainment with Swiss in-house productions.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://www.3plus.tv/</website>
+		<email></email>
+		<source>https://github.com/kodinerds/repo/tree/master/plugin.video.3plus_ch</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 1.0.3  (29.02.2020)[/COLOR][/B] by realvito[CR]
+- fixed: In manchen KODI-Skins werden die Episodentitel falsch oder gar nicht angezeigt
+------------------------------------------------------------------------------------------------------------------------
+[B][COLOR orangered]Version 1.0.2  (25.02.2020)[/COLOR][/B] by realvito[CR]
+- Autor bisher @L0RE
+- Ab jetzt übernommen durch @realvito
+- fixed: Addon neu aufgesetzt nach Webseitenveränderung
+--------------------------------------------------------------------------------------------------------------------------
+[B][COLOR orangered]Version 1.0.1  (19.01.2020)[/COLOR][/B] by realvito[CR]
+- Pluginname changed for KODI-compatibility (old=plugin.video.L0RE.3plus -> new=plugin.video.3plus_ch)
+- optimized: Some Script improvements
+		</news>
+	</extension>
+</addon>
+<addon id="plugin.video.atv_at" name="ATV.at - Mediathek" version="3.0.6" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.requests" version="2.12.4"/>
+		<import addon="script.common.plugin.cache" version="2.6.0" optional="true"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Die Mediathek von ATV.at</summary>
+		<summary lang="en_GB">The Media-Library of ATV.at</summary>
+		<description lang="de_DE">ATV-Produktionen in Österreichs größtem Fernsehprogramm, Filme und Serien sowie ganze Folgen in der Mediathek zum Nachsehen. Da macht online Fernsehen Spaß.[CR]Zusammengestellt von ATV (www.atv.at).[CR][CR]Für mehr Informationen zu allen Neuerungen siehe - CHANGELOG.     TEST IT AND LIKE IT</description>
+		<description lang="en_GB">ATV-Productions in Austria's largest television program, movies and series as well as entire episodes in the media library to see. That's what makes online TV fun.[CR]Compiled by ATV (www.atv.at).[CR][CR]For more information about all new features see - CHANGELOG.     TEST IT AND LIKE IT</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://www.atv.at</website>
+		<email></email>
+		<source>https://github.com/kodinerds/repo/tree/master/plugin.video.atv_at</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 3.0.6  (13.12.2019)[/COLOR][/B][CR]
+- fixed: Geoblocking Fehler durch Veränderung der URL
+- added: Addon kompatibel mit PYTHON-Vers.3 gemacht (für KODI-19+) :-)
+		</news>
+	</extension>
+</addon>
+<addon id="plugin.video.kika_de" name="KiKA+" version="2.0.2" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="2.24.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">KIKA Mediathek</summary>
+		<summary lang="en_GB">KIKA media library</summary>
+		<description lang="de_DE">KiKA - der Kinderkanal von ARD und ZDF.</description>
+		<description lang="en_GB">KiKA - the kids channel from ARD and ZDF.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://www.kika.de</website>
+		<email></email>
+		<source>https://github.com/kodinerds/repo/tree/master/plugin.video.kika_de</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 2.0.1+2.0.2  (02.10.2019)[/COLOR][/B] by realvito[CR]
+- removed : manuelle Streamauswahl (vordefiniert in den settings - sonst bestmögliche Qualität)
+- optimized: Bevorzugter Videostream jetzt 'mp4' statt 'rtmp'
+- added: Rubriken = Videos ab 3, 6, 10 Jahre, neue Videos (jede Rubrik abschaltbar - settings)
+- added: Autom. Auflistung mehrerer Serienseiten ohne umblättern (Anzahl einstellbar - settings)
+- added: Addon kompatibel mit PYTHON-Vers.3 gemacht (für KODI-19+) :-)
+- fixed: Mehrere nachträglich aufgetretene Encoding- und sonstige Errors
+		</news>
+	</extension>
+</addon>
+<addon id="plugin.video.spotitube" name="Youtube Music" version="2.1.7" provider-name="realvito (inspired by L0RE)">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="plugin.video.youtube" version="6.3.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">YouTube Musicplayer</summary>
+		<summary lang="en_GB">YouTube Musicplayer</summary>
+		<description lang="de_DE">Musik aus verschiedenen Quellen z.B. Beatport, Billboard, iTunes, Officialcharts etc. auswählen und über YouTube abspielen.[CR][CR]Für mehr Informationen zu allen Neuerungen siehe - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
+		<description lang="en_GB">Choose Music from different sources e.g. Beatport, Billboard, iTunes, Officialcharts etc. and play it via YouTube.[CR][CR]For more information about all new features see - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>http://www.kodinerds.net/index.php/Thread/47087-Release-YoutubeMusic-patched/</forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/kodinerds/repo/tree/master/plugin.video.spotitube</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 2.1.7  (28.02.2020)[/COLOR][/B] by realvito[CR]
+- fixed: long wait time for playback
+- fixed: error for playback of playlists
+		</news>
+	</extension>
+</addon>
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - Das Beste aus den Mediatheken" version="1.2.5" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="plugin.video.tyl0re.arte" optional="true"/>
+		<import addon="plugin.video.arteplussept" optional="true"/>
+		<import addon="plugin.video.rtlnow" optional="true"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Das Beste aus TV-Spielfilm</summary>
+		<summary lang="en_GB">The best from TV-Spielfilm</summary>
+		<description lang="de_DE">Das Beste aus deutschen Mediatheken, ausgewählt und zusammengestellt von der Zeitschrift TV-Spielfilm (www.tvspielfilm.de).[CR][CR]Für mehr Informationen zu allen Neuerungen siehe - CHANGELOG.[CR]     HAVE FUN</description>
+		<description lang="en_GB">The best from german Mediatheken, selected and compiled by the magazine TV-Spielfilm (www.tvspielfilm.de).[CR][CR]For more information about all new features see - CHANGELOG.[CR]     HAVE FUN</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/53329-RERELEASE-TVTODAY/</forum>
+		<website>https://www.tvspielfilm.de/mediathek/</website>
+		<email></email>
+		<source>https://github.com/kodinerds/repo/tree/master/plugin.video.tvspielfilm_de</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 1.2.5  (01.04.2020)[/COLOR][/B][CR]
+- optimized: Wiedergabequalität-Aufbereitung von ZDF-Links (mp4) - neue Codes hinzugefügt
+		</news>
+	</extension>
+</addon>
+<addon id="plugin.video.tvtoday_de" name="TV Today - Best of Mediatheken" version="1.5.5" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="plugin.video.tyl0re.arte" optional="true"/>
+		<import addon="plugin.video.arteplussept" optional="true"/>
+		<import addon="plugin.video.rtlnow" optional="true"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Das Beste aus TV-Today</summary>
+		<summary lang="en_GB">The best from TV-Today</summary>
+		<description lang="de_DE">Das Beste aus deutschen Mediatheken, ausgewählt und zusammengestellt von der Zeitschrift TV-Today (www.tvtoday.de).[CR][CR]Für mehr Informationen zu allen Neuerungen siehe - CHANGELOG.[CR]     HAVE FUN</description>
+		<description lang="en_GB">The best from german Mediatheken, selected and compiled by the magazine TV-Today (www.tvtoday.de).[CR][CR]For more information about all new features see - CHANGELOG.[CR]     HAVE FUN</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/53329-RERELEASE-TVTODAY/</forum>
+		<website>https://www.tvtoday.de/mediathek/</website>
+		<email></email>
+		<source>https://github.com/kodinerds/repo/tree/master/plugin.video.tvtoday_de</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 1.5.5  (01.04.2020)[/COLOR][/B][CR]
+- optimized: Wiedergabequalität-Aufbereitung von ZDF-Links (mp4) - neue Codes hinzugefügt
+		</news>
+	</extension>
+</addon>
+<addon id="plugin.video.vfb_stuttgart" name="VfB-Stuttgart TV" version="1.0.1" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="2.24.0"/>
+		<import addon="script.module.requests" version="2.12.4"/>
+		<import addon="script.module.beautifulsoup4" version="4.3.2"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de">Videoportal des VfB-Stuttgart</summary>
+		<summary lang="en">video portal of the VfB-Stuttgart</summary>
+		<description lang="de">Alle Bundesligaspiele des VfB-Stuttgart nach Schlusspfiff in voller Länge und im Highlights-Schnitt.[CR]Exklusive Interviews und die Pressekonferenzen. Laufend neue Facts und Features des Vereins.</description>
+		<description lang="en">All Bundesliga matches of the VfB-Stuttgart after the final whistle in full length and in highlights-editing.[CR]Exclusive interviews and the press conferences. Ongoing new facts and features of the club.</description>
+		<disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/64178-RELEASE-VfB-Stuttgart-TV-Videoportal-des-VfB-Stuttgart/</forum>
+		<website>https://vfbtv.vfb.de/tv/</website>
+		<email></email>
+		<source>https://github.com/kodinerds/repo/tree/master/plugin.video.vfb_stuttgart</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 1.0.1  (22.12.2018)[/COLOR][/B][CR]by realvito[CR]
+- Initial Release
+		</news>
+	</extension>
+</addon>
+</addons>

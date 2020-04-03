@@ -2,6 +2,6 @@
 
 [logo]: REPOSITORIES/repository.collabsvito/icon.png
 
-My personal new AiO REPO
+Collabsvito that's my AiO REPO
 .
 .
