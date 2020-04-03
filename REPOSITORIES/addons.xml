@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="repository.collabsvito" name="Collabsvito that's my AiO REPO" version="3.3.3" provider-name="Collabsvito">
+<addon id="repository.collabsvito" name="Collabsvito that's my AiO REPO [COLOR FF00EE00](neu)[/COLOR]" version="3.3.3" provider-name="Collabsvito">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
