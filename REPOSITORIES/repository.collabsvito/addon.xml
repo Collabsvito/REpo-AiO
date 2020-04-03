@@ -22,7 +22,7 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Some nice ADDONS created by @Collabsvito</summary>
-		<description>Download And Install Addons developed By Collabsvito.[CR]These Addons Should Not Missed.</description>
+		<description>Download And Install Addons Developed By Collabsvito.[CR]These Addons Should Not Missed.</description>
 		<disclaimer>The owner and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
 		<platform>all</platform>
 		<assets>
