@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="plugin.video.spotitube" name="Youtube Music" version="2.1.7" provider-name="realvito (inspired by L0RE)">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="plugin.video.youtube" version="6.3.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">YouTube Musicplayer</summary>
+		<summary lang="en_GB">YouTube Musicplayer</summary>
+		<description lang="de_DE">Musik aus verschiedenen Quellen z.B. Beatport, Billboard, iTunes, Officialcharts etc. auswählen und über YouTube abspielen.[CR][CR]Für mehr Informationen zu allen Neuerungen siehe - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
+		<description lang="en_GB">Choose Music from different sources e.g. Beatport, Billboard, iTunes, Officialcharts etc. and play it via YouTube.[CR][CR]For more information about all new features see - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>http://www.kodinerds.net/index.php/Thread/47087-Release-YoutubeMusic-patched/</forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/kodinerds/repo/tree/master/plugin.video.spotitube</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 2.1.7  (28.02.2020)[/COLOR][/B] by realvito[CR]
+- fixed: long wait time for playback
+- fixed: error for playback of playlists
+		</news>
+	</extension>
+</addon>

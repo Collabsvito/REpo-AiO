@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="plugin.video.vfb_stuttgart" name="VfB-Stuttgart TV" version="1.0.1" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="2.24.0"/>
+		<import addon="script.module.requests" version="2.12.4"/>
+		<import addon="script.module.beautifulsoup4" version="4.3.2"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de">Videoportal des VfB-Stuttgart</summary>
+		<summary lang="en">video portal of the VfB-Stuttgart</summary>
+		<description lang="de">Alle Bundesligaspiele des VfB-Stuttgart nach Schlusspfiff in voller Länge und im Highlights-Schnitt.[CR]Exklusive Interviews und die Pressekonferenzen. Laufend neue Facts und Features des Vereins.</description>
+		<description lang="en">All Bundesliga matches of the VfB-Stuttgart after the final whistle in full length and in highlights-editing.[CR]Exclusive interviews and the press conferences. Ongoing new facts and features of the club.</description>
+		<disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/64178-RELEASE-VfB-Stuttgart-TV-Videoportal-des-VfB-Stuttgart/</forum>
+		<website>https://vfbtv.vfb.de/tv/</website>
+		<email></email>
+		<source>https://github.com/kodinerds/repo/tree/master/plugin.video.vfb_stuttgart</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 1.0.1  (22.12.2018)[/COLOR][/B][CR]by realvito[CR]
+- Initial Release
+		</news>
+	</extension>
+</addon>
