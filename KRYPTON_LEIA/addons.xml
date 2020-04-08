@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <addons>
 <addon id="plugin.video.3plus_ch" name="3plus TV [COLOR FF00EE00](neu)[/COLOR]" version="1.0.3" provider-name="realvito">
 	<requires>
