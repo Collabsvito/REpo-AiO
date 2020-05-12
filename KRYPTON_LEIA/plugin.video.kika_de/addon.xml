@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.kika_de" name="KiKA plus" version="3.3.3" provider-name="realvito">
+<addon id="plugin.video.kika_de" name="KiKA+" version="2.0.2" provider-name="realvito">
 	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
-		<import addon="script.module.requests" version="2.20.0"/>
+		<import addon="xbmc.python" version="2.24.0"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -20,17 +19,18 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://www.kika.de</website>
 		<email></email>
-		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.kika_de</source>
+		<source>https://github.com/kodinerds/repo/tree/master/plugin.video.kika_de</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.3.3  (12.05.2020)[/COLOR][/B] by realvito[CR]
-- fixed: KiKA Live-TV neue Streamadresse
-- fixed: Rubrik = Neue Videos (Error beim öffnen)
-- optimized: URL-Abfrage jetzt umgestellt auf das etwas schnellere requests-modul
-- optimized: Sortierung der Episoden
-- added: Rubriken = Meistgesehene Videos und Sesamstrasse (abschaltbar/settings)
+		<news>[B][COLOR orangered]Version 2.0.1+2.0.2  (02.10.2019)[/COLOR][/B] by realvito[CR]
+- removed : manuelle Streamauswahl (vordefiniert in den settings - sonst bestmögliche Qualität)
+- optimized: Bevorzugter Videostream jetzt 'mp4' statt 'rtmp'
+- added: Rubriken = Videos ab 3, 6, 10 Jahre, neue Videos (jede Rubrik abschaltbar - settings)
+- added: Autom. Auflistung mehrerer Serienseiten ohne umblättern (Anzahl einstellbar - settings)
+- added: Addon kompatibel mit PYTHON-Vers.3 gemacht (für KODI-19+) :-)
+- fixed: Mehrere nachträglich aufgetretene Encoding- und sonstige Errors
 		</news>
 	</extension>
 </addon>
