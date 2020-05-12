@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 <addon id="plugin.video.3plus_ch" name="3plus TV [COLOR FF00EE00](neu)[/COLOR]" version="1.0.3" provider-name="realvito">
 	<requires>
@@ -40,6 +40,47 @@
 		</news>
 	</extension>
 </addon>
+<addon id="plugin.video.aod" name="Anime on Demand" version="1.0.1" provider-name="L0RE, realvito">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.requests" version="2.20.0"/>
+		<import addon="script.module.pyxbmct" version="1.3.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Videos von 'Anime on Demand'</summary>
+		<summary lang="en_GB">Videos of 'Anime on Demand'</summary>
+		<description lang="de_DE">Egal ob Action, Horror, Fantasy, Romance oder Ecchi, über 5.000 Anime-Episoden &amp; -Filme mit dt. Dub oder Sub gibt's legal bei Anime on Demand. Alle News zu neuen Anime-Serien und -Filmen günstig im Abo in bester Videoqualität.[CR][COLOR orangered]Ein Pay-Account wird benötigt !!![/COLOR][CR]Ausgewählt und zusammengestellt von Anime on Demand (AoD).</description>
+		<description lang="en_GB">Whether Action, Horror, Fantasy, Romance or Ecchi, over 5,000 Anime Episodes &amp; -Movies with German Dub or Sub are legal at Anime on Demand. All news about new Anime-Series and -Movies at a low price with the best video quality.[CR][COLOR orangered]A Pay-Account is required !!![/COLOR][CR]Selected and compiled by Anime on Demand (AoD).</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language>de</language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://www.anime-on-demand.de/</website>
+		<email></email>
+		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.aod</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 1.0.1  (12.05.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Videos können nicht abgespielt werden
+- fixed: Filter zur Festlegung der Anzeige von Episoden nachgebessert
+- optimized: Verschiedene Auswahlmöglichkeiten zum Abspielen der Videos hinzugefügt
+- optimized: Freefunktion und Teaserauswahl hinzugefügt - schaltbar
+- optimized: Filme mit Schrägschrift gekennzeichnet
+- optimized: Login-Status im Hauptmenü anzeigen
+- optimized: Anmeldedaten verschlüsseln - schaltbar
+- optimized: SSL Zertifikatprüfung - schaltbar
+- optimized: Videos mit Inputstream abspielen - schaltbar
+		</news>
+	</extension>
+</addon>
 <addon id="plugin.video.atv_at" name="ATV.at - Mediathek" version="3.0.6" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
@@ -73,9 +114,43 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.kika_de" name="KiKA+" version="2.0.2" provider-name="realvito">
+<addon id="plugin.video.fernsehkritik_tv" name="Massengeschmack [COLOR FF00EE00](light)[/COLOR]" version="2.2.1" provider-name="L0RE, realvito">
 	<requires>
-		<import addon="xbmc.python" version="2.24.0"/>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.requests" version="2.20.0"/>
+		<import addon="plugin.video.youtube" version="6.5.0"/>
+		<import addon="script.module.youtube.dl"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Das satirisch-kritische TV Magazin</summary>
+		<summary lang="en_GB">The satirical-critical TV Magazin</summary>
+		<description lang="de_DE">Am 5. August 2013 startete Massengeschmack mit den Magazinen Fernsehkritik-TV, Pantoffelkino (als Pantoffel-TV) und Pressesch(l)au. Fernsehkritik-TV und die neuen Formate wurden mit Start von Massengeschmack in dem neu gemieteten Alsterfilm-Studio in Hamburg-Wandsbek produziert.</description>
+		<description lang="en_GB">On August 5, 2013 Massengeschmack started with the magazines Fernsehkritik-TV, Pantoffelkino (as Pantoffel-TV) and Pressesch(l)au. Fernsehkritik-TV and the new formats were produced with the start of Massengeschmack in the newly rented Alster film studio in Hamburg-Wandsbek.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://massengeschmack.tv</website>
+		<email></email>
+		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.fernsehkritik_tv</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 2.2.1  (12.052020)[/COLOR][/B] by realvito[CR]
+- fixed: Keine Auflistung der Rubriken unter 'Magazine direkt' (Webseite verändert)
+		</news>
+	</extension>
+</addon>
+<addon id="plugin.video.kika_de" name="KiKA plus" version="3.3.3" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.requests" version="2.20.0"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -93,18 +168,17 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://www.kika.de</website>
 		<email></email>
-		<source>https://github.com/kodinerds/repo/tree/master/plugin.video.kika_de</source>
+		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.kika_de</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.1+2.0.2  (02.10.2019)[/COLOR][/B] by realvito[CR]
-- removed : manuelle Streamauswahl (vordefiniert in den settings - sonst bestmögliche Qualität)
-- optimized: Bevorzugter Videostream jetzt 'mp4' statt 'rtmp'
-- added: Rubriken = Videos ab 3, 6, 10 Jahre, neue Videos (jede Rubrik abschaltbar - settings)
-- added: Autom. Auflistung mehrerer Serienseiten ohne umblättern (Anzahl einstellbar - settings)
-- added: Addon kompatibel mit PYTHON-Vers.3 gemacht (für KODI-19+) :-)
-- fixed: Mehrere nachträglich aufgetretene Encoding- und sonstige Errors
+		<news>[B][COLOR orangered]Version 3.3.3  (12.05.2020)[/COLOR][/B] by realvito[CR]
+- fixed: KiKA Live-TV neue Streamadresse
+- fixed: Rubrik = Neue Videos (Error beim öffnen)
+- optimized: URL-Abfrage jetzt umgestellt auf das etwas schnellere requests-modul
+- optimized: Sortierung der Episoden
+- added: Rubriken = Meistgesehene Videos und Sesamstrasse (abschaltbar/settings)
 		</news>
 	</extension>
 </addon>
@@ -203,38 +277,6 @@
 		</assets>
 		<news>[B][COLOR orangered]Version 1.5.5  (01.04.2020)[/COLOR][/B][CR]
 - optimized: Wiedergabequalität-Aufbereitung von ZDF-Links (mp4) - neue Codes hinzugefügt
-		</news>
-	</extension>
-</addon>
-<addon id="plugin.video.vfb_stuttgart" name="VfB-Stuttgart TV" version="1.0.1" provider-name="realvito">
-	<requires>
-		<import addon="xbmc.python" version="2.24.0"/>
-		<import addon="script.module.requests" version="2.12.4"/>
-		<import addon="script.module.beautifulsoup4" version="4.3.2"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="de">Videoportal des VfB-Stuttgart</summary>
-		<summary lang="en">video portal of the VfB-Stuttgart</summary>
-		<description lang="de">Alle Bundesligaspiele des VfB-Stuttgart nach Schlusspfiff in voller Länge und im Highlights-Schnitt.[CR]Exklusive Interviews und die Pressekonferenzen. Laufend neue Facts und Features des Vereins.</description>
-		<description lang="en">All Bundesliga matches of the VfB-Stuttgart after the final whistle in full length and in highlights-editing.[CR]Exclusive interviews and the press conferences. Ongoing new facts and features of the club.</description>
-		<disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
-		<language></language>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/64178-RELEASE-VfB-Stuttgart-TV-Videoportal-des-VfB-Stuttgart/</forum>
-		<website>https://vfbtv.vfb.de/tv/</website>
-		<email></email>
-		<source>https://github.com/kodinerds/repo/tree/master/plugin.video.vfb_stuttgart</source>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-		<news>[B][COLOR orangered]Version 1.0.1  (22.12.2018)[/COLOR][/B][CR]by realvito[CR]
-- Initial Release
 		</news>
 	</extension>
 </addon>
