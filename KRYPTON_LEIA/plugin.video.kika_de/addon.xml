@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="plugin.video.kika_de" name="KiKA plus" version="3.3.3" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.requests" version="2.20.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">KIKA Mediathek</summary>
+		<summary lang="en_GB">KIKA media library</summary>
+		<description lang="de_DE">KiKA - der Kinderkanal von ARD und ZDF.</description>
+		<description lang="en_GB">KiKA - the kids channel from ARD and ZDF.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://www.kika.de</website>
+		<email></email>
+		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.kika_de</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 3.3.3  (12.05.2020)[/COLOR][/B] by realvito[CR]
+- fixed: KiKA Live-TV neue Streamadresse
+- fixed: Rubrik = Neue Videos (Error beim öffnen)
+- optimized: URL-Abfrage jetzt umgestellt auf das etwas schnellere requests-modul
+- optimized: Sortierung der Episoden
+- added: Rubriken = Meistgesehene Videos und Sesamstrasse (abschaltbar/settings)
+		</news>
+	</extension>
+</addon>
