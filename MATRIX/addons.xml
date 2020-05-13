@@ -42,7 +42,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.fernsehkritik_tv" name="Massengeschmack [COLOR FF00EE00](light)[/COLOR]" version="2.2.1+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.fernsehkritik_tv" name="Massengeschmack [COLOR FF00EE00](light)[/COLOR]" version="2.2.1~matrix" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -70,12 +70,12 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.2.1+matrix.1  (13.05.2020)[/COLOR][/B] by realvito[CR]
+		<news>[B][COLOR orangered]Version 2.2.1~matrix  (13.05.2020)[/COLOR][/B] by realvito[CR]
 - fixed: Keine Auflistung der Rubriken unter 'Magazine direkt' (Webseite verändert)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.kika_de" name="KiKA plus" version="3.3.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.kika_de" name="KiKA plus" version="19.3.3" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -101,7 +101,7 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.3.3+matrix.1  (13.05.2020)[/COLOR][/B] by realvito[CR]
+		<news>[B][COLOR orangered]Version 19.3.3~matrix  (13.05.2020)[/COLOR][/B] by realvito[CR]
 - fixed: KiKA Live-TV neue Streamadresse
 - fixed: Rubrik = Neue Videos (Error beim öffnen)
 - optimized: URL-Abfrage jetzt umgestellt auf das etwas schnellere requests-modul
