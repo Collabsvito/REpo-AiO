@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="plugin.video.bibeltv" name="Bibel TV" version="1.0.3" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="2.26.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Der christlich ausgerichtete Free-TV-Sender</summary>
+		<summary lang="en_GB">The Christian-oriented free-TV channel</summary>
+		<description lang="de_DE">Bibel TV ist ein deutschsprachiger Fernsehsender. Als erster christlicher Fernsehsender wurde Bibel TV 2001 gegründet. Die Verbreitung des christlichen Glaubens steht im Mittelpunkt des Fernsehprogramms.</description>
+		<description lang="en_GB">Bibel TV is a German language television station. Bibel TV was founded in 2001 as the first Christian television station. The dissemination of the Christian faith is the focus of the television program.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://www.bibeltv.de/</website>
+		<email></email>
+		<source>https://repo.kodinerds.net/addons/leia/zip/plugin.video.bibeltv</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 1.0.3  (05.06.2020)[/COLOR][/B][CR]
+- added: Anzeige der Seasonnummern falls vorhanden im Plot und im Titel
+- fixed: Manchmal funktionieren nicht alle Abspielformate
+------------------------------------------------------------------------------------------------------------------------------------
+[B][COLOR orangered]Version 1.0.2  (25.05.2020)[/COLOR][/B][CR]
+- added: Anzeige der Episodennummern falls vorhanden im Plot und im Titel
+- fixed: Encoding - Errors
+- fixed: Rubrik = Addon-Einstellungen lassen sich nicht ausblenden
+------------------------------------------------------------------------------------------------------------------------------------
+[B][COLOR orangered]Version 1.0.1  (24.05.2020)[/COLOR][/B][CR]
+- Initial Release
+		</news>
+	</extension>
+</addon>
