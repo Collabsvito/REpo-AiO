@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.aod" name="Anime on Demand" version="1.0.1+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.aod" name="Anime on Demand" version="1.0.3+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -27,17 +27,9 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.1+matrix.1  (13.05.2020)[/COLOR][/B] by realvito[CR]
+		<news>[B][COLOR orangered]Version 1.0.3+matrix.1  (07.06.2020)[/COLOR][/B] by realvito[CR]
 [B][COLOR orangered]Bei Startproblemen des Addons unter KODI-MATRIX:[CR]Gehe auf das Addon -> Rechtsklick: Informationen -> Klick: Abhängigkeiten -> und von dort die NICHT installierten SCRIPTE/ADDONS installieren !!![/COLOR][/B]
-- fixed: Videos können nicht abgespielt werden
-- fixed: Filter zur Festlegung der Anzeige von Episoden nachgebessert
-- optimized: Verschiedene Auswahlmöglichkeiten zum Abspielen der Videos hinzugefügt
-- optimized: Freefunktion und Teaserauswahl hinzugefügt - schaltbar
-- optimized: Filme mit Schrägschrift gekennzeichnet
-- optimized: Login-Status im Hauptmenü anzeigen
-- optimized: Anmeldedaten verschlüsseln - schaltbar
-- optimized: SSL Zertifikatprüfung - schaltbar
-- optimized: Videos mit Inputstream abspielen - schaltbar
+- fixed: Überbleibsel von vorigen Reparaturen - Debug LOGGING des Addons läuft im Dauerbetrieb
 		</news>
 	</extension>
 </addon>
