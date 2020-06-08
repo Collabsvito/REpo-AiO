@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.kika_de" name="KiKA plus" version="3.3.3" provider-name="realvito">
+<addon id="plugin.video.kika_de" name="KiKA plus" version="3.3.5" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -25,12 +25,10 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.3.3  (12.05.2020)[/COLOR][/B] by realvito[CR]
-- fixed: KiKA Live-TV neue Streamadresse
-- fixed: Rubrik = Neue Videos (Error beim öffnen)
-- optimized: URL-Abfrage jetzt umgestellt auf das etwas schnellere requests-modul
-- optimized: Sortierung der Episoden
-- added: Rubriken = Meistgesehene Videos und Sesamstrasse (abschaltbar/settings)
+		<news>[B][COLOR orangered]Version 3.3.4+3.3.5  (08.06.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Bei manchen Episoden/Filmen wird keine Laufzeit angezeigt - obwohl vorhanden
+- fixed: In der Rubrik = Meistgesehene Videos werden teilweise alle Serien angesteuert beim Abspielen (wenn kein Episodename vorhanden ist - z.B. 'Die WG - Zusammen mit Abstand')
+- fixed: In manchen KODI-Skins werden keine Titel angezeigt
 		</news>
 	</extension>
 </addon>
