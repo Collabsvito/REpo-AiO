@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="2.2.1" provider-name="L0RE, realvito">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">ServusTV Mediathek</summary>
+		<summary lang="en_GB">ServusTV Mediathek</summary>
+		<description lang="de_DE">ServusTV ist ein österreichischer Privatfernsehsender.[CR]Von Unterhaltung und Kultur bis Dokus und Sport - ServusTV richtet sich an ein weltoffenes und vielseitig interessiertes Publikum im deutschsprachigen Fernsehraum.</description>
+		<description lang="en_GB">ServusTV is an Austrian private television station.[CR]From entertainment and culture to documentaries and sports - ServusTV is aimed at a cosmopolitan and versatile audience in the German-speaking TV area.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://www.servustv.com</website>
+		<email></email>
+		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.servustv_com</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 2.2.1  (13.06.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Teilweise werden keine Bilder angezeigt
+- optimized: Rubrikenübersicht verbessert
+		</news>
+	</extension>
+</addon>
