@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.aod" name="Anime on Demand" version="1.0.3+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.3plus_ch" name="3plus TV" version="1.0.4+matrix.1" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.common.plugin.cache" version="2.6.1.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Videoportal von 3plus.tv</summary>
+		<summary lang="en_GB">Videoportal of 3plus.tv</summary>
+		<description lang="de_DE">3 Plus (3+) ist ein überregionaler privater Fernsehsender aus der Schweiz.[CR]Das abwechslungsreiche Programm von 3+ bietet Unterhaltung mit Schweizer-Eigenproduktionen.</description>
+		<description lang="en_GB">3 Plus (3+) is a nationwide private television station from Switzerland.[CR]The varied program of 3+ offers entertainment with Swiss in-house productions.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://www.3plus.tv/</website>
+		<email></email>
+		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.3plus_ch</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 1.0.4+matrix.1  (13.06.2020)[/COLOR][/B][CR]
+- fixed: Fehler beim aufrufen einzelner Staffeln einer Serie
+- optimized: Weitere Anpassungen für die neue API
+* Leider sind viele Videos immer noch nicht im hauseigenen KalturaPlayer registriert (nicht abspielbar) *
+		</news>
+	</extension>
+</addon>
+<addon id="plugin.video.aod" name="Anime on Demand" version="1.0.4+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -28,9 +61,9 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.3+matrix.1  (07.06.2020)[/COLOR][/B] by realvito[CR]
+		<news>[B][COLOR orangered]Version 1.0.4+matrix.1  (13.06.2020)[/COLOR][/B] by realvito[CR]
 [B][COLOR orangered]Bei Startproblemen des Addons unter KODI-MATRIX:[CR]Gehe auf das Addon -> Rechtsklick: Informationen -> Klick: Abhängigkeiten -> und von dort die NICHT installierten SCRIPTE/ADDONS installieren !!![/COLOR][/B]
-- fixed: Überbleibsel von vorigen Reparaturen - Debug LOGGING des Addons läuft im Dauerbetrieb
+- fixed: Restliche Encodingfehler beseitigt (Einloggen und Abspielen)
 		</news>
 	</extension>
 </addon>
@@ -70,6 +103,66 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 [B][COLOR orangered]Version 1.0.1+matrix.1  (24.05.2020)[/COLOR][/B][CR]
 - Initial Release
+		</news>
+	</extension>
+</addon>
+<addon id="plugin.video.euronews_com" name="euronews.com" version="2.1.6+matrix.1" provider-name="L0RE, realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Videoportal von EURONEWS</summary>
+		<description lang="de_DE">euronews bietet eine einzigartige Perspektive auf das Weltgeschehen. euronews gibt Menschen die Möglichkeit, sich eine eigene Meinung zu bilden, indem sachliche Analysen und eine Vielzahl von Standpunkten dargestellt werden.[CR]euronews Weltnachrichten täglich 24 Stunden gibt es in 12 versch. Ausgaben auf Arabisch, Englisch, Französisch, Deutsch, Griechisch, Ungarisch, Italienisch, Persisch, Portugiesisch, Russisch, Spanisch und Türkisch.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<summary lang="en_GB">Videoportal of EURONEWS</summary>
+		<description lang="en_GB">euronews offers a unique perspective on world affairs. euronews gives people the opportunity to form their own opinion, by presenting factual analysis and a variety of viewpoints.[CR]euronews World news daily 24 hours are available in 12 different editions in Arabic, English, French, German, Greek, Hungarian, Italian, Persian, Portuguese, Russian, Spanish and Turkish.</description>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<summary lang="el_GR">Τηλεοπτική πύλη EURONEWS</summary>
+		<description lang="el_GR">Το euronews προσφέρει μια μοναδική προοπτική στις παγκόσμιες υποθέσεις. Το euronews δίνει στους ανθρώπους την ευκαιρία να διαμορφώσουν τη δική τους γνώμη, παρουσιάζοντας πραγματικές αναλύσεις και ποικίλες απόψεις.[CR]euronews World news καθημερινά 24 ώρες είναι διαθέσιμα σε 12 διαφορετικές εκδόσεις το Αραβικά, Αγγλικά, Γαλλικά, Γερμανικά, Ελληνικά, Ουγγρικά, Ιταλικά, Περσικά, Πορτογαλικά, Ρωσικά, Ισπανικά και Τουρκικά.</description>
+		<summary lang="es_ES">Videoportal de EURONEWS</summary>
+		<description lang="es_ES">euronews ofrece una perspectiva única de los asuntos mundiales. euronews brinda a las personas la oportunidad de formarse su propia opinión, presentando un análisis de hechos y una variedad de puntos de vista.[CR]euronews Las noticias mundiales de 24 horas están disponibles en 12 ediciones diferentes en Árabe, Inglés, Francés, Alemán, Griego, Húngaro, Italiano, Persa, Portugués, Ruso, Español y Turco.</description>
+		<summary lang="fr_FR">Vidéoportail d'EURONEWS</summary>
+		<description lang="fr_FR">euronews offre une perspective unique sur les affaires mondiales. euronews donne aux gens la possibilité de se forger leur propre opinion, en présentant une analyse factuelle et une variété de points de vue.[CR]euronews World news 24 heures sur 24 est disponible en 12 éditions différentes en Arabe, Anglais, Français, Allemand, Grecque, Hongrois, Italien, Persan, Portugais, Russe, Espagnol et Turc.</description>
+		<summary lang="hr_HR">Videoportal od EURONEWS</summary>
+		<description lang="hr_HR">euronews nudi jedinstvenu perspektivu na svjetska pitanja. euronews pruža mogućnost ljudima da formiraju svoje vlastito mišljenje, iznošenjem faktografskih analiza i različitih gledišta.[CR]euronews Svjetske vijesti dnevno 24 sata dostupne su u 12 različitih izdanja u Arapski, Engleski, Francuski, Njemački, Grčki, Mađarski, Talijanski, Perzijski, Portugalski, Ruski, Španjolski i Turski.</description>
+		<summary lang="hu_HU">Az EURONEWS videoportálja</summary>
+		<description lang="hu_HU">Az euronews egyedülálló perspektívát kínál a világügyekkel kapcsolatban. Az euronews lehetőséget ad az embereknek arra, hogy véleményüket formálják, bemutatva tényszerű elemzéseket és különféle szempontokat.[CR]Az euronews napi 24 órás világhírek 12 különféle kiadásban érhetők el Arab, Angol, Francia, Német, Görög, Magyar, Olasz, Perzsa, Portugál, Orosz, Spanyol és Török.</description>
+		<summary lang="it_IT">Videoportale di EURONEWS</summary>
+		<description lang="it_IT">euronews offre una prospettiva unica sugli affari del mondo. euronews offre alle persone l'opportunità di esprimere la propria opinione, presentando analisi fattuali e una varietà di punti di vista.[CR]euronews Notizie dal mondo ogni giorno 24 ore sono disponibili in 12 diverse edizioni in Arabo, Inglese, Francese, Tedesco, Greco, Ungherese, Italiano, Persiano, Portoghese, Russo, Spagnolo e Turco.</description>
+		<summary lang="nb_NO">Videoportal av EURONEWS</summary>
+		<description lang="nb_NO">euronews tilbyr et unikt perspektiv på verdensforhold. euronews gir folk muligheten til å danne seg en egen mening ved å presentere saklig analyse og en rekke synspunkter.[CR]euronews Verdensnyheter daglig er 24 timer tilgjengelig i 12 forskjellige utgaver på Arabisk, Engelsk, Fransk, Tysk, Gresk, Ungarsk, Italiensk, Persisk, Portugisisk, Russisk, Spansk og Tyrkisk.</description>
+		<summary lang="nl_NL">Videoportaal van EURONEWS</summary>
+		<description lang="nl_NL">euronews biedt een uniek perspectief op wereldaangelegenheden. euronews geeft mensen de mogelijkheid om hun eigen mening te vormen door feitelijke analyse en een verscheidenheid aan standpunten te presenteren.[CR]euronews Wereldnieuws dagelijks 24 uur is beschikbaar in 12 verschillende edities in het Arabisch, Engels, Frans, Duits, Grieks, Hongaars, Italiaans, Perzisch, Portugees, Russisch, Spaans en Turks.</description>
+		<summary lang="pt_PT">Videoportal da EURONEWS</summary>
+		<description lang="pt_PT">A euronews oferece uma perspectiva única dos assuntos mundiais. A euronews oferece às pessoas a oportunidade de formar sua própria opinião, apresentando análises factuais e vários pontos de vista.[CR]euronews As notícias mundiais diariamente 24 horas estão disponíveis em 12 edições diferentes em Árabe, Inglês, Francês, Alemão, Grego, Húngaro, Italiano, Persa, Português, Russo, Espanhol e Turco.</description>
+		<summary lang="ro_RO">Videoportal al EURONEWS</summary>
+		<description lang="ro_RO">euronews oferă o perspectivă unică asupra afacerilor mondiale. euronews oferă oamenilor oportunitatea de a-și forma propria opinie, prezentând analize factuale și o varietate de puncte de vedere.[CR]euronews Știrile Mondiale zilnic 24 de ore sunt disponibile în 12 ediții diferite în Arabă, Engleză, Franceză, Germană, Greacă, Ungară, Italiană, Persană, Portugheză, Rusă, Spaniolă și Turcă.</description>
+		<summary lang="ru_RU">Видеопортал EURONEWS</summary>
+		<description lang="ru_RU">Евроньюс предлагает уникальный взгляд на мировые дела. euronews дает людям возможность сформировать собственное мнение, представив фактологический анализ и различные точки зрения.[CR]euronews Мировые новости ежедневно 24 часа доступны в 12 различных выпусках в Арабский, Английский, Французский, Немецкий, Греческий, Венгерский, Итальянский, Персидский, Португальский, Русский, Испанский и Турецкий.</description>
+		<summary lang="tr_TR">EURONEWS video portalı</summary>
+		<description lang="tr_TR">euronews, dünya meselelerine benzersiz bir bakış açısı sunuyor. euronews, gerçeklere yönelik analizler ve çeşitli bakış açıları sunarak insanlara kendi fikirlerini oluşturma fırsatı verir.[CR]euronews Dünya haberleri her gün 24 saat içinde 12 farklı sayıda Arapça, İngilizce, Fransızca, Almanca, Yunanca, Macarca, İtalyanca, Farsça, Portekizce, Rusça, İspanyolca ve Türkçe.</description>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://de.euronews.com/</website>
+		<email></email>
+		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.euronews_com</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 2.1.6+matrix.1  (13.06.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Error-Meldung wenn KEIN Video oder API-Link zum Thema gefunden wird
+- fixed: Nutzlose oder leere Partnerbeiträge ausblenden
+- fixed: Livestreams via Youtube (wenn Standard-Livestream nicht funktioniert)
+- fixed: Version = euronews - Persian
+- optimized: Anzeige von mehr Beiträgen pro Thema als bisher
+- added: Verschiedene Sprachfiles
 		</news>
 	</extension>
 </addon>
@@ -136,6 +229,67 @@
 - fixed: Bei manchen Episoden/Filmen wird keine Laufzeit angezeigt - obwohl vorhanden
 - fixed: In der Rubrik = Meistgesehene Videos werden teilweise alle Serien angesteuert beim Abspielen (wenn kein Episodename vorhanden ist - z.B. 'Die WG - Zusammen mit Abstand')
 - fixed: In manchen KODI-Skins werden keine Titel angezeigt
+		</news>
+	</extension>
+</addon>
+<addon id="plugin.video.myspass_de" name="MySpass" version="4.0.3+matrix.1" provider-name="L0RE, realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">MySpass Mediathek</summary>
+		<summary lang="en_GB">MySpass media library</summary>
+		<description lang="de_DE">Egal ob aktuelle TV Shows wie PussyTerror tv, LUKE ! Die Woche und ich oder Schlag den Henssler, ob Kult-TV-Serien wie Stromberg, Ladykracher oder Pastewka - MYSPASS haben es für Dich auf Lager !</description>
+		<description lang="en_GB">No matter if current TV shows like PussyTerror tv, LUKE ! The week and I or blow the Henssler, whether cult TV series like Stromberg, Ladykracher or Pastewka - MYSPASS have it in stock for you !</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://www.myspass.de</website>
+		<email></email>
+		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.myspass_de</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 4.0.3+matrix.1  (13.06.2020)[/COLOR][/B] by realvito[CR]
+- optimized: Kleinere Scriptanpassungen für KODI-Matrix (19)
+		</news>
+	</extension>
+</addon>
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="2.2.1+matrix.1" provider-name="L0RE, realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">ServusTV Mediathek</summary>
+		<summary lang="en_GB">ServusTV Mediathek</summary>
+		<description lang="de_DE">ServusTV ist ein österreichischer Privatfernsehsender.[CR]Von Unterhaltung und Kultur bis Dokus und Sport - ServusTV richtet sich an ein weltoffenes und vielseitig interessiertes Publikum im deutschsprachigen Fernsehraum.</description>
+		<description lang="en_GB">ServusTV is an Austrian private television station.[CR]From entertainment and culture to documentaries and sports - ServusTV is aimed at a cosmopolitan and versatile audience in the German-speaking TV area.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://www.servustv.com</website>
+		<email></email>
+		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.servustv_com</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 2.2.1+matrix.1  (13.06.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Teilweise werden keine Bilder angezeigt
+- optimized: Rubrikenübersicht verbessert
 		</news>
 	</extension>
 </addon>
