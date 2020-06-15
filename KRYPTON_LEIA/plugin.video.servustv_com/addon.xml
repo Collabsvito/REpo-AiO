@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="2.2.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="2.2.2" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 	</requires>
@@ -24,9 +24,8 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.2.1  (13.06.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Teilweise werden keine Bilder angezeigt
-- optimized: Rubrikenübersicht verbessert
+		<news>[B][COLOR orangered]Version 2.2.2  (15.06.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Encodingfehler in KODI-Linux Versionen (KODI-18)
 		</news>
 	</extension>
 </addon>
