@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.bibeltv" name="Bibel TV" version="1.0.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.bibeltv" name="Bibel TV" version="1.0.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -24,17 +24,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.3+matrix.1  (05.06.2020)[/COLOR][/B][CR]
-- added: Anzeige der Seasonnummern falls vorhanden im Plot und im Titel
-- fixed: Manchmal funktionieren nicht alle Abspielformate
-------------------------------------------------------------------------------------------------------------------------------------
-[B][COLOR orangered]Version 1.0.2+matrix.1  (25.05.2020)[/COLOR][/B][CR]
-- added: Anzeige der Episodennummern falls vorhanden im Plot und im Titel
-- fixed: Encoding - Errors
-- fixed: Rubrik = Addon-Einstellungen lassen sich nicht ausblenden
-------------------------------------------------------------------------------------------------------------------------------------
-[B][COLOR orangered]Version 1.0.1+matrix.1  (24.05.2020)[/COLOR][/B][CR]
-- Initial Release
+		<news>[B][COLOR orangered]Version 1.0.4+matrix.1  (21.06.2020)[/COLOR][/B][CR]
+- fixed: Anpassungen und Codeänderungen für inputstream.adaptive
 		</news>
 	</extension>
 </addon>
