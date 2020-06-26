@@ -97,6 +97,69 @@
 		</news>
 	</extension>
 </addon>
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek [COLOR FF00EE00](neu)[/COLOR]" version="3.0.1+matrix.1" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+		<import addon="service.cron.autobiblio" version="2.0.5+matrix.1" optional="true"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">DMAX Mediathek</summary>
+		<summary lang="en_GB">DMAX Mediathek</summary>
+		<description lang="de_DE">DMAX erzählt von Autoliebhabern, die ihre Auto-Leidenschaft für besondere Modelle und Tuning leben.[CR]DMAX dokumentiert den Job-Alltag hart arbeitender Frauen und Männer in ganz Deutschland, die täglich alles am Laufen halten oder sogar ihr Leben für uns riskieren.[CR]DMAX - Bleibt echt !</description>
+		<description lang="en_GB">DMAX tells of car lovers who live their car passion for special models and tuning.[CR]DMAX documents the everyday job life of hard-working men and women all over Germany who keep everything going every day or even risk their lives for us.[CR]DMAX - Stay real !</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://dmax.de</website>
+		<email></email>
+		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.discovery.dmax</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 3.0.1+matrix.1  (26.06.2020)[/COLOR][/B] by realvito[CR]
+- Komplette Neuauflage des DMAX-Addons nach Webseitenerneuerung (Initial Release)
+		</news>
+	</extension>
+</addon>
+<addon id="plugin.video.discovery.tlc" name="TLC Mediathek [COLOR FF00EE00](neu)[/COLOR]" version="3.0.1+matrix.1" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">TLC Mediathek</summary>
+		<summary lang="en_GB">TLC Mediathek</summary>
+		<description lang="de_DE">Ob Crime, Mystery, Liebes-Geschichten und Sendungen, die von echten menschlichen Schicksalen erzählen - wähle TLC-DE.[CR]Erlebe pure Emotionen auf tlc.de.[CR]TLC-DE (ursprünglich eine Abkürzung für The Learning Channel) ist ein deutschsprachiger Fernsehsender von Discovery Networks Deutschland.</description>
+		<description lang="en_GB">Whether it's crime, mystery, love stories or programmes that tell of real human fates - choose TLC-DE.[CR]Experience pure emotion on tlc.de.[CR]TLC-DE (originally an abbreviation for The Learning Channel) is a German-language television station of Discovery Networks Germany.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://tlc.de</website>
+		<email></email>
+		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.discovery.tlc</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 3.0.1+matrix.1  (26.06.2020)[/COLOR][/B] by realvito[CR]
+- Komplette Neuauflage des TLC-Addons nach Webseitenerneuerung (Initial Release)
+		</news>
+	</extension>
+</addon>
 <addon id="plugin.video.euronews_com" name="euronews.com" version="2.1.6+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
@@ -313,6 +376,36 @@
 		</assets>
 		<news>[B][COLOR orangered]Version 1.5.6+matrix.1  (08.06.2020)[/COLOR][/B][CR]
 - fixed: In allen Genrebereichen werden nur Spielfilme angezeigt
+		</news>
+	</extension>
+</addon>
+<addon id="service.cron.autobiblio" name="Crontab für andere Addons" version="2.0.6+matrix.1" provider-name="L0RE, realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="resources/lib/navigator.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="resources/lib/service.py"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Crontab - Aktionssteuerung</summary>
+		<summary lang="en_GB">Crontab - Action control</summary>
+		<description lang="de_DE">Ein Service um regelmäßig (Stunden/Tage) gespeicherte Aktionen (z.B. Aktualisierung der Addon-Medienbibliothek) in anderen Plugins aufzurufen.</description>
+		<description lang="en_GB">A service to call regular (hours/days) stored actions (e.g. update the addon media library) in other plugins.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website></website>
+		<email></email>
+		<source>https://repo.kodinerds.net/addons/matrix/zip/service.cron.autobiblio</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+		</assets>
+		<news>[B][COLOR orangered]Version 2.0.6+matrix.1  (26.06.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Fehler beim Löschen von Eintrag und Ordner
 		</news>
 	</extension>
 </addon>
