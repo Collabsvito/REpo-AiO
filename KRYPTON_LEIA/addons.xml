@@ -67,11 +67,11 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.atv_at" name="ATV.at - Mediathek" version="3.0.6" provider-name="realvito">
+<addon id="plugin.video.atv_at" name="ATV.at - Mediathek" version="3.0.7" provider-name="realvito">
 	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
-		<import addon="script.module.requests" version="2.12.4"/>
-		<import addon="script.common.plugin.cache" version="2.6.0" optional="true"/>
+		<import addon="xbmc.python" version="2.26.0"/>
+		<import addon="script.module.requests" version="2.20.0"/>
+		<import addon="script.common.plugin.cache" version="2.6.0"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -79,8 +79,8 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Die Mediathek von ATV.at</summary>
 		<summary lang="en_GB">The Media-Library of ATV.at</summary>
-		<description lang="de_DE">ATV-Produktionen in Österreichs größtem Fernsehprogramm, Filme und Serien sowie ganze Folgen in der Mediathek zum Nachsehen. Da macht online Fernsehen Spaß.[CR]Zusammengestellt von ATV (www.atv.at).[CR][CR]Für mehr Informationen zu allen Neuerungen siehe - CHANGELOG.     TEST IT AND LIKE IT</description>
-		<description lang="en_GB">ATV-Productions in Austria's largest television program, movies and series as well as entire episodes in the media library to see. That's what makes online TV fun.[CR]Compiled by ATV (www.atv.at).[CR][CR]For more information about all new features see - CHANGELOG.     TEST IT AND LIKE IT</description>
+		<description lang="de_DE">ATV-Produktionen in Österreichs größtem Fernsehprogramm, Filme und Serien sowie ganze Folgen in der Mediathek zum Nachsehen. Da macht online Fernsehen Spaß.[CR]Zusammengestellt von ATV (www.atv.at).</description>
+		<description lang="en_GB">ATV-Productions in Austria's largest television program, movies and series as well as entire episodes in the media library to see. That's what makes online TV fun.[CR]Compiled by ATV (www.atv.at).</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
@@ -89,14 +89,14 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://www.atv.at</website>
 		<email></email>
-		<source>https://github.com/kodinerds/repo/tree/master/plugin.video.atv_at</source>
+		<source>https://repo.kodinerds.net/addons/leia/zip/plugin.video.atv_at</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.6  (13.12.2019)[/COLOR][/B][CR]
-- fixed: Geoblocking Fehler durch Veränderung der URL
-- added: Addon kompatibel mit PYTHON-Vers.3 gemacht (für KODI-19+) :-)
+		<news>[B][COLOR orangered]Version 3.0.7  (10.07.2020)[/COLOR][/B][CR]
+- fixed: Anzeigefehler im Plot
+- added: Verschiedene Rubriken der Mediathek-Startseite hinzugefügt
 		</news>
 	</extension>
 </addon>
@@ -411,9 +411,9 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - Das Beste aus den Mediatheken" version="1.2.5" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - Das Beste aus den Mediatheken" version="1.2.6" provider-name="realvito">
 	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="plugin.video.tyl0re.arte" optional="true"/>
 		<import addon="plugin.video.arteplussept" optional="true"/>
 		<import addon="plugin.video.rtlnow" optional="true"/>
@@ -434,13 +434,14 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/53329-RERELEASE-TVTODAY/</forum>
 		<website>https://www.tvspielfilm.de/mediathek/</website>
 		<email></email>
-		<source>https://github.com/kodinerds/repo/tree/master/plugin.video.tvspielfilm_de</source>
+		<source>https://repo.kodinerds.net/addons/leia/zip/plugin.video.tvspielfilm_de</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.2.5  (01.04.2020)[/COLOR][/B][CR]
-- optimized: Wiedergabequalität-Aufbereitung von ZDF-Links (mp4) - neue Codes hinzugefügt
+		<news>[B][COLOR orangered]Version 1.2.6  (10.07.2020)[/COLOR][/B][CR]
+- fixed: Manchmal wird kein Vorschaubild des Titels angezeigt
+- optimized: Neue Addonstruktur
 		</news>
 	</extension>
 </addon>
@@ -474,6 +475,41 @@
 		</assets>
 		<news>[B][COLOR orangered]Version 1.5.6  (08.06.2020)[/COLOR][/B][CR]
 - fixed: In allen Genrebereichen werden nur Spielfilme angezeigt
+		</news>
+	</extension>
+</addon>
+<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.0.4" provider-name="L0RE, realvito">
+	<requires>
+		<import addon="xbmc.python" version="2.26.0"/>
+		<import addon="script.module.requests" version="2.20.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Videoportal von ARTE (DE/FR)</summary>
+		<description lang="de_DE">Mediathek und Livestream - Schwerpunkte sind Kultur, Europa und die Vermittlung von Informationen aus vorzugsweise ungewöhnlichen Perspektiven.[CR]Reportagen, Serien, Filme, Dokus, Magazine - Die Programme von ARTE online auf arte.tv.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<summary lang="en_GB">Videoportal of ARTE (DE/FR)</summary>
+		<description lang="en_GB">Media library and Livestream - focus is Culture, Europe and the transmission of information from preferably unusual Perspectives.[CR]Reports, Series, Movies, Documentaries, Magazines - The programs of ARTE online on arte.tv.</description>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<summary lang="fr_FR">Vidéoportail d'ARTE (DE/FR)</summary>
+		<description lang="fr_FR">Médiathèque et Livestream - L'accent est mis sur la culture, l'Europe et la transmission d'informations sous des perspectives de préférence inhabituelles.[CR]Reportages, séries, films, documentaires, magazines - Les programmes d'ARTE en ligne sur arte.tv.</description>
+		<disclaimer lang="fr_FR">L'auteur n'héberge ni ne distribue aucun des contenus affichés par cet addon. L'auteur n'a aucune affiliation avec les fournisseurs de contenu.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://www.arte.tv/</website>
+		<email></email>
+		<source>https://repo.kodinerds.net/addons/leia/zip/plugin.video.tyl0re.arte</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 1.0.4  (10.07.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Nächste Seite zum weiterblättern wird teilweise nicht angezeigt
+- added: Verschiedene Sprachfiles
 		</news>
 	</extension>
 </addon>
