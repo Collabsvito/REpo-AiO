@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.0.4+matrix.1" provider-name="L0RE, realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.22.0.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Videoportal von ARTE (DE/FR)</summary>
+		<description lang="de_DE">Mediathek und Livestream - Schwerpunkte sind Kultur, Europa und die Vermittlung von Informationen aus vorzugsweise ungewöhnlichen Perspektiven.[CR]Reportagen, Serien, Filme, Dokus, Magazine - Die Programme von ARTE online auf arte.tv.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<summary lang="en_GB">Videoportal of ARTE (DE/FR)</summary>
+		<description lang="en_GB">Media library and Livestream - focus is Culture, Europe and the transmission of information from preferably unusual Perspectives.[CR]Reports, Series, Movies, Documentaries, Magazines - The programs of ARTE online on arte.tv.</description>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<summary lang="fr_FR">Vidéoportail d'ARTE (DE/FR)</summary>
+		<description lang="fr_FR">Médiathèque et Livestream - L'accent est mis sur la culture, l'Europe et la transmission d'informations sous des perspectives de préférence inhabituelles.[CR]Reportages, séries, films, documentaires, magazines - Les programmes d'ARTE en ligne sur arte.tv.</description>
+		<disclaimer lang="fr_FR">L'auteur n'héberge ni ne distribue aucun des contenus affichés par cet addon. L'auteur n'a aucune affiliation avec les fournisseurs de contenu.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://www.arte.tv/</website>
+		<email></email>
+		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.tyl0re.arte</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 1.0.4+matrix.1  (10.07.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Nächste Seite zum weiterblättern wird teilweise nicht angezeigt
+- added: Verschiedene Sprachfiles
+		</news>
+	</extension>
+</addon>
