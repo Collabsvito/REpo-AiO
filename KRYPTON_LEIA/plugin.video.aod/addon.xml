@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.aod" name="Anime on Demand" version="1.0.4" provider-name="L0RE, realvito">
+<addon id="plugin.video.aod" name="Anime on Demand" version="1.0.5" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="xbmc.gui" version="5.14.0"/>
@@ -28,8 +28,9 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.4  (13.06.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Restliche Encodingfehler beseitigt (Einloggen und Abspielen)
+		<news>[B][COLOR orangered]Version 1.0.5  (22.07.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Encodingfehler beim Hinzufügen und Öffnen der AoD-Favoriten
+- fixed: Schon gespeicherte AoD-Favoriten können mehrfach gespeichert werden
 		</news>
 	</extension>
 </addon>
