@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek [COLOR FF00EE00](neu)[/COLOR]" version="3.0.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek [COLOR FF00EE00](neu)[/COLOR]" version="3.0.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
-		<import addon="service.cron.autobiblio" version="2.0.5+matrix.1" optional="true"/>
+		<import addon="service.cron.autobiblio" version="2.0.6+matrix.1" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -26,10 +26,10 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.2+matrix.1  (10.07.2020)[/COLOR][/B][CR]
-- fixed: Schon gespeicherte DMAX-Favoriten können mehrfach gespeichert werden
-- fixed: Doppelter Hinweis im Titel bei Specials
-- fixed: Übersicht und Einrückungen beim PLOT wenn kein Enddatum vorhanden ist
+		<news>[B][COLOR orangered]Version 3.0.3+matrix.1  (02.08.2020)[/COLOR][/B][CR]
+- fixed: endet bald|neu erscheint beim Speichern in Kodi-Bibliothek im Pfadnamen
+- fixed: Manchmal erscheint keine Hinweismeldung beim Speichern einer Serie in der Kodi-Bibliothek
+- fixed: Encodingfehler in Addon-Favoriten
 		</news>
 	</extension>
 </addon>

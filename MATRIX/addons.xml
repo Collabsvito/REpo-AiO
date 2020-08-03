@@ -131,11 +131,11 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek [COLOR FF00EE00](neu)[/COLOR]" version="3.0.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek [COLOR FF00EE00](neu)[/COLOR]" version="3.0.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
-		<import addon="service.cron.autobiblio" version="2.0.5+matrix.1" optional="true"/>
+		<import addon="service.cron.autobiblio" version="2.0.6+matrix.1" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -158,14 +158,45 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.2+matrix.1  (10.07.2020)[/COLOR][/B][CR]
-- fixed: Schon gespeicherte DMAX-Favoriten können mehrfach gespeichert werden
-- fixed: Doppelter Hinweis im Titel bei Specials
-- fixed: Übersicht und Einrückungen beim PLOT wenn kein Enddatum vorhanden ist
+		<news>[B][COLOR orangered]Version 3.0.3+matrix.1  (02.08.2020)[/COLOR][/B][CR]
+- fixed: endet bald|neu erscheint beim Speichern in Kodi-Bibliothek im Pfadnamen
+- fixed: Manchmal erscheint keine Hinweismeldung beim Speichern einer Serie in der Kodi-Bibliothek
+- fixed: Encodingfehler in Addon-Favoriten
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.tlc" name="TLC Mediathek [COLOR FF00EE00](neu)[/COLOR]" version="3.0.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek [COLOR FF00EE00](neu)[/COLOR]" version="1.0.1+matrix.1" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">HGTV Mediathek</summary>
+		<summary lang="en_GB">HGTV Mediathek</summary>
+		<description lang="de_DE">HOME &amp; GARDEN TV, kurz HGTV, ist die erste Anlaufstelle für alle die stilsichere Inneneinrichtung und Bauprojekte mit dem gewissen Wow-Faktor lieben, der neue Lifestyle-Sender bietet all das, was das designaffine Herz höherschlagen lässt.[CR]Hier wird 'Zuhause' zelebriert - neben dem Ort auch die Menschen und die Gefühle, die ihn ausmachen.</description>
+		<description lang="en_GB">HOME &amp; GARDEN TV, HGTV for short, is the first port of call for all those who love stylish interiors and building projects with that certain wow factor, the new lifestyle channel offers everything that makes the design-oriented heart beat faster.[CR]This is where 'home' is celebrated - not only the place, but also the people and the feelings that make it up.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://de.hgtv.com</website>
+		<email></email>
+		<source>https://repo.kodinerds.net/addons/leia/zip/plugin.video.discovery.hgtv</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 1.0.1+matrix.1  (03.08.2020)[/COLOR][/B] by realvito[CR]
+- Initial Release des HGTV-Addons
+		</news>
+	</extension>
+</addon>
+<addon id="plugin.video.discovery.tlc" name="TLC Mediathek [COLOR FF00EE00](neu)[/COLOR]" version="3.0.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -191,10 +222,9 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.2+matrix.1  (10.07.2020)[/COLOR][/B][CR]
-- fixed: Schon gespeicherte TLC-Favoriten können mehrfach gespeichert werden
-- fixed: Doppelter Hinweis im Titel bei Specials
-- fixed: Übersicht und Einrückungen beim PLOT wenn kein Enddatum vorhanden ist
+		<news>[B][COLOR orangered]Version 3.0.3+matrix.1  (02.08.2020)[/COLOR][/B][CR]
+- fixed: Encodingfehler in Addon-Favoriten
+- changed: Addon- ICON und FANART erneuert
 		</news>
 	</extension>
 </addon>
@@ -288,6 +318,39 @@
 		</assets>
 		<news>[B][COLOR orangered]Version 2.2.1+matrix.1  (13.05.2020)[/COLOR][/B] by realvito[CR]
 - fixed: Keine Auflistung der Rubriken unter 'Magazine direkt' (Webseite verändert)
+		</news>
+	</extension>
+</addon>
+<addon id="plugin.video.filmstarts" name="FILMSTARTS.de" version="1.0.4+matrix.1" provider-name="L0RE, realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Filme und Serien (Trailer, Making of, Teaser ...)</summary>
+		<summary lang="en_GB">Movies and Series (Trailer, Making of, Teaser ...)</summary>
+		<description lang="de_DE">FILMSTARTS.de ist das führende Online-Magazin rund um das Medium Film.[CR]In der FILMSTARTS-Datenbank befinden sich mittlerweile Informationen zu mehr als 70.000 Filmen.[CR]Schaue Trailer, Making of, Teaser etc. von Filmen und Serien, ausgewählt und zusammengestellt von http://www.filmstarts.de.</description>
+		<description lang="en_GB">FILMSTARTS.de is the leading online magazine about the medium of Movie.[CR]In the meantime the FILMSTARTS database contains information of more than 70.000 movies.[CR]Watch trailer, making of, teaser, etc. of movies and series, selected and compiled by http://www.filmstarts.de.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/53743-RERelease-filmstarts/</forum>
+		<website>http://www.filmstarts.de</website>
+		<email></email>
+		<source>https://repo.kodinerds.net/addons/leia/zip/plugin.video.filmstarts</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 1.0.4+matrix.1  (03.08.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Serien -> Die bestbewerteten Serien (kein Inhalt)
+- fixed: Kino -> Starttermin nach Wochen (Es werden keine verfügbaren Trailer angezeigt)
+- fixed: Häufig wird 'KEIN TRAILER' angezeigt obwohl vorhanden
 		</news>
 	</extension>
 </addon>
