@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.discovery.tlc" name="TLC Mediathek [COLOR FF00EE00](neu)[/COLOR]" version="3.0.2" provider-name="realvito">
+<addon id="plugin.video.discovery.tlc" name="TLC Mediathek [COLOR FF00EE00](neu)[/COLOR]" version="3.0.3" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -25,10 +25,9 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.2  (10.07.2020)[/COLOR][/B][CR]
-- fixed: Schon gespeicherte TLC-Favoriten können mehrfach gespeichert werden
-- fixed: Doppelter Hinweis im Titel bei Specials
-- fixed: Übersicht und Einrückungen beim PLOT wenn kein Enddatum vorhanden ist
+		<news>[B][COLOR orangered]Version 3.0.3  (02.08.2020)[/COLOR][/B][CR]
+- fixed: Encodingfehler in Addon-Favoriten
+- changed: Addon- ICON und FANART erneuert
 		</news>
 	</extension>
 </addon>
