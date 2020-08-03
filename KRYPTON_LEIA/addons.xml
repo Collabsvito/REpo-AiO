@@ -581,7 +581,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="service.cron.autobiblio" name="Crontab für andere Addons" version="2.0.6" provider-name="L0RE, realvito">
+<addon id="service.cron.autobiblio" name="Crontab für andere Addons" version="2.0.7" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 	</requires>
@@ -606,8 +606,9 @@
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.6  (26.06.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Fehler beim Löschen von Eintrag und Ordner
+		<news>[B][COLOR orangered]Version 2.0.7  (02.08.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Falsche oder gar keine Darstellung der Titel der gespeicherten Serien in der Datenbank (Übersicht)
+- fixed: Datenbank-Error beim Speichern, wenn in Seriennamen bestimmte Sonderzeichen vorhanden sind
 		</news>
 	</extension>
 </addon>
