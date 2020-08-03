@@ -131,7 +131,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek [COLOR FF00EE00](neu)[/COLOR]" version="3.0.3" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek [COLOR FF00EE00](neu)[/COLOR]" version="3.0.4" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -158,14 +158,12 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.3  (02.08.2020)[/COLOR][/B][CR]
-- fixed: endet bald|neu erscheint beim Speichern in Kodi-Bibliothek im Pfadnamen
-- fixed: Manchmal erscheint keine Hinweismeldung beim Speichern einer Serie in der Kodi-Bibliothek
-- fixed: Encodingfehler in Addon-Favoriten
+		<news>[B][COLOR orangered]Version 3.0.4  (04.08.2020)[/COLOR][/B][CR]
+- fixed: Addon-Favoriten können nicht mehr hinzugefügt werden (TypeError: 'errors' is an invalid keyword argument for this function)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek [COLOR FF00EE00](neu)[/COLOR]" version="1.0.1" provider-name="realvito">
+<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek [COLOR FF00EE00](neu)[/COLOR]" version="1.0.2" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -191,12 +189,12 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.1  (03.08.2020)[/COLOR][/B] by realvito[CR]
-- Initial Release des HGTV-Addons
+		<news>[B][COLOR orangered]Version 1.0.2  (04.08.2020)[/COLOR][/B][CR]
+- fixed: Addon-Favoriten können nicht mehr hinzugefügt werden (TypeError: 'errors' is an invalid keyword argument for this function)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.tlc" name="TLC Mediathek [COLOR FF00EE00](neu)[/COLOR]" version="3.0.3" provider-name="realvito">
+<addon id="plugin.video.discovery.tlc" name="TLC Mediathek [COLOR FF00EE00](neu)[/COLOR]" version="3.0.4" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -222,9 +220,8 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.3  (02.08.2020)[/COLOR][/B][CR]
-- fixed: Encodingfehler in Addon-Favoriten
-- changed: Addon- ICON und FANART erneuert
+		<news>[B][COLOR orangered]Version 3.0.4  (04.08.2020)[/COLOR][/B][CR]
+- fixed: Addon-Favoriten können nicht mehr hinzugefügt werden (TypeError: 'errors' is an invalid keyword argument for this function)
 		</news>
 	</extension>
 </addon>
