@@ -384,7 +384,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.myspass_de" name="MySpass" version="4.0.3+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.myspass_de" name="MySpass" version="4.0.4+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -409,8 +409,8 @@
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 4.0.3+matrix.1  (13.06.2020)[/COLOR][/B] by realvito[CR]
-- optimized: Kleinere Scriptanpassungen für KODI-Matrix (19)
+		<news>[B][COLOR orangered]Version 4.0.4+matrix.1  (16.08.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Fehler beim Abspielen von Podcasts (IndexError: list index out of range)
 		</news>
 	</extension>
 </addon>
