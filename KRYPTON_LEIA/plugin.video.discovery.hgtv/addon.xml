@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek [COLOR FF00EE00](neu)[/COLOR]" version="1.0.2" provider-name="realvito">
+<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek [COLOR FF00EE00](neu)[/COLOR]" version="1.0.3" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -10,8 +10,8 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">HGTV Mediathek</summary>
 		<summary lang="en_GB">HGTV Mediathek</summary>
-		<description lang="de_DE">HOME &amp; GARDEN TV, kurz HGTV, ist die erste Anlaufstelle für alle die stilsichere Inneneinrichtung und Bauprojekte mit dem gewissen Wow-Faktor lieben, der neue Lifestyle-Sender bietet all das, was das designaffine Herz höherschlagen lässt.[CR]Hier wird 'Zuhause' zelebriert - neben dem Ort auch die Menschen und die Gefühle, die ihn ausmachen.</description>
-		<description lang="en_GB">HOME &amp; GARDEN TV, HGTV for short, is the first port of call for all those who love stylish interiors and building projects with that certain wow factor, the new lifestyle channel offers everything that makes the design-oriented heart beat faster.[CR]This is where 'home' is celebrated - not only the place, but also the people and the feelings that make it up.</description>
+		<description lang="de_DE">HOME &amp; GARDEN TV (DE), kurz HGTV (DE), ist die erste Anlaufstelle für alle die stilsichere Inneneinrichtung und Bauprojekte mit dem gewissen Wow-Faktor lieben, der neue Lifestyle-Sender bietet all das, was das designaffine Herz höherschlagen lässt.[CR]Hier wird 'Zuhause' zelebriert - neben dem Ort auch die Menschen und die Gefühle, die ihn ausmachen.</description>
+		<description lang="en_GB">HOME &amp; GARDEN TV (DE), HGTV (DE) for short, is the first port of call for all those who love stylish interiors and building projects with that certain wow factor, the new lifestyle channel offers everything that makes the design-oriented heart beat faster.[CR]This is where 'home' is celebrated - not only the place, but also the people and the feelings that make it up.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
@@ -25,8 +25,8 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.2  (04.08.2020)[/COLOR][/B][CR]
-- fixed: Addon-Favoriten können nicht mehr hinzugefügt werden (TypeError: 'errors' is an invalid keyword argument for this function)
+		<news>[B][COLOR orangered]Version 1.0.3  (10.09.2020)[/COLOR][/B][CR]
+- fixed: Es werden überhaupt KEINE Serien- und Episodenbilder angezeigt (API-Struktur verändert)
 		</news>
 	</extension>
 </addon>
