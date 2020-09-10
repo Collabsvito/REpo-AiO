@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="repository.collabsvito" name="Collabsvito that's my AiO REPO [COLOR FF00EE00](neu)[/COLOR]" version="3.3.3" provider-name="Collabsvito">
+<addon id="repository.collabsvito" name="Collabsvito that's my AiO REPO" version="3.4.4" provider-name="Collabsvito">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
@@ -10,28 +10,28 @@
 			<checksum>https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/REPOSITORIES/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/REPOSITORIES/</datadir>
 		</dir>
-		<dir minversion="18.9.0">
-			<info compressed="false">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/MATRIX/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/MATRIX/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/MATRIX/</datadir>
-		</dir>
-		<dir minversion="16.9.0">
+		<dir minversion="17.0.0" maxversion="18.9.0">
 			<info compressed="false">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/KRYPTON_LEIA/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/KRYPTON_LEIA/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/KRYPTON_LEIA/</datadir>
 		</dir>
+		<dir minversion="19.0.0">
+			<info compressed="false">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/MATRIX/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/MATRIX/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Collabsvito/REpo-AiO/master/MATRIX/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Some nice ADDONS created by @Collabsvito</summary>
-		<description>Download And Install Addons Developed By Collabsvito.[CR]These Addons Should Not Missed.</description>
+		<description>Download And Install Addons Developed By Collabsvito.[CR]These Addons Should Not Missed And New Fans Are Welcome...</description>
 		<disclaimer>The owner and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
 		<platform>all</platform>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.3.3  (12.05.2020)[/COLOR][/B][CR]
-- created NEW REPO AiO PY2/PY3 compatible - New Fans are welcome...
+		<news>[B][COLOR orangered]Version 3.4.4  (10.09.2020)[/COLOR][/B][CR]
+- fixed: Show only Matrix-Addons on KODI-Matrix Installations since KODI-Matrix at 08-09-2020
 		</news>
 	</extension>
 </addon>
