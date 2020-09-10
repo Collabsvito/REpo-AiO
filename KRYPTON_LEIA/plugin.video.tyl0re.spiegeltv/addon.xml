@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.0.6" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.0.7" provider-name="L0RE, realvito">
 	<requires>
-		<import addon="xbmc.python" version="2.26.0"/>
-		<import addon="plugin.video.youtube" version="6.3.0"/>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="plugin.video.youtube" version="6.5.0"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -25,10 +25,8 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.6  (16.08.2020)[/COLOR][/B] by realvito[CR]
-- added: Rubrik = DER SPIEGEL liest und fragt
-- fixed: Videos mit Laufzeiten über 1 Stunde werden nicht angezeigt
-- fixed: Manche Videos können nicht abgespielt werden (KeyError: 'height')
+		<news>[B][COLOR orangered]Version 2.0.7  (10.09.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Es wird nur max. eine Seite nach Videoartikeln durchsucht (Einstellung wird ignoriert)
 		</news>
 	</extension>
 </addon>
