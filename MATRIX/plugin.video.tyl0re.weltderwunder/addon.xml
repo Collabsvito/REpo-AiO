@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tyl0re.weltderwunder" name="Welt der Wunder" version="2.0.7+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.weltderwunder" name="Welt der Wunder" version="2.0.8+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.beautifulsoup4" version="4.8.2+matrix.1"/>
@@ -26,8 +26,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.7+matrix.1  (16.08.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Suchfunktion zeigt keine Ergebnisse
+		<news>[B][COLOR orangered]Version 2.0.8+matrix.1  (04.10.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Notwendige Codeanpassungen für neue Matrix-Versionen (exceptions)
 		</news>
 	</extension>
 </addon>

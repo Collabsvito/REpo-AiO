@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - Das Beste aus den Mediatheken" version="1.2.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - Das Beste aus den Mediatheken" version="1.2.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="plugin.video.tyl0re.arte" optional="true"/>
@@ -27,9 +27,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]1.2.6+matrix.1  (10.07.2020)[/COLOR][/B][CR]
-- fixed: Manchmal wird kein Vorschaubild des Titels angezeigt
-- optimized: Neue Addonstruktur
+		<news>[B][COLOR orangered]1.2.7+matrix.1  (04.10.2020)[/COLOR][/B][CR]
+- fixed: Notwendige Codeanpassungen für neue Matrix-Versionen (exceptions)
 		</news>
 	</extension>
 </addon>

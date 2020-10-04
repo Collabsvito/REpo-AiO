@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.euronews_com" name="euronews.com" version="2.1.6+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.euronews_com" name="euronews.com" version="2.1.7+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
@@ -49,13 +49,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.1.6+matrix.1  (13.06.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Error-Meldung wenn KEIN Video oder API-Link zum Thema gefunden wird
-- fixed: Nutzlose oder leere Partnerbeiträge ausblenden
-- fixed: Livestreams via Youtube (wenn Standard-Livestream nicht funktioniert)
-- fixed: Version = euronews - Persian
-- optimized: Anzeige von mehr Beiträgen pro Thema als bisher
-- added: Verschiedene Sprachfiles
+		<news>[B][COLOR orangered]Version 2.1.7+matrix.1  (04.10.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Notwendige Codeanpassungen für neue Matrix-Versionen (exceptions)
 		</news>
 	</extension>
 </addon>

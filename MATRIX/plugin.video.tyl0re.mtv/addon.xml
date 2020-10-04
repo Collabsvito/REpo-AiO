@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tyl0re.mtv" name="MTV Germany" version="1.2.5+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.mtv" name="MTV Germany" version="1.2.6+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.beautifulsoup4" version="4.8.2+matrix.1"/>
@@ -26,11 +26,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.2.5+matrix.1  (10.09.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Die Playliste wird nicht abgespielt wenn ein einzelnes Video nicht gefunden wird
-- fixed: Bei Künstlern von A-Z werden jeweils nicht mehr als sechs Songs angezeigt
-- fixed: Manchmal auftretender Fehler = WARNING: Attempt to use invalid handle
-- added: Laufzeitanzeige im Plot für Playlisten
+		<news>[B][COLOR orangered]Version 1.2.6+matrix.1  (04.10.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Notwendige Codeanpassungen für neue Matrix-Versionen (exceptions)
 		</news>
 	</extension>
 </addon>
