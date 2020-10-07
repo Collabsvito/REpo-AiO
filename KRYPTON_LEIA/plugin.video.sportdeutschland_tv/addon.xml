@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV" version="2.0.1" provider-name="PUR3, realvito">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Amateursport - Wettbewerbe</summary>
+		<summary lang="en_GB">Amateur Sports - Competitions</summary>
+		<description lang="de_DE">Dein Sportsender im Netz: Sportdeutschland.TV ist der vom Deutschen Olympischen Sportbund (DOSB) gegründete Online-Sportsender. Alle Sportarten exklusiv LIVE &amp; ON DEMAND.[CR]Über 70 Disziplinen Live und legal streamen, kein Spiel- und Sport-Highlight verpassen.</description>
+		<description lang="en_GB">Your sports channel on the net: Sportdeutschland.TV is the online sports channel founded by the German Olympic Sports Confederation (DOSB). All sports exclusively LIVE &amp; ON DEMAND.[CR]Stream over 70 disciplines live and legally, never miss a game- and sport highlight.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://sportdeutschland.tv/</website>
+		<email></email>
+		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.sportdeutschland_tv</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 2.0.1  (07.10.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Bei vielen Beiträgen funktioniert die Wiedergabe nicht (Open - error probing input format)
+- fixed: Wenn das Video eines Beitrags gestückelt ist (Playliste) wird nur der erste Teil abgespielt
+- fixed: Laufzeit für alle Playlisten-Teile addieren
+- added: Rubriken = Highlights, RE - Live, Deutsche Meister und Kompaktlisten
+- added: Nächste Seite zum weiterblättern
+- added: HLS-Videos mit Inputstream.Adaptive wiedergeben (settings)
+- optimized: Live-Übertragungen und nächste Übertragungen in getrennte Ordner gepackt
+- optimized: Mehr Informationen zum Video verfügbar
+		</news>
+	</extension>
+</addon>
