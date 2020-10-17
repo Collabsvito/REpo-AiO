@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.atv_at" name="ATV.at - Mediathek" version="3.0.7" provider-name="realvito">
+<addon id="plugin.video.atv_at" name="ATV.at - Mediathek" version="3.0.8" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
-		<import addon="script.common.plugin.cache" version="2.6.0"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -11,8 +10,8 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Die Mediathek von ATV.at</summary>
 		<summary lang="en_GB">The Media-Library of ATV.at</summary>
-		<description lang="de_DE">ATV-Produktionen in Österreichs größtem Fernsehprogramm, Filme und Serien sowie ganze Folgen in der Mediathek zum Nachsehen. Da macht online Fernsehen Spaß.[CR]Zusammengestellt von ATV (www.atv.at).</description>
-		<description lang="en_GB">ATV-Productions in Austria's largest television program, movies and series as well as entire episodes in the media library to see. That's what makes online TV fun.[CR]Compiled by ATV (www.atv.at).</description>
+		<description lang="de_DE">ATV-Produktionen in Österreichs größtem Fernsehprogramm, Filme, Serien und beliebte Erfolgsproduktionen alles in der Mediathek zum Nachschauen.[CR]Bonusmaterial, Outtakes, Hintergrund-Geschichten von den Dreharbeiten und Infos zu den Moderatoren.</description>
+		<description lang="en_GB">ATV-Productions in Austria's largest Television Program, Movies, Series and popular Success-Productions - all in the Media library to look up.[CR]Bonusmaterial, Outtakes, Background Stories from the Shooting and Information about the Presenters.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
@@ -26,9 +25,12 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.7  (10.07.2020)[/COLOR][/B][CR]
-- fixed: Anzeigefehler im Plot
-- added: Verschiedene Rubriken der Mediathek-Startseite hinzugefügt
+		<news>[B][COLOR orangered]Version 3.0.8  (17.10.2020)[/COLOR][/B][CR]
+- fixed: Anzeigefehler in der Serien- und Seasonübersicht (Encoding-Error)
+- fixed: Ähnliche Sendungen oder Empfehlungen in der Episodenansicht ausblenden
+- fixed: Plot-Abstände werden nicht eingehalten
+- optimized: Modul 'script.common.plugin.cache' entfernt und Seitenabfrage beschleunigt
+- added: Eigene Addon-Favoriten anlegen/speichern
 		</news>
 	</extension>
 </addon>
