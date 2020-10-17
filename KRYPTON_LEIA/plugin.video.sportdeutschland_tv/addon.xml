@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV" version="2.0.1" provider-name="PUR3, realvito">
+<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV" version="2.0.2" provider-name="PUR3, realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 	</requires>
@@ -24,15 +24,9 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.1  (07.10.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Bei vielen Beiträgen funktioniert die Wiedergabe nicht (Open - error probing input format)
-- fixed: Wenn das Video eines Beitrags gestückelt ist (Playliste) wird nur der erste Teil abgespielt
-- fixed: Laufzeit für alle Playlisten-Teile addieren
-- added: Rubriken = Highlights, RE - Live, Deutsche Meister und Kompaktlisten
-- added: Nächste Seite zum weiterblättern
-- added: HLS-Videos mit Inputstream.Adaptive wiedergeben (settings)
-- optimized: Live-Übertragungen und nächste Übertragungen in getrennte Ordner gepackt
-- optimized: Mehr Informationen zum Video verfügbar
+		<news>[B][COLOR orangered]Version 2.0.2  (17.10.2020)[/COLOR][/B] by realvito[CR]
+- fixed: HTTP Error 422: Unprocessable Entity
+- fixed: Übersicht der Videos lässt sich nicht öffnen (KeyError: 'title' oder AttributeError: 'list' object has no attribute 'get')
 		</news>
 	</extension>
 </addon>
