@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tyl0re.mtv" name="MTV Germany" version="1.2.6+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.mtv" name="MTV Germany" version="1.2.7+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.beautifulsoup4" version="4.8.2+matrix.1"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
 		<import addon="script.common.plugin.cache" version="2.6.1.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -26,8 +27,9 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.2.6+matrix.1  (04.10.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Notwendige Codeanpassungen für neue Matrix-Versionen (exceptions)
+		<news>[B][COLOR orangered]Version 1.2.7+matrix.1  (28.10.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Diverse Chart-Ordner können nicht geöffnet werden (KeyError: 'images')
+- added: Deutsche Untertitel zu engl. Serien (sofern verfügbar - settings)
 		</news>
 	</extension>
 </addon>
