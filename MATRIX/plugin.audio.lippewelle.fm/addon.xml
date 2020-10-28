@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="plugin.audio.lippewelle.fm" name="Radio-Lippewelle [COLOR FF00EE00]FM[/COLOR]" version="1.0.2+matrix.1" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Radio Lippewelle 105</summary>
+		<summary lang="en_GB">Radio Lippewelle 105</summary>
+		<description lang="de_DE">Radio Lippe Welle Hamm ist das Lokalradio für die Stadt Hamm.[CR]Hier erfahrt ihr, was in Hamm geht. Wir geben euch Tipps für tagsüber oder abends, drinnen oder draußen.[CR]Mit der Lippewelle geht's vor die Tür.</description>
+		<description lang="en_GB">Radio Lippe Welle Hamm is the local radio for the city of Hamm.[CR]Here you can find out what's going on in Hamm. We give you tips for day or evening, indoors or outdoors.[CR]With the Lippewelle it goes outdoors.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://www.lippewelle.de</website>
+		<email></email>
+		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.audio.lippewelle.fm</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 1.0.2+matrix.1  (28.10.2020)[/COLOR][/B] by realvito[CR]
+- Official Initial Release
+		</news>
+	</extension>
+</addon>
