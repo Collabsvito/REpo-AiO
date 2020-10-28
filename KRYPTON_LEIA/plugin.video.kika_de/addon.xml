@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.kika_de" name="KiKA plus" version="3.3.5" provider-name="realvito">
+<addon id="plugin.video.kika_de" name="KiKA plus" version="3.3.7" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -25,10 +25,10 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.3.4+3.3.5  (08.06.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Bei manchen Episoden/Filmen wird keine Laufzeit angezeigt - obwohl vorhanden
-- fixed: In der Rubrik = Meistgesehene Videos werden teilweise alle Serien angesteuert beim Abspielen (wenn kein Episodename vorhanden ist - z.B. 'Die WG - Zusammen mit Abstand')
-- fixed: In manchen KODI-Skins werden keine Titel angezeigt
+		<news>[B][COLOR orangered]Version 3.3.7  (28.10.2020)[/COLOR][/B][CR]
+- fixed: Übersicht der Videos lässt sich nicht öffnen (IndexError: list index out of range)
+- fixed: Teilweise kann ein Ordner nicht geöffnet werden wenn das Bild zum Titel fehlt
+- fixed: Fehlermeldung wenn noch KEIN Video zum Titel verfügbar ist
 		</news>
 	</extension>
 </addon>
