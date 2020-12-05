@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.0.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.0.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
-		<import addon="service.cron.autobiblio" version="2.0.6+matrix.1" optional="true"/>
+		<import addon="service.cron.autobiblio" version="2.0.7+matrix.1" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -26,9 +26,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.6+matrix.1  (04.10.2020)[/COLOR][/B][CR]
-- fixed: Notwendige Codeanpassungen für neue Matrix-Versionen (exceptions)
-- optimized: Abfrage für versteckte Genres und Bilder verbessert
+		<news>[B][COLOR orangered]Version 3.0.7+matrix.1  (05.12.2020)[/COLOR][/B][CR]
+- optimized: Code cleanup
 		</news>
 	</extension>
 </addon>

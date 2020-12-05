@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="2.2.3+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="2.2.4+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -24,8 +24,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.2.3+matrix.1  (04.10.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Notwendige Codeanpassungen für neue Matrix-Versionen (exceptions)
+		<news>[B][COLOR orangered]Version 2.2.4+matrix.1  (05.12.2020)[/COLOR][/B] by realvito[CR]
+- optimized: Code cleanup
 		</news>
 	</extension>
 </addon>

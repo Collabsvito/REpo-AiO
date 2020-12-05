@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.atv_at" name="ATV.at - Mediathek" version="3.0.8" provider-name="realvito">
+<addon id="plugin.video.atv_at" name="ATV.at - Mediathek" version="3.0.9" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -25,12 +25,8 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.8  (17.10.2020)[/COLOR][/B][CR]
-- fixed: Anzeigefehler in der Serien- und Seasonübersicht (Encoding-Error)
-- fixed: Ähnliche Sendungen oder Empfehlungen in der Episodenansicht ausblenden
-- fixed: Plot-Abstände werden nicht eingehalten
-- optimized: Modul 'script.common.plugin.cache' entfernt und Seitenabfrage beschleunigt
-- added: Eigene Addon-Favoriten anlegen/speichern
+		<news>[B][COLOR orangered]Version 3.0.9  (05.12.2020)[/COLOR][/B][CR]
+- optimized: Code cleanup
 		</news>
 	</extension>
 </addon>

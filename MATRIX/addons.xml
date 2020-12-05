@@ -97,11 +97,10 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.atv_at" name="ATV.at - Mediathek" version="3.0.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.atv_at" name="ATV.at - Mediathek" version="3.0.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0.1"/>
-		<import addon="script.common.plugin.cache" version="2.6.1.1"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -109,8 +108,8 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Die Mediathek von ATV.at</summary>
 		<summary lang="en_GB">The Media-Library of ATV.at</summary>
-		<description lang="de_DE">ATV-Produktionen in Österreichs größtem Fernsehprogramm, Filme und Serien sowie ganze Folgen in der Mediathek zum Nachsehen. Da macht online Fernsehen Spaß.[CR]Zusammengestellt von ATV (www.atv.at).</description>
-		<description lang="en_GB">ATV-Productions in Austria's largest television program, movies and series as well as entire episodes in the media library to see. That's what makes online TV fun.[CR]Compiled by ATV (www.atv.at).</description>
+		<description lang="de_DE">ATV-Produktionen in Österreichs größtem Fernsehprogramm, Filme, Serien und beliebte Erfolgsproduktionen alles in der Mediathek zum Nachschauen.[CR]Bonusmaterial, Outtakes, Hintergrund-Geschichten von den Dreharbeiten und Infos zu den Moderatoren.</description>
+		<description lang="en_GB">ATV-Productions in Austria's largest Television Program, Movies, Series and popular Success-Productions - all in the Media library to look up.[CR]Bonusmaterial, Outtakes, Background Stories from the Shooting and Information about the Presenters.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
@@ -124,9 +123,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.7+matrix.1  (10.07.2020)[/COLOR][/B][CR]
-- fixed: Anzeigefehler im Plot
-- added: Verschiedene Rubriken der Mediathek-Startseite hinzugefügt
+		<news>[B][COLOR orangered]Version 3.0.9+matrix.1  (05.12.2020)[/COLOR][/B][CR]
+- optimized: Code cleanup
 		</news>
 	</extension>
 </addon>
@@ -160,11 +158,11 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.0.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.0.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
-		<import addon="service.cron.autobiblio" version="2.0.6+matrix.1" optional="true"/>
+		<import addon="service.cron.autobiblio" version="2.0.7+matrix.1" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -187,13 +185,12 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.6+matrix.1  (04.10.2020)[/COLOR][/B][CR]
-- fixed: Notwendige Codeanpassungen für neue Matrix-Versionen (exceptions)
-- optimized: Abfrage für versteckte Genres und Bilder verbessert
+		<news>[B][COLOR orangered]Version 3.0.7+matrix.1  (05.12.2020)[/COLOR][/B][CR]
+- optimized: Code cleanup
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek [COLOR FF00EE00](neu)[/COLOR]" version="1.0.4+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.0.5+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -219,13 +216,12 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.4+matrix.1  (04.10.2020)[/COLOR][/B][CR]
-- fixed: Notwendige Codeanpassungen für neue Matrix-Versionen (exceptions)
-- optimized: Abfrage für versteckte Genres und Bilder verbessert
+		<news>[B][COLOR orangered]Version 1.0.5+matrix.1  (05.12.2020)[/COLOR][/B][CR]
+- optimized: Code cleanup
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.0.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.0.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -251,13 +247,12 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.6+matrix.1  (04.10.2020)[/COLOR][/B][CR]
-- fixed: Notwendige Codeanpassungen für neue Matrix-Versionen (exceptions)
-- optimized: Abfrage für versteckte Genres und Bilder verbessert
+		<news>[B][COLOR orangered]Version 3.0.7+matrix.1  (05.12.2020)[/COLOR][/B][CR]
+- optimized: Code cleanup
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.euronews_com" name="euronews.com" version="2.1.7+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.euronews_com" name="euronews.com" version="2.1.8+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
@@ -307,12 +302,12 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.1.7+matrix.1  (04.10.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Notwendige Codeanpassungen für neue Matrix-Versionen (exceptions)
+		<news>[B][COLOR orangered]Version 2.1.8+matrix.1  (05.12.2020)[/COLOR][/B] by realvito[CR]
+- optimized: Code cleanup
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.fernsehkritik_tv" name="Massengeschmack [COLOR FF00EE00](light)[/COLOR]" version="2.2.2+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.fernsehkritik_tv" name="Massengeschmack [COLOR FF00EE00](light)[/COLOR]" version="2.2.3+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -340,12 +335,12 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.2.2+matrix.1  (04.10.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Notwendige Codeanpassungen für neue Matrix-Versionen (exceptions)
+		<news>[B][COLOR orangered]Version 2.2.3+matrix.1  (05.12.2020)[/COLOR][/B] by realvito[CR]
+- optimized: Code cleanup
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.filmstarts" name="FILMSTARTS.de" version="1.0.5+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.filmstarts" name="FILMSTARTS.de" version="1.0.6+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
@@ -371,8 +366,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.5+matrix.1  (04.10.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Notwendige Codeanpassungen für neue Matrix-Versionen (exceptions)
+		<news>[B][COLOR orangered]Version 1.0.6+matrix.1  (05.12.2020)[/COLOR][/B] by realvito[CR]
+- optimized: Code cleanup
 		</news>
 	</extension>
 </addon>
@@ -409,7 +404,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.myspass_de" name="MySpass" version="4.0.7+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.myspass_de" name="MySpass" version="4.0.8+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -434,21 +429,12 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 4.0.7+matrix.1  (12.09.2020)[/COLOR][/B] by realvito[CR]
-- removed: Webseiten-Cache entfernt da sonst häufig die Zuordnung der Videos nicht mehr funktioniert (CCurlFile::Open failed with code 404)
-------------------------------------------------------------------------------------------------------------------------------------
-[B][COLOR orangered]Version 4.0.6+matrix.1  (11.09.2020)[/COLOR][/B] by realvito[CR]
-- optimized: Episoden in der Rubrik 'Channels' werden jetzt einzeln gelistet und sind auswählbar (vorher Playliste)
-------------------------------------------------------------------------------------------------------------------------------------
-[B][COLOR orangered]Version 4.0.5+matrix.1  (10.09.2020)[/COLOR][/B] by realvito[CR]
-- Komplette Neuauflage des MYSPASS-Addons nach Webseitenerneuerung (New Initial Release)
-- fixed: Es werden nicht mehr als 100 Episoden einer Show angezeigt
-- added: Viele neue Rubriken in der Startübersicht
-- added: Eigene Addon-Favoriten anlegen/speichern
+		<news>[B][COLOR orangered]Version 4.0.8+matrix.1  (05.12.2020)[/COLOR][/B] by realvito[CR]
+- optimized: Code cleanup
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="2.2.3+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="2.2.4+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -473,8 +459,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.2.3+matrix.1  (04.10.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Notwendige Codeanpassungen für neue Matrix-Versionen (exceptions)
+		<news>[B][COLOR orangered]Version 2.2.4+matrix.1  (05.12.2020)[/COLOR][/B] by realvito[CR]
+- optimized: Code cleanup
 		</news>
 	</extension>
 </addon>

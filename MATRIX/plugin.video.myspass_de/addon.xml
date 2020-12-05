@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.myspass_de" name="MySpass" version="4.0.7+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.myspass_de" name="MySpass" version="4.0.8+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -24,17 +24,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 4.0.7+matrix.1  (12.09.2020)[/COLOR][/B] by realvito[CR]
-- removed: Webseiten-Cache entfernt da sonst häufig die Zuordnung der Videos nicht mehr funktioniert (CCurlFile::Open failed with code 404)
-------------------------------------------------------------------------------------------------------------------------------------
-[B][COLOR orangered]Version 4.0.6+matrix.1  (11.09.2020)[/COLOR][/B] by realvito[CR]
-- optimized: Episoden in der Rubrik 'Channels' werden jetzt einzeln gelistet und sind auswählbar (vorher Playliste)
-------------------------------------------------------------------------------------------------------------------------------------
-[B][COLOR orangered]Version 4.0.5+matrix.1  (10.09.2020)[/COLOR][/B] by realvito[CR]
-- Komplette Neuauflage des MYSPASS-Addons nach Webseitenerneuerung (New Initial Release)
-- fixed: Es werden nicht mehr als 100 Episoden einer Show angezeigt
-- added: Viele neue Rubriken in der Startübersicht
-- added: Eigene Addon-Favoriten anlegen/speichern
+		<news>[B][COLOR orangered]Version 4.0.8+matrix.1  (05.12.2020)[/COLOR][/B] by realvito[CR]
+- optimized: Code cleanup
 		</news>
 	</extension>
 </addon>
