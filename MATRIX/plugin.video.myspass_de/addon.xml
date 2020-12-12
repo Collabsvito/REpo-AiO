@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.myspass_de" name="MySpass" version="4.0.8+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.myspass_de" name="MySpass" version="4.0.9+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -24,8 +24,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 4.0.8+matrix.1  (05.12.2020)[/COLOR][/B] by realvito[CR]
-- optimized: Code cleanup
+		<news>[B][COLOR orangered]Version 4.0.9+matrix.1  (12.12.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Teilweise wird beim Wechsel von Staffeln zu Episoden ein Fehler erzeugt (IndexError: list index out of range)
 		</news>
 	</extension>
 </addon>
