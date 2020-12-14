@@ -404,7 +404,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.myspass_de" name="MySpass" version="4.0.9+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.myspass_de" name="MySpass" version="4.1.0+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -429,8 +429,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 4.0.9+matrix.1  (12.12.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Teilweise wird beim Wechsel von Staffeln zu Episoden ein Fehler erzeugt (IndexError: list index out of range)
+		<news>[B][COLOR orangered]Version 4.1.0+matrix.1  (14.12.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Bug in KODI-MATRIX-Android-Releases for command 'open to read and write' is not UNICODE
 		</news>
 	</extension>
 </addon>
