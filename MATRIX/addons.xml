@@ -128,7 +128,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.bibeltv" name="Bibel TV" version="1.0.5+matrix.1" provider-name="realvito">
+<addon id="plugin.video.bibeltv" name="Bibel TV" version="1.0.6+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -153,8 +153,9 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.5+matrix.1  (04.10.2020)[/COLOR][/B][CR]
-- fixed: Notwendige Codeanpassungen für neue Matrix-Versionen (exceptions)
+		<news>[B][COLOR orangered]Version 1.0.6+matrix.1  (24.12.2020)[/COLOR][/B][CR]
+- fixed: Livestreams werden nicht abgespielt
+- fixed: DRM geschützte Videos lassen sich nicht abspielen (z.B. Anne with an 'E')
 		</news>
 	</extension>
 </addon>
@@ -252,7 +253,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.euronews_com" name="euronews.com" version="2.1.8+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.euronews_com" name="euronews.com" version="2.1.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
@@ -302,8 +303,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.1.8+matrix.1  (05.12.2020)[/COLOR][/B] by realvito[CR]
-- optimized: Code cleanup
+		<news>[B][COLOR orangered]Version 2.1.9+matrix.1  (24.12.2020)[/COLOR][/B][CR]
+- fixed: Vereinzelt wird ein Fehler beim öffnen eines Ordners ausgegeben
 		</news>
 	</extension>
 </addon>
@@ -461,6 +462,45 @@
 		</assets>
 		<news>[B][COLOR orangered]Version 2.2.4+matrix.1  (05.12.2020)[/COLOR][/B] by realvito[CR]
 - optimized: Code cleanup
+		</news>
+	</extension>
+</addon>
+<addon id="plugin.video.sporttotal" name="Sport-Total TV" version="1.0.7+matrix.1" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Regionalsport auf Sporttotal.tv</summary>
+		<description lang="de_DE">Sporttotal.tv zeigt Deutschlands Amateursport in voller Länge und Breite. Sporttotal.tv ist die kostenlose Plattform für live und on-demand Streaming von Fußball, Volleyball, Basketball, Eishockey und mehr ![CR]Hier wird Breitensport LIVE zu seinen Fans gebracht.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<summary lang="en_GB">Regionalsport on Sporttotal.tv</summary>
+		<description lang="en_GB">Sporttotal.tv shows Germany's amateur sport in full length and width. Sporttotal.tv is the free platform for live and on-demand streaming of football, volleyball, basketball, ice hockey and more ![CR]This is where Breitensport LIVE is brought to its fans.</description>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<summary lang="fr_FR">Les sports régionaux sur Sporttotal.tv</summary>
+		<description lang="fr_FR">Sporttotal.tv présente le sport amateur allemand dans toute sa longueur et sa largeur. Sporttotal.tv est la plateforme gratuite de diffusion en direct et à la demande de football, volley-ball, basket-ball, hockey sur glace et bien d'autres choses encore ![CR]C'est ici que Breitensport LIVE est présenté à ses fans.</description>
+		<disclaimer lang="fr_FR">Le contenu affiché par cet addon n'est pas hébergé ou distribué par les créateurs de l'addon, et ces derniers n'ont aucune relation avec les fournisseurs de contenu.</disclaimer>
+		<summary lang="it_IT">Sport regionali su Sporttotal.tv</summary>
+		<description lang="it_IT">Sporttotal.tv mostra lo sport amatoriale tedesco in lunghezza e larghezza. Sporttotal.tv è la piattaforma gratuita per lo streaming live e on-demand di calcio, pallavolo, pallacanestro, hockey su ghiaccio e altro ancora ![CR]È qui che Breitensport LIVE viene portato ai suoi fan.</description>
+		<disclaimer lang="it_IT">I contenuti visualizzati da questo addon non sono ospitati o distribuiti dai creatori dell'addon, né i creatori hanno alcun rapporto con i fornitori di contenuti.</disclaimer>
+		<summary lang="nl_NL">Regionale sporten op Sporttotal.tv</summary>
+		<description lang="nl_NL">Sporttotal.tv toont de Duitse amateursport in de volle lengte en breedte. Sporttotal.tv is het gratis platform voor live en on-demand streaming van voetbal, volleybal, basketbal, ijshockey en meer ![CR]Dit is waar Breitensport LIVE aan haar fans wordt gebracht.</description>
+		<disclaimer lang="nl_NL">De inhoud die door deze addon wordt weergegeven, wordt niet gehost of gedistribueerd door de makers van de addon, noch hebben de makers enige relatie met de aanbieders van de inhoud.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://www.sporttotal.tv</website>
+		<email></email>
+		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.sporttotal</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 1.0.7+matrix.1  (24.12.2020)[/COLOR][/B][CR]
+- fixed: Manche Videos werden nicht abgespielt obwohl vorhanden (Umlaute nicht umgewandelt oder Dateiendung nicht klein geschrieben)
 		</news>
 	</extension>
 </addon>

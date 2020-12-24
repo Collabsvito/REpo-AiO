@@ -130,7 +130,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.bibeltv" name="Bibel TV" version="1.0.4" provider-name="realvito">
+<addon id="plugin.video.bibeltv" name="Bibel TV" version="1.0.6" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 	</requires>
@@ -155,8 +155,9 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.4  (21.06.2020)[/COLOR][/B][CR]
-- fixed: Anpassungen und Codeänderungen für inputstream.adaptive
+		<news>[B][COLOR orangered]Version 1.0.6  (24.12.2020)[/COLOR][/B][CR]
+- fixed: Livestreams werden nicht abgespielt
+- fixed: DRM geschützte Videos lassen sich nicht abspielen (z.B. Anne with an 'E')
 		</news>
 	</extension>
 </addon>
@@ -254,7 +255,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.euronews_com" name="euronews.com" version="2.1.8" provider-name="L0RE, realvito">
+<addon id="plugin.video.euronews_com" name="euronews.com" version="2.1.9" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="plugin.video.youtube" version="6.5.0"/>
@@ -304,8 +305,8 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.1.8  (05.12.2020)[/COLOR][/B] by realvito[CR]
-- optimized: Code cleanup
+		<news>[B][COLOR orangered]Version 2.1.9  (24.12.2020)[/COLOR][/B][CR]
+- fixed: Vereinzelt wird ein Fehler beim öffnen eines Ordners ausgegeben
 		</news>
 	</extension>
 </addon>
@@ -497,7 +498,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.sporttotal" name="Sport-Total TV" version="1.0.6" provider-name="L0RE, realvito">
+<addon id="plugin.video.sporttotal" name="Sport-Total TV" version="1.0.7" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 	</requires>
@@ -531,9 +532,8 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.6  (07.10.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Komplette Neuauflage des Addons nach Veränderung der Webseite
-- added: Verschiedene Sprachfiles (übereinstimmend mit der jew. Sprachversion der Webseite)
+		<news>[B][COLOR orangered]Version 1.0.7  (24.12.2020)[/COLOR][/B][CR]
+- fixed: Manche Videos werden nicht abgespielt obwohl vorhanden (Umlaute nicht umgewandelt oder Dateiendung nicht klein geschrieben)
 		</news>
 	</extension>
 </addon>
