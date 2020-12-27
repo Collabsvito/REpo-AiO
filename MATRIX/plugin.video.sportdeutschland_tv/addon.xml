@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV" version="2.0.3" provider-name="PUR3, realvito">
+<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV" version="2.0.3+matrix.1" provider-name="PUR3, realvito">
 	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -19,12 +19,12 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://sportdeutschland.tv/</website>
 		<email></email>
-		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.sportdeutschland_tv</source>
+		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.sportdeutschland_tv</source>
 		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.3  (27.12.2020)[/COLOR][/B] by realvito[CR]
+		<news>[B][COLOR orangered]Version 2.0.3+matrix.1  (27.12.2020)[/COLOR][/B] by realvito[CR]
 - optimized: Code cleanup
 		</news>
 	</extension>
