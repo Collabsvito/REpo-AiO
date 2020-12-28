@@ -534,10 +534,10 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.spotitube" name="Youtube Music" version="2.1.9+matrix.1" provider-name="realvito (inspired by L0RE)">
+<addon id="plugin.video.spotitube" name="Youtube Music" version="2.2.0+matrix.1" provider-name="realvito (inspired by L0RE)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="plugin.video.youtube" version="6.8.0+matrix.1"/>
+		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video audio</provides>
@@ -560,9 +560,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.1.9+matrix.1  (25.09.2020)[/COLOR][/B][CR]
-- fixed: Various music videos are not played (Encoding-Error)
-- added: Possibility to delete the entire cache folder (settings)
+		<news>[B][COLOR orangered]Version 2.2.0+matrix.1  (28.12.2020)[/COLOR][/B][CR]
+- optimized: Code cleanup
 		</news>
 	</extension>
 </addon>
