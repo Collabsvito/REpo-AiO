@@ -97,7 +97,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.atv_at" name="ATV.at - Mediathek" version="3.0.9+matrix.1" provider-name="realvito">
+<addon id="plugin.video.atv_at" name="ATV.at - Mediathek" version="3.1.0+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -123,8 +123,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.9+matrix.1  (05.12.2020)[/COLOR][/B][CR]
-- optimized: Code cleanup
+		<news>[B][COLOR orangered]Version 3.1.0+matrix.1  (28.12.2020)[/COLOR][/B][CR]
+- fixed: Error beim anlegen von Addon-Favoriten
 		</news>
 	</extension>
 </addon>
@@ -159,7 +159,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.0.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.0.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -186,12 +186,12 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.7+matrix.1  (05.12.2020)[/COLOR][/B][CR]
-- optimized: Code cleanup
+		<news>[B][COLOR orangered]Version 3.0.8+matrix.1  (28.12.2020)[/COLOR][/B][CR]
+- fixed: Error beim anlegen von Addon-Favoriten
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.0.5+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.0.6+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -217,12 +217,12 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.5+matrix.1  (05.12.2020)[/COLOR][/B][CR]
-- optimized: Code cleanup
+		<news>[B][COLOR orangered]Version 1.0.6+matrix.1  (28.12.2020)[/COLOR][/B][CR]
+- fixed: Error beim anlegen von Addon-Favoriten
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.0.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.0.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -248,8 +248,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.7+matrix.1  (05.12.2020)[/COLOR][/B][CR]
-- optimized: Code cleanup
+		<news>[B][COLOR orangered]Version 3.0.8+matrix.1  (28.12.2020)[/COLOR][/B][CR]
+- fixed: Error beim anlegen von Addon-Favoriten
 		</news>
 	</extension>
 </addon>
@@ -433,7 +433,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="2.2.4+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="2.2.5+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -458,8 +458,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.2.4+matrix.1  (05.12.2020)[/COLOR][/B] by realvito[CR]
-- optimized: Code cleanup
+		<news>[B][COLOR orangered]Version 2.2.5+matrix.1  (28.12.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Error beim anlegen von Addon-Favoriten
 		</news>
 	</extension>
 </addon>
