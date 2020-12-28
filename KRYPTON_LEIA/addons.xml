@@ -668,7 +668,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tyl0re.mtv" name="MTV Germany" version="1.2.7" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.mtv" name="MTV Germany" version="1.2.8" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.beautifulsoup4" version="4.6.0"/>
@@ -696,9 +696,8 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.2.7  (28.10.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Diverse Chart-Ordner können nicht geöffnet werden (KeyError: 'images')
-- added: Deutsche Untertitel zu engl. Serien (sofern verfügbar - settings)
+		<news>[B][COLOR orangered]Version 1.2.8  (28.12.2020)[/COLOR][/B] by realvito[CR]
+- optimized: Code cleanup
 		</news>
 	</extension>
 </addon>
