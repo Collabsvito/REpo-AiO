@@ -374,7 +374,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.kika_de" name="KiKA plus" version="3.3.7" provider-name="realvito">
+<addon id="plugin.video.kika_de" name="KiKA plus" version="3.3.8" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -400,10 +400,8 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.3.7  (28.10.2020)[/COLOR][/B][CR]
-- fixed: Übersicht der Videos lässt sich nicht öffnen (IndexError: list index out of range)
-- fixed: Teilweise kann ein Ordner nicht geöffnet werden wenn das Bild zum Titel fehlt
-- fixed: Fehlermeldung wenn noch KEIN Video zum Titel verfügbar ist
+		<news>[B][COLOR orangered]Version 3.3.8  (28.12.2020)[/COLOR][/B][CR]
+- optimized: Code cleanup
 		</news>
 	</extension>
 </addon>
