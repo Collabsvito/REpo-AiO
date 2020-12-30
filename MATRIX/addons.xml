@@ -563,7 +563,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="1.2.9+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="1.3.0+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="plugin.video.tyl0re.arte" optional="true"/>
@@ -591,13 +591,12 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.2.8+matrix.1 &amp; 1.2.9+matrix.1  (28.12.2020)[/COLOR][/B][CR]
-- optimized: Code cleanup
-- fixed: Playback über externes ARTE-Plugin
+		<news>[B][COLOR orangered]Version 1.3.0+matrix.1  (30.12.2020)[/COLOR][/B][CR]
+- fixed: TVNOW-Links können nicht ausgeblendet werden
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tvtoday_de" name="TV Today - Best of Mediatheken" version="1.5.8+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvtoday_de" name="TV Today - Best of Mediatheken" version="1.5.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="plugin.video.tyl0re.arte" optional="true"/>
@@ -625,8 +624,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.5.8+matrix.1  (28.12.2020)[/COLOR][/B][CR]
-- optimized: Code cleanup
+		<news>[B][COLOR orangered]Version 1.5.9+matrix.1  (30.12.2020)[/COLOR][/B][CR]
+- fixed: TVNOW-Links können nicht ausgeblendet werden
 		</news>
 	</extension>
 </addon>
