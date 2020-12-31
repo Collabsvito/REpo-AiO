@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.0.7" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.0.9" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="plugin.video.youtube" version="6.5.0"/>
@@ -20,13 +20,13 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://www.spiegel.de/</website>
 		<email></email>
-		<source>https://repo.kodinerds.net/addons/leia/zip/plugin.video.tyl0re.spiegeltv</source>
+		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.tyl0re.spiegeltv</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.7  (10.09.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Es wird nur max. eine Seite nach Videoartikeln durchsucht (Einstellung wird ignoriert)
+		<news>[B][COLOR orangered]Version 2.0.9  (31.12.2020)[/COLOR][/B] by realvito[CR]
+- optimized: Code cleanup
 		</news>
 	</extension>
 </addon>
