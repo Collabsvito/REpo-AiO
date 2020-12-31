@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.0.4" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.0.6" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -28,9 +28,10 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.4  (10.07.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Nächste Seite zum weiterblättern wird teilweise nicht angezeigt
-- added: Verschiedene Sprachfiles
+		<news>[B][COLOR orangered]Version 1.0.6  (31.12.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Rubrik = Besondere Highlights ohne Inhalt
+- fixed: ARTE Live- und Eventstreams
+- optimized: Rubrik = Serien+kurz &amp; witzig jetzt aufgeteilt in einzelne Serienordner
 		</news>
 	</extension>
 </addon>

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.0.5+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.0.6+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0.1"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -28,8 +28,11 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.5+matrix.1  (04.10.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Notwendige Codeanpassungen für neue Matrix-Versionen (exceptions)
+		<news>[B][COLOR orangered]Version 1.0.6+matrix.1  (31.12.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Die Abhängigkeit in 'script.module.requests' konnte nicht aufgelöst werden (falsche Version angegeben)
+- fixed: Rubrik = Besondere Highlights ohne Inhalt
+- fixed: ARTE Live- und Eventstreams
+- optimized: Rubrik = Serien+kurz &amp; witzig jetzt aufgeteilt in einzelne Serienordner
 		</news>
 	</extension>
 </addon>

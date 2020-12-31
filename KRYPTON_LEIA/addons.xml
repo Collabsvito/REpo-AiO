@@ -631,7 +631,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.0.4" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.0.6" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -660,9 +660,10 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.4  (10.07.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Nächste Seite zum weiterblättern wird teilweise nicht angezeigt
-- added: Verschiedene Sprachfiles
+		<news>[B][COLOR orangered]Version 1.0.6  (31.12.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Rubrik = Besondere Highlights ohne Inhalt
+- fixed: ARTE Live- und Eventstreams
+- optimized: Rubrik = Serien+kurz &amp; witzig jetzt aufgeteilt in einzelne Serienordner
 		</news>
 	</extension>
 </addon>
@@ -699,7 +700,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.0.7" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.0.9" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="plugin.video.youtube" version="6.5.0"/>
@@ -720,20 +721,22 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://www.spiegel.de/</website>
 		<email></email>
-		<source>https://repo.kodinerds.net/addons/leia/zip/plugin.video.tyl0re.spiegeltv</source>
+		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.tyl0re.spiegeltv</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.7  (10.09.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Es wird nur max. eine Seite nach Videoartikeln durchsucht (Einstellung wird ignoriert)
+		<news>[B][COLOR orangered]Version 2.0.9  (31.12.2020)[/COLOR][/B] by realvito[CR]
+- optimized: Code cleanup
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tyl0re.weltderwunder" name="Welt der Wunder" version="2.0.7" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.weltderwunder" name="Welt der Wunder" version="2.0.9" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
+		<import addon="script.module.requests" version="2.20.0"/>
 		<import addon="script.module.beautifulsoup4" version="4.6.2"/>
+		<import addon="plugin.video.youtube" version="6.5.0"/>
 		<import addon="script.module.youtube.dl"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -757,8 +760,9 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.7  (16.08.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Suchfunktion zeigt keine Ergebnisse
+		<news>[B][COLOR orangered]Version 2.0.9  (31.12.2020)[/COLOR][/B] by realvito[CR]
+- optimized: Code für Beautifulsoup überarbeitet und verbessert
+- added: YouTube Playlisten von 'Welt der Wunder'
 		</news>
 	</extension>
 </addon>
