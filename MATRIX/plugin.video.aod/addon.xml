@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.aod" name="Anime on Demand" version="1.0.7+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.aod" name="Anime on Demand" version="1.0.6+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -27,12 +27,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.7+matrix.1  (13.03.2021)[/COLOR][/B] by realvito[CR]
-- fixed: Anmeldeprozess und Verschlüsselung der Benutzerdaten
-- fixed: Error beim öffnen der Hauptrubriken
-- optimized: AoD-Favoriten werden jetzt im übersichtlichen json-Format gespeichert (altes Format wird autom. konvertiert)
-- optimized: Sortierung der Episoden auswählbar (settings)
-- added: Rechtsklickmenü = Episoden zur Playliste hinzufügen
+		<news>[B][COLOR orangered]Version 1.0.6+matrix.1  (04.10.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Notwendige Codeanpassungen für neue Matrix-Versionen (exceptions)
 		</news>
 	</extension>
 </addon>
