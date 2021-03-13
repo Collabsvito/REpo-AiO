@@ -468,7 +468,7 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>[B][COLOR orangered]Version 3.0.1  (13.03.2021)[/COLOR][/B][CR]
-- optimized: Altes Addon (2016) komlett neu aufgesetzt und Module vereinfacht
+- optimized: Altes Addon (2016) komplett neu aufgesetzt und Module vereinfacht
 - optimized: Code cleanup
 - added: Weitere Rubriken zur Auswahl hinzugefügt
 - added: Videos im Format 'mp4/m3u8' oder mit 'inputstream.adaptive' abspielen (settings)
