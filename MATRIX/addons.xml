@@ -64,7 +64,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.aod" name="Anime on Demand" version="1.0.6+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.aod" name="Anime on Demand" version="1.0.7+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -92,8 +92,12 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.6+matrix.1  (04.10.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Notwendige Codeanpassungen für neue Matrix-Versionen (exceptions)
+		<news>[B][COLOR orangered]Version 1.0.7+matrix.1  (13.03.2021)[/COLOR][/B] by realvito[CR]
+- fixed: Anmeldeprozess und Verschlüsselung der Benutzerdaten
+- fixed: Error beim öffnen der Hauptrubriken
+- optimized: AoD-Favoriten werden jetzt im übersichtlichen json-Format gespeichert (altes Format wird autom. konvertiert)
+- optimized: Sortierung der Episoden auswählbar (settings)
+- added: Rechtsklickmenü = Episoden zur Playliste hinzufügen
 		</news>
 	</extension>
 </addon>
@@ -372,7 +376,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.kika_de" name="KiKA plus" version="3.3.8+matrix.1" provider-name="realvito">
+<addon id="plugin.video.kika_de" name="KiKA plus" version="3.3.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -398,8 +402,12 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.3.8+matrix.1  (28.12.2020)[/COLOR][/B][CR]
-- optimized: Code cleanup
+		<news>[B][COLOR orangered]Version 3.3.9+matrix.1  (13.03.2021)[/COLOR][/B][CR]
+- fixed: KiKA Live-TV neue Streamadresse
+- fixed: Teilweise falscher Titel der Sendung
+- fixed: Bei eigentlich nicht abspielbaren Titeln wird anderes Video abgespielt
+- added: Nur Sendungen anzeigen die ein Video enthalten (settings)
+- added: Videos im Format 'mp4/m3u8' oder mit 'inputstream.adaptive' abspielen (settings)
 		</news>
 	</extension>
 </addon>
@@ -430,6 +438,41 @@
 		</assets>
 		<news>[B][COLOR orangered]Version 4.1.1+matrix.1  (28.12.2020)[/COLOR][/B][CR]
 - fixed: Titel unter Empfehlungen merkwürdige Umlautdarstellungen
+		</news>
+	</extension>
+</addon>
+<addon id="plugin.video.netzkino_de" name="Netzkino [COLOR FF00EE00](light)[/COLOR]" version="3.0.1+matrix.1" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Videoportal von Netzkino</summary>
+		<summary lang="en_GB">Videoportal of Netzkino</summary>
+		<description lang="de_DE">Mit Netzkino legal und kostenlos Spielfilme, Movies, ganze Filme online schauen.[CR]Netzkino bietet nur Gratis-Spielfilme, die lizenzrechtlich geklärt und von den Rechteinhabern ordnungsgemäß erworben wurden.[CR][CR][COLOR FF00EE00]Dieses Addon stellt nur den FREI verfügbaren Inhalt von 'netzkino.de' zur Verfügung ![/COLOR]</description>
+		<description lang="en_GB">Watch feature films, movies and entire films online legally and free of charge with Netzkino.[CR]Netzkino only offers free feature films that have been cleared under licensing law and properly acquired from the rights holders.[CR][CR][COLOR FF00EE00]This Addon provides only the FREE available content of 'netzkino.de' ![/COLOR]</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://www.netzkino.de/</website>
+		<email></email>
+		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.netzkino_de</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 3.0.1+matrix.1  (13.03.2021)[/COLOR][/B][CR]
+- optimized: Altes Addon (2016) komlett neu aufgesetzt und Module vereinfacht
+- optimized: Code cleanup
+- added: Weitere Rubriken zur Auswahl hinzugefügt
+- added: Videos im Format 'mp4/m3u8' oder mit 'inputstream.adaptive' abspielen (settings)
+- added: Addon kompatibel mit PYTHON-Vers.3 gemacht (für KODI-19+) :-)
 		</news>
 	</extension>
 </addon>
@@ -699,7 +742,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.0.9+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.1.0+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
@@ -725,8 +768,11 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.9+matrix.1  (31.12.2020)[/COLOR][/B] by realvito[CR]
-- optimized: Code cleanup
+		<news>[B][COLOR orangered]Version 2.1.0+matrix.1  (13.03.2021)[/COLOR][/B] by realvito[CR]
+- fixed: YouTube Playlisten von 'DER SPIEGEL' (Fehler 404 beim öffnen)
+- fixed: Häufig wird kein Plot und kein Bild zum Video angezeigt
+- fixed: Videos ohne Laufzeitangabe werden nicht angezeigt
+- added: Rubriken = Spitzengespräch - der Talk mit Markus Feldenkirchen, Spitzentitel - die Büchershow mit Volker Weidermann, Wir drehen eine Runde - Autotests, Coronavirus: Videos
 		</news>
 	</extension>
 </addon>
