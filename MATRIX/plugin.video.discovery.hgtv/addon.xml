@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.0.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.0.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -20,13 +20,14 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://de.hgtv.com</website>
 		<email></email>
-		<source>https://repo.kodinerds.net/addons/leia/zip/plugin.video.discovery.hgtv</source>
+		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.discovery.hgtv</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.6+matrix.1  (28.12.2020)[/COLOR][/B][CR]
-- fixed: Error beim anlegen von Addon-Favoriten
+		<news>[B][COLOR orangered]Version 1.0.7+matrix.1  (22.03.2021)[/COLOR][/B][CR]
+- fixed: ERROR auf Android 32bit Systemen - kann Unix-Zeitstempel nicht grösser als das Jahr 2038 konvertieren (ValueError: timestamp out of range for platform time_t)
+- optimized: HGTV-Favoriten werden jetzt im übersichtlichen json-Format gespeichert (altes Format wird autom. konvertiert)
 		</news>
 	</extension>
 </addon>
