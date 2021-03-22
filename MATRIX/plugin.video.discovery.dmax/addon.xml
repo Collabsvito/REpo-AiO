@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.0.8+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.0.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -26,8 +26,9 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.8+matrix.1  (28.12.2020)[/COLOR][/B][CR]
-- fixed: Error beim anlegen von Addon-Favoriten
+		<news>[B][COLOR orangered]Version 3.0.9+matrix.1  (22.03.2021)[/COLOR][/B][CR]
+- fixed: ERROR auf Android 32bit Systemen - kann Unix-Zeitstempel nicht grösser als das Jahr 2038 konvertieren (ValueError: timestamp out of range for platform time_t)
+- optimized: DMAX-Favoriten werden jetzt im übersichtlichen json-Format gespeichert (altes Format wird autom. konvertiert)
 		</news>
 	</extension>
 </addon>
