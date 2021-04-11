@@ -159,11 +159,11 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.1.0+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.0.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
-		<import addon="service.cron.autobiblio" version="2.0.9+matrix.1" optional="true"/>
+		<import addon="service.cron.autobiblio" version="2.0.7+matrix.1" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -181,18 +181,18 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://dmax.de</website>
 		<email></email>
-		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.discovery.dmax</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.1.0+matrix.1  (11.04.2021)[/COLOR][/B][CR]
-- fixed: Addon kann auf manchen Systemen nicht geöffnet werden (IOError: could not determine default encoding)
+		<news>[B][COLOR orangered]Version 3.0.9+matrix.1  (22.03.2021)[/COLOR][/B][CR]
+- fixed: ERROR auf Android 32bit Systemen - kann Unix-Zeitstempel nicht grösser als das Jahr 2038 konvertieren (ValueError: timestamp out of range for platform time_t)
+- optimized: DMAX-Favoriten werden jetzt im übersichtlichen json-Format gespeichert (altes Format wird autom. konvertiert)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.0.8+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.0.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -213,18 +213,18 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://de.hgtv.com</website>
 		<email></email>
-		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.discovery.hgtv</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.8+matrix.1  (11.04.2021)[/COLOR][/B][CR]
-- fixed: Addon kann auf manchen Systemen nicht geöffnet werden (IOError: could not determine default encoding)
+		<news>[B][COLOR orangered]Version 1.0.7+matrix.1  (22.03.2021)[/COLOR][/B][CR]
+- fixed: ERROR auf Android 32bit Systemen - kann Unix-Zeitstempel nicht grösser als das Jahr 2038 konvertieren (ValueError: timestamp out of range for platform time_t)
+- optimized: HGTV-Favoriten werden jetzt im übersichtlichen json-Format gespeichert (altes Format wird autom. konvertiert)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.1.0+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.0.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -245,14 +245,14 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://tlc.de</website>
 		<email></email>
-		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.discovery.tlc</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.1.0+matrix.1  (11.04.2021)[/COLOR][/B][CR]
-- fixed: Addon kann auf manchen Systemen nicht geöffnet werden (IOError: could not determine default encoding)
+		<news>[B][COLOR orangered]Version 3.0.9+matrix.1  (22.03.2021)[/COLOR][/B][CR]
+- fixed: ERROR auf Android 32bit Systemen - kann Unix-Zeitstempel nicht grösser als das Jahr 2038 konvertieren (ValueError: timestamp out of range for platform time_t)
+- optimized: TLC-Favoriten werden jetzt im übersichtlichen json-Format gespeichert (altes Format wird autom. konvertiert)
 		</news>
 	</extension>
 </addon>
@@ -810,7 +810,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="service.cron.autobiblio" name="Crontab für andere Addons" version="2.0.9+matrix.1" provider-name="realvito">
+<addon id="service.cron.autobiblio" name="Crontab für andere Addons" version="2.0.8+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -831,14 +831,12 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website></website>
 		<email></email>
-		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://repo.kodinerds.net/addons/matrix/zip/service.cron.autobiblio</source>
 		<assets>
 			<icon>resources/icon.png</icon>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.9+matrix.1  (11.04.2021)[/COLOR][/B] by realvito[CR]
-- fixed: Datetime-Errors
-- optimized: Keine Ausführung wenn die Bibliothek-Funktion im zugehörigen Addon wieder deaktiviert wurde (bzw. zugehöriges Addon deaktiviert ist)
+		<news>[B][COLOR orangered]Version 2.0.8+matrix.1  (04.10.2020)[/COLOR][/B] by realvito[CR]
+- fixed: Notwendige Codeanpassungen für neue Matrix-Versionen (exceptions)
 		</news>
 	</extension>
 </addon>
