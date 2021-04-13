@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="2.2.5" provider-name="L0RE, realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.0.1" provider-name="realvito">
 	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="xbmc.python" version="2.26.0"/>
+		<import addon="script.module.requests" version="2.20.0"/>
+		<import addon="inputstream.adaptive" version="2.4.2"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -19,13 +21,18 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://www.servustv.com</website>
 		<email></email>
-		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.servustv_com</source>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://repo.kodinerds.net/addons/leia/zip/plugin.video.servustv_com</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.2.5  (28.12.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Error beim anlegen von Addon-Favoriten
+		<news>[B][COLOR orangered]Version 3.0.1  (13.04.2021)[/B][CR]
+- fixed: Addon neu aufgesetzt mit Anlehnung des Aufbaus und der Struktur an die neue Android-APP von ServusTV
+- added: Gültigkeitsdauer für eigenen Token festlegen - ist jetzt Vorraussetzung zur Funktion des Addons (settings)
+- added: Anzeige des aktuellen Geobereichs
+- optimized: Livestream in alter Form mittels m3u8 oder neuer Form mittels Token abspielen (settings)
+- optimized: Alle Videos auch Livestreams werden jetzt grundsätzlich mit 'Inputstream.Adaptive' abgespielt (keine Aussetzer und Hänger mehr)
 		</news>
 	</extension>
 </addon>
