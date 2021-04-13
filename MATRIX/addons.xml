@@ -159,6 +159,40 @@
 		</news>
 	</extension>
 </addon>
+<addon id="plugin.video.dfb_tv" name="DFB - Sport" version="2.0.5+matrix.1" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Videoportal des DFB</summary>
+		<summary lang="en_GB">Videoportal of the DFB</summary>
+		<description lang="de_DE">Mit fast 7 Millionen Mitgliedern der angeschlossenen Vereine ist der DFB der größte nationale Sport-Fachverband der Welt.[CR]Sehen Sie Zusammenfassungen von Spielen aus dem deutschen Männer- und Frauenfußball, Livestreams, sonstige Videos mit Bezug zum DFB.</description>
+		<description lang="en_GB">With almost 7 million members of affiliated clubs, the DFB is the largest national sports federation in the world.[CR]Watch summaries of German men's and women's football matches, livestreams, other DFB-related videos.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://www.dfb.de/start/</website>
+		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.dfb_tv</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 2.0.5+matrix.1  (13.04.2021)[/COLOR][/B][CR]
+- added: Weitere Rubriken zur Auswahl hinzugefügt
+- added: Wahlweise = Streams mit Inputstream.Adaptive abspielen oder Qualitätsauswahl
+- added: Addon kompatibel mit PYTHON-Vers.3 gemacht (für KODI-19+) :-)
+- optimized: Code cleanup
+		</news>
+	</extension>
+</addon>
 <addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.1.0+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
@@ -475,9 +509,11 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="2.2.5+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.0.1+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+		<import addon="inputstream.adaptive" version="2.4.2"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -495,13 +531,18 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://www.servustv.com</website>
 		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.servustv_com</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.2.5+matrix.1  (28.12.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Error beim anlegen von Addon-Favoriten
+		<news>[B][COLOR orangered]Version 3.0.1+matrix.1  (13.04.2021)[/B][CR]
+- fixed: Addon neu aufgesetzt mit Anlehnung des Aufbaus und der Struktur an die neue Android-APP von ServusTV
+- added: Gültigkeitsdauer für eigenen Token festlegen - ist jetzt Vorraussetzung zur Funktion des Addons (settings)
+- added: Anzeige des aktuellen Geobereichs
+- optimized: Livestream in alter Form mittels m3u8 oder neuer Form mittels Token abspielen (settings)
+- optimized: Alle Videos auch Livestreams werden jetzt grundsätzlich mit 'Inputstream.Adaptive' abgespielt (keine Aussetzer und Hänger mehr)
 		</news>
 	</extension>
 </addon>
@@ -671,7 +712,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.0.6+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.0.7+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -695,16 +736,17 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://www.arte.tv/</website>
 		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.tyl0re.arte</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.6+matrix.1  (31.12.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Die Abhängigkeit in 'script.module.requests' konnte nicht aufgelöst werden (falsche Version angegeben)
-- fixed: Rubrik = Besondere Highlights ohne Inhalt
-- fixed: ARTE Live- und Eventstreams
-- optimized: Rubrik = Serien+kurz &amp; witzig jetzt aufgeteilt in einzelne Serienordner
+		<news>[B][COLOR orangered]Version 1.0.7+matrix.1  (13.04.2021)[/COLOR][/B] by realvito[CR]
+- fixed: ARTE Livestream
+- fixed: Rubrik - Besondere Highlights, Unterordner von Serien+kurz &amp; witzig ohne Inhalt
+- fixed: ERROR auf Android 32bit Systemen - kann Unix-Zeitstempel nicht grösser als das Jahr 2038 konvertieren (ValueError: timestamp out of range for platform time_t)
+- hacked: !!! KODI BUG SEIT LEIA 18.5 BEKANNT UND LEIDER IN MATRIX AUCH NICHT BEHOBEN !!! - Andauernd aufpoppende Eingabemaske in der Suchfunktion des Addons
 		</news>
 	</extension>
 </addon>
