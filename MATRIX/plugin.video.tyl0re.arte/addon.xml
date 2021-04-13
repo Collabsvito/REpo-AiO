@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.0.6+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.0.7+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -23,16 +23,17 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://www.arte.tv/</website>
 		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.tyl0re.arte</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.6+matrix.1  (31.12.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Die Abhängigkeit in 'script.module.requests' konnte nicht aufgelöst werden (falsche Version angegeben)
-- fixed: Rubrik = Besondere Highlights ohne Inhalt
-- fixed: ARTE Live- und Eventstreams
-- optimized: Rubrik = Serien+kurz &amp; witzig jetzt aufgeteilt in einzelne Serienordner
+		<news>[B][COLOR orangered]Version 1.0.7+matrix.1  (13.04.2021)[/COLOR][/B] by realvito[CR]
+- fixed: ARTE Livestream
+- fixed: Rubrik - Besondere Highlights, Unterordner von Serien+kurz &amp; witzig ohne Inhalt
+- fixed: ERROR auf Android 32bit Systemen - kann Unix-Zeitstempel nicht grösser als das Jahr 2038 konvertieren (ValueError: timestamp out of range for platform time_t)
+- hacked: !!! KODI BUG SEIT LEIA 18.5 BEKANNT UND LEIDER IN MATRIX AUCH NICHT BEHOBEN !!! - Andauernd aufpoppende Eingabemaske in der Suchfunktion des Addons
 		</news>
 	</extension>
 </addon>
