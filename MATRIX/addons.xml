@@ -477,7 +477,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.netzkino_de" name="Netzkino [COLOR FF00EE00](light)[/COLOR]" version="3.0.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.netzkino_de" name="Netzkino [COLOR FF00EE00](light)[/COLOR]" version="3.0.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -498,17 +498,15 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://www.netzkino.de/</website>
 		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.netzkino_de</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.1+matrix.1  (13.03.2021)[/COLOR][/B][CR]
-- optimized: Altes Addon (2016) komplett neu aufgesetzt und Module vereinfacht
-- optimized: Code cleanup
-- added: Weitere Rubriken zur Auswahl hinzugefügt
-- added: Videos im Format 'mp4/m3u8' oder mit 'inputstream.adaptive' abspielen (settings)
-- added: Addon kompatibel mit PYTHON-Vers.3 gemacht (für KODI-19+) :-)
+		<news>[B][COLOR orangered]Version 3.0.2+matrix.1  (13.04.2021)[/COLOR][/B][CR]
+- fixed: Fehlermeldung wenn in der Suchfunktion keine Eingabe erfolgt
+- optimized: Text für 'Watch later' Funktion im Kontextmenü geändert
 		</news>
 	</extension>
 </addon>
