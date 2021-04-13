@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.audio.lippewelle.fm" name="Radio-Lippewelle [COLOR FF00EE00]FM[/COLOR]" version="1.0.3+matrix.1" provider-name="realvito">
+<addon id="plugin.audio.lippewelle.fm" name="Radio-Lippewelle [COLOR FF00EE00]FM[/COLOR]" version="1.0.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video audio</provides>
@@ -20,13 +19,17 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://www.lippewelle.de</website>
 		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.audio.lippewelle.fm</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.3+matrix.1  (28.12.2020)[/COLOR][/B][CR]
-- optimized: Code cleanup
+		<news>[B][COLOR orangered]Version 1.0.4+matrix.1  (13.04.2021)[/COLOR][/B][CR]
+- removed: Youtube Videos (nicht mehr frei verfügbar)
+- removed: Mediathek Videos (existieren nicht mehr)
+- added: Weitere verfügbare Podcasts hinzugefügt
+- added: Weitere verfügbare Radiosender hinzugefügt
 		</news>
 	</extension>
 </addon>
