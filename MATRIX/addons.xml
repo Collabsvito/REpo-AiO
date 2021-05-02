@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.audio.lippewelle.fm" name="Radio-Lippewelle [COLOR FF00EE00]FM[/COLOR]" version="1.0.4+matrix.1" provider-name="realvito">
+<addon id="plugin.audio.lippewelle.fm" name="Radio-Lippewelle [COLOR FF00EE00]FM[/COLOR]" version="1.0.5+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -26,11 +26,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.4+matrix.1  (13.04.2021)[/COLOR][/B][CR]
-- removed: Youtube Videos (nicht mehr frei verfügbar)
-- removed: Mediathek Videos (existieren nicht mehr)
-- added: Weitere verfügbare Podcasts hinzugefügt
-- added: Weitere verfügbare Radiosender hinzugefügt
+		<news>[B][COLOR orangered]Version 1.0.5+matrix.1  (02.05.2021)[/COLOR][/B][CR]
+- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
 		</news>
 	</extension>
 </addon>
@@ -67,7 +64,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.aod" name="Anime on Demand" version="1.0.8+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.aod" name="Anime on Demand" version="1.0.9+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -90,14 +87,14 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://www.anime-on-demand.de/</website>
 		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.aod</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.8+matrix.1  (14.03.2021)[/COLOR][/B] by realvito[CR]
-- fixed: Error beim Start des Addons (UnicodeDecodeError)
-- fixed: NameError: name 'utils' is not defined
+		<news>[B][COLOR orangered]Version 1.0.9+matrix.1  (02.05.2021)[/COLOR][/B] by realvito[CR]
+- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
 		</news>
 	</extension>
 </addon>
@@ -132,7 +129,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.bibeltv" name="Bibel TV" version="1.0.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.bibeltv" name="Bibel TV" version="1.0.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -152,17 +149,18 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://www.bibeltv.de/</website>
 		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.bibeltv</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.7+matrix.1  (22.03.2021)[/COLOR][/B][CR]
-- fixed: ERROR auf Android 32bit Systemen - kann Unix-Zeitstempel nicht grösser als das Jahr 2038 konvertieren (ValueError: timestamp out of range for platform time_t)
+		<news>[B][COLOR orangered]Version 1.0.8+matrix.1  (02.05.2021)[/COLOR][/B][CR]
+- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.dfb_tv" name="DFB - Sport" version="2.0.5+matrix.1" provider-name="realvito">
+<addon id="plugin.video.dfb_tv" name="DFB - Sport" version="2.0.6+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -188,11 +186,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.5+matrix.1  (13.04.2021)[/COLOR][/B][CR]
-- added: Weitere Rubriken zur Auswahl hinzugefügt
-- added: Wahlweise = Streams mit Inputstream.Adaptive abspielen oder Qualitätsauswahl
-- added: Addon kompatibel mit PYTHON-Vers.3 gemacht (für KODI-19+) :-)
-- optimized: Code cleanup
+		<news>[B][COLOR orangered]Version 2.0.6+matrix.1  (02.05.2021)[/COLOR][/B][CR]
+- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
 		</news>
 	</extension>
 </addon>
