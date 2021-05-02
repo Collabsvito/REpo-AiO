@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.aod" name="Anime on Demand" version="1.0.8" provider-name="L0RE, realvito">
+<addon id="plugin.video.aod" name="Anime on Demand" version="1.0.9" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -22,14 +22,14 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://www.anime-on-demand.de/</website>
 		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://repo.kodinerds.net/addons/leia/zip/plugin.video.aod</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.8  (14.03.2021)[/COLOR][/B] by realvito[CR]
-- fixed: Error beim Start des Addons (UnicodeDecodeError)
-- fixed: NameError: name 'utils' is not defined
+		<news>[B][COLOR orangered]Version 1.0.9  (02.05.2021)[/COLOR][/B] by realvito[CR]
+- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
 		</news>
 	</extension>
 </addon>
