@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.dfb_tv" name="DFB - Sport" version="2.0.5" provider-name="realvito">
+<addon id="plugin.video.dfb_tv" name="DFB - Sport" version="2.0.6" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 	</requires>
@@ -25,11 +25,8 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.5  (13.04.2021)[/COLOR][/B][CR]
-- added: Weitere Rubriken zur Auswahl hinzugefügt
-- added: Wahlweise = Streams mit Inputstream.Adaptive abspielen oder Qualitätsauswahl
-- added: Addon kompatibel mit PYTHON-Vers.3 gemacht (für KODI-19+) :-)
-- optimized: Code cleanup
+		<news>[B][COLOR orangered]Version 2.0.6  (02.05.2021)[/COLOR][/B][CR]
+- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
 		</news>
 	</extension>
 </addon>
