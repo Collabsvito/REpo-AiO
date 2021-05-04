@@ -64,7 +64,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.aod" name="Anime on Demand" version="1.0.9+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.aod" name="Anime on Demand" version="1.1.0+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -93,8 +93,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.9+matrix.1  (02.05.2021)[/COLOR][/B] by realvito[CR]
-- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
+		<news>[B][COLOR orangered]Version 1.1.0+matrix.1  (04.05.2021)[/COLOR][/B] by realvito[CR]
+- fixed: Error beim Start des Addons (SyntaxError: invalid syntax)
 		</news>
 	</extension>
 </addon>
