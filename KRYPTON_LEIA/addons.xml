@@ -847,7 +847,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="service.cron.autobiblio" name="Crontab für andere Addons" version="2.0.7" provider-name="L0RE, realvito">
+<addon id="service.cron.autobiblio" name="Crontab für andere Addons" version="2.0.9" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 	</requires>
@@ -868,13 +868,14 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website></website>
 		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://repo.kodinerds.net/addons/leia/zip/service.cron.autobiblio</source>
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.7  (02.08.2020)[/COLOR][/B] by realvito[CR]
-- fixed: Falsche oder gar keine Darstellung der Titel der gespeicherten Serien in der Datenbank (Übersicht)
-- fixed: Datenbank-Error beim Speichern, wenn in Seriennamen bestimmte Sonderzeichen vorhanden sind
+		<news>[B][COLOR orangered]Version 2.0.9  (11.04.2021)[/COLOR][/B] by realvito[CR]
+- fixed: Datetime-Errors
+- optimized: Keine Ausführung wenn die Bibliothek-Funktion im zugehörigen Addon wieder deaktiviert wurde (bzw. zugehöriges Addon deaktiviert ist)
 		</news>
 	</extension>
 </addon>
