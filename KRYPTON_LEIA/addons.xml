@@ -98,7 +98,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.atv_at" name="ATV.at - Mediathek" version="3.1.0" provider-name="realvito">
+<addon id="plugin.video.atv_at" name="ATV.at - Mediathek" version="3.1.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -119,13 +119,16 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://www.atv.at</website>
 		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://repo.kodinerds.net/addons/leia/zip/plugin.video.atv_at</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.1.0  (28.12.2020)[/COLOR][/B][CR]
-- fixed: Error beim anlegen von Addon-Favoriten
+		<news>[B][COLOR orangered]Version 3.1.1  (15.05.2021)[/COLOR][/B][CR]
+- fixed: Alle Videos werden NICHT abgespielt (Webseite verändert)
+- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
+- optimized: ATV-Favoriten werden jetzt im übersichtlichen json-Format gespeichert (altes Format wird autom. konvertiert)
 		</news>
 	</extension>
 </addon>
@@ -190,10 +193,11 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.1.0" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.1.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
+		<import addon="inputstream.adaptive" version="2.4.2"/>
 		<import addon="service.cron.autobiblio" version="2.0.9" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -218,15 +222,17 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.1.0  (11.04.2021)[/COLOR][/B][CR]
-- fixed: Addon kann auf manchen Systemen nicht geöffnet werden (IOError: could not determine default encoding)
+		<news>[B][COLOR orangered]Version 3.1.1  (15.05.2021)[/COLOR][/B][CR]
+- fixed: DRM geschützte Videos werden nicht gelistet
+- changed: Aufgrund des neu eingeführten DRM-Schutzes werden alle Videos nur noch mit 'Inputstream.Adaptive' abgespielt
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.0.8" provider-name="realvito">
+<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.0.9" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
+		<import addon="inputstream.adaptive" version="2.4.2"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -250,15 +256,17 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.8  (11.04.2021)[/COLOR][/B][CR]
-- fixed: Addon kann auf manchen Systemen nicht geöffnet werden (IOError: could not determine default encoding)
+		<news>[B][COLOR orangered]Version 1.0.9  (15.05.2021)[/COLOR][/B][CR]
+- fixed: DRM geschützte Videos werden nicht gelistet
+- changed: Aufgrund des neu eingeführten DRM-Schutzes werden alle Videos nur noch mit 'Inputstream.Adaptive' abgespielt
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.1.0" provider-name="realvito">
+<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.1.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
+		<import addon="inputstream.adaptive" version="2.4.2"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -282,12 +290,13 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.1.0  (11.04.2021)[/COLOR][/B][CR]
-- fixed: Addon kann auf manchen Systemen nicht geöffnet werden (IOError: could not determine default encoding)
+		<news>[B][COLOR orangered]Version 3.1.1  (15.05.2021)[/COLOR][/B][CR]
+- fixed: DRM geschützte Videos werden nicht gelistet
+- changed: Aufgrund des neu eingeführten DRM-Schutzes werden alle Videos nur noch mit 'Inputstream.Adaptive' abgespielt
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.euronews_com" name="euronews.com" version="2.1.9" provider-name="realvito">
+<addon id="plugin.video.euronews_com" name="euronews.com" version="2.2.0" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="plugin.video.youtube" version="6.5.0"/>
@@ -332,21 +341,23 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://de.euronews.com/</website>
 		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.euronews_com</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.1.9  (24.12.2020)[/COLOR][/B][CR]
-- fixed: Vereinzelt wird ein Fehler beim öffnen eines Ordners ausgegeben
+		<news>[B][COLOR orangered]Version 2.2.0  (15.05.2021)[/COLOR][/B][CR]
+- fixed: euronews - LIVESTREAMS funktionieren nicht mehr
+- fixed: Häufig kann ein Ordner nicht geöffnet werden (HTTP Error 404: Not Found)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.fernsehkritik_tv" name="Massengeschmack [COLOR FF00EE00](light)[/COLOR]" version="2.2.3" provider-name="L0RE, realvito">
+<addon id="plugin.video.fernsehkritik_tv" name="Massengeschmack [COLOR FF00EE00](light)[/COLOR]" version="2.2.4" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
-		<import addon="plugin.video.youtube" version="6.5.0"/>
+		<import addon="plugin.video.youtube" version="6.5.0" optional="true"/>
 		<import addon="script.module.youtube.dl"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -355,8 +366,8 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Das satirisch-kritische TV Magazin</summary>
 		<summary lang="en_GB">The satirical-critical TV Magazin</summary>
-		<description lang="de_DE">Am 5. August 2013 startete Massengeschmack mit den Magazinen Fernsehkritik-TV, Pantoffelkino (als Pantoffel-TV) und Pressesch(l)au. Fernsehkritik-TV und die neuen Formate wurden mit Start von Massengeschmack in dem neu gemieteten Alsterfilm-Studio in Hamburg-Wandsbek produziert.</description>
-		<description lang="en_GB">On August 5, 2013 Massengeschmack started with the magazines Fernsehkritik-TV, Pantoffelkino (as Pantoffel-TV) and Pressesch(l)au. Fernsehkritik-TV and the new formats were produced with the start of Massengeschmack in the newly rented Alster film studio in Hamburg-Wandsbek.</description>
+		<description lang="de_DE">Am 5. August 2013 startete Massengeschmack mit den Magazinen Fernsehkritik-TV, Pantoffelkino (als Pantoffel-TV) und Pressesch(l)au. Fernsehkritik-TV und die neuen Formate wurden mit Start von Massengeschmack in dem neu gemieteten Alsterfilm-Studio in Hamburg-Wandsbek produziert.[CR][CR][COLOR FF00EE00]Dieses Addon stellt nur den FREI verfügbaren Inhalt von 'massengeschmack.tv' zur Verfügung ![/COLOR]</description>
+		<description lang="en_GB">On August 5, 2013 Massengeschmack started with the magazines Fernsehkritik-TV, Pantoffelkino (as Pantoffel-TV) and Pressesch(l)au. Fernsehkritik-TV and the new formats were produced with the start of Massengeschmack in the newly rented Alsterfilm-Studio in Hamburg-Wandsbek.[CR][CR][COLOR FF00EE00]This Addon provides only the FREE available content of 'massengeschmack.tv' ![/COLOR]</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
@@ -365,13 +376,14 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://massengeschmack.tv</website>
 		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.fernsehkritik_tv</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.2.3  (05.12.2020)[/COLOR][/B] by realvito[CR]
-- optimized: Code cleanup
+		<news>[B][COLOR orangered]Version 2.2.4  (15.05.2021)[/COLOR][/B][CR]
+- fixed: YouTube Playlisten von 'Massengeschmack.TV' (Fehler 404 beim öffnen)
 		</news>
 	</extension>
 </addon>
@@ -406,7 +418,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.kika_de" name="KiKA plus" version="3.3.9" provider-name="realvito">
+<addon id="plugin.video.kika_de" name="KiKA plus" version="3.4.0" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -427,17 +439,15 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://www.kika.de</website>
 		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.kika_de</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.3.9  (13.03.2021)[/COLOR][/B][CR]
-- fixed: KiKA Live-TV neue Streamadresse
-- fixed: Teilweise falscher Titel der Sendung
-- fixed: Bei eigentlich nicht abspielbaren Titeln wird anderes Video abgespielt
-- added: Nur Sendungen anzeigen die ein Video enthalten (settings)
-- added: Videos im Format 'mp4/m3u8' oder mit 'inputstream.adaptive' abspielen (settings)
+		<news>[B][COLOR orangered]Version 3.4.0  (15.05.2021)[/COLOR][/B][CR]
+- fixed: Rubrik = Neue Videos und Meistgesehene Videos (Error Contents: No JSON object could be decoded)
+- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
 		</news>
 	</extension>
 </addon>
@@ -471,7 +481,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.netzkino_de" name="Netzkino [COLOR FF00EE00](light)[/COLOR]" version="3.0.2" provider-name="realvito">
+<addon id="plugin.video.netzkino_de" name="Netzkino [COLOR FF00EE00](light)[/COLOR]" version="3.0.3" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -498,13 +508,12 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.2  (13.04.2021)[/COLOR][/B][CR]
-- fixed: Fehlermeldung wenn in der Suchfunktion keine Eingabe erfolgt
-- optimized: Text für 'Watch later' Funktion im Kontextmenü geändert
+		<news>[B][COLOR orangered]Version 3.0.3  (15.05.2021)[/COLOR][/B][CR]
+- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.0.1" provider-name="realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.0.2" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -532,12 +541,8 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.1  (13.04.2021)[/B][CR]
-- fixed: Addon neu aufgesetzt mit Anlehnung des Aufbaus und der Struktur an die neue Android-APP von ServusTV
-- added: Gültigkeitsdauer für eigenen Token festlegen - ist jetzt Vorraussetzung zur Funktion des Addons (settings)
-- added: Anzeige des aktuellen Geobereichs
-- optimized: Livestream in alter Form mittels m3u8 oder neuer Form mittels Token abspielen (settings)
-- optimized: Alle Videos auch Livestreams werden jetzt grundsätzlich mit 'Inputstream.Adaptive' abgespielt (keine Aussetzer und Hänger mehr)
+		<news>[B][COLOR orangered]Version 3.0.2  (15.05.2021)[/COLOR][/B][CR]
+- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
 		</news>
 	</extension>
 </addon>
@@ -707,7 +712,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.0.7" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.0.8" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -737,11 +742,8 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.7  (13.04.2021)[/COLOR][/B] by realvito[CR]
-- fixed: ARTE Livestream
-- fixed: Rubrik - Besondere Highlights, Unterordner von Serien+kurz &amp; witzig ohne Inhalt
-- fixed: ERROR auf Android 32bit Systemen - kann Unix-Zeitstempel nicht grösser als das Jahr 2038 konvertieren (ValueError: timestamp out of range for platform time_t)
-- hacked: !!! KODI BUG SEIT LEIA 18.5 BEKANNT UND LEIDER IN MATRIX AUCH NICHT BEHOBEN !!! - Andauernd aufpoppende Eingabemaske in der Suchfunktion des Addons
+		<news>[B][COLOR orangered]Version 1.0.8  (15.05.2021)[/COLOR][/B] by realvito[CR]
+- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
 		</news>
 	</extension>
 </addon>
@@ -778,10 +780,10 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.1.0" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.1.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
-		<import addon="plugin.video.youtube" version="6.5.0"/>
+		<import addon="plugin.video.youtube" version="6.5.0" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -799,25 +801,23 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://www.spiegel.de/</website>
 		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.tyl0re.spiegeltv</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.1.0  (13.03.2021)[/COLOR][/B] by realvito[CR]
-- fixed: YouTube Playlisten von 'DER SPIEGEL' (Fehler 404 beim öffnen)
-- fixed: Häufig wird kein Plot und kein Bild zum Video angezeigt
-- fixed: Videos ohne Laufzeitangabe werden nicht angezeigt
-- added: Rubriken = Spitzengespräch - der Talk mit Markus Feldenkirchen, Spitzentitel - die Büchershow mit Volker Weidermann, Wir drehen eine Runde - Autotests, Coronavirus: Videos
+		<news>[B][COLOR orangered]Version 2.1.1  (15.05.2021)[/COLOR][/B] by realvito[CR]
+- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tyl0re.weltderwunder" name="Welt der Wunder" version="2.0.9" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.weltderwunder" name="Welt der Wunder" version="2.1.0" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
 		<import addon="script.module.beautifulsoup4" version="4.6.2"/>
-		<import addon="plugin.video.youtube" version="6.5.0"/>
+		<import addon="plugin.video.youtube" version="6.5.0" optional="true"/>
 		<import addon="script.module.youtube.dl"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -836,14 +836,15 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>http://www.weltderwunder.de</website>
 		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://repo.kodinerds.net/addons/leia/zip/plugin.video.tyl0re.weltderwunder</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.9  (31.12.2020)[/COLOR][/B] by realvito[CR]
-- optimized: Code für Beautifulsoup überarbeitet und verbessert
-- added: YouTube Playlisten von 'Welt der Wunder'
+		<news>[B][COLOR orangered]Version 2.1.0  (15.05.2021)[/COLOR][/B] by realvito[CR]
+- fixed: YouTube Playlisten von 'Welt der Wunder' (Fehler 404 beim öffnen)
+- fixed: LIVESTREAM wird nicht abgespielt
 		</news>
 	</extension>
 </addon>
