@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.euronews_com" name="euronews.com" version="2.1.9+matrix.1" provider-name="realvito">
+<addon id="plugin.video.euronews_com" name="euronews.com" version="2.2.0+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
@@ -44,13 +44,15 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://de.euronews.com/</website>
 		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.euronews_com</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.1.9+matrix.1  (24.12.2020)[/COLOR][/B][CR]
-- fixed: Vereinzelt wird ein Fehler beim öffnen eines Ordners ausgegeben
+		<news>[B][COLOR orangered]Version 2.2.0+matrix.1  (15.05.2021)[/COLOR][/B][CR]
+- fixed: euronews - LIVESTREAMS funktionieren nicht mehr
+- fixed: Häufig kann ein Ordner nicht geöffnet werden (HTTP Error 404: Not Found)
 		</news>
 	</extension>
 </addon>
