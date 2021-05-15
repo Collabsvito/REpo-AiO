@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tyl0re.weltderwunder" name="Welt der Wunder" version="2.0.9+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.weltderwunder" name="Welt der Wunder" version="2.1.0+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
 		<import addon="script.module.beautifulsoup4" version="4.8.2+matrix.1"/>
-		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
+		<import addon="plugin.video.youtube" version="6.8.1+matrix.1" optional="true"/>
 		<import addon="script.module.youtube.dl"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -23,14 +23,15 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>http://www.weltderwunder.de</website>
 		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.tyl0re.weltderwunder</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.9+matrix.1  (31.12.2020)[/COLOR][/B] by realvito[CR]
-- optimized: Code für Beautifulsoup überarbeitet und verbessert
-- added: YouTube Playlisten von 'Welt der Wunder'
+		<news>[B][COLOR orangered]Version 2.1.0+matrix.1  (15.05.2021)[/COLOR][/B] by realvito[CR]
+- fixed: YouTube Playlisten von 'Welt der Wunder' (Fehler 404 beim öffnen)
+- fixed: LIVESTREAM wird nicht abgespielt
 		</news>
 	</extension>
 </addon>
