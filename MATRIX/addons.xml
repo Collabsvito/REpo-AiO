@@ -194,7 +194,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.1.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.1.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -218,18 +218,18 @@
 		<website>https://dmax.de</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
-		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.discovery.dmax</source>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.discovery.dmax</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.1.1+matrix.1  (15.05.2021)[/COLOR][/B][CR]
-- fixed: DRM geschützte Videos werden nicht gelistet
-- changed: Aufgrund des neu eingeführten DRM-Schutzes werden alle Videos nur noch mit 'Inputstream.Adaptive' abgespielt
+		<news>[B][COLOR orangered]Version 3.1.2+matrix.1  (06.06.2021)[/COLOR][/B][CR]
+- optimized: Ausgabe des APi-Json-Formats jetzt direkt über das 'requests Modul'
+- added: Meldung beim Abspielen für Videos eingebaut für die Ausgabe vom 'Code 404' (Video nicht vorhanden)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.0.9+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.1.0+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -252,18 +252,18 @@
 		<website>https://de.hgtv.com</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
-		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.discovery.hgtv</source>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.discovery.hgtv</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.9+matrix.1  (15.05.2021)[/COLOR][/B][CR]
-- fixed: DRM geschützte Videos werden nicht gelistet
-- changed: Aufgrund des neu eingeführten DRM-Schutzes werden alle Videos nur noch mit 'Inputstream.Adaptive' abgespielt
+		<news>[B][COLOR orangered]Version 1.1.0+matrix.1  (06.06.2021)[/COLOR][/B][CR]
+- optimized: Ausgabe des APi-Json-Formats jetzt direkt über das 'requests Modul'
+- added: Meldung beim Abspielen für Videos eingebaut für die Ausgabe vom 'Code 404' (Video nicht vorhanden)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.1.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.1.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -286,14 +286,14 @@
 		<website>https://tlc.de</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
-		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.discovery.tlc</source>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.discovery.tlc</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.1.1+matrix.1  (15.05.2021)[/COLOR][/B][CR]
-- fixed: DRM geschützte Videos werden nicht gelistet
-- changed: Aufgrund des neu eingeführten DRM-Schutzes werden alle Videos nur noch mit 'Inputstream.Adaptive' abgespielt
+		<news>[B][COLOR orangered]Version 3.1.2+matrix.1  (06.06.2021)[/COLOR][/B][CR]
+- optimized: Ausgabe des APi-Json-Formats jetzt direkt über das 'requests Modul'
+- added: Meldung beim Abspielen für Videos eingebaut für die Ausgabe vom 'Code 404' (Video nicht vorhanden)
 		</news>
 	</extension>
 </addon>
@@ -713,7 +713,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.0.8+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.0.9+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -738,13 +738,13 @@
 		<website>https://www.arte.tv/</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
-		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.tyl0re.arte</source>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.tyl0re.arte</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.8+matrix.1  (15.05.2021)[/COLOR][/B] by realvito[CR]
-- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
+		<news>[B][COLOR orangered]Version 1.0.9+matrix.1  (06.06.2021)[/COLOR][/B] by realvito[CR]
+- fixed: Fehler beim öffnen eines Serienordners wenn Serie nicht mehr existiert (UnboundLocalError: local variable 'newURL' referenced before assignment)
 		</news>
 	</extension>
 </addon>

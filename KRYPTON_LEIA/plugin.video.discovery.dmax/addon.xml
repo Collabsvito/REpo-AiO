@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.1.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.1.2" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -23,14 +23,14 @@
 		<website>https://dmax.de</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
-		<source>https://repo.kodinerds.net/addons/leia/zip/plugin.video.discovery.dmax</source>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/KRYPTON_LEIA/plugin.video.discovery.dmax</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.1.1  (15.05.2021)[/COLOR][/B][CR]
-- fixed: DRM geschützte Videos werden nicht gelistet
-- changed: Aufgrund des neu eingeführten DRM-Schutzes werden alle Videos nur noch mit 'Inputstream.Adaptive' abgespielt
+		<news>[B][COLOR orangered]Version 3.1.2  (06.06.2021)[/COLOR][/B][CR]
+- optimized: Ausgabe des APi-Json-Formats jetzt direkt über das 'requests Modul'
+- added: Meldung beim Abspielen für Videos eingebaut für die Ausgabe vom 'Code 404' (Video nicht vorhanden)
 		</news>
 	</extension>
 </addon>
