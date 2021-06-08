@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV" version="2.0.3+matrix.1" provider-name="PUR3, realvito">
+<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV" version="2.0.4+matrix.1" provider-name="PUR3, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -19,13 +19,15 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://sportdeutschland.tv/</website>
 		<email></email>
-		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.sportdeutschland_tv</source>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.sportdeutschland_tv</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.3+matrix.1  (27.12.2020)[/COLOR][/B] by realvito[CR]
-- optimized: Code cleanup
+		<news>[B][COLOR orangered]Version 2.0.4+matrix.1  (08.06.2021)[/COLOR][/B] by realvito[CR]
+- fixed: ERROR auf Android 32bit Systemen - kann Unix-Zeitstempel nicht grösser als das Jahr 2038 konvertieren (ValueError: timestamp out of range for platform time_t)
+- hacked: !!! KODI BUG SEIT LEIA 18.5 BEKANNT UND LEIDER IN MATRIX AUCH NICHT BEHOBEN !!! - Andauernd aufpoppende Eingabemaske in der Suchfunktion des Addons
 		</news>
 	</extension>
 </addon>
