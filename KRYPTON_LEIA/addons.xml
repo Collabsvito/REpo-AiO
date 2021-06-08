@@ -618,7 +618,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.spotitube" name="Youtube Music" version="2.2.0" provider-name="realvito (inspired by L0RE)">
+<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.1" provider-name="realvito (inspired by L0RE)">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="plugin.video.youtube" version="6.5.0"/>
@@ -627,10 +627,10 @@
 		<provides>video audio</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">YouTube Musicplayer</summary>
-		<summary lang="en_GB">YouTube Musicplayer</summary>
-		<description lang="de_DE">Musik aus verschiedenen Quellen z.B. Beatport, Billboard, iTunes, Officialcharts etc. auswählen und über YouTube abspielen.[CR][CR]Für mehr Informationen zu allen Neuerungen siehe - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
-		<description lang="en_GB">Choose Music from different sources e.g. Beatport, Billboard, iTunes, Officialcharts etc. and play it via YouTube.[CR][CR]For more information about all new features see - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
+		<summary lang="de_DE">Chartplayer für Musicvideos</summary>
+		<summary lang="en_GB">Chartplayer for Musicvideos</summary>
+		<description lang="de_DE">Musiktitel aus verschiedenen Quellen z.B. Beatport, Billboard, iTunes, Officialcharts etc. auswählen und das entsprechende Video über YouTube abspielen.[CR][CR]Für mehr Informationen zu allen Neuerungen siehe - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
+		<description lang="en_GB">Select music titles from various sources e.g. Beatport, Billboard, iTunes, Officialcharts etc. and play the corresponding video via YouTube.[CR][CR]For more information about all new features see - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
@@ -639,13 +639,21 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/47087-Release-YoutubeMusic-patched/</forum>
 		<website></website>
 		<email></email>
-		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.spotitube</source>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/KRYPTON_LEIA/plugin.video.spotitube</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.2.0  (28.12.2020)[/COLOR][/B][CR]
-- optimized: Code cleanup
+		<news>[B][COLOR orangered]Version 3.0.1  (08.06.2021)[/COLOR][/B][CR]
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- old addon Name: Youtube Music
+- changed: new Name for the addon to avoid confusion with the Original
+- From now on new Name: You(T) Musicbox
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- fixed: Beatport generates Error on open (old service 'pro.beatport' not for free anymore)
+- fixed: German-DJ-Playlist sometimes generates Error on open (changed to https)
+- optimized: remove unnecessary objects in Title-Notification
 		</news>
 	</extension>
 </addon>
