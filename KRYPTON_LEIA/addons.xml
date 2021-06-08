@@ -513,7 +513,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.0.2" provider-name="realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.0.3" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -536,17 +536,17 @@
 		<website>https://www.servustv.com</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
-		<source>https://repo.kodinerds.net/addons/leia/zip/plugin.video.servustv_com</source>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/KRYPTON_LEIA/plugin.video.servustv_com</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.2  (15.05.2021)[/COLOR][/B][CR]
-- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
+		<news>[B][COLOR orangered]Version 3.0.3  (08.06.2021)[/COLOR][/B][CR]
+- fixed: Manchmal wird der Auth-Token bei der Url-Abfrage nicht mitgesendet
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV" version="2.0.3" provider-name="PUR3, realvito">
+<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV" version="2.0.4" provider-name="PUR3, realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 	</requires>
@@ -566,17 +566,19 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://sportdeutschland.tv/</website>
 		<email></email>
-		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.sportdeutschland_tv</source>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/KRYPTON_LEIA/plugin.video.sportdeutschland_tv</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.3  (27.12.2020)[/COLOR][/B] by realvito[CR]
-- optimized: Code cleanup
+		<news>[B][COLOR orangered]Version 2.0.4  (08.06.2021)[/COLOR][/B] by realvito[CR]
+- fixed: ERROR auf Android 32bit Systemen - kann Unix-Zeitstempel nicht grösser als das Jahr 2038 konvertieren (ValueError: timestamp out of range for platform time_t)
+- hacked: !!! KODI BUG SEIT LEIA 18.5 BEKANNT UND LEIDER IN MATRIX AUCH NICHT BEHOBEN !!! - Andauernd aufpoppende Eingabemaske in der Suchfunktion des Addons
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.sporttotal" name="Sport-Total TV" version="1.0.7" provider-name="realvito">
+<addon id="plugin.video.sporttotal" name="Sport-Total TV" version="1.0.8" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 	</requires>
@@ -605,13 +607,14 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://www.sporttotal.tv</website>
 		<email></email>
-		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.sporttotal</source>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/KRYPTON_LEIA/plugin.video.sporttotal</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.7  (24.12.2020)[/COLOR][/B][CR]
-- fixed: Manche Videos werden nicht abgespielt obwohl vorhanden (Umlaute nicht umgewandelt oder Dateiendung nicht klein geschrieben)
+		<news>[B][COLOR orangered]Version 1.0.8  (08.06.2021)[/COLOR][/B][CR]
+- fixed: ERROR auf Android 32bit Systemen - kann Unix-Zeitstempel nicht grösser als das Jahr 2038 konvertieren (ValueError: timestamp out of range for platform time_t)
 		</news>
 	</extension>
 </addon>
@@ -747,7 +750,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tyl0re.mtv" name="MTV Germany" version="1.2.8" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.mtv" name="MTV Germany" version="1.2.9" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.beautifulsoup4" version="4.6.0"/>
@@ -770,13 +773,14 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>http://www.mtv.de</website>
 		<email></email>
-		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.tyl0re.mtv</source>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/KRYPTON_LEIA/plugin.video.tyl0re.mtv</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.2.8  (28.12.2020)[/COLOR][/B] by realvito[CR]
-- optimized: Code cleanup
+		<news>[B][COLOR orangered]Version 1.2.9  (08.06.2021)[/COLOR][/B] by realvito[CR]
+- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
 		</news>
 	</extension>
 </addon>
