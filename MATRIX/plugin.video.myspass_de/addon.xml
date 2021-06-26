@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.myspass_de" name="MySpass" version="4.1.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.myspass_de" name="MySpass" version="4.1.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -19,13 +19,17 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://www.myspass.de</website>
 		<email></email>
-		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.myspass_de</source>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.myspass_de</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 4.1.1+matrix.1  (28.12.2020)[/COLOR][/B][CR]
-- fixed: Titel unter Empfehlungen merkwürdige Umlautdarstellungen
+		<news>[B][COLOR orangered]Version 4.1.2+matrix.1  (26.06.2021)[/COLOR][/B][CR]
+- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
+- optimized: MYSPASS-Favoriten werden jetzt im übersichtlichen json-Format gespeichert (altes Format wird autom. konvertiert)
+- optimized: Bei nur einer Staffel in der Auswahl werden jetzt gleich die Episoden angezeigt
+- added: Diverse Sortiermethoden für Episoden
 		</news>
 	</extension>
 </addon>
