@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tvtoday_de" name="TV Today - Best of Mediatheken" version="1.5.9" provider-name="realvito">
+<addon id="plugin.video.tvtoday_de" name="TV Today - Best of Mediatheken" version="1.6.0" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="plugin.video.tyl0re.arte" optional="true"/>
 		<import addon="plugin.video.arteplussept" optional="true"/>
-		<import addon="plugin.video.rtlnow" optional="true"/>
+		<import addon="plugin.video.rtlgroup.de" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -22,13 +22,14 @@
 		<forum>https://www.kodinerds.net/index.php/Thread/53329-RERELEASE-TVTODAY/</forum>
 		<website>https://www.tvtoday.de/mediathek/</website>
 		<email></email>
-		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.tvtoday_de</source>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/KRYPTON_LEIA/plugin.video.tvtoday_de</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.5.9  (30.12.2020)[/COLOR][/B][CR]
-- fixed: TVNOW-Links können nicht ausgeblendet werden
+		<news>[B][COLOR orangered]Version 1.6.0  (26.06.2021)[/COLOR][/B][CR]
+- fixed: Vorschaubilder der Titel werden nicht mehr angezeigt
 		</news>
 	</extension>
 </addon>
