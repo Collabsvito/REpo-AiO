@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.0.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.0.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -27,8 +27,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.3+matrix.1  (08.06.2021)[/COLOR][/B][CR]
-- fixed: Manchmal wird der Auth-Token bei der Url-Abfrage nicht mitgesendet
+		<news>[B][COLOR orangered]Version 3.0.4+matrix.1  (26.06.2021)[/COLOR][/B][CR]
+- fixed: Manchmal wird nicht der richtige Titel der Sendung in den Addon-Favoriten gespeichert
 		</news>
 	</extension>
 </addon>
