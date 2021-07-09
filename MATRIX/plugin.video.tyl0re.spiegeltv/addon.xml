@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.1.1+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.1.2+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1" optional="true"/>
@@ -21,13 +21,13 @@
 		<website>https://www.spiegel.de/</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
-		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.tyl0re.spiegeltv</source>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.tyl0re.spiegeltv</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.1.1+matrix.1  (15.05.2021)[/COLOR][/B] by realvito[CR]
-- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
+		<news>[B][COLOR orangered]Version 2.1.2+matrix.1  (09.07.2021)[/COLOR][/B] by realvito[CR]
+- fixed: Viele Rubriken zeigen keinen Inhalt (Webseite verändert)
 		</news>
 	</extension>
 </addon>
