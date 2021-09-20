@@ -96,7 +96,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.atv_at" name="ATV.at - Mediathek" version="3.1.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.atv_at" name="ATV.at - Mediathek" version="3.1.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -107,8 +107,8 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Die Mediathek von ATV.at</summary>
 		<summary lang="en_GB">The Media-Library of ATV.at</summary>
-		<description lang="de_DE">ATV-Produktionen in Österreichs größtem Fernsehprogramm, Filme, Serien und beliebte Erfolgsproduktionen alles in der Mediathek zum Nachschauen.[CR]Bonusmaterial, Outtakes, Hintergrund-Geschichten von den Dreharbeiten und Infos zu den Moderatoren.</description>
-		<description lang="en_GB">ATV-Productions in Austria's largest Television Program, Movies, Series and popular Success-Productions - all in the Media library to look up.[CR]Bonusmaterial, Outtakes, Background Stories from the Shooting and Information about the Presenters.</description>
+		<description lang="de_DE">[COLOR red]- z.Zt. gibt es keinen Developer für die Fortführung dieses Addons.[CR]- Updates für dieses Addon vorerst eingestellt ![/COLOR]</description>
+		<description lang="en_GB">[COLOR red]- Currently there is no developer to continue this addon.[CR]- Updates for this addon discontinued for the time being ![/COLOR]</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
@@ -123,10 +123,11 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.1.1+matrix.1  (15.05.2021)[/COLOR][/B][CR]
-- fixed: Alle Videos werden NICHT abgespielt (Webseite verändert)
-- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
-- optimized: ATV-Favoriten werden jetzt im übersichtlichen json-Format gespeichert (altes Format wird autom. konvertiert)
+		<broken>
+- z.Zt. gibt es keinen Developer für die Fortführung dieses Addons.[CR]- Updates für dieses Addon vorerst eingestellt !
+		</broken>
+		<news>[B][COLOR orangered]Version 3.1.2+matrix.1  (20.09.2021)[/COLOR][/B] by realvito[CR]
+- z.Zt. gibt es keinen Developer für die Fortführung dieses Addons.[CR]- Updates für dieses Addon vorerst eingestellt !
 		</news>
 	</extension>
 </addon>
