@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.0.1" provider-name="realvito">
+<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.0.2" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -31,8 +31,11 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.1  (09.07.2021)[/B] by realvito[CR]
-- Initial Release und Rework von RTLPLUS (old=TVNOW) auf Basis der API.v.3
+		<news>[B][COLOR orangered]Version 1.0.2  (30.09.2021)[/B][CR]
+- added: Anzeige der Seasons entweder nur als 'Jahr' (old-default) oder autom. Wechsel zwischen 'Jahr' und 'Staffel' (new) auswählbar in den 'Settings'
+- added: Rubik = Eventstreams (Soccer)
+- added: m3u-Liste zur Integration der Livestreams des Addons in den 'PVR IPTV Simple Client' (zu finden unter: plugin.video.rtlgroup.de -> resources -> data)
+- optimized: FSK-Anzeige für ab 0 Jahren = ohne Altersbeschränkung
 		</news>
 	</extension>
 </addon>
