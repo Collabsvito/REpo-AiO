@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV" version="2.0.4" provider-name="PUR3, realvito">
+<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV [COLOR FF00EE00](light)[/COLOR]" version="2.0.5" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 	</requires>
@@ -9,8 +9,8 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Amateursport - Wettbewerbe</summary>
 		<summary lang="en_GB">Amateur Sports - Competitions</summary>
-		<description lang="de_DE">Dein Sportsender im Netz: Sportdeutschland.TV ist der vom Deutschen Olympischen Sportbund (DOSB) gegründete Online-Sportsender. Alle Sportarten exklusiv LIVE &amp; ON DEMAND.[CR]Über 70 Disziplinen Live und legal streamen, kein Spiel- und Sport-Highlight verpassen.</description>
-		<description lang="en_GB">Your sports channel on the net: Sportdeutschland.TV is the online sports channel founded by the German Olympic Sports Confederation (DOSB). All sports exclusively LIVE &amp; ON DEMAND.[CR]Stream over 70 disciplines live and legally, never miss a game- and sport highlight.</description>
+		<description lang="de_DE">Sportdeutschland.TV ist der vom Deutschen Olympischen Sportbund (DOSB) im Jahr 2014 gegründete Online-Sportsender. Dem User stehen auf der Plattform über ca. 5.000 Stunden On – demand – Videos zur Auswahl.[CR]Zudem gibt es verschiedene Livestreams zu vielen Sportarten wie Handball, Basketball, Eishockey und Volleyball auf Sportdeutschland.TV.[CR][CR][COLOR FF00EE00]Dieses Addon stellt nur den FREI verfügbaren Inhalt von 'sportdeutschland.tv' zur Verfügung ![/COLOR]</description>
+		<description lang="en_GB">Sportdeutschland.TV is the online sports channel founded by the German Olympic Sports Confederation (DOSB) in year 2014. The user can choose from over approx. 5.000 hours of On – demand – Videos on the platform.[CR]In addition, there are various live streams for many sports such as handball, basketball, ice hockey and volleyball on Sportdeutschland.TV.[CR][COLOR FF00EE00]This Addon only provides the FREE available content of 'sportdeutschland.tv' ![/COLOR]</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
@@ -25,9 +25,10 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.4  (08.06.2021)[/COLOR][/B] by realvito[CR]
-- fixed: ERROR auf Android 32bit Systemen - kann Unix-Zeitstempel nicht grösser als das Jahr 2038 konvertieren (ValueError: timestamp out of range for platform time_t)
-- hacked: !!! KODI BUG SEIT LEIA 18.5 BEKANNT UND LEIDER IN MATRIX AUCH NICHT BEHOBEN !!! - Andauernd aufpoppende Eingabemaske in der Suchfunktion des Addons
+		<news>[B][COLOR orangered]Version 2.0.5  (30.09.2021)[/COLOR][/B][CR]
+- ReRelease of 'plugin.video.sportdeutschland_tv' - oldVersion = Auf Basis der AndroidAPP / newVersion = Auf Basis der Webseite
+- added: Mehr Einzelsportarten in der Übersicht
+- added: Eigene Addon-Favoriten anlegen/speichern
 		</news>
 	</extension>
 </addon>
