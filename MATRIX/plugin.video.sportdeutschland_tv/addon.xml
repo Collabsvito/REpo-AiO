@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV [COLOR FF00EE00](light)[/COLOR]" version="2.0.5+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV [COLOR FF00EE00](light)[/COLOR]" version="2.0.6+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -25,7 +25,10 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.5+matrix.1  (30.09.2021)[/COLOR][/B][CR]
+		<news>[B][COLOR orangered]Version 2.0.6+matrix.1  (03.10.2021)[/COLOR][/B][CR]
+- fixed: Übersicht der Videos lässt sich auf diversen Systemen nicht öffnen (UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2)
+- fixed: Die Rubrik 'Nächste Übertragungen' wird manchmal nicht angezeigt obwohl Inhalt vorhanden ist[CR]
+[B][COLOR orangered]Version 2.0.5+matrix.1  (30.09.2021)[/COLOR][/B][CR]
 - ReRelease of 'plugin.video.sportdeutschland_tv' - oldVersion = Auf Basis der AndroidAPP / newVersion = Auf Basis der Webseite
 - added: Mehr Einzelsportarten in der Übersicht
 - added: Eigene Addon-Favoriten anlegen/speichern
