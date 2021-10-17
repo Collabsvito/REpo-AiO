@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.0.4" provider-name="realvito">
+<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.0.5" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -31,15 +31,8 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.4  (01.10.2021)[/COLOR][/B][CR]
-- fixed: Suche öffnet sich nicht (falsche Zuordnung)[CR]
-[B][COLOR orangered]Version 1.0.3  (30.09.2021)[/COLOR][/B][CR]
-- fixed: Eventstreams werden nicht abgespielt (Error Type: type 'exceptions.UnboundLocalError')[CR]
-[B][COLOR orangered]Version 1.0.2  (30.09.2021)[/COLOR][/B][CR]
-- added: Anzeige der Seasons entweder nur als 'Jahr' (old-default) oder autom. Wechsel zwischen 'Jahr' und 'Staffel' (new) auswählbar in den 'Settings'
-- added: Rubik = Eventstreams (Soccer)
-- added: m3u-Liste zur Integration der Livestreams des Addons in den 'PVR IPTV Simple Client' (zu finden unter: plugin.video.rtlgroup.de -> resources -> data)
-- optimized: FSK-Anzeige für ab 0 Jahren = ohne Altersbeschränkung
+		<news>[B][COLOR orangered]Version 1.0.5  (17.10.2021)[/COLOR][/B][CR]
+- fixed: LIVESTREAMS lassen sich nicht abspielen (Error 403)
 		</news>
 	</extension>
 </addon>
