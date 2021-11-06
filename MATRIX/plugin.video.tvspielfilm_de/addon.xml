@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="1.3.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="1.3.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="plugin.video.tyl0re.arte" optional="true"/>
@@ -28,7 +28,9 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.3.2+matrix.1  (05.11.2021)[/COLOR][/B][CR]
+		<news>[B][COLOR orangered]Version 1.3.3+matrix.1  (06.11.2021)[/COLOR][/B][CR]
+- fixed: Falsche Senderkennzeichnung für Sender 'RTL'[CR]
+[B][COLOR orangered]Version 1.3.2+matrix.1  (05.11.2021)[/COLOR][/B][CR]
 - optimized: Codeanpassungen für die Wiedergabe von TVNOW-Links (plugin.video.rtlgroup.de)
 		</news>
 	</extension>
