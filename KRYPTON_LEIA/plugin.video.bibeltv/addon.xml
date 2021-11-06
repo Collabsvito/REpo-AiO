@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.bibeltv" name="Bibel TV" version="1.0.9" provider-name="realvito">
+<addon id="plugin.video.bibeltv" name="Bibel TV" version="1.1.0" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
+		<import addon="script.module.requests" version="2.20.0"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -25,8 +26,10 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.9  (26.06.2021)[/COLOR][/B][CR]
-- fixed: Manchmal können (falls eingestellt) mp4-Videos nicht abgespielt werden
+		<news>[B][COLOR orangered]Version 1.1.0  (06.11.2021)[/COLOR][/B][CR]
+- fixed: Sämtliche Rubriken können NICHT geöffnet werden (API verändert)
+- added: Rubrik = Online Specials
+- optimized: URL-Abfrage jetzt umgestellt auf das etwas schnellere 'requests-modul'
 		</news>
 	</extension>
 </addon>

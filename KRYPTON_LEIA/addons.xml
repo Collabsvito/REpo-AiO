@@ -131,9 +131,10 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.bibeltv" name="Bibel TV" version="1.0.9" provider-name="realvito">
+<addon id="plugin.video.bibeltv" name="Bibel TV" version="1.1.0" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
+		<import addon="script.module.requests" version="2.20.0"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -157,8 +158,10 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.9  (26.06.2021)[/COLOR][/B][CR]
-- fixed: Manchmal können (falls eingestellt) mp4-Videos nicht abgespielt werden
+		<news>[B][COLOR orangered]Version 1.1.0  (06.11.2021)[/COLOR][/B][CR]
+- fixed: Sämtliche Rubriken können NICHT geöffnet werden (API verändert)
+- added: Rubrik = Online Specials
+- optimized: URL-Abfrage jetzt umgestellt auf das etwas schnellere 'requests-modul'
 		</news>
 	</extension>
 </addon>
@@ -293,7 +296,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.euronews_com" name="euronews.com" version="2.2.0" provider-name="realvito">
+<addon id="plugin.video.euronews_com" name="euronews.com" version="2.2.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="plugin.video.youtube" version="6.5.0"/>
@@ -339,14 +342,14 @@
 		<website>https://de.euronews.com/</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
-		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.euronews_com</source>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/KRYPTON_LEIA/plugin.video.euronews_com</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.2.0  (15.05.2021)[/COLOR][/B][CR]
-- fixed: euronews - LIVESTREAMS funktionieren nicht mehr
-- fixed: Häufig kann ein Ordner nicht geöffnet werden (HTTP Error 404: Not Found)
+		<news>[B][COLOR orangered]Version 2.2.1  (06.11.2021)[/COLOR][/B][CR]
+- fixed: Oftmals wird nicht das richtige Verzeichnis der Videos gefunden
+- fixed: Nachbesserung der Codes für YOUTUBE Livestream Kanäle
 		</news>
 	</extension>
 </addon>
@@ -844,7 +847,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.1.2" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.1.3" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="plugin.video.youtube" version="6.5.0" optional="true"/>
@@ -871,8 +874,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.1.2  (09.07.2021)[/COLOR][/B] by realvito[CR]
-- fixed: Viele Rubriken zeigen keinen Inhalt (Webseite verändert)
+		<news>[B][COLOR orangered]Version 2.1.3  (06.11.2021)[/COLOR][/B] by realvito[CR]
+- fixed: Laufzeitangaben und Plot-1 werden nicht angezeigt
+- optimized: Auslesemethode der Laufzeit von Videos
 		</news>
 	</extension>
 </addon>
@@ -909,6 +913,42 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		<news>[B][COLOR orangered]Version 2.1.0  (15.05.2021)[/COLOR][/B] by realvito[CR]
 - fixed: YouTube Playlisten von 'Welt der Wunder' (Fehler 404 beim öffnen)
 - fixed: LIVESTREAM wird nicht abgespielt
+		</news>
+	</extension>
+</addon>
+<addon id="plugin.video.viacom.mtv" name="MTV Germany [COLOR FF00EE00](neu)[/COLOR]" version="2.0.1" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="2.26.0"/>
+		<import addon="script.module.requests" version="2.20.0"/>
+		<import addon="script.common.plugin.cache" version="2.6.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">MTV Musik</summary>
+		<summary lang="en_GB">MTV Music</summary>
+		<description lang="de_DE">Hört euch die neuesten Songs eurer Lieblingsacts an und checkt deren Musikvideos oder seht komplette Staffeln eurer liebsten TV-Serien an.[CR]MTV ist die ultimative Quelle für Musik, Lifestyle, Popkultur, Entertainment, Filme und vieles mehr...</description>
+		<description lang="en_GB">Listen to the latest songs of your favorite acts and check out their music videos or watch complete seasons of your favorite TV series.[CR]MTV is the ultimate source for music, lifestyle, pop culture, entertainment, movies and much more...</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://www.mtv.de/</website>
+		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/KRYPTON_LEIA/plugin.video.viacom.mtv</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 2.0.1  (06.11.2021)[/COLOR][/B] by realvito[CR]
+- Pluginname changed with this ReRelease (old=plugin.video.tyl0re.mtv -> new=plugin.video.viacom.mtv)
+- Komplette Neuauflage des MTV-Addons nach Webseitenerneuerung (ReRelease)
+- added: Rubriken = Neue Episoden + Neue Musikvideos
+- added: Diverse 'Musik-Ordner' lassen sich per 'Rechtsklick' als Playliste (shuffle) abspielen
 		</news>
 	</extension>
 </addon>
