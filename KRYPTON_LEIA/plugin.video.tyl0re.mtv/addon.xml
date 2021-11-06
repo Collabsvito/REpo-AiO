@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tyl0re.mtv" name="MTV Germany" version="1.2.9" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.mtv" name="MTV Germany (old-broken)" version="1.3.0" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.beautifulsoup4" version="4.6.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
 		<import addon="script.common.plugin.cache" version="2.6.0"/>
+		<import addon="plugin.video.viacom.mtv" version="2.0.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -12,8 +13,8 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">MTV Musik</summary>
 		<summary lang="en_GB">MTV Music</summary>
-		<description lang="de_DE">Hört euch die neuesten Songs eurer Lieblingsacts an und checkt deren Musikvideos oder seht komplette Staffeln eurer liebsten TV-Serien an.[CR]MTV ist die ultimative Quelle für Musik, Lifestyle, Popkultur, Entertainment, Filme und vieles mehr...</description>
-		<description lang="en_GB">Listen to the latest songs of your favorite acts and check out their music videos or watch complete seasons of your favorite TV series.[CR]MTV is the ultimate source for music, lifestyle, pop culture, entertainment, movies and much more...</description>
+		<description lang="de_DE">[COLOR red]- Dieses Addon bekommt einen neuen Pfad im KODI-Verzeichnis ![CR]- Der neue Pfad lautet: 'plugin.video.viacom.mtv'.[CR][CR]- Bitte das neue Addon mit der Version-No. 2.0.1 AKTIVIEREN.[CR]- Danach dieses Addon mit der Version-No. 1.3.0 DEINSTALLIEREN.[/COLOR]</description>
+		<description lang="en_GB">[COLOR red]- This Addon gets a new path in the KODI directory ![CR]- The new Path named: 'plugin.video.viacom.mtv'.[CR][CR]- Please ACTIVATE the new Addon with the Version-No. 2.0.1.[CR]- After that UNINSTALL this Addon with the Version-No. 1.3.0.[/COLOR]</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
@@ -28,8 +29,11 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.2.9  (08.06.2021)[/COLOR][/B] by realvito[CR]
-- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
+		<broken>
+- Dieses Addon bekommt einen neuen Pfad im KODI-Verzeichnis ![CR]- Der neue Pfad lautet: 'plugin.video.viacom.mtv'.[CR][CR]- Bitte das neue Addon mit der Version-No. 2.0.1 AKTIVIEREN.[CR]- Danach dieses Addon mit der Version-No. 1.3.0 DEINSTALLIEREN.
+		</broken>
+		<news>[B][COLOR orangered]Version 1.3.0 (06.11.2021)[/COLOR][/B] by realvito[CR]
+- Dieses Addon bekommt einen neuen Pfad im KODI-Verzeichnis ![CR]- Der neue Pfad lautet: 'plugin.video.viacom.mtv'.[CR][CR]- Bitte das neue Addon mit der Version-No. 2.0.1 AKTIVIEREN.[CR]- Danach dieses Addon mit der Version-No. 1.3.0 DEINSTALLIEREN.
 		</news>
 	</extension>
 </addon>
