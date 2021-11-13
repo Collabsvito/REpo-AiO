@@ -296,9 +296,10 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.euronews_com" name="euronews.com" version="2.2.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.euronews_com" name="euronews.com" version="2.2.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -317,20 +318,12 @@
 		<description lang="es_ES">euronews ofrece una perspectiva única de los asuntos mundiales. euronews brinda a las personas la oportunidad de formarse su propia opinión, presentando un análisis de hechos y una variedad de puntos de vista.[CR]euronews Las noticias mundiales de 24 horas están disponibles en 12 ediciones diferentes en Árabe, Inglés, Francés, Alemán, Griego, Húngaro, Italiano, Persa, Portugués, Ruso, Español y Turco.</description>
 		<summary lang="fr_FR">Vidéoportail d'EURONEWS</summary>
 		<description lang="fr_FR">euronews offre une perspective unique sur les affaires mondiales. euronews donne aux gens la possibilité de se forger leur propre opinion, en présentant une analyse factuelle et une variété de points de vue.[CR]euronews World news 24 heures sur 24 est disponible en 12 éditions différentes en Arabe, Anglais, Français, Allemand, Grecque, Hongrois, Italien, Persan, Portugais, Russe, Espagnol et Turc.</description>
-		<summary lang="hr_HR">Videoportal od EURONEWS</summary>
-		<description lang="hr_HR">euronews nudi jedinstvenu perspektivu na svjetska pitanja. euronews pruža mogućnost ljudima da formiraju svoje vlastito mišljenje, iznošenjem faktografskih analiza i različitih gledišta.[CR]euronews Svjetske vijesti dnevno 24 sata dostupne su u 12 različitih izdanja u Arapski, Engleski, Francuski, Njemački, Grčki, Mađarski, Talijanski, Perzijski, Portugalski, Ruski, Španjolski i Turski.</description>
 		<summary lang="hu_HU">Az EURONEWS videoportálja</summary>
 		<description lang="hu_HU">Az euronews egyedülálló perspektívát kínál a világügyekkel kapcsolatban. Az euronews lehetőséget ad az embereknek arra, hogy véleményüket formálják, bemutatva tényszerű elemzéseket és különféle szempontokat.[CR]Az euronews napi 24 órás világhírek 12 különféle kiadásban érhetők el Arab, Angol, Francia, Német, Görög, Magyar, Olasz, Perzsa, Portugál, Orosz, Spanyol és Török.</description>
 		<summary lang="it_IT">Videoportale di EURONEWS</summary>
 		<description lang="it_IT">euronews offre una prospettiva unica sugli affari del mondo. euronews offre alle persone l'opportunità di esprimere la propria opinione, presentando analisi fattuali e una varietà di punti di vista.[CR]euronews Notizie dal mondo ogni giorno 24 ore sono disponibili in 12 diverse edizioni in Arabo, Inglese, Francese, Tedesco, Greco, Ungherese, Italiano, Persiano, Portoghese, Russo, Spagnolo e Turco.</description>
-		<summary lang="nb_NO">Videoportal av EURONEWS</summary>
-		<description lang="nb_NO">euronews tilbyr et unikt perspektiv på verdensforhold. euronews gir folk muligheten til å danne seg en egen mening ved å presentere saklig analyse og en rekke synspunkter.[CR]euronews Verdensnyheter daglig er 24 timer tilgjengelig i 12 forskjellige utgaver på Arabisk, Engelsk, Fransk, Tysk, Gresk, Ungarsk, Italiensk, Persisk, Portugisisk, Russisk, Spansk og Tyrkisk.</description>
-		<summary lang="nl_NL">Videoportaal van EURONEWS</summary>
-		<description lang="nl_NL">euronews biedt een uniek perspectief op wereldaangelegenheden. euronews geeft mensen de mogelijkheid om hun eigen mening te vormen door feitelijke analyse en een verscheidenheid aan standpunten te presenteren.[CR]euronews Wereldnieuws dagelijks 24 uur is beschikbaar in 12 verschillende edities in het Arabisch, Engels, Frans, Duits, Grieks, Hongaars, Italiaans, Perzisch, Portugees, Russisch, Spaans en Turks.</description>
 		<summary lang="pt_PT">Videoportal da EURONEWS</summary>
 		<description lang="pt_PT">A euronews oferece uma perspectiva única dos assuntos mundiais. A euronews oferece às pessoas a oportunidade de formar sua própria opinião, apresentando análises factuais e vários pontos de vista.[CR]euronews As notícias mundiais diariamente 24 horas estão disponíveis em 12 edições diferentes em Árabe, Inglês, Francês, Alemão, Grego, Húngaro, Italiano, Persa, Português, Russo, Espanhol e Turco.</description>
-		<summary lang="ro_RO">Videoportal al EURONEWS</summary>
-		<description lang="ro_RO">euronews oferă o perspectivă unică asupra afacerilor mondiale. euronews oferă oamenilor oportunitatea de a-și forma propria opinie, prezentând analize factuale și o varietate de puncte de vedere.[CR]euronews Știrile Mondiale zilnic 24 de ore sunt disponibile în 12 ediții diferite în Arabă, Engleză, Franceză, Germană, Greacă, Ungară, Italiană, Persană, Portugheză, Rusă, Spaniolă și Turcă.</description>
 		<summary lang="ru_RU">Видеопортал EURONEWS</summary>
 		<description lang="ru_RU">Евроньюс предлагает уникальный взгляд на мировые дела. euronews дает людям возможность сформировать собственное мнение, представив фактологический анализ и различные точки зрения.[CR]euronews Мировые новости ежедневно 24 часа доступны в 12 различных выпусках в Арабский, Английский, Французский, Немецкий, Греческий, Венгерский, Итальянский, Персидский, Португальский, Русский, Испанский и Турецкий.</description>
 		<summary lang="tr_TR">EURONEWS video portalı</summary>
@@ -347,9 +340,9 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.2.1+matrix.1  (06.11.2021)[/COLOR][/B][CR]
-- fixed: Oftmals wird nicht das richtige Verzeichnis der Videos gefunden
-- fixed: Nachbesserung der Codes für YOUTUBE Livestream Kanäle
+		<news>[B][COLOR orangered]Version 2.2.2+matrix.1  (13.11.2021)[/COLOR][/B][CR]
+- fixed: Alle Ordner ohne Inhalt (API verändert)
+- added: Rubrik = NEWS – TICKER
 		</news>
 	</extension>
 </addon>
@@ -590,7 +583,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV [COLOR FF00EE00](light)[/COLOR]" version="2.0.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV [COLOR FF00EE00](light)[/COLOR]" version="2.0.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -616,38 +609,35 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.6+matrix.1  (03.10.2021)[/COLOR][/B][CR]
-- fixed: Übersicht der Videos lässt sich auf diversen Systemen nicht öffnen (UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2)
-- fixed: Die Rubrik 'Nächste Übertragungen' wird manchmal nicht angezeigt obwohl Inhalt vorhanden ist[CR]
-[B][COLOR orangered]Version 2.0.5+matrix.1  (30.09.2021)[/COLOR][/B][CR]
-- ReRelease of 'plugin.video.sportdeutschland_tv' - oldVersion = Auf Basis der AndroidAPP / newVersion = Auf Basis der Webseite
-- added: Mehr Einzelsportarten in der Übersicht
-- added: Eigene Addon-Favoriten anlegen/speichern
+		<news>[B][COLOR orangered]Version 2.0.7+matrix.1  (13.11.2021)[/COLOR][/B][CR]
+- fixed: Startübersicht des Addons lässt sich nicht aufrufen (Neue Url für Livestreams)
+- fixed: Einige Rubriken lassen sich nicht öffnen (API verändert)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.sporttotal" name="Sport-Total TV" version="1.0.8+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sporttotal" name="Sporttotal.TV [COLOR FF00EE00](light)[/COLOR]" version="1.0.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Regionalsport auf Sporttotal.tv</summary>
-		<description lang="de_DE">Sporttotal.tv zeigt Deutschlands Amateursport in voller Länge und Breite. Sporttotal.tv ist die kostenlose Plattform für live und on-demand Streaming von Fußball, Volleyball, Basketball, Eishockey und mehr ![CR]Hier wird Breitensport LIVE zu seinen Fans gebracht.</description>
+		<description lang="de_DE">Sporttotal.tv zeigt Deutschlands Amateursport in voller Länge und Breite. Neben Amateurfußball und Motorsport überträgt Sporttotal mit seinen vollautomatischen Kameras auch Spiele der Volleyball-Bundesliga, sowie Eishockey- und Basketballspiele.[CR][CR][COLOR FF00EE00]Dieses Addon stellt nur den FREI verfügbaren Inhalt von 'sporttotal.tv' zur Verfügung ![/COLOR]</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<summary lang="en_GB">Regionalsport on Sporttotal.tv</summary>
-		<description lang="en_GB">Sporttotal.tv shows Germany's amateur sport in full length and width. Sporttotal.tv is the free platform for live and on-demand streaming of football, volleyball, basketball, ice hockey and more ![CR]This is where Breitensport LIVE is brought to its fans.</description>
+		<description lang="en_GB">Sporttotal.tv shows Germany's amateur sport in full length and width. In addition to amateur football and motor sports, Sporttotal also broadcasts matches of the Volleyball Bundesliga, as well as ice hockey and basketball games with its fully automatic cameras.[CR][CR][COLOR FF00EE00]This Addon only provides the FREE available content of 'sporttotal.tv' ![/COLOR]</description>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<summary lang="fr_FR">Les sports régionaux sur Sporttotal.tv</summary>
-		<description lang="fr_FR">Sporttotal.tv présente le sport amateur allemand dans toute sa longueur et sa largeur. Sporttotal.tv est la plateforme gratuite de diffusion en direct et à la demande de football, volley-ball, basket-ball, hockey sur glace et bien d'autres choses encore ![CR]C'est ici que Breitensport LIVE est présenté à ses fans.</description>
+		<description lang="fr_FR">Sporttotal.tv présente le sport amateur allemand dans toute sa longueur et sa largeur. Outre le football amateur et les sports automobiles, Sporttotal diffuse également des matchs de la Bundesliga de volley-ball, ainsi que des matchs de hockey sur glace et de basket-ball grâce à ses caméras entièrement automatiques.[CR][CR][COLOR FF00EE00]Cet Addon fournit uniquement le contenu disponible GRATUITEMENT sur 'sporttotal.tv' ![/COLOR]</description>
 		<disclaimer lang="fr_FR">Le contenu affiché par cet addon n'est pas hébergé ou distribué par les créateurs de l'addon, et ces derniers n'ont aucune relation avec les fournisseurs de contenu.</disclaimer>
 		<summary lang="it_IT">Sport regionali su Sporttotal.tv</summary>
-		<description lang="it_IT">Sporttotal.tv mostra lo sport amatoriale tedesco in lunghezza e larghezza. Sporttotal.tv è la piattaforma gratuita per lo streaming live e on-demand di calcio, pallavolo, pallacanestro, hockey su ghiaccio e altro ancora ![CR]È qui che Breitensport LIVE viene portato ai suoi fan.</description>
+		<description lang="it_IT">Sporttotal.tv mostra lo sport amatoriale tedesco in lunghezza e larghezza. Oltre al calcio amatoriale e agli sport motoristici, Sporttotal trasmette anche le partite della Bundesliga di pallavolo, così come le partite di hockey su ghiaccio e basket con le sue telecamere completamente automatiche.[CR][CR][COLOR FF00EE00]Questo Addon fornisce solo il contenuto disponibile GRATIS di 'sporttotal.tv' ![/COLOR]</description>
 		<disclaimer lang="it_IT">I contenuti visualizzati da questo addon non sono ospitati o distribuiti dai creatori dell'addon, né i creatori hanno alcun rapporto con i fornitori di contenuti.</disclaimer>
 		<summary lang="nl_NL">Regionale sporten op Sporttotal.tv</summary>
-		<description lang="nl_NL">Sporttotal.tv toont de Duitse amateursport in de volle lengte en breedte. Sporttotal.tv is het gratis platform voor live en on-demand streaming van voetbal, volleybal, basketbal, ijshockey en meer ![CR]Dit is waar Breitensport LIVE aan haar fans wordt gebracht.</description>
+		<description lang="nl_NL">Sporttotal.tv toont de Duitse amateursport in de volle lengte en breedte. Naast amateurvoetbal en motorsport zendt Sporttotal met zijn volautomatische camera's ook wedstrijden uit van de Volleyball Bundesliga, alsmede ijshockey- en basketbalwedstrijden.[CR][CR][COLOR FF00EE00]Deze Addon bevat alleen de GRATIS beschikbare inhoud van 'sporttotal.tv' ![/COLOR]</description>
 		<disclaimer lang="nl_NL">De inhoud die door deze addon wordt weergegeven, wordt niet gehost of gedistribueerd door de makers van de addon, noch hebben de makers enige relatie met de aanbieders van de inhoud.</disclaimer>
 		<language></language>
 		<platform>all</platform>
@@ -661,8 +651,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.8+matrix.1  (08.06.2021)[/COLOR][/B][CR]
-- fixed: ERROR auf Android 32bit Systemen - kann Unix-Zeitstempel nicht grösser als das Jahr 2038 konvertieren (ValueError: timestamp out of range for platform time_t)
+		<news>[B][COLOR orangered]Version 1.0.9+matrix.1  (13.11.2021)[/COLOR][/B][CR]
+- added: Neue Liste für die Regionalliga unter 'Regional und Events'
 		</news>
 	</extension>
 </addon>
