@@ -1,26 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.sporttotal" name="Sport-Total TV" version="1.0.8+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sporttotal" name="Sporttotal.TV [COLOR FF00EE00](light)[/COLOR]" version="1.0.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Regionalsport auf Sporttotal.tv</summary>
-		<description lang="de_DE">Sporttotal.tv zeigt Deutschlands Amateursport in voller Länge und Breite. Sporttotal.tv ist die kostenlose Plattform für live und on-demand Streaming von Fußball, Volleyball, Basketball, Eishockey und mehr ![CR]Hier wird Breitensport LIVE zu seinen Fans gebracht.</description>
+		<description lang="de_DE">Sporttotal.tv zeigt Deutschlands Amateursport in voller Länge und Breite. Neben Amateurfußball und Motorsport überträgt Sporttotal mit seinen vollautomatischen Kameras auch Spiele der Volleyball-Bundesliga, sowie Eishockey- und Basketballspiele.[CR][CR][COLOR FF00EE00]Dieses Addon stellt nur den FREI verfügbaren Inhalt von 'sporttotal.tv' zur Verfügung ![/COLOR]</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<summary lang="en_GB">Regionalsport on Sporttotal.tv</summary>
-		<description lang="en_GB">Sporttotal.tv shows Germany's amateur sport in full length and width. Sporttotal.tv is the free platform for live and on-demand streaming of football, volleyball, basketball, ice hockey and more ![CR]This is where Breitensport LIVE is brought to its fans.</description>
+		<description lang="en_GB">Sporttotal.tv shows Germany's amateur sport in full length and width. In addition to amateur football and motor sports, Sporttotal also broadcasts matches of the Volleyball Bundesliga, as well as ice hockey and basketball games with its fully automatic cameras.[CR][CR][COLOR FF00EE00]This Addon only provides the FREE available content of 'sporttotal.tv' ![/COLOR]</description>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<summary lang="fr_FR">Les sports régionaux sur Sporttotal.tv</summary>
-		<description lang="fr_FR">Sporttotal.tv présente le sport amateur allemand dans toute sa longueur et sa largeur. Sporttotal.tv est la plateforme gratuite de diffusion en direct et à la demande de football, volley-ball, basket-ball, hockey sur glace et bien d'autres choses encore ![CR]C'est ici que Breitensport LIVE est présenté à ses fans.</description>
+		<description lang="fr_FR">Sporttotal.tv présente le sport amateur allemand dans toute sa longueur et sa largeur. Outre le football amateur et les sports automobiles, Sporttotal diffuse également des matchs de la Bundesliga de volley-ball, ainsi que des matchs de hockey sur glace et de basket-ball grâce à ses caméras entièrement automatiques.[CR][CR][COLOR FF00EE00]Cet Addon fournit uniquement le contenu disponible GRATUITEMENT sur 'sporttotal.tv' ![/COLOR]</description>
 		<disclaimer lang="fr_FR">Le contenu affiché par cet addon n'est pas hébergé ou distribué par les créateurs de l'addon, et ces derniers n'ont aucune relation avec les fournisseurs de contenu.</disclaimer>
 		<summary lang="it_IT">Sport regionali su Sporttotal.tv</summary>
-		<description lang="it_IT">Sporttotal.tv mostra lo sport amatoriale tedesco in lunghezza e larghezza. Sporttotal.tv è la piattaforma gratuita per lo streaming live e on-demand di calcio, pallavolo, pallacanestro, hockey su ghiaccio e altro ancora ![CR]È qui che Breitensport LIVE viene portato ai suoi fan.</description>
+		<description lang="it_IT">Sporttotal.tv mostra lo sport amatoriale tedesco in lunghezza e larghezza. Oltre al calcio amatoriale e agli sport motoristici, Sporttotal trasmette anche le partite della Bundesliga di pallavolo, così come le partite di hockey su ghiaccio e basket con le sue telecamere completamente automatiche.[CR][CR][COLOR FF00EE00]Questo Addon fornisce solo il contenuto disponibile GRATIS di 'sporttotal.tv' ![/COLOR]</description>
 		<disclaimer lang="it_IT">I contenuti visualizzati da questo addon non sono ospitati o distribuiti dai creatori dell'addon, né i creatori hanno alcun rapporto con i fornitori di contenuti.</disclaimer>
 		<summary lang="nl_NL">Regionale sporten op Sporttotal.tv</summary>
-		<description lang="nl_NL">Sporttotal.tv toont de Duitse amateursport in de volle lengte en breedte. Sporttotal.tv is het gratis platform voor live en on-demand streaming van voetbal, volleybal, basketbal, ijshockey en meer ![CR]Dit is waar Breitensport LIVE aan haar fans wordt gebracht.</description>
+		<description lang="nl_NL">Sporttotal.tv toont de Duitse amateursport in de volle lengte en breedte. Naast amateurvoetbal en motorsport zendt Sporttotal met zijn volautomatische camera's ook wedstrijden uit van de Volleyball Bundesliga, alsmede ijshockey- en basketbalwedstrijden.[CR][CR][COLOR FF00EE00]Deze Addon bevat alleen de GRATIS beschikbare inhoud van 'sporttotal.tv' ![/COLOR]</description>
 		<disclaimer lang="nl_NL">De inhoud die door deze addon wordt weergegeven, wordt niet gehost of gedistribueerd door de makers van de addon, noch hebben de makers enige relatie met de aanbieders van de inhoud.</disclaimer>
 		<language></language>
 		<platform>all</platform>
@@ -34,8 +35,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.8+matrix.1  (08.06.2021)[/COLOR][/B][CR]
-- fixed: ERROR auf Android 32bit Systemen - kann Unix-Zeitstempel nicht grösser als das Jahr 2038 konvertieren (ValueError: timestamp out of range for platform time_t)
+		<news>[B][COLOR orangered]Version 1.0.9+matrix.1  (13.11.2021)[/COLOR][/B][CR]
+- added: Neue Liste für die Regionalliga unter 'Regional und Events'
 		</news>
 	</extension>
 </addon>
