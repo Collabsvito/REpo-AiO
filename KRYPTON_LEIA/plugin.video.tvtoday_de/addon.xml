@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tvtoday_de" name="TV Today - Best of Mediatheken" version="1.6.2" provider-name="realvito">
+<addon id="plugin.video.tvtoday_de" name="TV Today - Best of Mediatheken" version="1.6.3" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="plugin.video.tyl0re.arte" optional="true"/>
@@ -28,11 +28,9 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.6.2  (06.11.2021)[/COLOR][/B][CR]
-- fixed: Falsche Senderkennzeichnung für Sender 'RTL'[CR]
-[B][COLOR orangered]Version 1.6.1  (05.11.2021)[/COLOR][/B][CR]
-- fixed: Und wieder werden die Vorschaubilder der Titel nicht mehr angezeigt (Webseite verändert no.2)
-- optimized: Codeanpassungen für die Wiedergabe von TVNOW-Links (plugin.video.rtlgroup.de)
+		<news>[B][COLOR orangered]Version 1.6.3  (15.11.2021)[/COLOR][/B][CR]
+- fixed: Alle ARD-Videos werden NICHT abgespielt (API verändert)
+- added: Videos von ARD+ZDF können jetzt auch im 'HLS'-Format mit Inputstream abgespielt werden (Settings)
 		</news>
 	</extension>
 </addon>
