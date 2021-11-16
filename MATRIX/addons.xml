@@ -296,7 +296,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.euronews_com" name="euronews.com" version="2.2.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.euronews_com" name="euronews.com" version="2.2.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -340,7 +340,9 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.2.2+matrix.1  (13.11.2021)[/COLOR][/B][CR]
+		<news>[B][COLOR orangered]Version 2.2.3+matrix.1  (16.11.2021)[/COLOR][/B][CR]
+- fixed: Viele Ordner können nicht geöffnet werden (Provider hat nochmals die API verändert)[CR]
+[B][COLOR orangered]Version 2.2.2+matrix.1  (13.11.2021)[/COLOR][/B][CR]
 - fixed: Alle Ordner ohne Inhalt (API verändert)
 - added: Rubrik = NEWS – TICKER
 		</news>
