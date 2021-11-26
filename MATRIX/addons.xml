@@ -483,7 +483,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.netzkino_de" name="Netzkino [COLOR FF00EE00](light)[/COLOR]" version="3.0.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.netzkino_de" name="Netzkino [COLOR FF00EE00](light)[/COLOR]" version="3.0.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -505,13 +505,15 @@
 		<website>https://www.netzkino.de/</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
-		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.netzkino_de</source>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.netzkino_de</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.3+matrix.1  (15.05.2021)[/COLOR][/B][CR]
-- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
+		<news>[B][COLOR orangered]Version 3.0.4+matrix.1  (26.11.2021)[/COLOR][/B][CR]
+- fixed: Wenn Image mit dt. Umlaut im Ordner enthalten ist kann Dieser nicht geöffnet werden (UnicodeEncodeError: 'ascii' codec can't encode character...)
+- fixed: Eintragsdatum wird nicht angezeigt obwohl vorhanden (Gestartet am: ...)
+- optimized: FSK-Anzeige ab 0 Jahren = ohne Altersbeschränkung
 		</news>
 	</extension>
 </addon>
@@ -552,11 +554,11 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.0.4+matrix.1" provider-name="realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.0.5+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
-		<import addon="inputstream.adaptive" version="2.4.2"/>
+		<import addon="inputstream.adaptive" version="2.4.5"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -580,8 +582,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.4+matrix.1  (26.06.2021)[/COLOR][/B][CR]
-- fixed: Manchmal wird nicht der richtige Titel der Sendung in den Addon-Favoriten gespeichert
+		<news>[B][COLOR orangered]Version 3.0.5+matrix.1  (26.11.2021)[/COLOR][/B][CR]
+- fixed: Livestream in alter Form mittels m3u8 abspielen (Neue Url für DE+AT)
 		</news>
 	</extension>
 </addon>
@@ -767,7 +769,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.0.9+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.1.0+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -797,8 +799,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.9+matrix.1  (06.06.2021)[/COLOR][/B] by realvito[CR]
-- fixed: Fehler beim öffnen eines Serienordners wenn Serie nicht mehr existiert (UnboundLocalError: local variable 'newURL' referenced before assignment)
+		<news>[B][COLOR orangered]Version 1.1.0+matrix.1  (26.11.2021)[/COLOR][/B] by realvito[CR]
+- fixed: ARTE Live- und Eventstreams
 		</news>
 	</extension>
 </addon>
@@ -945,7 +947,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="service.cron.autobiblio" name="Crontab für andere Addons" version="2.1.0+matrix.1" provider-name="realvito">
+<addon id="service.cron.autobiblio" name="Crontab für andere Addons" version="2.1.1+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -971,9 +973,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		<assets>
 			<icon>resources/icon.png</icon>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.1.0+matrix.1  (05.11.2021)[/COLOR][/B][CR]
-- added: Anpassungen und Übernahme der neuen 'Staffel-Anzeige' im 'plugin.video.rtlgroup.de'
-- optimized: OS-Erkennung beim Start des Service
+		<news>[B][COLOR orangered]Version 2.1.1+matrix.1  (26.11.2021)[/COLOR][/B][CR]
+- added: Anpassungen zur Aufteilung des Speicherordners in Movies/Series
 		</news>
 	</extension>
 </addon>
