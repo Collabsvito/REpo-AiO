@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.0.4" provider-name="realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.0.5" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
-		<import addon="inputstream.adaptive" version="2.4.2"/>
+		<import addon="inputstream.adaptive" version="2.4.5"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -27,8 +27,8 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.4  (26.06.2021)[/COLOR][/B][CR]
-- fixed: Manchmal wird nicht der richtige Titel der Sendung in den Addon-Favoriten gespeichert
+		<news>[B][COLOR orangered]Version 3.0.5  (26.11.2021)[/COLOR][/B][CR]
+- fixed: Livestream in alter Form mittels m3u8 abspielen (Neue Url für DE+AT)
 		</news>
 	</extension>
 </addon>
