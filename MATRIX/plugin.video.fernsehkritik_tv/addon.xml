@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.fernsehkritik_tv" name="Massengeschmack [COLOR FF00EE00](light)[/COLOR]" version="2.2.4+matrix.1" provider-name="realvito">
+<addon id="plugin.video.fernsehkritik_tv" name="Massengeschmack [COLOR FF00EE00](light)[/COLOR]" version="2.2.5+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -23,13 +23,13 @@
 		<website>https://massengeschmack.tv</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
-		<source>https://repo.kodinerds.net/addons/matrix/zip/plugin.video.fernsehkritik_tv</source>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.fernsehkritik_tv</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.2.4+matrix.1  (15.05.2021)[/COLOR][/B][CR]
-- fixed: YouTube Playlisten von 'Massengeschmack.TV' (Fehler 404 beim öffnen)
+		<news>[B][COLOR orangered]Version 2.2.5+matrix.1  (07.12.2021)[/COLOR][/B][CR]
+- optimized: Auslesemethode der Laufzeit von Videos
 		</news>
 	</extension>
 </addon>
