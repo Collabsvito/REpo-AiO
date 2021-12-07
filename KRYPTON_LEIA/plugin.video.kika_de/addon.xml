@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.kika_de" name="KiKA plus" version="3.4.0" provider-name="realvito">
+<addon id="plugin.video.kika_de" name="KiKA plus" version="3.4.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -21,14 +21,14 @@
 		<website>https://www.kika.de</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
-		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.kika_de</source>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/KRYPTON_LEIA/plugin.video.kika_de</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.4.0  (15.05.2021)[/COLOR][/B][CR]
-- fixed: Rubrik = Neue Videos und Meistgesehene Videos (Error Contents: No JSON object could be decoded)
-- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
+		<news>[B][COLOR orangered]Version 3.4.1  (07.12.2021)[/COLOR][/B][CR]
+- fixed: KiKA Live-TV neue Streamadresse
+- optimized: Auslesemethode der Laufzeit von Videos
 		</news>
 	</extension>
 </addon>
