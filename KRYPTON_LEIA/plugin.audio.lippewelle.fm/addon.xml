@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.audio.lippewelle.fm" name="Radio-Lippewelle [COLOR FF00EE00]FM[/COLOR]" version="1.0.5" provider-name="realvito">
+<addon id="plugin.audio.lippewelle.fm" name="Radio-Lippewelle [COLOR FF00EE00]FM[/COLOR]" version="1.0.6" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video audio</provides>
+		<provides>audio</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Radio Lippewelle 105</summary>
@@ -20,13 +20,18 @@
 		<website>https://www.lippewelle.de</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
-		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.audio.lippewelle.fm</source>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/KRYPTON_LEIA/plugin.audio.lippewelle.fm</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.5  (02.05.2021)[/COLOR][/B][CR]
-- fixed: System - Plattform wird auf iOS-Systemen nicht erkannt und Ergebnisse werden nicht angezeigt (IOError: [Errno 10] No child processes)
+		<news>[B][COLOR orangered]Version 1.0.6  (07.12.2021)[/COLOR][/B][CR]
+- fixed: Teilweise werden die Lauzeiten der Podcasts nicht angezeigt obwohl vorhanden
+- fixed: Keine Titelanzeige in den Rubriken Guter Stoff+Beste Gäste
+- optimized: Mehr und längere Beschreibungen anzeigen
+- optimized: Auslesemethode der Laufzeit von Audio/Podcast
+- added: Podcasts = Heimspiel - Musik von hier, Midlife Party, Expertenrunde reloaded
+- removed: Podcasts = Traumberufe, Bühne frei!, Unter der Haube, Corona und jetzt
 		</news>
 	</extension>
 </addon>
