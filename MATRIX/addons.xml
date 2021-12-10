@@ -841,7 +841,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.1.3+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.1.4+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1" optional="true"/>
@@ -868,9 +868,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.1.3+matrix.1  (06.11.2021)[/COLOR][/B] by realvito[CR]
-- fixed: Laufzeitangaben und Plot-1 werden nicht angezeigt
-- optimized: Auslesemethode der Laufzeit von Videos
+		<news>[B][COLOR orangered]Version 2.1.4+matrix.1  (10.12.2021)[/COLOR][/B] by realvito[CR]
+- fixed: Alle Rubriken zeigen keinen Inhalt (Quelltext verändert)
 		</news>
 	</extension>
 </addon>
