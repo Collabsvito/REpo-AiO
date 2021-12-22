@@ -871,6 +871,40 @@
 		</news>
 	</extension>
 </addon>
+<addon id="plugin.video.vfb_stuttgart" name="VfB-Stuttgart TV" version="1.0.2" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="2.26.0"/>
+		<import addon="script.module.requests" version="2.20.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Videoportal des VfB-Stuttgart</summary>
+		<summary lang="en_GB">Videoportal of the VfB-Stuttgart</summary>
+		<description lang="de_DE">Alle Bundesligaspiele des VfB-Stuttgart nach Schlusspfiff in voller Länge und im Highlights-Schnitt.[CR]Exklusive Interviews und die Pressekonferenzen. Laufend neue Facts und Features des Vereins.</description>
+		<description lang="en_GB">All Bundesliga matches of the VfB-Stuttgart after the final whistle in full length and in highlights-editing.[CR]Exclusive interviews and the press conferences. Ongoing new facts and features of the club.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://vfbtv.vfb.de/tv/</website>
+		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/KRYPTON_LEIA/plugin.video.vfb_stuttgart</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 1.0.2  (22.12.2021)[/COLOR][/B][CR]
+- fixed: Im Ordner 'DFB-Pokal' werden keine Saison-Jahre gelistet
+- optimized: Code cleanup
+- added: Addon kompatibel mit PYTHON-Vers.3 gemacht (für KODI-19+) :-)
+		</news>
+	</extension>
+</addon>
 <addon id="plugin.video.viacom.mtv" name="MTV Germany [COLOR FF00EE00](neu)[/COLOR]" version="2.0.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
