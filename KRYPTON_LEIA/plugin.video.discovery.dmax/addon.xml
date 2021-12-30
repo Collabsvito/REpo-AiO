@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.1.3" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.1.4" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -28,8 +28,8 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.1.3  (05.11.2021)[/COLOR][/B][CR]
-- optimized: FSK-Anzeige ab 0 Jahren = ohne Altersbeschränkung
+		<news>[B][COLOR orangered]Version 3.1.4  (30.12.2021)[/COLOR][/B][CR]
+- added: Unterordner Series für Einträge der KODI-Bibliothek erstellen (settings)
 		</news>
 	</extension>
 </addon>
