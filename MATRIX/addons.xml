@@ -169,7 +169,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.1.5+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.1.6+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -198,8 +198,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.1.5+matrix.1  (02.02.2022)[/COLOR][/B][CR]
-- fixed: Videos werden nicht abgespielt (Error Contents: No JSON object could be decoded)
+		<news>[B][COLOR orangered]Version 3.1.6+matrix.1  (12.02.2022)[/COLOR][/B][CR]
+- removed: Tele5-Sendungen/Inhalte
 		</news>
 	</extension>
 </addon>
