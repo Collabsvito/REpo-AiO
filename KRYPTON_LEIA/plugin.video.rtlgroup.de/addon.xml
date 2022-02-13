@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.0.6" provider-name="realvito">
+<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.0.7" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -31,9 +31,9 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.6  (30.12.2021)[/COLOR][/B][CR]
-- fixed: LIVESTREAMS lassen sich erneut nicht abspielen (Error 403)
-- added: Unterordner Series/Movies für Einträge der KODI-Bibliothek erstellen (settings)
+		<news>[B][COLOR orangered]Version 1.0.7  (13.02.2022)[/COLOR][/B][CR]
+- fixed: LIVESTREAMS lassen sich erneut nicht abspielen (Unable to lookup host: 'blivenowusodashnowlive-a.akamaized.net')
+- fixed: m3u-Liste zur Integration der Livestreams des Addons in den 'PVR IPTV Simple Client' (neue StreamUrls)
 		</news>
 	</extension>
 </addon>
