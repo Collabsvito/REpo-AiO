@@ -386,7 +386,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.kika_de" name="KiKA plus" version="3.4.2" provider-name="realvito">
+<addon id="plugin.video.kika_de" name="KiKA plus" version="3.4.3" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -413,8 +413,8 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.4.2  (15.02.2022)[/COLOR][/B][CR]
-- added: Möglichkeit der Streamwiedergabe von externem Addon
+		<news>[B][COLOR orangered]Version 3.4.3  (15.02.2022)[/COLOR][/B][CR]
+- fixed: Rubrik = Neue Videos kann nicht geöffnet werden (AttributeError: 'NoneType' object has no attribute 'replace')
 		</news>
 	</extension>
 </addon>
