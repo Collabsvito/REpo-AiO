@@ -386,7 +386,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.kika_de" name="KiKA plus" version="3.4.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.kika_de" name="KiKA plus" version="3.4.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -413,9 +413,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.4.1+matrix.1  (07.12.2021)[/COLOR][/B][CR]
-- fixed: KiKA Live-TV neue Streamadresse
-- optimized: Auslesemethode der Laufzeit von Videos
+		<news>[B][COLOR orangered]Version 3.4.2+matrix.1  (15.02.2022)[/COLOR][/B][CR]
+- added: Möglichkeit der Streamwiedergabe von externem Addon
 		</news>
 	</extension>
 </addon>
@@ -766,7 +765,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.1.4+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.1.5+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1" optional="true"/>
@@ -793,8 +792,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.1.4+matrix.1  (10.12.2021)[/COLOR][/B] by realvito[CR]
-- fixed: Alle Rubriken zeigen keinen Inhalt (Quelltext verändert)
+		<news>[B][COLOR orangered]Version 2.1.5+matrix.1  (15.02.2022)[/COLOR][/B] by realvito[CR]
+- fixed: Es wird kein Bild zum Video angezeigt
 		</news>
 	</extension>
 </addon>
