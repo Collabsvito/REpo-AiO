@@ -36,7 +36,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.3plus_ch" name="3plus TV" version="1.0.5+matrix.1" provider-name="realvito">
+<addon id="plugin.video.3plus_ch" name="3plus TV" version="1.0.6+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -46,8 +46,8 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Videoportal von 3plus.tv</summary>
 		<summary lang="en_GB">Videoportal of 3plus.tv</summary>
-		<description lang="de_DE">3 Plus (3+) ist ein überregionaler privater Fernsehsender aus der Schweiz.[CR]Das abwechslungsreiche Programm von 3 Plus bietet Unterhaltung mit Schweizer-Eigenproduktionen.</description>
-		<description lang="en_GB">3 Plus (3+) is a nationwide private television station from Switzerland.[CR]The varied program of 3 Plus offers entertainment with Swiss in-house productions.</description>
+		<description lang="de_DE">[COLOR red]- Die Webseite/Mediathek wurde leider abgeschaltet.[CR]- Addon-Support eingestellt ![/COLOR]</description>
+		<description lang="en_GB">[COLOR red]- The Website/Mediathek has unfortunately been shut down.[CR]- Addon support discontinued ![/COLOR]</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
@@ -62,8 +62,11 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.5+matrix.1  (26.06.2021)[/COLOR][/B][CR]
-- fixed: Addon nochmals neu aufgesetzt nach Veränderung der Webseite/API
+		<broken>
+- Die Webseite/Mediathek wurde leider abgeschaltet.[CR]- Addon-Support eingestellt !
+		</broken>
+		<news>[B][COLOR orangered]Version 1.0.6+matrix.1  (17.02.2022)[/COLOR][/B] by realvito[CR]
+- Die Webseite/Mediathek wurde leider abgeschaltet.[CR]- Addon-Support eingestellt !
 		</news>
 	</extension>
 </addon>
@@ -269,7 +272,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.euronews_com" name="euronews.com" version="2.2.4+matrix.1" provider-name="realvito">
+<addon id="plugin.video.euronews_com" name="euronews.com" version="2.2.5+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -313,8 +316,10 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.2.4+matrix.1  (15.12.2021)[/COLOR][/B][CR]
-- fixed: Rubrik = NEWS – TICKER kann nicht geöffnet werden (ValueError: invalid literal for int() with base 10: 'none')
+		<news>[B][COLOR orangered]Version 2.2.5+matrix.1  (17.02.2022)[/COLOR][/B][CR]
+- fixed: Fast keine Ordner in der Startübersicht vorhanden (Quelltext verändert)
+- optimized: Videos - bevorzugt über Youtube abspielen (YTID jetzt direkt aus dem Quelltext der Webseite auslesen)
+- added: Rubriken = Wirtschaft, Sport
 		</news>
 	</extension>
 </addon>
