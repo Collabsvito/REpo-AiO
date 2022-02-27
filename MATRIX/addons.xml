@@ -770,7 +770,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.1.6+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.1.7+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1" optional="true"/>
@@ -797,8 +797,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.1.6+matrix.1  (18.02.2022)[/COLOR][/B] by realvito[CR]
-- fixed: Die Rubrik 'Übersicht Videos' zeigt nur wenige Videos an (Webseite verändert)
+		<news>[B][COLOR orangered]Version 2.1.7+matrix.1  (27.02.2022)[/COLOR][/B] by realvito[CR]
+- fixed: Durch Scrapingfehler bei den Videolaufzeiten werden teilweise nicht die max. Anzahl der angeforderten Seiten gelistet (z.B. Übersicht Videos)
 		</news>
 	</extension>
 </addon>
