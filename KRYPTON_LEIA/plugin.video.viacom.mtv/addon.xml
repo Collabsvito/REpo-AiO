@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.viacom.mtv" name="MTV Germany [COLOR FF00EE00](neu)[/COLOR]" version="2.0.1" provider-name="realvito">
+<addon id="plugin.video.viacom.mtv" name="MTV Germany" version="2.0.2" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -27,11 +27,8 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.1  (06.11.2021)[/COLOR][/B] by realvito[CR]
-- Pluginname changed with this ReRelease (old=plugin.video.tyl0re.mtv -> new=plugin.video.viacom.mtv)
-- Komplette Neuauflage des MTV-Addons nach Webseitenerneuerung (ReRelease)
-- added: Rubriken = Neue Episoden + Neue Musikvideos
-- added: Diverse 'Musik-Ordner' lassen sich per 'Rechtsklick' als Playliste (shuffle) abspielen
+		<news>[B][COLOR orangered]Version 2.0.2  (17.03.2022)[/COLOR][/B][CR]
+- optimized: Meldung für Wiedergabefehler überarbeitet
 		</news>
 	</extension>
 </addon>
