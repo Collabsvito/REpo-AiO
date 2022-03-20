@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.euronews_com" name="euronews.com" version="2.2.5" provider-name="realvito">
+<addon id="plugin.video.euronews_com" name="euronews.com" version="2.2.6" provider-name="realvito">
 	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
 		<import addon="plugin.video.youtube" version="6.5.0"/>
 	</requires>
@@ -43,10 +43,10 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.2.5  (17.02.2022)[/COLOR][/B][CR]
-- fixed: Fast keine Ordner in der Startübersicht vorhanden (Quelltext verändert)
-- optimized: Videos - bevorzugt über Youtube abspielen (YTID jetzt direkt aus dem Quelltext der Webseite auslesen)
-- added: Rubriken = Wirtschaft, Sport
+		<news>[B][COLOR orangered]Version 2.2.6  (20.03.2022)[/COLOR][/B][CR]
+- fixed: Einige euronews - LIVESTREAMS funktionieren nicht mehr (neue URL zur Abfrage der Streams)
+- optimized: Die Rubrik = 'NEWS – TICKER' wird jetzt schneller geöffnet durch *asynchrone* Abfragemethode
+- added: Ausführlichen/Erweiterten Plot im 'NEWS – TICKER' laden (settings)
 		</news>
 	</extension>
 </addon>
