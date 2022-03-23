@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.2" provider-name="realvito (inspired by L0RE)">
+<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.3" provider-name="realvito (inspired by L0RE)">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="plugin.video.youtube" version="6.5.0"/>
@@ -26,9 +26,12 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.2  (08.12.2021)[/COLOR][/B][CR]
-- fixed: Billboard-Videolists are empty (Website-Structure changes)
-- added: Billboard-Global 200 and Billboard-Archive sorted by year
+		<news>[B][COLOR orangered]Version 3.0.3  (23.03.2022)[/COLOR][/B][CR]
+- fixed: Billboard-Videolists are unreadable doublelines
+- fixed: Billboard archive sorted by year nothing is displayed
+- fixed: Hypem in all categories masses of ERRORs are written to the LOG
+- added: Title-Infos as Plot for all Providers
+- optimized: Scripting of Deezer-Search
 		</news>
 	</extension>
 </addon>
