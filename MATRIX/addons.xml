@@ -674,12 +674,12 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tvtoday_de" name="TV Today - Best of Mediatheken" version="1.6.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvtoday_de" name="TV Today - Best of Mediatheken" version="1.6.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="plugin.video.tyl0re.arte" optional="true"/>
-		<import addon="plugin.video.arteplussept" optional="true"/>
 		<import addon="plugin.video.rtlgroup.de" optional="true"/>
+		<import addon="plugin.video.tvspielfilm_de" version="2.0.1+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -687,25 +687,27 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Das Beste aus TV-Today</summary>
 		<summary lang="en_GB">The best from TV-Today</summary>
-		<description lang="de_DE">Das Beste aus deutschen Mediatheken, ausgewählt und zusammengestellt von der Zeitschrift TV-Today (www.tvtoday.de).[CR][CR]Für mehr Informationen zu allen Neuerungen siehe - CHANGELOG.[CR]     HAVE FUN</description>
-		<description lang="en_GB">The best from german Mediatheken, selected and compiled by the magazine TV-Today (www.tvtoday.de).[CR][CR]For more information about all new features see - CHANGELOG.[CR]     HAVE FUN</description>
+		<description lang="de_DE">[COLOR red]- Da die Addons 'plugin.video.tvtoday_de' und 'plugin.video.tvspielfilm_de' den gleichen Inhalt darstellen wird dieses Addon jetzt durch das Addon 'plugin.video.tvspielfilm_de' ersetzt (um den Wartungsaufwand zu minimieren) ![CR][CR]- Bitte das Addon 'plugin.video.tvspielfilm_de' mit der Version-No. 2.0.1+matrix.1 AKTIVIEREN.[CR]- Danach dieses Addon mit der Version-No. 1.6.4+matrix.1 DEINSTALLIEREN.[/COLOR]</description>
+		<description lang="en_GB">[COLOR red]- Since the Addons 'plugin.video.tvtoday_de' and 'plugin.video.tvspielfilm_de' represent the same content, this Addon will now be replaced by the Addon 'plugin.video.tvspielfilm_de' (to minimise the maintenance effort) ![CR][CR]- Please ACTIVATE the Addon 'plugin.video.tvspielfilm_de' with the Version-No. 2.0.1+matrix.1.[CR]- After that UNINSTALL this Addon with the Version-No. 1.6.4+matrix.1.[/COLOR]</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/53329-RERELEASE-TVTODAY/</forum>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
 		<website>https://www.tvtoday.de/mediathek/</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
-		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.tvtoday_de</source>
+		<source></source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.6.3+matrix.1  (15.11.2021)[/COLOR][/B][CR]
-- fixed: Alle ARD-Videos werden NICHT abgespielt (API verändert)
-- added: Videos von ARD+ZDF können jetzt auch im 'HLS'-Format mit Inputstream abgespielt werden (Settings)
+		<broken>
+- Da die Addons 'plugin.video.tvtoday_de' und 'plugin.video.tvspielfilm_de' den gleichen Inhalt darstellen wird dieses Addon jetzt durch das Addon 'plugin.video.tvspielfilm_de' ersetzt (um den Wartungsaufwand zu minimieren) !
+		</broken>
+		<news>[B][COLOR orangered]Version 1.6.4+matrix.1 (16.04.2022)[/COLOR][/B][CR]
+- Bitte das Addon 'plugin.video.tvspielfilm_de' mit der Version-No. 2.0.1+matrix.1 AKTIVIEREN.[CR]- Danach dieses Addon mit der Version-No. 1.6.4+matrix.1 DEINSTALLIEREN.
 		</news>
 	</extension>
 </addon>
