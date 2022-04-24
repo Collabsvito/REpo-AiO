@@ -522,9 +522,10 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV [COLOR FF00EE00](light)[/COLOR]" version="2.0.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV [COLOR FF00EE00](light)[/COLOR]" version="2.0.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -548,9 +549,13 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.7+matrix.1  (13.11.2021)[/COLOR][/B][CR]
-- fixed: Startübersicht des Addons lässt sich nicht aufrufen (Neue Url für Livestreams)
-- fixed: Einige Rubriken lassen sich nicht öffnen (API verändert)
+		<news>[B][COLOR orangered]Version 2.0.8+matrix.1  (24.04.2022)[/COLOR][/B][CR]
+- fixed: Es werden teilweise überhaupt KEINE Videos angezeigt (Video-Url auf nächster Seite versteckt)
+- fixed: Rubrik = Sportkanäle kann nicht geöffnet werden (API verändert)
+- fixed: Viele Videos werden NICHT abgespielt (Token-Abfrage verändert)
+- fixed: Die Anzahl der laufenden Livestreams im Startmenü stimmt teilweise nicht mit dem tatsächlichen Ordnerinhalt überein
+- added: Videolaufzeiten und zusätzliche Informationen
+- added: Suchfunktion für Teams/Profile
 		</news>
 	</extension>
 </addon>
