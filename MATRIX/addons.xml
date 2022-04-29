@@ -388,7 +388,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.myspass_de" name="MySpass" version="4.1.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.myspass_de" name="MySpass" version="4.1.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -414,8 +414,8 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 4.1.3+matrix.1  (07.12.2021)[/COLOR][/B][CR]
-- optimized: Auslesemethode der Laufzeit von Videos
+		<news>[B][COLOR orangered]Version 4.1.4+matrix.1  (29.04.2022)[/COLOR][/B][CR]
+- fixed: Titel ohne Video-Url ausblenden
 		</news>
 	</extension>
 </addon>
