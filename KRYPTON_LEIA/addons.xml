@@ -36,40 +36,6 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.3plus_ch" name="3plus TV" version="1.0.6" provider-name="realvito">
-	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">Videoportal von 3plus.tv</summary>
-		<summary lang="en_GB">Videoportal of 3plus.tv</summary>
-		<description lang="de_DE">[COLOR red]- Die Webseite/Mediathek wurde leider abgeschaltet.[CR]- Addon-Support eingestellt ![/COLOR]</description>
-		<description lang="en_GB">[COLOR red]- The Website/Mediathek has unfortunately been shut down.[CR]- Addon support discontinued ![/COLOR]</description>
-		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
-		<language></language>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
-		<website>https://www.3plus.tv/</website>
-		<email></email>
-		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
-		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/KRYPTON_LEIA/plugin.video.3plus_ch</source>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-		<broken>
-- Die Webseite/Mediathek wurde leider abgeschaltet.[CR]- Addon-Support eingestellt !
-		</broken>
-		<news>[B][COLOR orangered]Version 1.0.6  (17.02.2022)[/COLOR][/B] by realvito[CR]
-- Die Webseite/Mediathek wurde leider abgeschaltet.[CR]- Addon-Support eingestellt !
-		</news>
-	</extension>
-</addon>
 <addon id="plugin.video.bibeltv" name="Bibel.TV" version="2.0.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
