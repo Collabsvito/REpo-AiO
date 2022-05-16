@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.1.0+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.1.1+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -29,8 +29,15 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.1.0+matrix.1  (26.11.2021)[/COLOR][/B] by realvito[CR]
-- fixed: ARTE Live- und Eventstreams
+		<news>[B][COLOR orangered]Version 1.1.1+matrix.1  (16.05.2022)[/COLOR][/B] by realvito[CR]
+- fixed: Addon komplett überarbeitet mit Anlehnung des Aufbaus und der Struktur an die Web-API von arte.TV (ohne Webscraping)
+- fixed: Videos werden NICHT abgespielt (APi.v.1 abgeschaltet)
+- fixed: Video-Startzeiten unter Programme nach Datum werden nicht angezeigt
+- added: Rubrik = Startseite und Musik entdecken
+- added: Dokus und Reportagen + Sendungen und Magazine unter alle Kategorien
+- added: max. angezeigte Beiträge selbst festlegen (settings)
+- removed: Rubrik = Besondere Highlights
+- comment: *Verdammt was haben sich die Franzosen nur dabei gedacht 4 verschiedene API's(player-v2,emac-v3,opa-v3,_next-data) gleichzeitig zu nutzen, die nicht zu 100% kompatibel sind ?!*
 		</news>
 	</extension>
 </addon>
