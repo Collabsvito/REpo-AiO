@@ -322,7 +322,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.kika_de" name="KiKA plus" version="3.4.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.kika_de" name="KiKA plus" version="3.4.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -349,8 +349,16 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.4.3+matrix.1  (15.02.2022)[/COLOR][/B][CR]
-- fixed: Rubrik = Neue Videos kann nicht geöffnet werden (AttributeError: 'NoneType' object has no attribute 'replace')
+		<news>[B][COLOR orangered]Version 3.4.4+matrix.1  (21.05.2022)[/COLOR][/B][CR]
+- fixed: Videos mit der Endung 'm3u8' werden teilweise NICHT abgespielt (HTTP-Error 503)
+- optimized: Alle Ordner werden jetzt schneller geöffnet durch neue *asynchrone* Abfragemethode
+- optimized: Ausführlichen/Erweiterten Plot für jedes Video laden
+- added: Rubriken = Letzte Chance, Videos mit Gebärdensprache, Hörfilme für Kinder
+- added: Alle Sendungen in einer Liste = 'KOMPLETT-ÜBERSICHT' (Unterordner)
+- added: Sortierung der Episoden auswählen (settings)
+- removed: Max. gelistete Seiten einer Serie (settings - es werden jetzt immer alle Seiten gelistet)
+- removed: Qualitätsauswahl für MP4-Streams (settings - jetzt immer autom. höchste verfügbare Qualität abspielen)
+- comment: *Wenn Sie eine schwächere Qualität des Streams bevorzugen, wählen Sie den Inputstream-Stream und regeln dort die Qualität herunter !*
 		</news>
 	</extension>
 </addon>
