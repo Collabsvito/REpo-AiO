@@ -393,7 +393,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.netzkino_de" name="Netzkino [COLOR FF00EE00](light)[/COLOR]" version="3.0.4+matrix.1" provider-name="realvito">
+<addon id="plugin.video.netzkino_de" name="Netzkino [COLOR FF00EE00](light)[/COLOR]" version="3.0.5+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -420,10 +420,11 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.4+matrix.1  (26.11.2021)[/COLOR][/B][CR]
-- fixed: Wenn Image mit dt. Umlaut im Ordner enthalten ist kann Dieser nicht geöffnet werden (UnicodeEncodeError: 'ascii' codec can't encode character...)
-- fixed: Eintragsdatum wird nicht angezeigt obwohl vorhanden (Gestartet am: ...)
-- optimized: FSK-Anzeige ab 0 Jahren = ohne Altersbeschränkung
+		<news>
+[B][COLOR orangered]Version 3.0.5+matrix.1  (27.05.2022)[/COLOR][/B]
+- fixed: Vereinzelt können Videos NICHT abgespielt werden (Standard-StreamUrl verändert)
+- changed: Angezeigtes Filmdatum von 'modified' zu 'date'
+- added: Bildeintrag = Banner für unterstützende Skins
 		</news>
 	</extension>
 </addon>
@@ -685,7 +686,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.1.1+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.1.2+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -715,7 +716,11 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.1.1+matrix.1  (16.05.2022)[/COLOR][/B] by realvito[CR]
+		<news>
+[B][COLOR orangered]Version 1.1.2+matrix.1  (27.05.2022)[/COLOR][/B] by realvito
+- added: Spezielle Meldung wenn Stream vorhanden aber NICHT abspielbar ist
+
+[B][COLOR orangered]Version 1.1.1+matrix.1  (16.05.2022)[/COLOR][/B]
 - fixed: Addon komplett überarbeitet mit Anlehnung des Aufbaus und der Struktur an die Web-API von arte.TV (ohne Webscraping)
 - fixed: Videos werden NICHT abgespielt (APi.v.1 abgeschaltet)
 - fixed: Video-Startzeiten unter Programme nach Datum werden nicht angezeigt
