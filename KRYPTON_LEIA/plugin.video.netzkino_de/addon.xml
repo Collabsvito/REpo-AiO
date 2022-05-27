@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.netzkino_de" name="Netzkino [COLOR FF00EE00](light)[/COLOR]" version="3.0.4" provider-name="realvito">
+<addon id="plugin.video.netzkino_de" name="Netzkino [COLOR FF00EE00](light)[/COLOR]" version="3.0.5" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -26,10 +26,11 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.4  (26.11.2021)[/COLOR][/B][CR]
-- fixed: Wenn Image mit dt. Umlaut im Ordner enthalten ist kann Dieser nicht geöffnet werden (UnicodeEncodeError: 'ascii' codec can't encode character...)
-- fixed: Eintragsdatum wird nicht angezeigt obwohl vorhanden (Gestartet am: ...)
-- optimized: FSK-Anzeige ab 0 Jahren = ohne Altersbeschränkung
+		<news>
+[B][COLOR orangered]Version 3.0.5  (27.05.2022)[/COLOR][/B]
+- fixed: Vereinzelt können Videos NICHT abgespielt werden (Standard-StreamUrl verändert)
+- changed: Angezeigtes Filmdatum von 'modified' zu 'date'
+- added: Bildeintrag = Banner für unterstützende Skins
 		</news>
 	</extension>
 </addon>
