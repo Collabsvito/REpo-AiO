@@ -322,7 +322,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.kika_de" name="KiKA plus" version="3.4.5+matrix.1" provider-name="realvito">
+<addon id="plugin.video.kika_de" name="KiKA plus" version="3.4.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -349,11 +349,7 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>
-[B][COLOR orangered]Version 3.4.5+matrix.1  (06.06.2022)[/COLOR][/B]
-- fixed: Die Rubriken = Videos ab 3 Jahren, Videos ab 6 Jahren, Videos ab 10 Jahren, Videos mit Gebärdensprache und Hörfilme für Kinder können nicht geöffnet werden (IndexError: list index out of range)
-
-[B][COLOR orangered]Version 3.4.4+matrix.1  (21.05.2022)[/COLOR][/B]
+		<news>[B][COLOR orangered]Version 3.4.4+matrix.1  (21.05.2022)[/COLOR][/B][CR]
 - fixed: Videos mit der Endung 'm3u8' werden teilweise NICHT abgespielt (HTTP-Error 503)
 - optimized: Alle Ordner werden jetzt schneller geöffnet durch neue *asynchrone* Abfragemethode
 - optimized: Ausführlichen/Erweiterten Plot für jedes Video laden
@@ -733,44 +729,6 @@
 - added: max. angezeigte Beiträge selbst festlegen (settings)
 - removed: Rubrik = Besondere Highlights
 - comment: *Verdammt was haben sich die Franzosen nur dabei gedacht 4 verschiedene API's(player-v2,emac-v3,opa-v3,_next-data) gleichzeitig zu nutzen, die nicht zu 100% kompatibel sind ?!*
-		</news>
-	</extension>
-</addon>
-<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.1.8+matrix.1" provider-name="L0RE, realvito">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
-		<import addon="plugin.video.youtube" version="6.8.1+matrix.1" optional="true"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">Online Nachrichten - 'DER SPIEGEL'</summary>
-		<summary lang="en_GB">Online News - 'DER SPIEGEL'</summary>
-		<description lang="de_DE">'DER SPIEGEL' zeichnet sich durch schnelles Reagieren auf aktuelle Ereignisse sowie sorgfältig recherchierte investigative Hintergrundgeschichten aus.[CR]Hier gibt es Reportagen und Dokus von 'DER SPIEGEL' aus den Bereichen Politik, Wirtschaft, Gesellschaft, Kultur, Sport, Technik und Wissenschaft.</description>
-		<description lang="en_GB">'DER SPIEGEL' is characterized by fast reaction to current events as well as carefully researched background stories.[CR]Here are reports and documentaries by 'DER SPIEGEL' in the fields of politics, economics, society, culture, sports, technology and science.</description>
-		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
-		<language></language>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
-		<website>https://www.spiegel.de/</website>
-		<email></email>
-		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
-		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.tyl0re.spiegeltv</source>
-		<assets>
-			<icon>resources/media/icon.png</icon>
-			<fanart>resources/media/fanart.jpg</fanart>
-		</assets>
-		<news>
-[B][COLOR orangered]Version 2.1.8+matrix.1  (06.06.2022)[/COLOR][/B] by realvito
-- fixed: Viele Videos können NICHT abgespielt werden (Quelltext verändert)
-- optimized: Alle Ordner werden jetzt schneller geöffnet durch neue *asynchrone* Abfragemethode
-- optimized: Ausführlichen/Erweiterten Plot für jedes Video laden
-- optimized: Genauere Laufzeitangaben für jedes Video
-- added: Diverse Sortiermethoden für Videos (Seitenmenü links)
 		</news>
 	</extension>
 </addon>
