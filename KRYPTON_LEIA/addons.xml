@@ -322,7 +322,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.kika_de" name="KiKA plus" version="3.4.4" provider-name="realvito">
+<addon id="plugin.video.kika_de" name="KiKA plus" version="3.4.5" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -349,7 +349,11 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.4.4  (21.05.2022)[/COLOR][/B][CR]
+		<news>
+[B][COLOR orangered]Version 3.4.5  (06.06.2022)[/COLOR][/B]
+- fixed: Die Rubriken = Videos ab 3 Jahren, Videos ab 6 Jahren, Videos ab 10 Jahren, Videos mit Gebärdensprache und Hörfilme für Kinder können nicht geöffnet werden (IndexError: list index out of range)
+
+[B][COLOR orangered]Version 3.4.4  (21.05.2022)[/COLOR][/B]
 - fixed: Videos mit der Endung 'm3u8' werden teilweise NICHT abgespielt (HTTP-Error 503)
 - optimized: Alle Ordner werden jetzt schneller geöffnet durch neue *asynchrone* Abfragemethode
 - optimized: Ausführlichen/Erweiterten Plot für jedes Video laden
@@ -732,9 +736,10 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.1.7" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.1.8" provider-name="L0RE, realvito">
 	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="xbmc.python" version="2.26.0"/>
+		<import addon="script.module.requests" version="2.20.0"/>
 		<import addon="plugin.video.youtube" version="6.5.0" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -759,8 +764,13 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.1.7  (27.02.2022)[/COLOR][/B] by realvito[CR]
-- fixed: Durch Scrapingfehler bei den Videolaufzeiten werden teilweise nicht die max. Anzahl der angeforderten Seiten gelistet (z.B. Übersicht Videos)
+		<news>
+[B][COLOR orangered]Version 2.1.8  (06.06.2022)[/COLOR][/B] by realvito
+- fixed: Viele Videos können NICHT abgespielt werden (Quelltext verändert)
+- optimized: Alle Ordner werden jetzt schneller geöffnet durch neue *asynchrone* Abfragemethode
+- optimized: Ausführlichen/Erweiterten Plot für jedes Video laden
+- optimized: Genauere Laufzeitangaben für jedes Video
+- added: Diverse Sortiermethoden für Videos (Seitenmenü links)
 		</news>
 	</extension>
 </addon>

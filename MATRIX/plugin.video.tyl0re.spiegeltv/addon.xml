@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.1.7+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.1.8+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -26,8 +27,13 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.1.7+matrix.1  (27.02.2022)[/COLOR][/B] by realvito[CR]
-- fixed: Durch Scrapingfehler bei den Videolaufzeiten werden teilweise nicht die max. Anzahl der angeforderten Seiten gelistet (z.B. Übersicht Videos)
+		<news>
+[B][COLOR orangered]Version 2.1.8+matrix.1  (06.06.2022)[/COLOR][/B] by realvito
+- fixed: Viele Videos können NICHT abgespielt werden (Quelltext verändert)
+- optimized: Alle Ordner werden jetzt schneller geöffnet durch neue *asynchrone* Abfragemethode
+- optimized: Ausführlichen/Erweiterten Plot für jedes Video laden
+- optimized: Genauere Laufzeitangaben für jedes Video
+- added: Diverse Sortiermethoden für Videos (Seitenmenü links)
 		</news>
 	</extension>
 </addon>
