@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.viacom.mtv" name="MTV Germany" version="2.0.3" provider-name="realvito">
+<addon id="plugin.video.viacom.mtv" name="MTV Germany" version="2.0.4" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -28,6 +28,11 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 2.0.4  (11.06.2022)[/COLOR][/B]
+- fixed: Untertitel mit deutschen Umlauten im Titel können nicht gespeichert werden (UnicodeDecodeError: 'ascii' codec can't decode)
+- added: Titel-Infos als Plot für diverse Musikvideos
+- added: Untertiteleinstellung erweitert mit Sprachauswahl zu engl. Serien (settings)
+
 [B][COLOR orangered]Version 2.0.3  (08.06.2022)[/COLOR][/B]
 - fixed: Die Serie 'Ghosted' unter Shows kann NICHT geöffnet werden (KeyError: 'data')
 - fixed: Teilweise wird nicht der richtige Artistname dargestellt (Song und Artistname gleich)
