@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.1.6" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.1.7" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -28,8 +28,14 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.1.6  (12.02.2022)[/COLOR][/B][CR]
-- removed: Tele5-Sendungen/Inhalte
+		<news>
+[B][COLOR orangered]Version 3.1.7  (21.06.2022)[/COLOR][/B]
+- fixed: Die Funktion Videos zur Bibliothek hinzufügen und autom. aktualisieren schlägt fehl
+- fixed: Es werden überhaupt KEINE Videos im Ordner 'Neue Sendungen ' angezeigt (API oder Anbieter Fehlprogrammierung)
+- added: Script-Anforderung/Sortierung für den Ordner 'Neue Sendungen' erzwingen (settings)
+- optimized: Alle Ordner werden jetzt schneller geöffnet durch neue *asynchrone* Abfragemethode
+- comment: *Leider kämpft Discovery in letzter Zeit mit teilweisen Aussetzern in Ihrer API, ob das an der Programmierung von deren Server oder an dem Menschen davor liegt ist leider nicht feststellbar ?!*
+- comment: *Dies hat gerade der komplette Ausfall der Rubrik 'Neue Sendungen' deutlich gemacht - die Hoffnung stirbt zuletzt ODER... ?!*
 		</news>
 	</extension>
 </addon>
