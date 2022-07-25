@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.kika_de" name="KiKA plus" version="3.4.5+matrix.1" provider-name="realvito">
+<addon id="plugin.video.kika_de" name="KiKA plus" version="3.4.6+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -27,19 +27,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.4.5+matrix.1  (06.06.2022)[/COLOR][/B]
-- fixed: Die Rubriken = Videos ab 3 Jahren, Videos ab 6 Jahren, Videos ab 10 Jahren, Videos mit Gebärdensprache und Hörfilme für Kinder können nicht geöffnet werden (IndexError: list index out of range)
-
-[B][COLOR orangered]Version 3.4.4+matrix.1  (21.05.2022)[/COLOR][/B]
-- fixed: Videos mit der Endung 'm3u8' werden teilweise NICHT abgespielt (HTTP-Error 503)
-- optimized: Alle Ordner werden jetzt schneller geöffnet durch neue *asynchrone* Abfragemethode
-- optimized: Ausführlichen/Erweiterten Plot für jedes Video laden
-- added: Rubriken = Letzte Chance, Videos mit Gebärdensprache, Hörfilme für Kinder
-- added: Alle Sendungen in einer Liste = 'KOMPLETT-ÜBERSICHT' (Unterordner)
-- added: Sortierung der Episoden auswählen (settings)
-- removed: Max. gelistete Seiten einer Serie (settings - es werden jetzt immer alle Seiten gelistet)
-- removed: Qualitätsauswahl für MP4-Streams (settings - jetzt immer autom. höchste verfügbare Qualität abspielen)
-- comment: *Wenn Sie eine schwächere Qualität des Streams bevorzugen, wählen Sie den Inputstream-Stream und regeln dort die Qualität herunter !*
+[B][COLOR orangered]Version 3.4.6+matrix.1  (25.07.2022)[/COLOR][/B]
+- fixed: Die Rubrik = Alle Videos kann nicht geöffnet werden (IndexError: list index out of range)
 		</news>
 	</extension>
 </addon>
