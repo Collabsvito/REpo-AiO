@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.0.8" provider-name="realvito">
+<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.0.9" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
-		<import addon="script.common.plugin.cache" version="2.6.0"/>
+		<import addon="script.common.plugin.cache" version="2.6.2"/>
 		<import addon="inputstream.adaptive" version="2.4.5"/>
-		<import addon="script.module.inputstreamhelper" version="0.5.2"/>
-		<import addon="service.cron.autobiblio" version="2.0.9" optional="true"/>
+		<import addon="script.module.inputstreamhelper" version="0.5.5"/>
+		<import addon="service.cron.autobiblio" version="2.1.0" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -32,6 +32,10 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 1.0.9  (31.07.2022)[/COLOR][/B]
+- fixed: Bilder der 'Meine RTLPLUS-Favoriten' werden doppelt encodiert und teilweise nicht angezeigt (Umlaute z.B. 'ö' zu falsch='%25C3%25B6' richtig='%C3%B6')
+- fixed: Streamqualität für Live &amp; VoD lässt sich teilweise nicht herunterregeln (Premium settings)
+
 [B][COLOR orangered]Version 1.0.8  (20.07.2022)[/COLOR][/B]
 - fixed: LIVESTREAMS lassen sich nicht abspielen (Widivine-LicenseUrl+StreamUrls verändert)
 - fixed: m3u-Liste zur Integration der Livestreams des Addons in den 'PVR IPTV Simple Client' (neue StreamUrls)
