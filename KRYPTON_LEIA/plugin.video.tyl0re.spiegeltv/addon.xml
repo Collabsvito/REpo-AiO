@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.1.8" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.1.9" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -28,12 +28,8 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.1.8  (06.06.2022)[/COLOR][/B] by realvito
-- fixed: Viele Videos können NICHT abgespielt werden (Quelltext verändert)
-- optimized: Alle Ordner werden jetzt schneller geöffnet durch neue *asynchrone* Abfragemethode
-- optimized: Ausführlichen/Erweiterten Plot für jedes Video laden
-- optimized: Genauere Laufzeitangaben für jedes Video
-- added: Diverse Sortiermethoden für Videos (Seitenmenü links)
+[B][COLOR orangered]Version 2.1.9  (14.08.2022)[/COLOR][/B] by realvito
+- fixed: Die Rubriken = Panorama, Politik Ausland und Politik Deutschland zeigen keinen Inhalt (Fehlfunktion im Scriptablauf)
 		</news>
 	</extension>
 </addon>
