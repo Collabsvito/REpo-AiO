@@ -532,7 +532,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV [COLOR FF00EE00](light)[/COLOR]" version="2.0.9+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV [COLOR FF00EE00](light)[/COLOR]" version="2.1.0+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -560,6 +560,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 2.1.0+matrix.1  (20.08.2022)[/COLOR][/B]
+- fixed: Startübersicht des Addons lässt sich nicht aufrufen (Neue Url für Livestreams)
+
 [B][COLOR orangered]Version 2.0.9+matrix.1  (06.08.2022)[/COLOR][/B]
 - fixed: Es werden KEINE Bilder zu den Videos angezeigt (API verändert)
 		</news>
@@ -642,7 +645,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.0.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.0.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -674,8 +677,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.0.3+matrix.1  (21.07.2022)[/COLOR][/B]
-- fixed: Anpassungen für den Sender 'Kabel 1' (neue Senderkennung)
+[B][COLOR orangered]Version 2.0.4+matrix.1  (20.08.2022)[/COLOR][/B]
+- fixed: Sämtliche Videos können nicht abgespielt werden (Webseite verändert)
+- fixed: ERROR wenn der Videolink bei der ersten Abfrage nicht gefunden wird (normalerweise erfolgt dann zweite Abfrage)
 		</news>
 	</extension>
 </addon>
