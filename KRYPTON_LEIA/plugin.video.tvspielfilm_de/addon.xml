@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.0.3" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.0.4" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -31,8 +31,9 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.0.3  (21.07.2022)[/COLOR][/B]
-- fixed: Anpassungen für den Sender 'Kabel 1' (neue Senderkennung)
+[B][COLOR orangered]Version 2.0.4  (20.08.2022)[/COLOR][/B]
+- fixed: Sämtliche Videos können nicht abgespielt werden (Webseite verändert)
+- fixed: ERROR wenn der Videolink bei der ersten Abfrage nicht gefunden wird (normalerweise erfolgt dann zweite Abfrage)
 		</news>
 	</extension>
 </addon>
