@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.1.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.1.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -28,16 +28,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.1.6+matrix.1  (02.07.2022)[/COLOR][/B]
-- added: Rubrik = 'Neue Sendungen (Episoden)' (z.Zt. zuverlässigste Methode um alle Episoden der vergangenen 7 Tage zu erfassen, aktuell nach Onlinestellung)
-- comment: *Leider ist die neue Methode die Rubrik: 'Neue Sendungen (Serien)' nach dem Eintrag: 'newestEpisodePublishStart' abzufragen auch nicht zu 100% ausfallsicher (z.B. bei TLC fehlte eine Serie z.Zt. der Prüfung) !!!*
-
-[B][COLOR orangered]Version 3.1.5+matrix.1  (21.06.2022)[/COLOR][/B]
-- fixed: Es werden überhaupt KEINE Videos im Ordner 'Neue Sendungen ' angezeigt (API oder Anbieter Fehlprogrammierung)
-- added: Script-Anforderung/Sortierung für den Ordner 'Neue Sendungen' erzwingen (settings)
-- optimized: Alle Ordner werden jetzt schneller geöffnet durch neue *asynchrone* Abfragemethode
-- comment: *Leider kämpft Discovery in letzter Zeit mit teilweisen Aussetzern in Ihrer API, ob das an der Programmierung von deren Server oder an dem Menschen davor liegt ist leider nicht feststellbar ?!*
-- comment: *Dies hat gerade der komplette Ausfall der Rubrik 'Neue Sendungen' deutlich gemacht - die Hoffnung stirbt zuletzt ODER... ?!*
+[B][COLOR orangered]Version 3.1.7+matrix.1  (07.11.2022)[/COLOR][/B]
+- fixed: Rubrik = Neue Sendungen (Serien) Fehler und nicht öffnender Ordner bei Sortierung nach neuestem Datum (TypeError: 'x' not supported between instances of 'str' and 'NoneType')
 		</news>
 	</extension>
 </addon>
