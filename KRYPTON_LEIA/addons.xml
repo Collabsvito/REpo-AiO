@@ -104,12 +104,12 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.1.8" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.1.9" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
 		<import addon="inputstream.adaptive" version="2.4.5"/>
-		<import addon="service.cron.autobiblio" version="2.0.9" optional="true"/>
+		<import addon="service.cron.autobiblio" version="2.1.0" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -134,21 +134,12 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.1.8  (02.07.2022)[/COLOR][/B]
-- added: Rubrik = 'Neue Sendungen (Episoden)' (z.Zt. zuverlässigste Methode um alle Episoden der vergangenen 7 Tage zu erfassen, aktuell nach Onlinestellung)
-- comment: *Leider ist die neue Methode die Rubrik: 'Neue Sendungen (Serien)' nach dem Eintrag: 'newestEpisodePublishStart' abzufragen auch nicht zu 100% ausfallsicher (z.B. bei TLC fehlte eine Serie z.Zt. der Prüfung) !!!*
-
-[B][COLOR orangered]Version 3.1.7  (21.06.2022)[/COLOR][/B]
-- fixed: Die Funktion Videos zur Bibliothek hinzufügen und autom. aktualisieren schlägt fehl
-- fixed: Es werden überhaupt KEINE Videos im Ordner 'Neue Sendungen ' angezeigt (API oder Anbieter Fehlprogrammierung)
-- added: Script-Anforderung/Sortierung für den Ordner 'Neue Sendungen' erzwingen (settings)
-- optimized: Alle Ordner werden jetzt schneller geöffnet durch neue *asynchrone* Abfragemethode
-- comment: *Leider kämpft Discovery in letzter Zeit mit teilweisen Aussetzern in Ihrer API, ob das an der Programmierung von deren Server oder an dem Menschen davor liegt ist leider nicht feststellbar ?!*
-- comment: *Dies hat gerade der komplette Ausfall der Rubrik 'Neue Sendungen' deutlich gemacht - die Hoffnung stirbt zuletzt ODER... ?!*
+[B][COLOR orangered]Version 3.1.9  (07.11.2022)[/COLOR][/B]
+- fixed: Rubrik = Neue Sendungen (Serien) Fehler und nicht öffnender Ordner bei Sortierung nach neuestem Datum (TypeError: 'x' not supported between instances of 'str' and 'NoneType')
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.1.4" provider-name="realvito">
+<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.1.5" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -177,20 +168,12 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.1.4  (02.07.2022)[/COLOR][/B]
-- added: Rubrik = 'Neue Sendungen (Episoden)' (z.Zt. zuverlässigste Methode um alle Episoden der vergangenen 7 Tage zu erfassen, aktuell nach Onlinestellung)
-- comment: *Leider ist die neue Methode die Rubrik: 'Neue Sendungen (Serien)' nach dem Eintrag: 'newestEpisodePublishStart' abzufragen auch nicht zu 100% ausfallsicher (z.B. bei TLC fehlte eine Serie z.Zt. der Prüfung) !!!*
-
-[B][COLOR orangered]Version 1.1.3  (21.06.2022)[/COLOR][/B]
-- fixed: Es werden überhaupt KEINE Videos im Ordner 'Neue Sendungen ' angezeigt (API oder Anbieter Fehlprogrammierung)
-- added: Script-Anforderung/Sortierung für den Ordner 'Neue Sendungen' erzwingen (settings)
-- optimized: Alle Ordner werden jetzt schneller geöffnet durch neue *asynchrone* Abfragemethode
-- comment: *Leider kämpft Discovery in letzter Zeit mit teilweisen Aussetzern in Ihrer API, ob das an der Programmierung von deren Server oder an dem Menschen davor liegt ist leider nicht feststellbar ?!*
-- comment: *Dies hat gerade der komplette Ausfall der Rubrik 'Neue Sendungen' deutlich gemacht - die Hoffnung stirbt zuletzt ODER... ?!*
+[B][COLOR orangered]Version 1.1.5  (07.11.2022)[/COLOR][/B]
+- fixed: Rubrik = Neue Sendungen (Serien) Fehler und nicht öffnender Ordner bei Sortierung nach neuestem Datum (TypeError: 'x' not supported between instances of 'str' and 'NoneType')
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.1.6" provider-name="realvito">
+<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.1.7" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -219,16 +202,8 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.1.6  (02.07.2022)[/COLOR][/B]
-- added: Rubrik = 'Neue Sendungen (Episoden)' (z.Zt. zuverlässigste Methode um alle Episoden der vergangenen 7 Tage zu erfassen, aktuell nach Onlinestellung)
-- comment: *Leider ist die neue Methode die Rubrik: 'Neue Sendungen (Serien)' nach dem Eintrag: 'newestEpisodePublishStart' abzufragen auch nicht zu 100% ausfallsicher (z.B. bei TLC fehlte eine Serie z.Zt. der Prüfung) !!!*
-
-[B][COLOR orangered]Version 3.1.5  (21.06.2022)[/COLOR][/B]
-- fixed: Es werden überhaupt KEINE Videos im Ordner 'Neue Sendungen ' angezeigt (API oder Anbieter Fehlprogrammierung)
-- added: Script-Anforderung/Sortierung für den Ordner 'Neue Sendungen' erzwingen (settings)
-- optimized: Alle Ordner werden jetzt schneller geöffnet durch neue *asynchrone* Abfragemethode
-- comment: *Leider kämpft Discovery in letzter Zeit mit teilweisen Aussetzern in Ihrer API, ob das an der Programmierung von deren Server oder an dem Menschen davor liegt ist leider nicht feststellbar ?!*
-- comment: *Dies hat gerade der komplette Ausfall der Rubrik 'Neue Sendungen' deutlich gemacht - die Hoffnung stirbt zuletzt ODER... ?!*
+[B][COLOR orangered]Version 3.1.7  (07.11.2022)[/COLOR][/B]
+- fixed: Rubrik = Neue Sendungen (Serien) Fehler und nicht öffnender Ordner bei Sortierung nach neuestem Datum (TypeError: 'x' not supported between instances of 'str' and 'NoneType')
 		</news>
 	</extension>
 </addon>
@@ -452,7 +427,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.0.9" provider-name="realvito">
+<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.1.0" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -466,10 +441,10 @@
 	</extension>
 	<extension point="xbmc.service" library="service.py"/>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">Streamingdienst von RTLPLUS.de (old=TVNOW.de)</summary>
-		<summary lang="en_GB">Streamingservice of RTLPLUS.de (old=TVNOW.de)</summary>
-		<description lang="de_DE">Bei RTLPLUS.de (old=TVNOW.de) Serien, Shows und Filme online streamen. Schau dir komplette Serien an, fiebere bei deinen liebsten Daily-Soaps mit oder staune bei spannenden Dokumentationen - alles wann und wo du willst auf Abruf.[CR]Viele Inhalte aus dem TV Programm siehst du bei RTLPLUS.de (old=TVNOW.de) sogar schon vor TV-Aussstrahlung !</description>
-		<description lang="en_GB">Stream RTLPLUS.de (old=TVNOW.de) series, shows and movies online. Watch complete series, enjoy your favorite daily soap operas or marvel at exciting documentaries - all when and where you want on demand.[CR]Many content from the TV program you see on RTLPLUS.de (old=TVNOW.de) even before TV broadcast !</description>
+		<summary lang="de_DE">Streamingdienst von RTL+ (DE)</summary>
+		<summary lang="en_GB">Streamingservice of RTL+ (DE)</summary>
+		<description lang="de_DE">Bei RTL+ (DE), vormals TVNOW (DE), Serien, Shows und Filme online streamen. Schau dir komplette Serien an, fiebere bei deinen liebsten Daily-Soaps mit oder staune bei spannenden Dokumentationen - alles wann und wo du willst auf Abruf.[CR]Viele Inhalte aus dem TV Programm siehst du bei RTL+ (DE), vormals TVNOW (DE), sogar schon vor TV-Aussstrahlung !</description>
+		<description lang="en_GB">Stream series, shows and movies online with RTL+ (DE), formerly TVNOW (DE). Watch complete series, enjoy your favorite daily soap operas or marvel at exciting documentaries - all when and where you want on demand.[CR]You can see a lot of content from the TV program on RTL+ (DE), formerly TVNOW (DE), even before it is broadcast on TV!</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
@@ -485,16 +460,12 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.9  (31.07.2022)[/COLOR][/B]
-- fixed: Bilder der 'Meine RTLPLUS-Favoriten' werden doppelt encodiert und teilweise nicht angezeigt (Umlaute z.B. 'ö' zu falsch='%25C3%25B6' richtig='%C3%B6')
-- fixed: Streamqualität für Live &amp; VoD lässt sich teilweise nicht herunterregeln (Premium settings)
-
-[B][COLOR orangered]Version 1.0.8  (20.07.2022)[/COLOR][/B]
-- fixed: LIVESTREAMS lassen sich nicht abspielen (Widivine-LicenseUrl+StreamUrls verändert)
-- fixed: m3u-Liste zur Integration der Livestreams des Addons in den 'PVR IPTV Simple Client' (neue StreamUrls)
-- added: 'Premiumkennzeichnung' der Serien-/Filmordner auf Basis des Eintrags 'hasFreeEpisodes' in der API (nur FreeUser)
-- added: Anzeige-Enddatum der Verfügbarkeit von Videos für FreeUser (nur FreeUser)
-- added: Anpassungen an Änderungen von KODI-Nexus
+[B][COLOR orangered]Version 1.1.0  (07.11.2022)[/COLOR][/B]
+- fixed: m3u-Liste zur Integration der Livestreams des Addons in den 'PVR IPTV Simple Client' (neue Parameter)
+- fixed: Ein paar VOD-Streams der API.v.3 lassen sich NICHT abspielen (daher jetzt Wechsel zu den VOD-Streams der API.v.1, die auch im Browser verwendet werden)
+- comment: *Leider kommt es in letzter Zeit zu Abspielproblemen bei nur einigen wenigen VOD-Streams der API.v.3, dabei festzustellen ist dass sich die StreamUrls der API.v.3 vs. API.v.1 (neuere Variante) im Vergleich zu früher stark unterscheiden !*
+- comment: *Daher werden die VOD- und Event-Streams dieses Addons ab jetzt von der API.v.1 ausgelesen (thx @Pati für die Vorlage in seinem "plugin.video.tvnow.de"), die Metadaten kommen weiterhin von der API.v.3 (da sie dort ausführlicher sind).*
+- comment: *Der einzige Nachteil der sich durch diese Veränderung ergibt ist, dass der "Gesehen Status" sämtlicher Sendungen bis zum diesem Update (durch Anpassung der Pfade) verloren geht - SORRY !!!*
 		</news>
 	</extension>
 </addon>
@@ -797,11 +768,11 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.viacom.mtv" name="MTV Germany" version="2.0.4" provider-name="realvito">
+<addon id="plugin.video.viacom.mtv" name="MTV Germany" version="2.0.5" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
-		<import addon="script.common.plugin.cache" version="2.6.0"/>
+		<import addon="script.common.plugin.cache" version="2.6.2"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -826,16 +797,9 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.0.4  (11.06.2022)[/COLOR][/B]
-- fixed: Untertitel mit deutschen Umlauten im Titel können nicht gespeichert werden (UnicodeDecodeError: 'ascii' codec can't decode)
-- added: Titel-Infos als Plot für diverse Musikvideos
-- added: Untertiteleinstellung erweitert mit Sprachauswahl zu engl. Serien (settings)
-
-[B][COLOR orangered]Version 2.0.3  (08.06.2022)[/COLOR][/B]
-- fixed: Die Serie 'Ghosted' unter Shows kann NICHT geöffnet werden (KeyError: 'data')
-- fixed: Teilweise wird nicht der richtige Artistname dargestellt (Song und Artistname gleich)
-- fixed: MTV-Livestream
-- added: Rubriken = Musik/Rockzone + Charts/Jahrescharts 2021
+[B][COLOR orangered]Version 2.0.5  (07.11.2022)[/COLOR][/B]
+- fixed: Häufig werden die Vorschaubilder der Titel nicht angezeigt
+- fixed: Die 'Musik-Ordner' in der Rubrik = Charts lassen sich nicht als Playliste (shuffle) abspielen
 		</news>
 	</extension>
 </addon>
