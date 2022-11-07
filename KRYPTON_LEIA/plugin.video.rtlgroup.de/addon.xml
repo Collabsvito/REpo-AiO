@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.0.9" provider-name="realvito">
+<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.1.0" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -13,10 +13,10 @@
 	</extension>
 	<extension point="xbmc.service" library="service.py"/>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">Streamingdienst von RTLPLUS.de (old=TVNOW.de)</summary>
-		<summary lang="en_GB">Streamingservice of RTLPLUS.de (old=TVNOW.de)</summary>
-		<description lang="de_DE">Bei RTLPLUS.de (old=TVNOW.de) Serien, Shows und Filme online streamen. Schau dir komplette Serien an, fiebere bei deinen liebsten Daily-Soaps mit oder staune bei spannenden Dokumentationen - alles wann und wo du willst auf Abruf.[CR]Viele Inhalte aus dem TV Programm siehst du bei RTLPLUS.de (old=TVNOW.de) sogar schon vor TV-Aussstrahlung !</description>
-		<description lang="en_GB">Stream RTLPLUS.de (old=TVNOW.de) series, shows and movies online. Watch complete series, enjoy your favorite daily soap operas or marvel at exciting documentaries - all when and where you want on demand.[CR]Many content from the TV program you see on RTLPLUS.de (old=TVNOW.de) even before TV broadcast !</description>
+		<summary lang="de_DE">Streamingdienst von RTL+ (DE)</summary>
+		<summary lang="en_GB">Streamingservice of RTL+ (DE)</summary>
+		<description lang="de_DE">Bei RTL+ (DE), vormals TVNOW (DE), Serien, Shows und Filme online streamen. Schau dir komplette Serien an, fiebere bei deinen liebsten Daily-Soaps mit oder staune bei spannenden Dokumentationen - alles wann und wo du willst auf Abruf.[CR]Viele Inhalte aus dem TV Programm siehst du bei RTL+ (DE), vormals TVNOW (DE), sogar schon vor TV-Aussstrahlung !</description>
+		<description lang="en_GB">Stream series, shows and movies online with RTL+ (DE), formerly TVNOW (DE). Watch complete series, enjoy your favorite daily soap operas or marvel at exciting documentaries - all when and where you want on demand.[CR]You can see a lot of content from the TV program on RTL+ (DE), formerly TVNOW (DE), even before it is broadcast on TV!</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
@@ -32,16 +32,12 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.9  (31.07.2022)[/COLOR][/B]
-- fixed: Bilder der 'Meine RTLPLUS-Favoriten' werden doppelt encodiert und teilweise nicht angezeigt (Umlaute z.B. 'ö' zu falsch='%25C3%25B6' richtig='%C3%B6')
-- fixed: Streamqualität für Live &amp; VoD lässt sich teilweise nicht herunterregeln (Premium settings)
-
-[B][COLOR orangered]Version 1.0.8  (20.07.2022)[/COLOR][/B]
-- fixed: LIVESTREAMS lassen sich nicht abspielen (Widivine-LicenseUrl+StreamUrls verändert)
-- fixed: m3u-Liste zur Integration der Livestreams des Addons in den 'PVR IPTV Simple Client' (neue StreamUrls)
-- added: 'Premiumkennzeichnung' der Serien-/Filmordner auf Basis des Eintrags 'hasFreeEpisodes' in der API (nur FreeUser)
-- added: Anzeige-Enddatum der Verfügbarkeit von Videos für FreeUser (nur FreeUser)
-- added: Anpassungen an Änderungen von KODI-Nexus
+[B][COLOR orangered]Version 1.1.0  (07.11.2022)[/COLOR][/B]
+- fixed: m3u-Liste zur Integration der Livestreams des Addons in den 'PVR IPTV Simple Client' (neue Parameter)
+- fixed: Ein paar VOD-Streams der API.v.3 lassen sich NICHT abspielen (daher jetzt Wechsel zu den VOD-Streams der API.v.1, die auch im Browser verwendet werden)
+- comment: *Leider kommt es in letzter Zeit zu Abspielproblemen bei nur einigen wenigen VOD-Streams der API.v.3, dabei festzustellen ist dass sich die StreamUrls der API.v.3 vs. API.v.1 (neuere Variante) im Vergleich zu früher stark unterscheiden !*
+- comment: *Daher werden die VOD- und Event-Streams dieses Addons ab jetzt von der API.v.1 ausgelesen (thx @Pati für die Vorlage in seinem "plugin.video.tvnow.de"), die Metadaten kommen weiterhin von der API.v.3 (da sie dort ausführlicher sind).*
+- comment: *Der einzige Nachteil der sich durch diese Veränderung ergibt ist, dass der "Gesehen Status" sämtlicher Sendungen bis zum diesem Update (durch Anpassung der Pfade) verloren geht - SORRY !!!*
 		</news>
 	</extension>
 </addon>
