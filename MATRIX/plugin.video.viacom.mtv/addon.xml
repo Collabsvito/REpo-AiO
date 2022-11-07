@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.viacom.mtv" name="MTV Germany" version="2.0.4+matrix.1" provider-name="realvito">
+<addon id="plugin.video.viacom.mtv" name="MTV Germany" version="2.0.5+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
-		<import addon="script.common.plugin.cache" version="2.6.1.1"/>
+		<import addon="script.common.plugin.cache" version="2.6.2+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -28,15 +28,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.0.4+matrix.1  (11.06.2022)[/COLOR][/B]
-- added: Titel-Infos als Plot für diverse Musikvideos
-- added: Untertiteleinstellung erweitert mit Sprachauswahl zu engl. Serien (settings)
-
-[B][COLOR orangered]Version 2.0.3+matrix.1  (08.06.2022)[/COLOR][/B]
-- fixed: Die Serie 'Ghosted' unter Shows kann NICHT geöffnet werden (KeyError: 'data')
-- fixed: Teilweise wird nicht der richtige Artistname dargestellt (Song und Artistname gleich)
-- fixed: MTV-Livestream
-- added: Rubriken = Musik/Rockzone + Charts/Jahrescharts 2021
+[B][COLOR orangered]Version 2.0.5+matrix.1  (07.11.2022)[/COLOR][/B]
+- fixed: Häufig werden die Vorschaubilder der Titel nicht angezeigt
+- fixed: Die 'Musik-Ordner' in der Rubrik = Charts lassen sich nicht als Playliste (shuffle) abspielen
+- added: Anpassungen an Änderungen von KODI-Nexus
 		</news>
 	</extension>
 </addon>
