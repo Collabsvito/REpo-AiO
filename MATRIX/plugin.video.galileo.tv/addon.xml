@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="plugin.video.galileo.tv" name="Galileo.TV [COLOR FF00EE00](neu)[/COLOR]" version="1.0.1+matrix.1" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Videoportal von Galileo.tv</summary>
+		<summary lang="en_GB">Videoportal of Galileo.tv</summary>
+		<description lang="de_DE">Galileo.tv liefert relevantes Wissen mit Aha-Effekt. Immer auf den Punkt gebracht. Immer mit klarem Mehrwert - und das jeden Tag.[CR]Willkommen im echten Leben * Smartes Alltags-Know-how, * coole Gadgets – und * Lifehacks, die dich wirklich voranbringen.</description>
+		<description lang="en_GB">Galileo.tv delivers relevant knowledge with an aha effect. Always to the point. Always with clear added value - and every day.[CR]Welcome to real life * Smart everyday know-how, * cool gadgets - and * lifehacks that really get you ahead.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website>https://www.galileo.tv/</website>
+		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.galileo.tv</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>
+[B][COLOR orangered]Version 1.0.1+matrix.1  (11.12.2022)[/COLOR][/B]
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- Initial Release @realvito
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- added: Alle Rubriken der Startseite in der Übersicht (Browservariante)
+- added: Sämtliche Unterordner der Mediathek = Alle ganzen Galileo-Folgen, Alle Video-Clips, Neue Video-Clips, Digital Exclusives, Ganze Galileo-Folgen, Beliebte Videos
+- added: Kontextmenü-Klick für 'Passende Videos finden' (ähnliche Videos)
+- added: HLS-Videos mit 'Inputstream.Adaptive' abspielen (settings, default=true)
+		</news>
+	</extension>
+</addon>
