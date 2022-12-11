@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.0.4" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.0.5" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0"/>
 		<import addon="script.module.requests" version="2.20.0"/>
@@ -31,9 +31,9 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.0.4  (20.08.2022)[/COLOR][/B]
-- fixed: Sämtliche Videos können nicht abgespielt werden (Webseite verändert)
-- fixed: ERROR wenn der Videolink bei der ersten Abfrage nicht gefunden wird (normalerweise erfolgt dann zweite Abfrage)
+[B][COLOR orangered]Version 2.0.5  (11.12.2022)[/COLOR][/B]
+- fixed: Rubrik = 'TV-HIGHLIGHTS' zeigt keine Inhalte (Quelltext der Webseite verändert)
+- fixed: Manche RTLPLUS(TVNOW)-Links können nicht abgespielt werden (Abfrage jetzt direkt über die Webseite von RTL+)
 		</news>
 	</extension>
 </addon>
