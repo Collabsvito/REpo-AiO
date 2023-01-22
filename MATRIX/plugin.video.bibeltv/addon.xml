@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.bibeltv" name="Bibel.TV" version="2.0.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.bibeltv" name="Bibel.TV" version="2.0.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -26,12 +26,9 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.1+matrix.1  (27.04.2022)[/COLOR][/B][CR]
-- fixed: Addon neu aufgesetzt mit Anlehnung des Aufbaus und der Struktur an die neue API von bibel.TV
-- added: Da es in der neuen API keine Seite mehr zum weiterblättern gibt, kann man jetzt die max. angezeigten Beiträge selbst festlegen (settings)
-- added: Da die Beiträge auf der ersten Seite meist keinen Beschreibungstexte enthalten, kann man diesen wenn gewünscht vorladen (! ACHTUNG ZEITAUFWENDIG ! - settings)
-- added: Subgenres in der Rubrik Genres anzeigen (settings)
-- added: Farbschema für noch nicht abrufbare Videos festlegen (settings)
+		<news>
+[B][COLOR orangered]Version 2.0.2+matrix.1  (22.01.2023)[/COLOR][/B]
+- fixed: Manche Ordner werden in NEXUS nicht geöffnet (Error Type: class 'TypeError')
 		</news>
 	</extension>
 </addon>

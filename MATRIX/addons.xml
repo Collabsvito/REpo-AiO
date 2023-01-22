@@ -36,7 +36,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.bibeltv" name="Bibel.TV" version="2.0.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.bibeltv" name="Bibel.TV" version="2.0.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -63,12 +63,9 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.0.1+matrix.1  (27.04.2022)[/COLOR][/B][CR]
-- fixed: Addon neu aufgesetzt mit Anlehnung des Aufbaus und der Struktur an die neue API von bibel.TV
-- added: Da es in der neuen API keine Seite mehr zum weiterblättern gibt, kann man jetzt die max. angezeigten Beiträge selbst festlegen (settings)
-- added: Da die Beiträge auf der ersten Seite meist keinen Beschreibungstexte enthalten, kann man diesen wenn gewünscht vorladen (! ACHTUNG ZEITAUFWENDIG ! - settings)
-- added: Subgenres in der Rubrik Genres anzeigen (settings)
-- added: Farbschema für noch nicht abrufbare Videos festlegen (settings)
+		<news>
+[B][COLOR orangered]Version 2.0.2+matrix.1  (22.01.2023)[/COLOR][/B]
+- fixed: Manche Ordner werden in NEXUS nicht geöffnet (Error Type: class 'TypeError')
 		</news>
 	</extension>
 </addon>
@@ -207,7 +204,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.euronews_com" name="euronews.com" version="2.2.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.euronews_com" name="euronews.com" version="2.2.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -252,10 +249,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.2.7+matrix.1  (11.12.2022)[/COLOR][/B]
-- fixed: euronews - LIVESTREAMS funktionieren nicht mehr (erneut URL zur Abfrage der Streams verändert)
-- fixed: Häufig wird keine YoutubeID für den VOD-Stream gefunden obwohl vorhanden (zweite Abfrage integriert)
-- added: Anpassungen an Änderungen von KODI-Nexus
+[B][COLOR orangered]Version 2.2.8+matrix.1  (22.01.2023)[/COLOR][/B]
+- fixed: Fast keine Ordner in der Startübersicht vorhanden (Quelltext verändert)
 		</news>
 	</extension>
 </addon>
@@ -656,7 +651,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.0.5+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.0.6+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -688,10 +683,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.0.5+matrix.1  (11.12.2022)[/COLOR][/B]
-- fixed: Rubrik = 'TV-HIGHLIGHTS' zeigt keine Inhalte (Quelltext der Webseite verändert)
-- fixed: Manche RTLPLUS(TVNOW)-Links können nicht abgespielt werden (Abfrage jetzt direkt über die Webseite von RTL+)
-- added: Anpassungen an Änderungen von KODI-Nexus
+[B][COLOR orangered]Version 2.0.6+matrix.1  (22.01.2023)[/COLOR][/B]
+- fixed: Viele Zusatzinfos zu den Sendungen werden nicht mehr angezeigt (Quelltext der Webseite verändert)
+- fixed: Sämtliche Videos können nicht abgespielt werden
+- optimized: Filter für Videos nach Datum integriert (jetzt wird nur der Inhalt für das ausgewählte Datum angezeigt und nicht alle Sendungen wie auf der Webseite)
+- added: Schauspieler/Regie-, Laufzeiten- Infos
 		</news>
 	</extension>
 </addon>
