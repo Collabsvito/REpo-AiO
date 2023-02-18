@@ -1,14 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.3+matrix.1" provider-name="realvito (inspired by L0RE)">
+<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.4+matrix.1" provider-name="realvito (inspired by L0RE)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+		<import addon="script.common.plugin.cache" version="2.6.2+matrix.1"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video audio</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">Chartplayer für Musicvideos</summary>
+		<summary lang="de_DE">Chartplayer für Musikvideos</summary>
 		<summary lang="en_GB">Chartplayer for Musicvideos</summary>
 		<description lang="de_DE">Musiktitel aus verschiedenen Quellen z.B. Beatport, Billboard, iTunes, Officialcharts etc. auswählen und das entsprechende Video über YouTube abspielen.[CR][CR]Für mehr Informationen zu allen Neuerungen siehe - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
 		<description lang="en_GB">Select music titles from various sources e.g. Beatport, Billboard, iTunes, Officialcharts etc. and play the corresponding video via YouTube.[CR][CR]For more information about all new features see - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
@@ -26,12 +28,14 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.3+matrix.1  (23.03.2022)[/COLOR][/B][CR]
-- fixed: Billboard-Videolists are unreadable doublelines
-- fixed: Billboard archive sorted by year nothing is displayed
-- fixed: Hypem in all categories masses of ERRORs are written to the LOG
-- added: Title-Infos as Plot for all Providers
-- optimized: Scripting of Deezer-Search
+		<news>
+[B][COLOR orangered]Version 3.0.4+matrix.1  (18.02.2023)[/COLOR][/B]
+- fixed: German-DJ-Playlist generates Error on open (new url and complete changed source text)
+- added: Provider Shazam
+- added: Revival of orig. public Spotify-Charts and public Spotify-Playlists with public token (if want more please purchase an account at Spotify)
+- added: Adaptations to changes of KODI-Nexus
+- removed: Old entries and webpage of "https://spotifycharts.com" (dont exist anymore)
+- optimized: Removed cache of webpages in "addon_data" folder - now use "script.common.plugin.cache"
 		</news>
 	</extension>
 </addon>
