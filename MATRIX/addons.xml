@@ -462,7 +462,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.1.0+matrix.1" provider-name="realvito">
+<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.1.1+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -495,12 +495,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.1.0+matrix.1  (07.11.2022)[/COLOR][/B]
-- fixed: m3u-Liste zur Integration der Livestreams des Addons in den 'PVR IPTV Simple Client' (neue Parameter)
-- fixed: Ein paar VOD-Streams der API.v.3 lassen sich NICHT abspielen (daher jetzt Wechsel zu den VOD-Streams der API.v.1, die auch im Browser verwendet werden)
-- comment: *Leider kommt es in letzter Zeit zu Abspielproblemen bei nur einigen wenigen VOD-Streams der API.v.3, dabei festzustellen ist dass sich die StreamUrls der API.v.3 vs. API.v.1 (neuere Variante) im Vergleich zu früher stark unterscheiden !*
-- comment: *Daher werden die VOD- und Event-Streams dieses Addons ab jetzt von der API.v.1 ausgelesen (thx @Pati für die Vorlage in seinem "plugin.video.tvnow.de"), die Metadaten kommen weiterhin von der API.v.3 (da sie dort ausführlicher sind).*
-- comment: *Der einzige Nachteil der sich durch diese Veränderung ergibt ist, dass der "Gesehen Status" sämtlicher Sendungen bis zum diesem Update (durch Anpassung der Pfade) verloren geht - SORRY !!!*
+[B][COLOR orangered]Version 1.1.1+matrix.1  (18.02.2023)[/COLOR][/B]
+- optimized: Loginfunktion überarbeitet, um Fehleingaben des Nutzers zu vermeiden
+- optimized: Account über Funktionstaste in den 'settings' löschen/erneuern ohne erzwungenen Neustart von KODI
 		</news>
 	</extension>
 </addon>
@@ -615,16 +612,18 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.3+matrix.1" provider-name="realvito (inspired by L0RE)">
+<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.4+matrix.1" provider-name="realvito (inspired by L0RE)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+		<import addon="script.common.plugin.cache" version="2.6.2+matrix.1"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video audio</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">Chartplayer für Musicvideos</summary>
+		<summary lang="de_DE">Chartplayer für Musikvideos</summary>
 		<summary lang="en_GB">Chartplayer for Musicvideos</summary>
 		<description lang="de_DE">Musiktitel aus verschiedenen Quellen z.B. Beatport, Billboard, iTunes, Officialcharts etc. auswählen und das entsprechende Video über YouTube abspielen.[CR][CR]Für mehr Informationen zu allen Neuerungen siehe - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
 		<description lang="en_GB">Select music titles from various sources e.g. Beatport, Billboard, iTunes, Officialcharts etc. and play the corresponding video via YouTube.[CR][CR]For more information about all new features see - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
@@ -642,16 +641,18 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.3+matrix.1  (23.03.2022)[/COLOR][/B][CR]
-- fixed: Billboard-Videolists are unreadable doublelines
-- fixed: Billboard archive sorted by year nothing is displayed
-- fixed: Hypem in all categories masses of ERRORs are written to the LOG
-- added: Title-Infos as Plot for all Providers
-- optimized: Scripting of Deezer-Search
+		<news>
+[B][COLOR orangered]Version 3.0.4+matrix.1  (18.02.2023)[/COLOR][/B]
+- fixed: German-DJ-Playlist generates Error on open (new url and complete changed source text)
+- added: Provider Shazam
+- added: Revival of orig. public Spotify-Charts and public Spotify-Playlists with public token (if want more please purchase an account at Spotify)
+- added: Adaptations to changes of KODI-Nexus
+- removed: Old entries and webpage of "https://spotifycharts.com" (dont exist anymore)
+- optimized: Removed cache of webpages in "addon_data" folder - now use "script.common.plugin.cache"
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.0.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.0.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -683,11 +684,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.0.6+matrix.1  (22.01.2023)[/COLOR][/B]
-- fixed: Viele Zusatzinfos zu den Sendungen werden nicht mehr angezeigt (Quelltext der Webseite verändert)
-- fixed: Sämtliche Videos können nicht abgespielt werden
-- optimized: Filter für Videos nach Datum integriert (jetzt wird nur der Inhalt für das ausgewählte Datum angezeigt und nicht alle Sendungen wie auf der Webseite)
-- added: Schauspieler/Regie-, Laufzeiten- Infos
+[B][COLOR orangered]Version 2.0.7+matrix.1  (18.02.2023)[/COLOR][/B]
+- fixed: Die Genre-Rubriken zeigen keine Inhalte (Quelltext der Webseite verändert)
+- fixed: Die Rubrik: Spielfilme und nach Sendern->ZDF kann in KODI-Nexus nicht geöffnet werden (TypeError: Actor: name property must not be empty)
 		</news>
 	</extension>
 </addon>
