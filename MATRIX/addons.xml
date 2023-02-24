@@ -324,7 +324,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.galileo.tv" name="Galileo.TV [COLOR FF00EE00](neu)[/COLOR]" version="1.0.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.galileo.tv" name="Galileo.TV" version="1.0.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -352,14 +352,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.1+matrix.1  (11.12.2022)[/COLOR][/B]
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-- Initial Release @realvito
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-- added: Alle Rubriken der Startseite in der Übersicht (Browservariante)
-- added: Sämtliche Unterordner der Mediathek = Alle ganzen Galileo-Folgen, Alle Video-Clips, Neue Video-Clips, Digital Exclusives, Ganze Galileo-Folgen, Beliebte Videos
-- added: Kontextmenü-Klick für 'Passende Videos finden' (ähnliche Videos)
-- added: HLS-Videos mit 'Inputstream.Adaptive' abspielen (settings, default=true)
+[B][COLOR orangered]Version 1.0.2+matrix.1  (24.02.2023)[/COLOR][/B]
+- fixed: Property Headers für 'Inputstream.Adaptive' verändert ab KODI-20
 		</news>
 	</extension>
 </addon>
@@ -462,7 +456,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.1.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.1.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -495,6 +489,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 1.1.2+matrix.1  (24.02.2023)[/COLOR][/B]
+- fixed: LIVESTREAMS bleiben nach kurzer Zeit hängen (StreamUrls verändert)
+- fixed: m3u-Liste zur Integration der Livestreams des Addons in den 'PVR IPTV Simple Client' (neue StreamUrls)
+- fixed: Eventstreams laufen nicht mit der Einstellung: 'Standard' - Qualität (wenn der SD-Stream nicht vorhanden ist wird jetzt automatisch der HD-Stream wiedergegeben)
+- comment: *Die Qualität der Streams lässt sich auch in 'Inputstream.Adaptive herunterregeln !*
+
 [B][COLOR orangered]Version 1.1.1+matrix.1  (18.02.2023)[/COLOR][/B]
 - optimized: Loginfunktion überarbeitet, um Fehleingaben des Nutzers zu vermeiden
 - optimized: Account über Funktionstaste in den 'settings' löschen/erneuern ohne erzwungenen Neustart von KODI
@@ -535,7 +535,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV [COLOR FF00EE00](light)[/COLOR]" version="2.1.0+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV [COLOR FF00EE00](light)[/COLOR]" version="2.1.1+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -563,11 +563,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.1.0+matrix.1  (20.08.2022)[/COLOR][/B]
-- fixed: Startübersicht des Addons lässt sich nicht aufrufen (Neue Url für Livestreams)
-
-[B][COLOR orangered]Version 2.0.9+matrix.1  (06.08.2022)[/COLOR][/B]
+[B][COLOR orangered]Version 2.1.1+matrix.1  (24.02.2023)[/COLOR][/B]
 - fixed: Es werden KEINE Bilder zu den Videos angezeigt (API verändert)
+- added: Anpassungen an Änderungen von KODI-Nexus
 		</news>
 	</extension>
 </addon>
