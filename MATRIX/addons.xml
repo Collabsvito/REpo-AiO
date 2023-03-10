@@ -421,7 +421,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.netzkino_de" name="Netzkino [COLOR FF00EE00](light)[/COLOR]" version="3.0.5+matrix.1" provider-name="realvito">
+<addon id="plugin.video.netzkino_de" name="Netzkino [COLOR FF00EE00](light)[/COLOR]" version="3.0.6+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -449,10 +449,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.5+matrix.1  (27.05.2022)[/COLOR][/B]
-- fixed: Vereinzelt können Videos NICHT abgespielt werden (Standard-StreamUrl verändert)
-- changed: Angezeigtes Filmdatum von 'modified' zu 'date'
-- added: Bildeintrag = Banner für unterstützende Skins
+[B][COLOR orangered]Version 3.0.6+matrix.1  (10.03.2023)[/COLOR][/B]
+- removed: Schalter = Videos im Format 'mp4/m3u8' oder mit 'inputstream.adaptive' abspielen (Netzkino bietet nur noch einen 'mp4-Stream' an)
+- added: Anpassungen an Änderungen von KODI-Nexus
 		</news>
 	</extension>
 </addon>
