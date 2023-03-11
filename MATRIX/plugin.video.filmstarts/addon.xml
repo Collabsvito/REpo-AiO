@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.filmstarts" name="FILMSTARTS.de" version="1.0.8+matrix.1" provider-name="realvito">
+<addon id="plugin.video.filmstarts" name="FILMSTARTS.de" version="1.0.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -27,11 +26,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.8+matrix.1  (21.06.2022)[/COLOR][/B]
-- fixed: Häufig werden KEINE Regie/Besetzung angezeigt obwohl vorhanden (Quelltext verändert)
-- fixed: Rubrik = Die besten Filme generiert nur Fehler in den Unterkategorien
-- added: Rubrik = TRAILER kommende Serien + TRAILER kommende Staffeln + Filme sortiert nach Beliebtheit
-- removed: Rubrik = Kinderfilme + die schlechtesten Filme (existiert nicht mehr)
+[B][COLOR orangered]Version 1.0.9+matrix.1  (11.03.2023)[/COLOR][/B]
+- fixed: Rubrik = Filme-/Serien- Trailer, manchmal wird der Inhalt der nächsten Seite nicht angezeigt (IndexError: list index out of range)
+- removed: News -> Fünf Sterne + Fehlerteufel + Meine Lieblings-Filmszene (existieren nicht mehr)
+- added: Anpassungen an Änderungen von KODI-Nexus
 		</news>
 	</extension>
 </addon>
