@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.weltderwunder" name="Welt der Wunder [COLOR FF00EE00](neu)[/COLOR]" version="3.0.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.weltderwunder" name="Welt der Wunder" version="3.0.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
@@ -10,8 +10,8 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Welt der Wunder auf YOUTUBE</summary>
 		<summary lang="en_GB">Welt der Wunder on YOUTUBE</summary>
-		<description lang="de_DE">Jeden Tag, rund um die Uhr bietet Welt der Wunder seit 1996 Interessantes aus der Welt der Wissenschaft, dem Tierreich und der Technik. Aber auch Fragen aus dem Alltag werden behandelt.</description>
-		<description lang="en_GB">Every day, around the clock, Welt der Wunder has been offering interesting facts from the world of science, the animal kingdom and technology since 1996. But questions from everyday life are also dealt with.</description>
+		<description lang="de_DE">Jeden Tag, rund um die Uhr bietet Welt der Wunder seit 1996 interessantes Wissen, verständlich erklärt. Das Beste aus Forschung und Wissenschaft mit täglich neuen Storys.[CR]Nicht glauben, sondern wissen.</description>
+		<description lang="en_GB">Every day, around the clock, Welt der Wunder has been offering interesting knowledge, explained in an understandable way, since 1996. The best of research and science with new stories every day.[CR]Don't believe, but know.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
@@ -26,11 +26,11 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 3.0.1+matrix.1  (17.03.2022)[/COLOR][/B] by realvito[CR]
-- Pluginname changed with this ReRelease (old=plugin.video.tyl0re.weltderwunder -> new=plugin.video.weltderwunder)
-- Komplette Neuauflage des Welt der Wunder-Addons nach Webseitenerneuerung (ReRelease)
-- removed: Alle Rubriken der Webseite, da kaum noch Videos vorhanden sind
-- added: Diverse Rubriken der Youtube-Seite überarbeitet und diese als Startansicht festgelegt (da die WdW-Mediathek komplett zu Youtube ausgelagert wurde)
+		<news>
+[B][COLOR orangered]Version 3.0.2+matrix.1  (11.03.2023)[/COLOR][/B]
+- fixed: Livestream wird nicht abgespielt
+- removed: Festgelegte Rubriken von 'Welt der Wunder' auf Youtube
+- added: Dynamische Playlisten von 'Welt der Wunder' auf Youtube immer aktuell
 		</news>
 	</extension>
 </addon>
