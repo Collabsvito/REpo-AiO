@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.0.8+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.0.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -14,8 +14,8 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Das Beste aus TV-Spielfilm</summary>
 		<summary lang="en_GB">The best from TV-Spielfilm</summary>
-		<description lang="de_DE">TV SPIELFILM stellt das beste Programm aus den Mediatheken von vielen TV-Sendern sortiert und übersichtlich zur Verfügung. Neben der gezielten Senderauswahl, werden auch die Mediatheken-Tipps nach den Sparten Spielfilm, Serie, Report, Unterhaltung, Sport und Kinder angeboten (www.tvspielfilm.de).[CR][CR]     HAVE FUN</description>
-		<description lang="en_GB">TV SPIELFILM provides the best programmes from the media libraries of many TV channels, sorted and clearly arranged. In addition to the targeted channel selection, the media library tips are also offered according to the categories of movies, series, report, entertainment, sport and children (www.tvspielfilm.de).[CR][CR]     HAVE FUN</description>
+		<description lang="de_DE">In TV SPIELFILM findest Du das beste Programm aus den Mediatheken von vielen TV-Sendern sortiert und übersichtlich. Neben der gezielten Senderauswahl, werden auch die Mediatheken-Tipps nach den Sparten Spielfilm, Serie, Dokus &amp; Polit-Talks, Shows &amp; Comedy, Kinderfilme &amp; -serien und Sport angeboten.[CR][CR]     HAVE FUN</description>
+		<description lang="en_GB">In TV SPIELFILM you will find the best programs from the media libraries of many TV stations sorted and clearly arranged. In addition to the targeted channel selection, the media library tips are also offered according to the Categories of feature Movies, Series, Documentaries &amp; Political talks, Shows &amp; Comedy, Children's movies &amp; series and Sports.[CR][CR]     HAVE FUN</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
@@ -31,8 +31,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.0.8+matrix.1  (14.03.2023)[/COLOR][/B]
-- fixed: Sämtliche Videos können nicht abgespielt werden (Abspiellink neu versteckt)
+[B][COLOR orangered]Version 2.0.9+matrix.1  (28.03.2023)[/COLOR][/B]
+- fixed: Die Rubrik: Nach Sendern kann in nicht geöffnet werden (IndexError: list index out of range)
+- optimized: Wiedergabequalität-Aufbereitung von ZDF-Links (mp4) - neue Codes zur Qualitätssteigerung hinzugefügt
 		</news>
 	</extension>
 </addon>
