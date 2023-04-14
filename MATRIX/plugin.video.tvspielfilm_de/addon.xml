@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.1.0+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.1.1+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -31,6 +31,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 2.1.1+matrix.1  (14.04.2023)[/COLOR][/B]
+- fixed: Viele Rubriken zeigen keine Inhalte (Quelltext der Webseite verändert)
+
 [B][COLOR orangered]Version 2.1.0+matrix.1  (06.04.2023)[/COLOR][/B]
 - fixed: Tele5-Links können nicht abgespielt werden (Der Anbieter Discovery verarbeitet jetzt fast alles mit Javascript)
 
