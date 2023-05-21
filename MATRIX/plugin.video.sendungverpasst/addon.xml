@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus [COLOR FF00EE00](neu)[/COLOR]" version="1.0.1+matrix.1" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+		<import addon="plugin.video.tyl0re.arte" optional="true"/>
+		<import addon="plugin.video.rtlgroup.de" optional="true"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">AiO-Mediatheken Spezialitäten</summary>
+		<summary lang="en_GB">AiO Mediatheques Specialities</summary>
+		<description lang="de_DE">Sendungverpasst.de ist eine Suchmaschine für das Videoangebot der traditionellen deutschen TV-Sender, die jeder von seinem Fernseher kennt.[CR]Angereichert mit redaktionellen Beiträgen, Empfehlungen, Top- und Trend-Listen und Vielem mehr bietet Sendungverpasst.de den idealen Einstiegspunkt, um sich im Dschungel des Web-TV zu orientieren.</description>
+		<description lang="en_GB">Sendungverpasst.de is a search engine for the video offerings of the traditional German TV channels that everyone knows from their TV set.[CR]Enriched with editorial contributions, recommendations, top and trend lists and much more, Sendungverpasst.de offers the ideal entry point for finding your way through the jungle of Web-TV.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
+		<website>https://www.sendungverpasst.de/</website>
+		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.sendungverpasst</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>
+[B][COLOR orangered]Version 1.0.1  (21.05.2023)[/COLOR][/B]
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- Initial Release @realvito
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- added: Alle Rubriken der Startseite in der Übersicht (Browser)
+- added: Kontextmenü-Klick No.1 für z.B. 'Mehr Tatort' (dieselbe Sendung limitiert auf 20 Einträge)
+- added: Kontextmenü-Klick No.2 für 'MEHR DAVON ANZEIGEN' (dieselbe Sendung mit Folgeseiten zum umblättern)
+- added: Sendungen die zur Wiedergabe auf externe Addons verweisen ausblenden (settings)
+- added: Einzelne Sendungen der Rubrik = 'Sendungen von A-Z' zu den 'SEVER-Favoriten' hinzufügen
+- comment * Manche ältere Sendungen sind nicht mehr auf den Servern verfügbar/abspielbar ! *
+		</news>
+	</extension>
+</addon>
