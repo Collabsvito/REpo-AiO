@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.1.2+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.1.3+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -20,7 +20,7 @@
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website>https://www.arte.tv/</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
@@ -30,18 +30,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.1.2+matrix.1  (27.05.2022)[/COLOR][/B] by realvito
-- added: Spezielle Meldung wenn Stream vorhanden aber NICHT abspielbar ist
-
-[B][COLOR orangered]Version 1.1.1+matrix.1  (16.05.2022)[/COLOR][/B]
-- fixed: Addon komplett überarbeitet mit Anlehnung des Aufbaus und der Struktur an die Web-API von arte.TV (ohne Webscraping)
-- fixed: Videos werden NICHT abgespielt (APi.v.1 abgeschaltet)
-- fixed: Video-Startzeiten unter Programme nach Datum werden nicht angezeigt
-- added: Rubrik = Startseite und Musik entdecken
-- added: Dokus und Reportagen + Sendungen und Magazine unter alle Kategorien
-- added: max. angezeigte Beiträge selbst festlegen (settings)
-- removed: Rubrik = Besondere Highlights
-- comment: *Verdammt was haben sich die Franzosen nur dabei gedacht 4 verschiedene API's(player-v2,emac-v3,opa-v3,_next-data) gleichzeitig zu nutzen, die nicht zu 100% kompatibel sind ?!*
+[B][COLOR orangered]Version 1.1.3+matrix.1  (26.05.2023)[/COLOR][/B] by realvito
+- fixed: Manchmal wird nicht automatisch die höchste Auflösung eines Streams ausgewählt
+- added: Anpassungen an Änderungen von KODI-Nexus
 		</news>
 	</extension>
 </addon>
