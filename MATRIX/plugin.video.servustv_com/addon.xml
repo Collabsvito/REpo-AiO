@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.0.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.0.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -18,7 +18,7 @@
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website>https://www.servustv.com</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
@@ -28,8 +28,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.6+matrix.1  (20.07.2022)[/COLOR][/B]
-- fixed: Livestream in alter Form mittels m3u8 abspielen (Neue Url für DE+AT)
+[B][COLOR orangered]Version 3.0.7+matrix.1  (26.05.2023)[/COLOR][/B]
+- fixed: Es können keine Sendungen zu den Addon-Favoriten hinzugefügt werden
+- added: Anpassungen an Änderungen von KODI-Nexus
 		</news>
 	</extension>
 </addon>

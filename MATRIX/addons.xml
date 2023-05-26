@@ -547,7 +547,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.0.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.0.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -566,7 +566,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website>https://www.servustv.com</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
@@ -576,8 +576,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.6+matrix.1  (20.07.2022)[/COLOR][/B]
-- fixed: Livestream in alter Form mittels m3u8 abspielen (Neue Url für DE+AT)
+[B][COLOR orangered]Version 3.0.7+matrix.1  (26.05.2023)[/COLOR][/B]
+- fixed: Es können keine Sendungen zu den Addon-Favoriten hinzugefügt werden
+- added: Anpassungen an Änderungen von KODI-Nexus
 		</news>
 	</extension>
 </addon>
@@ -698,7 +699,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.1.4+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.1.5+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -731,16 +732,15 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 2.1.5+matrix.1  (26.05.2023)[/COLOR][/B]
+- fixed: Doppelte Videoeinträge entfernen/herausfiltern
+
 [B][COLOR orangered]Version 2.1.4+matrix.1  (21.05.2023)[/COLOR][/B]
 - added: Abhängigkeit "plugin.video.joyn" zum Abspielen von Links der Seven.One Entertainment Group
-
-[B][COLOR orangered]Version 2.1.3+matrix.1  (02.05.2023)[/COLOR][/B]
-- fixed: Kodi-Fehler wenn Tele5-Links nicht mehr abrufbar sind
-- optimized: Den Inhalt der Rubrik: 'Tipps der Woche' nach Datum sortieren
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.1.2+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.1.3+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -761,7 +761,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website>https://www.arte.tv/</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
@@ -771,18 +771,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.1.2+matrix.1  (27.05.2022)[/COLOR][/B] by realvito
-- added: Spezielle Meldung wenn Stream vorhanden aber NICHT abspielbar ist
-
-[B][COLOR orangered]Version 1.1.1+matrix.1  (16.05.2022)[/COLOR][/B]
-- fixed: Addon komplett überarbeitet mit Anlehnung des Aufbaus und der Struktur an die Web-API von arte.TV (ohne Webscraping)
-- fixed: Videos werden NICHT abgespielt (APi.v.1 abgeschaltet)
-- fixed: Video-Startzeiten unter Programme nach Datum werden nicht angezeigt
-- added: Rubrik = Startseite und Musik entdecken
-- added: Dokus und Reportagen + Sendungen und Magazine unter alle Kategorien
-- added: max. angezeigte Beiträge selbst festlegen (settings)
-- removed: Rubrik = Besondere Highlights
-- comment: *Verdammt was haben sich die Franzosen nur dabei gedacht 4 verschiedene API's(player-v2,emac-v3,opa-v3,_next-data) gleichzeitig zu nutzen, die nicht zu 100% kompatibel sind ?!*
+[B][COLOR orangered]Version 1.1.3+matrix.1  (26.05.2023)[/COLOR][/B] by realvito
+- fixed: Manchmal wird nicht automatisch die höchste Auflösung eines Streams ausgewählt
+- added: Anpassungen an Änderungen von KODI-Nexus
 		</news>
 	</extension>
 </addon>
@@ -925,7 +916,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="service.cron.autobiblio" name="Crontab für andere Addons" version="2.1.1+matrix.1" provider-name="realvito">
+<addon id="service.cron.autobiblio" name="Crontab für andere Addons" version="2.1.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -943,7 +934,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website></website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
@@ -951,8 +942,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		<assets>
 			<icon>resources/icon.png</icon>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.1.1+matrix.1  (26.11.2021)[/COLOR][/B][CR]
-- added: Anpassungen zur Aufteilung des Speicherordners in Movies/Series
+		<news>
+[B][COLOR orangered]Version 2.1.2+matrix.1  (26.05.2023)[/COLOR][/B]
+- added: Anpassungen an Änderungen von KODI-Nexus
 		</news>
 	</extension>
 </addon>
