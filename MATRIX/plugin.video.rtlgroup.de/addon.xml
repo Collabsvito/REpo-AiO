@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.1.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.1.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
 		<import addon="script.common.plugin.cache" version="2.6.2+matrix.1"/>
 		<import addon="inputstream.adaptive" version="2.4.5"/>
 		<import addon="script.module.inputstreamhelper" version="0.5.5+matrix.1"/>
-		<import addon="service.cron.autobiblio" version="2.1.0+matrix.1" optional="true"/>
+		<import addon="service.cron.autobiblio" version="2.1.2+matrix.1" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -22,7 +22,7 @@
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website>https://www.tvnow.de/</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
@@ -32,15 +32,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.1.2+matrix.1  (24.02.2023)[/COLOR][/B]
-- fixed: LIVESTREAMS bleiben nach kurzer Zeit hängen (StreamUrls verändert)
+[B][COLOR orangered]Version 1.1.3+matrix.1  (04.06.2023)[/COLOR][/B]
+- fixed: LIVESTREAMS lassen sich nicht abspielen (StreamUrls verändert)
 - fixed: m3u-Liste zur Integration der Livestreams des Addons in den 'PVR IPTV Simple Client' (neue StreamUrls)
-- fixed: Eventstreams laufen nicht mit der Einstellung: 'Standard' - Qualität (wenn der SD-Stream nicht vorhanden ist wird jetzt automatisch der HD-Stream wiedergegeben)
-- comment: *Die Qualität der Streams lässt sich auch in 'Inputstream.Adaptive herunterregeln !*
-
-[B][COLOR orangered]Version 1.1.1+matrix.1  (18.02.2023)[/COLOR][/B]
-- optimized: Loginfunktion überarbeitet, um Fehleingaben des Nutzers zu vermeiden
-- optimized: Account über Funktionstaste in den 'settings' löschen/erneuern ohne erzwungenen Neustart von KODI
 		</news>
 	</extension>
 </addon>
