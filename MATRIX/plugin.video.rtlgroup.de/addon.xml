@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.1.4+matrix.1" provider-name="realvito">
+<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.1.5+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -32,6 +32,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 1.1.5+matrix.1  (25.06.2023)[/COLOR][/B]
+- added: Premium(Bezahl)-Inhalte für 'FreeUser' ausblenden (settings)
+
 [B][COLOR orangered]Version 1.1.4+matrix.1  (09.06.2023)[/COLOR][/B]
 - fixed: In Kodi Nexus/Omega funktioniert die Sortierung der Episoden nach Datum nicht
 
