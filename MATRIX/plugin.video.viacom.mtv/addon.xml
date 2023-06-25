@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.viacom.mtv" name="MTV Germany" version="2.0.5+matrix.1" provider-name="realvito">
+<addon id="plugin.video.viacom.mtv" name="MTV Germany" version="2.0.6+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -18,7 +18,7 @@
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website>https://www.mtv.de/</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
@@ -28,10 +28,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.0.5+matrix.1  (07.11.2022)[/COLOR][/B]
-- fixed: Häufig werden die Vorschaubilder der Titel nicht angezeigt
-- fixed: Die 'Musik-Ordner' in der Rubrik = Charts lassen sich nicht als Playliste (shuffle) abspielen
-- added: Anpassungen an Änderungen von KODI-Nexus
+[B][COLOR orangered]Version 2.0.6+matrix.1  (25.06.2023)[/COLOR][/B]
+- fixed: Error unter Charts, wenn Einträge ohne Video ausgeblendet werden sollen (UnboundLocalError: local variable 'name' referenced before assignment)
+- fixed: Error unter Charts, wenn Einträge ohne Video angeklickt werden (ERROR general: Playlist Player: skipping unplayable item: 0)
+- added: Charts = Jahrescharts 2022
 		</news>
 	</extension>
 </addon>
