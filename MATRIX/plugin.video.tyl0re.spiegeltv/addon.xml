@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV" version="2.1.9+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.spiegeltv" name="SPIEGEL.TV (old-broken)" version="2.2.0+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1" optional="true"/>
+		<import addon="plugin.video.spiegel.de" version="3.0.1+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -11,14 +12,14 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Online Nachrichten - 'DER SPIEGEL'</summary>
 		<summary lang="en_GB">Online News - 'DER SPIEGEL'</summary>
-		<description lang="de_DE">'DER SPIEGEL' zeichnet sich durch schnelles Reagieren auf aktuelle Ereignisse sowie sorgfältig recherchierte investigative Hintergrundgeschichten aus.[CR]Hier gibt es Reportagen und Dokus von 'DER SPIEGEL' aus den Bereichen Politik, Wirtschaft, Gesellschaft, Kultur, Sport, Technik und Wissenschaft.</description>
-		<description lang="en_GB">'DER SPIEGEL' is characterized by fast reaction to current events as well as carefully researched background stories.[CR]Here are reports and documentaries by 'DER SPIEGEL' in the fields of politics, economics, society, culture, sports, technology and science.</description>
+		<description lang="de_DE">[COLOR red]- Dieses Addon bekommt einen neuen Pfad im KODI-Verzeichnis ![CR]- Der neue Pfad lautet: 'plugin.video.spiegel.de'.[CR][CR]- Bitte das neue Addon mit der Version-No. 3.0.1+matrix.1 AKTIVIEREN.[CR]- Danach dieses Addon mit der Version-No. 2.2.0+matrix.1 DEINSTALLIEREN.[/COLOR]</description>
+		<description lang="en_GB">[COLOR red]- This Addon gets a new path in the KODI directory ![CR]- The new Path named: 'plugin.video.spiegel.de'.[CR][CR]- Please ACTIVATE the new Addon with the Version-No. 3.0.1+matrix.1.[CR]- After that UNINSTALL this Addon with the Version-No. 2.2.0+matrix.1.[/COLOR]</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website>https://www.spiegel.de/</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
@@ -27,9 +28,12 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
+		<lifecyclestate type="broken">
+- Dieses Addon bekommt einen neuen Pfad im KODI-Verzeichnis ![CR]- Der neue Pfad lautet: 'plugin.video.spiegel.de'.
+		</lifecyclestate>
 		<news>
-[B][COLOR orangered]Version 2.1.9+matrix.1  (14.08.2022)[/COLOR][/B] by realvito
-- fixed: Die Rubriken = Panorama, Politik Ausland und Politik Deutschland zeigen keinen Inhalt (Fehlfunktion im Scriptablauf)
+[B][COLOR orangered]Version 2.2.0+matrix.1  (25.06.2023)[/COLOR][/B] by realvito
+- Dieses Addon bekommt einen neuen Pfad im KODI-Verzeichnis ![CR]- Der neue Pfad lautet: 'plugin.video.spiegel.de'.[CR][CR]- Bitte das neue Addon mit der Version-No. 3.0.1+matrix.1 AKTIVIEREN.[CR]- Danach dieses Addon mit der Version-No. 2.2.0+matrix.1 DEINSTALLIEREN.
 		</news>
 	</extension>
 </addon>
