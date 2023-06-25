@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="plugin.video.spiegel.de" name="DER SPIEGEL [COLOR FF00EE00](neu)[/COLOR]" version="3.0.1+matrix.1" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+		<import addon="plugin.video.youtube" version="6.8.1+matrix.1" optional="true"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Online Nachrichten - 'DER SPIEGEL'</summary>
+		<summary lang="en_GB">Online News - 'DER SPIEGEL'</summary>
+		<description lang="de_DE">'DER SPIEGEL' zeichnet sich durch schnelles Reagieren auf aktuelle Ereignisse sowie sorgfältig recherchierte investigative Hintergrundgeschichten aus.[CR]Deutschlands führende Nachrichtenseite für alles Wichtige aus Politik, Wirtschaft, Sport, Kultur, Wissenschaft, Technik und mehr.</description>
+		<description lang="en_GB">DER SPIEGEL' is characterised by quick reactions to current events as well as carefully researched investigative background stories.[CR]Germany's leading news site for everything important from politics, business, sport, culture, science, technology and more.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
+		<website>https://www.spiegel.de/</website>
+		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.spiegel.de</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>
+[B][COLOR orangered]Version 3.0.1+matrix.1  (25.06.2023)[/COLOR][/B]
+- Pluginname changed with this ReRelease (old=plugin.video.tyl0re.spiegeltv -> new=plugin.video.spiegel.de)
+- Komplette Überarbeitung des alten Spiegel.TV-Addons nach Webseitenerneuerung (ReRelease)
+- fixed: Tagline und Autoren der einzelnen Artikel werden nicht angezeigt
+- removed: Rubriken = DER SPIEGEL liest und fragt, Spitzentitel - die Büchershow mit Volker Weidermann, Coronavirus: Videos
+- removed: Festgelegte Rubriken von 'Der Spiegel' auf Youtube
+- added: Rubriken = Russlands Krieg gegen die Ukraine, SPIEGEL Bestseller - Mehr lesen mit Elke Heidenreich
+- added: Podcasts und Audiostreams anzeigen und abspielen (settings)
+- added: Dynamische Playlisten von 'Der Spiegel' auf Youtube immer aktuell
+- added: Anpassungen an Änderungen von KODI-Nexus
+- optimized: Die Themen der Rubrik 'Thema: SPIEGEL TV' zur besseren Übersicht aufgeteilt in separate Ordner
+		</news>
+	</extension>
+</addon>
