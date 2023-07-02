@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.vfb_stuttgart" name="VfB-Stuttgart TV" version="1.0.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.vfb_stuttgart" name="VfB-Stuttgart TV" version="1.0.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -17,7 +17,7 @@
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website>https://vfbtv.vfb.de/tv/</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
@@ -26,10 +26,10 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.2+matrix.1  (22.12.2021)[/COLOR][/B][CR]
-- fixed: Im Ordner 'DFB-Pokal' werden keine Saison-Jahre gelistet
-- optimized: Code cleanup
-- added: Addon kompatibel mit PYTHON-Vers.3 gemacht (für KODI-19+) :-)
+		<news>
+[B][COLOR orangered]Version 1.0.3+matrix.1  (02.07.2023)[/COLOR][/B]
+- fixed: Im Ordner 'DFB-Pokal' wird schon das nächste noch nicht vorhandene Saison-Jahr gelistet
+- added: Anpassungen an Änderungen von KODI-Nexus
 		</news>
 	</extension>
 </addon>
