@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus [COLOR FF00EE00](neu)[/COLOR]" version="1.0.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.0.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -29,16 +29,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.1  (21.05.2023)[/COLOR][/B]
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-- Initial Release @realvito
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-- added: Alle Rubriken der Startseite in der Übersicht (Browser)
-- added: Kontextmenü-Klick No.1 für z.B. 'Mehr Tatort' (dieselbe Sendung limitiert auf 20 Einträge)
-- added: Kontextmenü-Klick No.2 für 'MEHR DAVON ANZEIGEN' (dieselbe Sendung mit Folgeseiten zum umblättern)
-- added: Sendungen die zur Wiedergabe auf externe Addons verweisen ausblenden (settings)
-- added: Einzelne Sendungen der Rubrik = 'Sendungen von A-Z' zu den 'SEVER-Favoriten' hinzufügen
-- comment * Manche ältere Sendungen sind nicht mehr auf den Servern verfügbar/abspielbar ! *
+[B][COLOR orangered]Version 1.0.2+matrix.1  (16.07.2023)[/COLOR][/B]
+- fixed: Manche ZDF-Videos sind nicht abspielbar und erzeugen einen Fehler (KeyError: 'http://zdf.de/rels/streams/ptmd-template')
+- fixed: In Kodi Nexus/Omega funktioniert die Sortierung der Episoden nach Datum nicht
 		</news>
 	</extension>
 </addon>
