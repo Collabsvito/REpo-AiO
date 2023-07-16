@@ -511,7 +511,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus [COLOR FF00EE00](neu)[/COLOR]" version="1.0.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.0.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -541,16 +541,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.1  (21.05.2023)[/COLOR][/B]
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-- Initial Release @realvito
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-- added: Alle Rubriken der Startseite in der Übersicht (Browser)
-- added: Kontextmenü-Klick No.1 für z.B. 'Mehr Tatort' (dieselbe Sendung limitiert auf 20 Einträge)
-- added: Kontextmenü-Klick No.2 für 'MEHR DAVON ANZEIGEN' (dieselbe Sendung mit Folgeseiten zum umblättern)
-- added: Sendungen die zur Wiedergabe auf externe Addons verweisen ausblenden (settings)
-- added: Einzelne Sendungen der Rubrik = 'Sendungen von A-Z' zu den 'SEVER-Favoriten' hinzufügen
-- comment * Manche ältere Sendungen sind nicht mehr auf den Servern verfügbar/abspielbar ! *
+[B][COLOR orangered]Version 1.0.2+matrix.1  (16.07.2023)[/COLOR][/B]
+- fixed: Manche ZDF-Videos sind nicht abspielbar und erzeugen einen Fehler (KeyError: 'http://zdf.de/rels/streams/ptmd-template')
+- fixed: In Kodi Nexus/Omega funktioniert die Sortierung der Episoden nach Datum nicht
 		</news>
 	</extension>
 </addon>
@@ -749,7 +742,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.1.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.1.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -782,12 +775,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version Version 2.1.6+matrix.1/2.1.5+matrix.1  (26.05.2023)[/COLOR][/B]
-- fixed: Doppelte Videoeinträge entfernen/herausfiltern
-- fixed: Rubrik: 'Tipps der Woche' nach Datum sortieren (defekt durch neue Einteilung der Listen)
-
-[B][COLOR orangered]Version 2.1.4+matrix.1  (21.05.2023)[/COLOR][/B]
-- added: Abhängigkeit "plugin.video.joyn" zum Abspielen von Links der Seven.One Entertainment Group
+[B][COLOR orangered]Version Version 2.1.7+matrix.1  (16.07.2023)[/COLOR][/B]
+- fixed: Manche ZDF-Videos sind nicht abspielbar und erzeugen einen Fehler (KeyError: 'http://zdf.de/rels/streams/ptmd-template')
+- added: FirstAired-, MPAA Rating-, IMDb Rating- Infos
 		</news>
 	</extension>
 </addon>
