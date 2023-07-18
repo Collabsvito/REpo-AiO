@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.1.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.1.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -32,6 +32,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version Version 2.1.8+matrix.1  (18.07.2023)[/COLOR][/B]
+- fixed: Vorschaubilder der Titel werden nicht mehr angezeigt (neue Struktur)
+
 [B][COLOR orangered]Version Version 2.1.7+matrix.1  (16.07.2023)[/COLOR][/B]
 - fixed: Manche ZDF-Videos sind nicht abspielbar und erzeugen einen Fehler (KeyError: 'http://zdf.de/rels/streams/ptmd-template')
 - added: FirstAired-, MPAA Rating-, IMDb Rating- Infos
