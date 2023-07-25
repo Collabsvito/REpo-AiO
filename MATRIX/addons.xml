@@ -742,7 +742,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.1.8+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.1.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -775,6 +775,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version Version 2.1.9+matrix.1  (25.07.2023)[/COLOR][/B]
+- fixed: Bei einigen Videos wird keine Laufzeit/Dauer angezeigt (Doppel-/Fehl- anzeige im Quelltext der Webseite)
+- fixed: Bei mehreren Seiten einer Rubrik, wird die nächste Seite nicht mehr automatisch geladen
+- fixed: Fehler im Addon-Script der Rubrik = Vor- &amp; Rückschau durch letztes Update
+
 [B][COLOR orangered]Version Version 2.1.8+matrix.1  (18.07.2023)[/COLOR][/B]
 - fixed: Vorschaubilder der Titel werden nicht mehr angezeigt (neue Struktur)
 
