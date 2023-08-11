@@ -36,7 +36,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.bibeltv" name="Bibel.TV" version="2.0.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.bibeltv" name="Bibel.TV" version="2.0.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -54,7 +54,7 @@
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website>https://www.bibeltv.de/home</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
@@ -64,8 +64,14 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.0.2+matrix.1  (22.01.2023)[/COLOR][/B]
-- fixed: Manche Ordner werden in NEXUS nicht geöffnet (Error Type: class 'TypeError')
+[B][COLOR orangered]Version 2.0.3+matrix.1  (11.08.2023)[/COLOR][/B]
+- fixed: Seltene Wiedergabefehler
+- added: Serien- und Episodenkennzeichnung im Titel ausblenden (settings)
+- added: Sendezeit und Sendungsbeschreibung für Livestreams
+- added: Anpassungen an Änderungen von KODI - Nexus/Omega
+- optimized: Anzeige über dem Plot (Serie, Folge, Datum) übersichtlicher gestaltet
+- replaced: Livestream 'Bibel TV Musik' ersetzt durch 'Echt Jetzt'
+- removed: Subgenres anzeigen (settings) = gibt es in der API nicht mehr
 		</news>
 	</extension>
 </addon>
@@ -511,12 +517,11 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.0.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.0.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
 		<import addon="plugin.video.tyl0re.arte" optional="true"/>
-		<import addon="plugin.video.rtlgroup.de" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -541,9 +546,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.2+matrix.1  (16.07.2023)[/COLOR][/B]
-- fixed: Manche ZDF-Videos sind nicht abspielbar und erzeugen einen Fehler (KeyError: 'http://zdf.de/rels/streams/ptmd-template')
-- fixed: In Kodi Nexus/Omega funktioniert die Sortierung der Episoden nach Datum nicht
+[B][COLOR orangered]Version 1.0.3+matrix.1  (11.08.2023)[/COLOR][/B]
+- removed: Abhängigkeit "plugin.video.rtlgroup.de" zum Abspielen von RTLPLUS-Links
+- comment *Das Abspielen von Links die auf die Webseite 'https://plus.rtl.de' verweisen ist wegen Komplettumstellung der Webseite auf Javascript und neuer Video-Ids die mit mit der alten API v.1+v.3 nicht kompatibel sind z.Zt. NICHT möglich, daher werden Diese jetzt ausgeblendet !*
 		</news>
 	</extension>
 </addon>
@@ -742,7 +747,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.1.9+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.2.0+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -750,7 +755,6 @@
 		<import addon="plugin.video.joyn" optional="true"/>
 		<import addon="plugin.video.servustv_com" optional="true"/>
 		<import addon="plugin.video.tele5_de" optional="true"/>
-		<import addon="plugin.video.rtlgroup.de" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -775,17 +779,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version Version 2.1.9+matrix.1  (25.07.2023)[/COLOR][/B]
-- fixed: Bei einigen Videos wird keine Laufzeit/Dauer angezeigt (Doppel-/Fehl- anzeige im Quelltext der Webseite)
-- fixed: Bei mehreren Seiten einer Rubrik, wird die nächste Seite nicht mehr automatisch geladen
-- fixed: Fehler im Addon-Script der Rubrik = Vor- &amp; Rückschau durch letztes Update
-
-[B][COLOR orangered]Version Version 2.1.8+matrix.1  (18.07.2023)[/COLOR][/B]
-- fixed: Vorschaubilder der Titel werden nicht mehr angezeigt (neue Struktur)
-
-[B][COLOR orangered]Version Version 2.1.7+matrix.1  (16.07.2023)[/COLOR][/B]
-- fixed: Manche ZDF-Videos sind nicht abspielbar und erzeugen einen Fehler (KeyError: 'http://zdf.de/rels/streams/ptmd-template')
-- added: FirstAired-, MPAA Rating-, IMDb Rating- Infos
+[B][COLOR orangered]Version 2.2.0+matrix.1  (11.08.2023)[/COLOR][/B]
+- removed: Abhängigkeit "plugin.video.rtlgroup.de" zum Abspielen von RTLPLUS-Links
+- comment *Das Abspielen von Links die auf die Webseite 'https://plus.rtl.de' verweisen ist wegen Komplettumstellung der Webseite auf Javascript und neuer Video-Ids die mit mit der alten API v.1+v.3 nicht kompatibel sind z.Zt. NICHT möglich, daher werden Diese jetzt ausgeblendet !*
 		</news>
 	</extension>
 </addon>
