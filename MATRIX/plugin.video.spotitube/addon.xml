@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.4+matrix.1" provider-name="realvito (inspired by L0RE)">
+<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.5+matrix.1" provider-name="realvito (inspired by L0RE)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -19,7 +19,7 @@
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/47087-Release-YoutubeMusic-patched/</forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website></website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
@@ -29,13 +29,12 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.4+matrix.1  (18.02.2023)[/COLOR][/B]
-- fixed: German-DJ-Playlist generates Error on open (new url and complete changed source text)
-- added: Provider Shazam
-- added: Revival of orig. public Spotify-Charts and public Spotify-Playlists with public token (if want more please purchase an account at Spotify)
-- added: Adaptations to changes of KODI-Nexus
-- removed: Old entries and webpage of "https://spotifycharts.com" (dont exist anymore)
-- optimized: Removed cache of webpages in "addon_data" folder - now use "script.common.plugin.cache"
+[B][COLOR orangered]Version 3.0.5+matrix.1  (03.09.2023)[/COLOR][/B]
+- fixed: all Folder under "Beatport" are empty (new Website)
+- fixed: all "Billboard" Charts by Country and added some new Countries
+- fixed: all Folder under "Official Charts" generate Errors (Website-Structure changes)
+- added: Hide additional information (blue font) in the title (settings)
+- optimized: Code cleanup
 		</news>
 	</extension>
 </addon>
