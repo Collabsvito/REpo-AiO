@@ -214,7 +214,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.euronews_com" name="euronews.com" version="2.2.8+matrix.1" provider-name="realvito">
+<addon id="plugin.video.euronews_com" name="euronews.com" version="2.2.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -249,7 +249,7 @@
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website>https://de.euronews.com/</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
@@ -259,8 +259,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.2.8+matrix.1  (22.01.2023)[/COLOR][/B]
-- fixed: Fast keine Ordner in der Startübersicht vorhanden (Quelltext verändert)
+[B][COLOR orangered]Version 2.2.9+matrix.1  (03.09.2023)[/COLOR][/B]
+- fixed: Einige euronews - LIVESTREAMS funktionieren nicht mehr
 		</news>
 	</extension>
 </addon>
@@ -664,7 +664,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.sporttotal" name="Sporttotal.TV [COLOR FF00EE00](light)[/COLOR]" version="1.1.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sporttotal" name="Sporttotal.TV [COLOR FF00EE00](light)[/COLOR]" version="2.0.1+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -674,24 +674,15 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Regionalsport auf Sporttotal.tv</summary>
-		<description lang="de_DE">Sporttotal.tv zeigt Deutschlands Amateursport in voller Länge und Breite. Neben Amateurfußball und Motorsport überträgt Sporttotal mit seinen vollautomatischen Kameras auch Spiele der Volleyball-Bundesliga, sowie Eishockey- und Basketballspiele.[CR][CR][COLOR FF00EE00]Dieses Addon stellt nur den FREI verfügbaren Inhalt von 'sporttotal.tv' zur Verfügung ![/COLOR]</description>
+		<description lang="de_DE">Neben Livesport erhalten Sportinteressierte emotional aufgeladenen Content, Topspiel-Produktionen, Doku-Serien und vieles mehr. Sporttotal.tv medialisiert Deutschlands Sport und bietet allen Interessierten die Möglichkeit, bei ihrem Lieblingsevent dabei zu sein.[CR]Eine Plattform für Vereine, Sportler, Fans und Sportinteressierte - It's on you ![CR][CR][COLOR FF00EE00]Dieses Addon stellt nur den FREI verfügbaren Inhalt von 'sporttotal.tv' zur Verfügung ![/COLOR]</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<summary lang="en_GB">Regionalsport on Sporttotal.tv</summary>
-		<description lang="en_GB">Sporttotal.tv shows Germany's amateur sport in full length and width. In addition to amateur football and motor sports, Sporttotal also broadcasts matches of the Volleyball Bundesliga, as well as ice hockey and basketball games with its fully automatic cameras.[CR][CR][COLOR FF00EE00]This Addon only provides the FREE available content of 'sporttotal.tv' ![/COLOR]</description>
+		<description lang="en_GB">In addition to live sports, sports fans receive emotionally charged content, top match productions, documentary series and much more. Sporttotal.tv medializes Germany's sports and offers all interested people the opportunity to be part of their favorite event.[CR]A platform for clubs, athletes, fans and sports enthusiasts - It's on you ![CR][COLOR FF00EE00]This addon provides only the FREE available content of 'sporttotal.tv' ![/COLOR]</description>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
-		<summary lang="fr_FR">Les sports régionaux sur Sporttotal.tv</summary>
-		<description lang="fr_FR">Sporttotal.tv présente le sport amateur allemand dans toute sa longueur et sa largeur. Outre le football amateur et les sports automobiles, Sporttotal diffuse également des matchs de la Bundesliga de volley-ball, ainsi que des matchs de hockey sur glace et de basket-ball grâce à ses caméras entièrement automatiques.[CR][CR][COLOR FF00EE00]Cet Addon fournit uniquement le contenu disponible GRATUITEMENT sur 'sporttotal.tv' ![/COLOR]</description>
-		<disclaimer lang="fr_FR">Le contenu affiché par cet addon n'est pas hébergé ou distribué par les créateurs de l'addon, et ces derniers n'ont aucune relation avec les fournisseurs de contenu.</disclaimer>
-		<summary lang="it_IT">Sport regionali su Sporttotal.tv</summary>
-		<description lang="it_IT">Sporttotal.tv mostra lo sport amatoriale tedesco in lunghezza e larghezza. Oltre al calcio amatoriale e agli sport motoristici, Sporttotal trasmette anche le partite della Bundesliga di pallavolo, così come le partite di hockey su ghiaccio e basket con le sue telecamere completamente automatiche.[CR][CR][COLOR FF00EE00]Questo Addon fornisce solo il contenuto disponibile GRATIS di 'sporttotal.tv' ![/COLOR]</description>
-		<disclaimer lang="it_IT">I contenuti visualizzati da questo addon non sono ospitati o distribuiti dai creatori dell'addon, né i creatori hanno alcun rapporto con i fornitori di contenuti.</disclaimer>
-		<summary lang="nl_NL">Regionale sporten op Sporttotal.tv</summary>
-		<description lang="nl_NL">Sporttotal.tv toont de Duitse amateursport in de volle lengte en breedte. Naast amateurvoetbal en motorsport zendt Sporttotal met zijn volautomatische camera's ook wedstrijden uit van de Volleyball Bundesliga, alsmede ijshockey- en basketbalwedstrijden.[CR][CR][COLOR FF00EE00]Deze Addon bevat alleen de GRATIS beschikbare inhoud van 'sporttotal.tv' ![/COLOR]</description>
-		<disclaimer lang="nl_NL">De inhoud die door deze addon wordt weergegeven, wordt niet gehost of gedistribueerd door de makers van de addon, noch hebben de makers enige relatie met de aanbieders van de inhoud.</disclaimer>
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website>https://www.sporttotal.tv</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
@@ -701,13 +692,14 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.1.1+matrix.1  (02.05.2023)[/COLOR][/B]
-- fixed: Manchmal werden 'Ads' angezeigt
-- added: Anpassungen an Änderungen von KODI-Nexus
+[B][COLOR orangered]Version 2.0.1+matrix.1  (03.09.2023)[/COLOR][/B]
+- fixed: Addon neu aufgesetzt mit Anlehnung des Aufbaus und der Struktur an die neue API von sporttotal.TV
+- added: Rubriken = Vor- &amp; Rückschau (Events nach Datum sortiert), Suche...
+- added: Nächste Seite zum weiterblättern (gab es vorher nicht in der API)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.4+matrix.1" provider-name="realvito (inspired by L0RE)">
+<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.5+matrix.1" provider-name="realvito (inspired by L0RE)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -727,7 +719,7 @@
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/47087-Release-YoutubeMusic-patched/</forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website></website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
@@ -737,13 +729,12 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.4+matrix.1  (18.02.2023)[/COLOR][/B]
-- fixed: German-DJ-Playlist generates Error on open (new url and complete changed source text)
-- added: Provider Shazam
-- added: Revival of orig. public Spotify-Charts and public Spotify-Playlists with public token (if want more please purchase an account at Spotify)
-- added: Adaptations to changes of KODI-Nexus
-- removed: Old entries and webpage of "https://spotifycharts.com" (dont exist anymore)
-- optimized: Removed cache of webpages in "addon_data" folder - now use "script.common.plugin.cache"
+[B][COLOR orangered]Version 3.0.5+matrix.1  (03.09.2023)[/COLOR][/B]
+- fixed: all Folder under "Beatport" are empty (new Website)
+- fixed: all "Billboard" Charts by Country and added some new Countries
+- fixed: all Folder under "Official Charts" generate Errors (Website-Structure changes)
+- added: Hide additional information (blue font) in the title (settings)
+- optimized: Code cleanup
 		</news>
 	</extension>
 </addon>

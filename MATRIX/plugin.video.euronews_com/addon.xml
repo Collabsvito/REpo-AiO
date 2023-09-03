@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.euronews_com" name="euronews.com" version="2.2.8+matrix.1" provider-name="realvito">
+<addon id="plugin.video.euronews_com" name="euronews.com" version="2.2.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -34,7 +34,7 @@
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website>https://de.euronews.com/</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
@@ -44,8 +44,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.2.8+matrix.1  (22.01.2023)[/COLOR][/B]
-- fixed: Fast keine Ordner in der Startübersicht vorhanden (Quelltext verändert)
+[B][COLOR orangered]Version 2.2.9+matrix.1  (03.09.2023)[/COLOR][/B]
+- fixed: Einige euronews - LIVESTREAMS funktionieren nicht mehr
 		</news>
 	</extension>
 </addon>
