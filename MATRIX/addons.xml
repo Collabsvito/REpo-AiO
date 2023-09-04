@@ -214,7 +214,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.euronews_com" name="euronews.com" version="2.2.9+matrix.1" provider-name="realvito">
+<addon id="plugin.video.euronews_com" name="euronews.com" version="2.3.0+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -259,6 +259,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 2.3.0+matrix.1  (04.09.2023)[/COLOR][/B]
+- fixed: Ordner können auf Kodi Nexus/Omega nicht geöffnet werden (NameError: name 'liz' is not defined)
+
 [B][COLOR orangered]Version 2.2.9+matrix.1  (03.09.2023)[/COLOR][/B]
 - fixed: Einige euronews - LIVESTREAMS funktionieren nicht mehr
 		</news>
