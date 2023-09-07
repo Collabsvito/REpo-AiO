@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.1.5+matrix.1" provider-name="realvito">
+<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.1.6+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -23,7 +23,7 @@
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
 		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
-		<website>https://www.tvnow.de/</website>
+		<website>https://plus.rtl.de/</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.rtlgroup.de</source>
@@ -32,15 +32,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.1.5+matrix.1  (25.06.2023)[/COLOR][/B]
-- added: Premium(Bezahl)-Inhalte für 'FreeUser' ausblenden (settings)
-
-[B][COLOR orangered]Version 1.1.4+matrix.1  (09.06.2023)[/COLOR][/B]
-- fixed: In Kodi Nexus/Omega funktioniert die Sortierung der Episoden nach Datum nicht
-
-[B][COLOR orangered]Version 1.1.3+matrix.1  (04.06.2023)[/COLOR][/B]
-- fixed: LIVESTREAMS lassen sich nicht abspielen (StreamUrls verändert)
-- fixed: m3u-Liste zur Integration der Livestreams des Addons in den 'PVR IPTV Simple Client' (neue StreamUrls)
+[B][COLOR orangered]Version 1.1.6+matrix.1  (07.09.2023)[/COLOR][/B]
+- fixed: VOD-STREAMS für Premium-User werden nur in SD-Qualität abgespielt
+- optimized: Serienname, Staffel/Folge und Sendetermin neu angeordnet und übersichtlicher gestaltet
+- added: Bibliothek = Thumb für Staffeln und Fanart für Episoden
 		</news>
 	</extension>
 </addon>
