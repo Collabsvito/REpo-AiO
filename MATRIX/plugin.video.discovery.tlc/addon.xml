@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.1.8+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.1.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -28,9 +28,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.1.8+matrix.1  (29.05.2023)[/COLOR][/B]
-- fixed: Manchmal können Videos nicht abgespielt werden
-- added: Anpassungen an Änderungen von KODI-Nexus
+[B][COLOR orangered]Version 3.1.9+matrix.1  (10.09.2023)[/COLOR][/B]
+- fixed: In Kodi Nexus/Omega funktioniert die Sortierung der Episoden nach Datum nicht
+- removed on OMEGA: listitem.setProperty('inputstream.adaptive.manifest_type') = DEPRECATED
 		</news>
 	</extension>
 </addon>
