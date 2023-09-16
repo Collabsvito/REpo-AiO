@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.0.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.0.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -28,9 +28,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.3+matrix.1  (11.08.2023)[/COLOR][/B]
-- removed: Abhängigkeit "plugin.video.rtlgroup.de" zum Abspielen von RTLPLUS-Links
-- comment *Das Abspielen von Links die auf die Webseite 'https://plus.rtl.de' verweisen ist wegen Komplettumstellung der Webseite auf Javascript und neuer Video-Ids die mit mit der alten API v.1+v.3 nicht kompatibel sind z.Zt. NICHT möglich, daher werden Diese jetzt ausgeblendet !*
+[B][COLOR orangered]Version 1.0.4+matrix.1  (16.09.2023)[/COLOR][/B]
+- fixed: Abspiel-Fehler wenn in den Einstellungen 'Video-Dateiformat' mp4 ausgewählt wurde (NameError: name 'reduce' is not defined)
 		</news>
 	</extension>
 </addon>
