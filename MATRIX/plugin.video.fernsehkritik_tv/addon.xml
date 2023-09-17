@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.fernsehkritik_tv" name="Massengeschmack [COLOR FF00EE00](light)[/COLOR]" version="2.2.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.fernsehkritik_tv" name="Massengeschmack [COLOR FF00EE00](light)[/COLOR]" version="2.2.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -18,7 +18,7 @@
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website>https://massengeschmack.tv</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
@@ -28,10 +28,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.2.6+matrix.1  (11.03.2023)[/COLOR][/B]
-- removed: Festgelegte Rubriken von 'Massengeschmack.TV' auf Youtube
-- added: Dynamische Playlisten von 'Massengeschmack.TV' auf Youtube immer aktuell
-- added: Anpassungen an Änderungen von KODI-Nexus
+[B][COLOR orangered]Version 2.2.7+matrix.1  (17.09.2023)[/COLOR][/B]
+- added: Sendungen im Startmenü nach Name sortieren
+- fixed: Dynamische Playlisten von 'Massengeschmack.TV' auf Youtube können nicht geöffnet werden (Error Type: class 'json.decoder.JSONDecodeError')
 		</news>
 	</extension>
 </addon>
