@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.weltderwunder" name="Welt der Wunder" version="3.0.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.weltderwunder" name="Welt der Wunder" version="3.0.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
@@ -17,7 +17,7 @@
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website>https://www.weltderwunder.de</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
@@ -27,10 +27,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.2+matrix.1  (11.03.2023)[/COLOR][/B]
-- fixed: Livestream wird nicht abgespielt
-- removed: Festgelegte Rubriken von 'Welt der Wunder' auf Youtube
-- added: Dynamische Playlisten von 'Welt der Wunder' auf Youtube immer aktuell
+[B][COLOR orangered]Version 3.0.3+matrix.1  (17.09.2023)[/COLOR][/B]
+- fixed: Dynamische Playlisten von 'Welt der Wunder' auf Youtube können nicht geöffnet werden (Error Type: class 'json.decoder.JSONDecodeError')
 		</news>
 	</extension>
 </addon>
