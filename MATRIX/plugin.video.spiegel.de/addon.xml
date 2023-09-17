@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.spiegel.de" name="DER SPIEGEL [COLOR FF00EE00](neu)[/COLOR]" version="3.0.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.spiegel.de" name="DER SPIEGEL" version="3.0.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -28,17 +28,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.1+matrix.1  (25.06.2023)[/COLOR][/B]
-- Pluginname changed with this ReRelease (old=plugin.video.tyl0re.spiegeltv -> new=plugin.video.spiegel.de)
-- Komplette Überarbeitung des alten Spiegel.TV-Addons nach Webseitenerneuerung (ReRelease)
-- fixed: Tagline und Autoren der einzelnen Artikel werden nicht angezeigt
-- removed: Rubriken = DER SPIEGEL liest und fragt, Spitzentitel - die Büchershow mit Volker Weidermann, Coronavirus: Videos
-- removed: Festgelegte Rubriken von 'Der Spiegel' auf Youtube
-- added: Rubriken = Russlands Krieg gegen die Ukraine, SPIEGEL Bestseller - Mehr lesen mit Elke Heidenreich
-- added: Podcasts und Audiostreams anzeigen und abspielen (settings)
-- added: Dynamische Playlisten von 'Der Spiegel' auf Youtube immer aktuell
-- added: Anpassungen an Änderungen von KODI-Nexus
-- optimized: Die Themen der Rubrik 'Thema: SPIEGEL TV' zur besseren Übersicht aufgeteilt in separate Ordner
+[B][COLOR orangered]Version 3.0.2+matrix.1  (17.09.2023)[/COLOR][/B]
+- fixed: Dynamische Playlisten von 'Der Spiegel' auf Youtube können nicht geöffnet werden (Error Type: class 'json.decoder.JSONDecodeError')
+- fixed: Ausstrahlungsdatum der Sendungen wird manchmal nicht richtig dargestellt
+- fixed: In Kodi Nexus/Omega funktioniert die Sortierung der Episoden nach Datum nicht
+- removed on OMEGA: listitem.setProperty('inputstream.adaptive.manifest_type') = DEPRECATED
 		</news>
 	</extension>
 </addon>
