@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.2.0+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.2.1+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -31,9 +31,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.2.0+matrix.1  (11.08.2023)[/COLOR][/B]
-- removed: Abhängigkeit "plugin.video.rtlgroup.de" zum Abspielen von RTLPLUS-Links
-- comment *Das Abspielen von Links die auf die Webseite 'https://plus.rtl.de' verweisen ist wegen Komplettumstellung der Webseite auf Javascript und neuer Video-Ids die mit mit der alten API v.1+v.3 nicht kompatibel sind z.Zt. NICHT möglich, daher werden Diese jetzt ausgeblendet !*
+[B][COLOR orangered]Version 2.2.1+matrix.1  (18.11.2023)[/COLOR][/B]
+- fixed: Die Rubrik: 'Sendungen sortiert nach Sendern' hat keinen Inhalt
+- optimized: Den Inhalt der Rubrik: 'Vor- &amp; Rückschau' um einige Daten erweitert
+- comment *Die jetzt angezeigten Daten in der Rubrik: 'Vor- &amp; Rückschau' entsprechen nicht genau der Vorgabe der Webseite von 'tvspielfilm.de', aber ältere Sendungen sind auch meist in den Mediatheken nicht mehr verfügbar !*
 		</news>
 	</extension>
 </addon>
