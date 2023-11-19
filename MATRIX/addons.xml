@@ -475,12 +475,12 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.1.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - NW" version="1.1.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+		<import addon="script.module.requests" version="2.27.0"/>
 		<import addon="script.common.plugin.cache" version="2.6.2+matrix.1"/>
-		<import addon="inputstream.adaptive" version="2.4.5"/>
+		<import addon="inputstream.adaptive" version="2.4.8"/>
 		<import addon="script.module.inputstreamhelper" version="0.5.5+matrix.1"/>
 		<import addon="service.cron.autobiblio" version="2.1.2+matrix.1" optional="true"/>
 	</requires>
@@ -489,17 +489,17 @@
 	</extension>
 	<extension point="xbmc.service" library="service.py"/>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">Streamingdienst von RTL+ (DE)</summary>
-		<summary lang="en_GB">Streamingservice of RTL+ (DE)</summary>
-		<description lang="de_DE">Bei RTL+ (DE), vormals TVNOW (DE), Serien, Shows und Filme online streamen. Schau dir komplette Serien an, fiebere bei deinen liebsten Daily-Soaps mit oder staune bei spannenden Dokumentationen - alles wann und wo du willst auf Abruf.[CR]Viele Inhalte aus dem TV Programm siehst du bei RTL+, sogar schon vor TV-Aussstrahlung !</description>
-		<description lang="en_GB">Stream series, shows and movies online with RTL+ (DE), formerly TVNOW (DE). Watch complete series, enjoy your favorite daily soap operas or marvel at exciting documentaries - all when and where you want on demand.[CR]You can see a lot of content from the TV program on RTL+, even before it is broadcast on TV!</description>
+		<summary lang="de_DE">Streamingdienst von RTL+ in Deutschland</summary>
+		<summary lang="en_GB">Streamingservice of RTL+ in Germany</summary>
+		<description lang="de_DE">Bei RTL+ (DE) Serien, Shows und Filme online streamen. Schau dir komplette Serien an, fiebere bei deinen liebsten Daily-Soaps mit oder staune bei spannenden Dokumentationen - alles wann und wo du willst auf Abruf.[CR]Viele Inhalte aus dem TV Programm siehst du bei RTL+ sogar schon vor TV-Aussstrahlung !</description>
+		<description lang="en_GB">Stream series, shows and movies online with RTL+ (DE). Watch complete series, enjoy your favorite daily soap operas or marvel at exciting documentaries - all when and where you want on demand.[CR]You can even see a lot of content from the TV program on RTL+ before it is broadcast on TV!</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
 		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
-		<website>https://plus.rtl.de/</website>
+		<website>https://plus.rtl.de</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.rtlgroup.de</source>
@@ -508,10 +508,13 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.1.6+matrix.1  (07.09.2023)[/COLOR][/B]
-- fixed: VOD-STREAMS für Premium-User werden nur in SD-Qualität abgespielt
-- optimized: Serienname, Staffel/Folge und Sendetermin neu angeordnet und übersichtlicher gestaltet
-- added: Bibliothek = Thumb für Staffeln und Fanart für Episoden
+[B][COLOR orangered]Version 1.1.7+matrix.1  (19.11.2023)[/COLOR][/B]
+- fixed: Sämtliche Streams der Medienbibliothek- und innerhalb des Addons-RTLPLUS sind nicht abspielbar (es werden jetzt wieder die Streams der API.v.3 verwendet)
+- changed: m3u-Liste zur Integration der Livestreams des Addons in den 'PVR IPTV Simple Client' (diverse Anpassungen)
+- optimized: Pop-ups beim Start des Addons und unnötige Meldungen entfernt (An- oder Abmeldung eines Accounts jetzt direkt in den 'settings' des Addons)
+- removed: Rubrik = Eventstreams (keine Quelle in der API.v.3 vorhanden)
+- comment: * Ich kann KEINE Gewähr dafür übernehmen, dass alle Daten der API.v.3 mit den offiziellen Daten der aktuellen Web- oder Androidversion von RTL+ übereinstimmen - deshalb wurde von mir bisher die API.v.1 des Anbieters genutzt (leider nicht mehr verfügbar) !!! *
+- comment: * Benutzer der Bibliothekfunktion des Addons-RTLPLUS müssen erst die nächste Auffrischung der gespeicherten Sendungen abwarten, um Diese wiedergeben zu können !!! *
 		</news>
 	</extension>
 </addon>
@@ -844,7 +847,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.viacom.mtv" name="MTV Germany" version="2.0.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.viacom.mtv" name="MTV Germany" version="2.0.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -854,10 +857,10 @@
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">MTV Musik</summary>
-		<summary lang="en_GB">MTV Music</summary>
-		<description lang="de_DE">Hört euch die neuesten Songs eurer Lieblingsacts an und checkt deren Musikvideos oder seht komplette Staffeln eurer liebsten TV-Serien an.[CR]MTV ist die ultimative Quelle für Musik, Lifestyle, Popkultur, Entertainment, Filme und vieles mehr...</description>
-		<description lang="en_GB">Listen to the latest songs of your favorite acts and check out their music videos or watch complete seasons of your favorite TV series.[CR]MTV is the ultimate source for music, lifestyle, pop culture, entertainment, movies and much more...</description>
+		<summary lang="de_DE">MTV.de Musik und mehr</summary>
+		<summary lang="en_GB">MTV.de Music and more</summary>
+		<description lang="de_DE">Bei MTV.de findet ihr coolen Content, wie alles rund um Yo! MTV Raps und ganze Folgen eurer liebsten MTV Shows, wie Catfish, Ex on the Beach, Just Tattoo of Us, Geordie Shore und viele mehr.[CR]MTV.de ist die ultimative Quelle für Musik, Lifestyle, Popkultur, Entertainment, Filme und vieles mehr...</description>
+		<description lang="en_GB">At MTV.de you'll find cool content, like everything about Yo! MTV Raps and full episodes of your favourite MTV shows, like Catfish, Ex on the Beach, Just Tattoo of Us, Geordie Shore and many more.[CR]MTV.de is the ultimate source for music, lifestyle, pop culture, entertainment, movies and much more...</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
@@ -873,10 +876,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.0.6+matrix.1  (25.06.2023)[/COLOR][/B]
-- fixed: Error unter Charts, wenn Einträge ohne Video ausgeblendet werden sollen (UnboundLocalError: local variable 'name' referenced before assignment)
-- fixed: Error unter Charts, wenn Einträge ohne Video angeklickt werden (ERROR general: Playlist Player: skipping unplayable item: 0)
-- added: Charts = Jahrescharts 2022
+[B][COLOR orangered]Version 2.0.7+matrix.1  (19.11.2023)[/COLOR][/B]
+- fixed: Alle Unterordner des Addons können NICHT geöffnet werden (API des Anbieters verändert)
+- added: Poster-Images für Shows
 		</news>
 	</extension>
 </addon>
