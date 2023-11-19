@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.viacom.mtv" name="MTV Germany" version="2.0.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.viacom.mtv" name="MTV Germany" version="2.0.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
@@ -9,10 +9,10 @@
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">MTV Musik</summary>
-		<summary lang="en_GB">MTV Music</summary>
-		<description lang="de_DE">Hört euch die neuesten Songs eurer Lieblingsacts an und checkt deren Musikvideos oder seht komplette Staffeln eurer liebsten TV-Serien an.[CR]MTV ist die ultimative Quelle für Musik, Lifestyle, Popkultur, Entertainment, Filme und vieles mehr...</description>
-		<description lang="en_GB">Listen to the latest songs of your favorite acts and check out their music videos or watch complete seasons of your favorite TV series.[CR]MTV is the ultimate source for music, lifestyle, pop culture, entertainment, movies and much more...</description>
+		<summary lang="de_DE">MTV.de Musik und mehr</summary>
+		<summary lang="en_GB">MTV.de Music and more</summary>
+		<description lang="de_DE">Bei MTV.de findet ihr coolen Content, wie alles rund um Yo! MTV Raps und ganze Folgen eurer liebsten MTV Shows, wie Catfish, Ex on the Beach, Just Tattoo of Us, Geordie Shore und viele mehr.[CR]MTV.de ist die ultimative Quelle für Musik, Lifestyle, Popkultur, Entertainment, Filme und vieles mehr...</description>
+		<description lang="en_GB">At MTV.de you'll find cool content, like everything about Yo! MTV Raps and full episodes of your favourite MTV shows, like Catfish, Ex on the Beach, Just Tattoo of Us, Geordie Shore and many more.[CR]MTV.de is the ultimate source for music, lifestyle, pop culture, entertainment, movies and much more...</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
@@ -28,10 +28,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.0.6+matrix.1  (25.06.2023)[/COLOR][/B]
-- fixed: Error unter Charts, wenn Einträge ohne Video ausgeblendet werden sollen (UnboundLocalError: local variable 'name' referenced before assignment)
-- fixed: Error unter Charts, wenn Einträge ohne Video angeklickt werden (ERROR general: Playlist Player: skipping unplayable item: 0)
-- added: Charts = Jahrescharts 2022
+[B][COLOR orangered]Version 2.0.7+matrix.1  (19.11.2023)[/COLOR][/B]
+- fixed: Alle Unterordner des Addons können NICHT geöffnet werden (API des Anbieters verändert)
+- added: Poster-Images für Shows
 		</news>
 	</extension>
 </addon>
