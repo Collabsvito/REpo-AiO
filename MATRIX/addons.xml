@@ -518,11 +518,12 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.0.4+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.0.5+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+		<import addon="script.module.requests" version="2.27.0"/>
 		<import addon="plugin.video.tyl0re.arte" optional="true"/>
+		<import addon="plugin.video.joyn" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -547,8 +548,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.4+matrix.1  (16.09.2023)[/COLOR][/B]
-- fixed: Abspiel-Fehler wenn in den Einstellungen 'Video-Dateiformat' mp4 ausgewählt wurde (NameError: name 'reduce' is not defined)
+[B][COLOR orangered]Version 1.0.5+matrix.1  (06.12.2023)[/COLOR][/B]
+- fixed: Manche ZDF-Videos werden nicht gefunden und sind nicht abspielbar (Einige ZDF-Sendungen haben eine veränderte Seitenstruktur)
+- added: Abhängigkeit 'plugin.video.joyn' zum Abspielen von Links der Seven.One Entertainment Group
+- removed: Umandlung von 'ProSiebenSat.1 Media -Links' die auf diverse Seiten dieses Anbieters verweisen (werden von 'Sendungverpasst.de' nicht mehr verwendet)
 		</news>
 	</extension>
 </addon>
@@ -737,10 +740,10 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.2.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.2.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+		<import addon="script.module.requests" version="2.27.0"/>
 		<import addon="plugin.video.tyl0re.arte" optional="true"/>
 		<import addon="plugin.video.joyn" optional="true"/>
 		<import addon="plugin.video.servustv_com" optional="true"/>
@@ -769,10 +772,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.2.1+matrix.1  (18.11.2023)[/COLOR][/B]
-- fixed: Die Rubrik: 'Sendungen sortiert nach Sendern' hat keinen Inhalt
-- optimized: Den Inhalt der Rubrik: 'Vor- &amp; Rückschau' um einige Daten erweitert
-- comment *Die jetzt angezeigten Daten in der Rubrik: 'Vor- &amp; Rückschau' entsprechen nicht genau der Vorgabe der Webseite von 'tvspielfilm.de', aber ältere Sendungen sind auch meist in den Mediatheken nicht mehr verfügbar !*
+[B][COLOR orangered]Version 2.2.2+matrix.1  (06.12.2023)[/COLOR][/B]
+- fixed: Manche ZDF-Videos werden nicht gefunden und sind nicht abspielbar (Einige ZDF-Sendungen haben eine veränderte Seitenstruktur)
+- fixed: Manche Weiterleitungen für 'JOYN - Inhalte' sind unvollständig und müssen daher zweimal abgefragt werden um Wiedergabefehler zu vermeiden !
 		</news>
 	</extension>
 </addon>
