@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.spiegel.de" name="DER SPIEGEL" version="3.0.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.spiegel.de" name="DER SPIEGEL" version="3.0.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+		<import addon="script.module.requests" version="2.27.0"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -28,11 +28,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.2+matrix.1  (17.09.2023)[/COLOR][/B]
-- fixed: Dynamische Playlisten von 'Der Spiegel' auf Youtube können nicht geöffnet werden (Error Type: class 'json.decoder.JSONDecodeError')
-- fixed: Ausstrahlungsdatum der Sendungen wird manchmal nicht richtig dargestellt
-- fixed: In Kodi Nexus/Omega funktioniert die Sortierung der Episoden nach Datum nicht
-- removed on OMEGA: listitem.setProperty('inputstream.adaptive.manifest_type') = DEPRECATED
+[B][COLOR orangered]Version 3.0.3+matrix.1  (19.12.2023)[/COLOR][/B]
+- fixed: Sämtliche Ordner können nicht geöffnet werden (Quelltext der Webseite verändert)
+- fixed: Einige Sendungs-Titel haben beim Abspielen ein '[/B]' Symbol am Titelende
+- optimized: Die Symbol-Kennzeichnung von 'Audio-Streams' verursacht bei einigen Skins Darstellungs-Probleme (ersetzt durch anderes Symbol)
 		</news>
 	</extension>
 </addon>
