@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - NW" version="1.1.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - NW" version="1.1.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -32,13 +32,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.1.7+matrix.1  (19.11.2023)[/COLOR][/B]
-- fixed: Sämtliche Streams der Medienbibliothek- und innerhalb des Addons-RTLPLUS sind nicht abspielbar (es werden jetzt wieder die Streams der API.v.3 verwendet)
-- changed: m3u-Liste zur Integration der Livestreams des Addons in den 'PVR IPTV Simple Client' (diverse Anpassungen)
-- optimized: Pop-ups beim Start des Addons und unnötige Meldungen entfernt (An- oder Abmeldung eines Accounts jetzt direkt in den 'settings' des Addons)
-- removed: Rubrik = Eventstreams (keine Quelle in der API.v.3 vorhanden)
-- comment: * Ich kann KEINE Gewähr dafür übernehmen, dass alle Daten der API.v.3 mit den offiziellen Daten der aktuellen Web- oder Androidversion von RTL+ übereinstimmen - deshalb wurde von mir bisher die API.v.1 des Anbieters genutzt (leider nicht mehr verfügbar) !!! *
-- comment: * Benutzer der Bibliothekfunktion des Addons-RTLPLUS müssen erst die nächste Auffrischung der gespeicherten Sendungen abwarten, um Diese wiedergeben zu können !!! *
+[B][COLOR orangered]Version 1.1.8+matrix.1  (29.12.2023)[/COLOR][/B]
+- fixed: In seltenen Fällen wird trotz erfolgreichem Login-Prozess später ein Fehler ausgegeben
 		</news>
 	</extension>
 </addon>
