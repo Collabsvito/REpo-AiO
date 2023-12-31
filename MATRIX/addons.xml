@@ -303,9 +303,10 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.filmstarts" name="FILMSTARTS.de" version="1.0.9+matrix.1" provider-name="realvito">
+<addon id="plugin.video.filmstarts" name="FILMSTARTS.de" version="1.1.0+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.27.0"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -320,7 +321,7 @@
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/53743-RERelease-filmstarts/</forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website>https://www.filmstarts.de</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
@@ -330,10 +331,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.9+matrix.1  (11.03.2023)[/COLOR][/B]
-- fixed: Rubrik = Filme-/Serien- Trailer, manchmal wird der Inhalt der nächsten Seite nicht angezeigt (IndexError: list index out of range)
-- removed: News -> Fünf Sterne + Fehlerteufel + Meine Lieblings-Filmszene (existieren nicht mehr)
-- added: Anpassungen an Änderungen von KODI-Nexus
+[B][COLOR orangered]Version 1.1.0+matrix.1  (31.12.2023)[/COLOR][/B]
+- fixed: Rubriken = Vorpremieren im Kino, Filme sortiert nach Beliebtheit und Star-Interviews (IndexError: list index out of range)
+- added: HOME-BUTTON - Dieser Button ermöglicht es direkt zum Hauptmenü des Addons zurückzukehren ohne dabei jede aufgerufene Seite einer Liste einzeln zurückblättern zu müssen (settings)
+- optimized: Datumsangaben bzw. längere Textpassagen vom Titel des Films zum Plot verschoben
 		</news>
 	</extension>
 </addon>
@@ -370,10 +371,10 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.kika_de" name="KiKA plus" version="3.4.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.kika_de" name="KiKA plus" version="3.4.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+		<import addon="script.module.requests" version="2.27.0"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -388,7 +389,7 @@
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website>https://www.kika.de</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
@@ -398,12 +399,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.4.7+matrix.1  (30.03.2023)[/COLOR][/B]
-- added: Alle Rubriken für die Funktion mit der Android-API angepasst
-- added: Rubrik = Lollywood (KiKA Filme)
-- added: Diverse Sortiermethoden für Episoden im Seitenmenü
-- removed: Rubriken die für die Funktion mit der Web-API festgelegt waren
-- comment: *Mein besonderer Dank geht an den User: 'buzz-tee' auf Github für seine Unterstützung*
+[B][COLOR orangered]Version 3.4.8+matrix.1  (31.12.2023)[/COLOR][/B]
+- fixed: Manche Odner lassen sich nicht öffnen (KeyError: 'mediumBrandImageUrl')
+- fixed: In Kodi Nexus/Omega funktioniert die Sortierung der Episoden nach Datum nicht
 		</news>
 	</extension>
 </addon>
@@ -585,7 +583,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.spiegel.de" name="DER SPIEGEL" version="3.0.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.spiegel.de" name="DER SPIEGEL" version="3.0.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -598,7 +596,7 @@
 		<summary lang="de_DE">Online Nachrichten - 'DER SPIEGEL'</summary>
 		<summary lang="en_GB">Online News - 'DER SPIEGEL'</summary>
 		<description lang="de_DE">'DER SPIEGEL' zeichnet sich durch schnelles Reagieren auf aktuelle Ereignisse sowie sorgfältig recherchierte investigative Hintergrundgeschichten aus.[CR]Deutschlands führende Nachrichtenseite für alles Wichtige aus Politik, Wirtschaft, Sport, Kultur, Wissenschaft, Technik und mehr.</description>
-		<description lang="en_GB">DER SPIEGEL' is characterised by quick reactions to current events as well as carefully researched investigative background stories.[CR]Germany's leading news site for everything important from politics, business, sport, culture, science, technology and more.</description>
+		<description lang="en_GB">'DER SPIEGEL' is characterised by quick reactions to current events as well as carefully researched investigative background stories.[CR]Germany's leading news site for everything important from politics, business, sport, culture, science, technology and more.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
@@ -614,10 +612,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.3+matrix.1  (19.12.2023)[/COLOR][/B]
-- fixed: Sämtliche Ordner können nicht geöffnet werden (Quelltext der Webseite verändert)
-- fixed: Einige Sendungs-Titel haben beim Abspielen ein '[/B]' Symbol am Titelende
-- optimized: Die Symbol-Kennzeichnung von 'Audio-Streams' verursacht bei einigen Skins Darstellungs-Probleme (ersetzt durch anderes Symbol)
+[B][COLOR orangered]Version 3.0.4+matrix.1  (31.12.2023)[/COLOR][/B]
+- fixed: Nervende Meldung: 'DETAILS - ERROR' wenn nur für wenige Beiträge kein Video vorhanden ist (Fehlermeldung jetzt erst ab mind. 15 Server-Fehlern)
+- fixed: Fehlerhafte Beiträge ohne Video/Audio -Stream werden nicht ausgeblendet
 		</news>
 	</extension>
 </addon>

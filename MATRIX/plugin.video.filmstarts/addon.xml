@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.filmstarts" name="FILMSTARTS.de" version="1.0.9+matrix.1" provider-name="realvito">
+<addon id="plugin.video.filmstarts" name="FILMSTARTS.de" version="1.1.0+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.27.0"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -16,7 +17,7 @@
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/53743-RERelease-filmstarts/</forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website>https://www.filmstarts.de</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
@@ -26,10 +27,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.9+matrix.1  (11.03.2023)[/COLOR][/B]
-- fixed: Rubrik = Filme-/Serien- Trailer, manchmal wird der Inhalt der nächsten Seite nicht angezeigt (IndexError: list index out of range)
-- removed: News -> Fünf Sterne + Fehlerteufel + Meine Lieblings-Filmszene (existieren nicht mehr)
-- added: Anpassungen an Änderungen von KODI-Nexus
+[B][COLOR orangered]Version 1.1.0+matrix.1  (31.12.2023)[/COLOR][/B]
+- fixed: Rubriken = Vorpremieren im Kino, Filme sortiert nach Beliebtheit und Star-Interviews (IndexError: list index out of range)
+- added: HOME-BUTTON - Dieser Button ermöglicht es direkt zum Hauptmenü des Addons zurückzukehren ohne dabei jede aufgerufene Seite einer Liste einzeln zurückblättern zu müssen (settings)
+- optimized: Datumsangaben bzw. längere Textpassagen vom Titel des Films zum Plot verschoben
 		</news>
 	</extension>
 </addon>
