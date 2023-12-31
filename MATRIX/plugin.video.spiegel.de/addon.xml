@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.spiegel.de" name="DER SPIEGEL" version="3.0.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.spiegel.de" name="DER SPIEGEL" version="3.0.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -12,7 +12,7 @@
 		<summary lang="de_DE">Online Nachrichten - 'DER SPIEGEL'</summary>
 		<summary lang="en_GB">Online News - 'DER SPIEGEL'</summary>
 		<description lang="de_DE">'DER SPIEGEL' zeichnet sich durch schnelles Reagieren auf aktuelle Ereignisse sowie sorgfältig recherchierte investigative Hintergrundgeschichten aus.[CR]Deutschlands führende Nachrichtenseite für alles Wichtige aus Politik, Wirtschaft, Sport, Kultur, Wissenschaft, Technik und mehr.</description>
-		<description lang="en_GB">DER SPIEGEL' is characterised by quick reactions to current events as well as carefully researched investigative background stories.[CR]Germany's leading news site for everything important from politics, business, sport, culture, science, technology and more.</description>
+		<description lang="en_GB">'DER SPIEGEL' is characterised by quick reactions to current events as well as carefully researched investigative background stories.[CR]Germany's leading news site for everything important from politics, business, sport, culture, science, technology and more.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
@@ -28,10 +28,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.3+matrix.1  (19.12.2023)[/COLOR][/B]
-- fixed: Sämtliche Ordner können nicht geöffnet werden (Quelltext der Webseite verändert)
-- fixed: Einige Sendungs-Titel haben beim Abspielen ein '[/B]' Symbol am Titelende
-- optimized: Die Symbol-Kennzeichnung von 'Audio-Streams' verursacht bei einigen Skins Darstellungs-Probleme (ersetzt durch anderes Symbol)
+[B][COLOR orangered]Version 3.0.4+matrix.1  (31.12.2023)[/COLOR][/B]
+- fixed: Nervende Meldung: 'DETAILS - ERROR' wenn nur für wenige Beiträge kein Video vorhanden ist (Fehlermeldung jetzt erst ab mind. 15 Server-Fehlern)
+- fixed: Fehlerhafte Beiträge ohne Video/Audio -Stream werden nicht ausgeblendet
 		</news>
 	</extension>
 </addon>
