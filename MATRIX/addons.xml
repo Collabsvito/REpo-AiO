@@ -473,7 +473,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - NW" version="1.1.8+matrix.1" provider-name="realvito">
+<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - NW" version="1.1.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -506,8 +506,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.1.8+matrix.1  (29.12.2023)[/COLOR][/B]
-- fixed: In seltenen Fällen wird trotz erfolgreichem Login-Prozess später ein Fehler ausgegeben
+[B][COLOR orangered]Version 1.1.9+matrix.1  (02.01.2024)[/COLOR][/B]
+- fixed: Der Account-Login wird vom Addon NICHT akzeptiert wenn die Original-Daten im 'Base64-Format' vorliegen
+- comment: * Wenn der Addon-User ein Original-Passwort im 'Base64-Format' nutzt und bei der Eingabe die Verschlüsselung seiner Daten ablehnt, setzte das Addon allerdings voraus, dass bei dieser Konstellation die Login-Daten nicht im 'Base64-Format' vorliegen dürfen ! *
 		</news>
 	</extension>
 </addon>
