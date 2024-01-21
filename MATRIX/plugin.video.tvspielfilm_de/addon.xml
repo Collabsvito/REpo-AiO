@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.2.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.2.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -31,10 +31,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.2.3+matrix.1  (25.12.2023)[/COLOR][/B]
-- fixed: Die Rubrik: 'Shows &amp; Comedy' hat keinen Inhalt (heißt jetzt wieder 'Unterhaltung')
-- added: Rubriken: Top bewertet auf IMDb, Highlights der ARD+, Highlights des ZDF+ und Highlights der PRIVATEN SENDER
-- comment: * ARD+ bedeutet alle Sender der ARD (Regionale etc.) die dazugehören, ZDF+ bedeutet auch alle Sender des ZDF die dazugehören &amp; ARTE *
+[B][COLOR orangered]Version 2.2.4+matrix.1  (21.01.2024)[/COLOR][/B]
+- fixed: Die Rubrik: 'Aktuell Beliebt' kann nicht geöffnet werden (fehlerhafte Links im Quelltext)
+- fixed: Sendungen ohne -Laufzeit und -Bescheibung ausblenden (diese Sendungen haben keinen Abspiellink - 'Quelltextleichen')
+- optimized: Taglines mit besonderer Kennzeichnung dementsprechend darstellen
+- optimized: Alle 'Highlights Rubriken' geändert zu 'Primetime Highlights Rubriken', d.h. gefiltert nach Uhrzeit zwischen 20:15 und 23:58
 		</news>
 	</extension>
 </addon>
