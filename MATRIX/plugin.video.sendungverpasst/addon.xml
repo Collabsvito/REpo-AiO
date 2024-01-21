@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.0.5+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.0.6+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
 		<import addon="plugin.video.tyl0re.arte" optional="true"/>
 		<import addon="plugin.video.joyn" optional="true"/>
+		<import addon="plugin.video.tvnow.de" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -29,10 +30,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.5+matrix.1  (06.12.2023)[/COLOR][/B]
-- fixed: Manche ZDF-Videos werden nicht gefunden und sind nicht abspielbar (Einige ZDF-Sendungen haben eine veränderte Seitenstruktur)
-- added: Abhängigkeit 'plugin.video.joyn' zum Abspielen von Links der Seven.One Entertainment Group
-- removed: Umandlung von 'ProSiebenSat.1 Media -Links' die auf diverse Seiten dieses Anbieters verweisen (werden von 'Sendungverpasst.de' nicht mehr verwendet)
+[B][COLOR orangered]Version 1.0.6+matrix.1  (21.01.2024)[/COLOR][/B]
+- fixed: Rubrik: 'Sendungs-Archive' der Unterordner 'Rubriken' produziert einen Fehler (Error Contents: 'name')
+- added: Abhängigkeit 'plugin.video.tvnow.de' zum Abspielen von Links der RTL interactive GmbH (nur für Links die mit 'https://plus.rtl.de' starten)
 		</news>
 	</extension>
 </addon>
