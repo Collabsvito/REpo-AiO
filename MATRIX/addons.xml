@@ -303,7 +303,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.filmstarts" name="FILMSTARTS.de" version="1.1.0+matrix.1" provider-name="realvito">
+<addon id="plugin.video.filmstarts" name="FILMSTARTS.de" version="1.1.1+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -331,33 +331,38 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.1.0+matrix.1  (31.12.2023)[/COLOR][/B]
-- fixed: Rubriken = Vorpremieren im Kino, Filme sortiert nach Beliebtheit und Star-Interviews (IndexError: list index out of range)
-- added: HOME-BUTTON - Dieser Button ermöglicht es direkt zum Hauptmenü des Addons zurückzukehren ohne dabei jede aufgerufene Seite einer Liste einzeln zurückblättern zu müssen (settings)
-- optimized: Datumsangaben bzw. längere Textpassagen vom Titel des Films zum Plot verschoben
+[B][COLOR orangered]Version 1.1.1+matrix.1  (25.02.2024)[/COLOR][/B]
+- fixed: Für fast alle Videos wird 'KEIN TRAILER' angezeigt (Quelltext und Videoabfrage verändert)
+- fixed: Genres, Regisseure und Darsteller der Videos werden nicht angezeigt
+- fixed: Für Serien-Videos wird kein Starttermin angezeigt
+- added: Originaltitel, Drehbuch, Produktionsland und FSK für Serien und Filme, Produktionsübersicht für Serien
+- added: Ausführliche Daten und Beschreibungen zu den diversen Trailer-Rubriken
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.galileo.tv" name="Galileo.TV" version="1.0.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.galileo.tv" name="Galileo.TV" version="2.0.1+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="inputstream.adaptive" version="2.4.8"/>
+		<import addon="plugin.video.joyn"/>
+		<import addon="plugin.video.youtube" version="6.8.1+matrix.1" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">Videoportal von Galileo.tv</summary>
-		<summary lang="en_GB">Videoportal of Galileo.tv</summary>
-		<description lang="de_DE">Galileo.tv liefert relevantes Wissen mit Aha-Effekt. Immer auf den Punkt gebracht. Immer mit klarem Mehrwert - und das jeden Tag.[CR]Willkommen im echten Leben * Smartes Alltags-Know-how, * coole Gadgets – und * Lifehacks, die dich wirklich voranbringen.</description>
-		<description lang="en_GB">Galileo.tv delivers relevant knowledge with an aha effect. Always to the point. Always with clear added value - and every day.[CR]Welcome to real life * Smart everyday know-how, * cool gadgets - and * lifehacks that really get you ahead.</description>
+		<summary lang="de_DE">Videoportal von Galileo auf ProSieben</summary>
+		<summary lang="en_GB">Videoportal of Galileo on ProSieben</summary>
+		<description lang="de_DE">GALILEO liefert relevantes Wissen mit Aha-Effekt. Immer auf den Punkt gebracht. Immer mit klarem Mehrwert - und das jeden Tag.[CR]Willkommen im echten Leben * Smartes Alltags-Know-how, * coole Gadgets – und * Lifehacks, die dich wirklich voranbringen.</description>
+		<description lang="en_GB">GALILEO delivers relevant knowledge with an aha effect. Always to the point. Always with clear added value - and every day.[CR]Welcome to real life * Smart everyday know-how, * cool gadgets - and * lifehacks that really get you ahead.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
-		<website>https://www.galileo.tv/</website>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
+		<website>https://www.prosieben.de/</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.galileo.tv</source>
@@ -366,8 +371,13 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.2+matrix.1  (24.02.2023)[/COLOR][/B]
-- fixed: Property Headers für 'Inputstream.Adaptive' verändert ab KODI-20
+[B][COLOR orangered]Version 2.0.1+matrix.1  (25.02.2024)[/COLOR][/B]
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- Re-Release @realvito // Nach Abschaltung der offiziellen Webseite von 'Galileo.tv'
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- added: Alle Rubriken der Startseite in der Übersicht (Browservariante von ProSieben [Galileo])
+- added: Hauptrubriken der Unterordner besonders hervorgehoben
+- comment: * Addon jetzt angepasst an die Webseite von ProSieben (Galileo), für die einwanfreie Funktion dieses Addons wird das 'plugin.video.joyn' und das 'plugin.video.youtube' benötigt (Manche Streams werden direkt zu JOYN oder YOUTUBE weitergeleitet) !!! *
 		</news>
 	</extension>
 </addon>
@@ -581,6 +591,63 @@
 [B][COLOR orangered]Version 3.0.7+matrix.1  (26.05.2023)[/COLOR][/B]
 - fixed: Es können keine Sendungen zu den Addon-Favoriten hinzugefügt werden
 - added: Anpassungen an Änderungen von KODI-Nexus
+		</news>
+	</extension>
+</addon>
+<addon id="plugin.video.skylinelivecams" name="Skyline LiveCams [COLOR FF00EE00](neu)[/COLOR]" version="1.0.1+matrix.1" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="script.module.beautifulsoup4" version="4.9.3"/>
+		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+		<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Live-HD-Kameras aus der ganzen Welt</summary>
+		<description lang="de_DE">Erleben Sie die Welt durch die Panoramafenster von SkylineWebcams.[CR]Entdecken Sie die atemberaubenden Strände oder Bergwelten, die lebendige Kultur und landschaftliche Schönheit vieler Städte in verschiedenen Ländern dieser Welt mit unsereren Live-Webcams.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<summary lang="en_GB">Live HD Cams from the World</summary>
+		<description lang="en_GB">Experience the world through the panoramic windows of SkylineWebcams.[CR]Discover the breathtaking beaches or mountain scenery, the vibrant culture and scenic beauty of many cities in different countries around the world with our Live-Webcams.</description>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<summary lang="fr_FR">Caméras HD en direct de partout dans le monde</summary>
+		<description lang="fr_FR">Découvrez le monde à travers les fenêtres panoramiques de SkylineWebcams.[CR]Découvrez les plages ou les montagnes à couper le souffle, la culture vivante et la beauté des paysages de nombreuses villes dans différents pays du monde grâce à nos webcams en direct.</description>
+		<summary lang="es_ES">Cámaras en vivo de alta definición de todo el mundo</summary>
+		<description lang="es_ES">Experimenta el mundo a través de las ventanas panorámicas de SkylineWebcams[CR]Descubre las impresionantes playas o mundos de montaña, la vibrante cultura y la belleza escénica de muchas ciudades en diferentes países de todo el mundo con nuestras cámaras web en vivo.</description>
+		<summary lang="it_IT">Telecamere HD in diretta da tutto il mondo</summary>
+		<description lang="it_IT">Scoprite il mondo attraverso le finestre panoramiche di SkylineWebcams.[CR]Scoprite le spiagge o le montagne mozzafiato, la cultura vibrante e la bellezza paesaggistica di molte città in diversi paesi del mondo con le nostre webcam dal vivo.</description>
+		<summary lang="el_GR">Ζωντανές κάμερες HD από όλο τον κόσμο</summary>
+		<description lang="el_GR">Ζήστε την εμπειρία του κόσμου μέσα από τα πανοραμικά παράθυρα της SkylineWebcams.[CR]Ανακαλύψτε τις μαγευτικές παραλίες ή τα βουνά, τον ζωντανό πολιτισμό και τη γραφική ομορφιά πολλών πόλεων σε διάφορες χώρες σε όλο τον κόσμο με τις ζωντανές μας κάμερες.</description>
+		<summary lang="pl_PL">Kamery HD na żywo z całego świata</summary>
+		<description lang="pl_PL">Poznaj świat przez panoramiczne okna SkylineWebcams.[CR]Odkryj zapierające dech w piersiach plaże lub góry, tętniącą życiem kulturę i malownicze piękno wielu miast w różnych krajach na całym świecie dzięki naszym kamerom internetowym na żywo.</description>
+		<summary lang="ru_RU">HD-камеры со всего мира</summary>
+		<description lang="ru_RU">Познайте мир через панорамные окна SkylineWebcams.[CR]Откройте для себя захватывающие дух пляжи или горы, яркую культуру и живописную красоту многих городов в разных странах мира с помощью наших веб-камер в реальном времени.</description>
+		<summary lang="hr_HR">HD kamere uživo iz cijelog svijeta</summary>
+		<description lang="hr_HR">Doživite svijet kroz panoramske prozore SkylineWebCams.[CR]Otkrijte prekrasne plaže ili planinske svjetove, živopisnu kulturu i slikovitu ljepotu mnogih gradova u različitim zemljama svijeta pomoću naših web kamera uživo.</description>
+		<summary lang="sl_SI">Kamere HD v živo z vsega sveta</summary>
+		<description lang="sl_SI">Spoznajte svet skozi panoramska okna SkylineWebcams.[CR]Odkrijte dih jemajoče plaže ali gore, živahno kulturo in slikovitost številnih mest v različnih državah po svetu z našimi spletnimi kamerami v živo.</description>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
+		<website>https://www.skylinewebcams.com</website>
+		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.skylinelivecams</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>
+[B][COLOR orangered]Version 1.0.1+matrix.1  (25.02.2024)[/COLOR][/B]
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- Initial Release @realvito
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- added: Rubrik = Zufällige Cam, Neue Cams, Top Cams, Live Cams nach Kategorien und Ländern
+- added: Favoriten-Ordner für persönliche Highlights
+- added: Youtube-Kompatibilität für externe Streams - Diese werden weitergeleitet an das Youtube-Addon
+- comment: * Leider kommt es bei den Direkt-Streams die über den Anbieter 'skylinewebcams.com' laufen manchmal zu Ausfällen (dies ist also KEIN Addon-Fehler) !!! *
 		</news>
 	</extension>
 </addon>

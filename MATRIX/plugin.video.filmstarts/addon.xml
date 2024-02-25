@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.filmstarts" name="FILMSTARTS.de" version="1.1.0+matrix.1" provider-name="realvito">
+<addon id="plugin.video.filmstarts" name="FILMSTARTS.de" version="1.1.1+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -27,10 +27,12 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.1.0+matrix.1  (31.12.2023)[/COLOR][/B]
-- fixed: Rubriken = Vorpremieren im Kino, Filme sortiert nach Beliebtheit und Star-Interviews (IndexError: list index out of range)
-- added: HOME-BUTTON - Dieser Button ermöglicht es direkt zum Hauptmenü des Addons zurückzukehren ohne dabei jede aufgerufene Seite einer Liste einzeln zurückblättern zu müssen (settings)
-- optimized: Datumsangaben bzw. längere Textpassagen vom Titel des Films zum Plot verschoben
+[B][COLOR orangered]Version 1.1.1+matrix.1  (25.02.2024)[/COLOR][/B]
+- fixed: Für fast alle Videos wird 'KEIN TRAILER' angezeigt (Quelltext und Videoabfrage verändert)
+- fixed: Genres, Regisseure und Darsteller der Videos werden nicht angezeigt
+- fixed: Für Serien-Videos wird kein Starttermin angezeigt
+- added: Originaltitel, Drehbuch, Produktionsland und FSK für Serien und Filme, Produktionsübersicht für Serien
+- added: Ausführliche Daten und Beschreibungen zu den diversen Trailer-Rubriken
 		</news>
 	</extension>
 </addon>
