@@ -377,7 +377,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 - added: Alle Rubriken der Startseite in der Übersicht (Browservariante von ProSieben [Galileo])
 - added: Hauptrubriken der Unterordner besonders hervorgehoben
-- comment: * Addon jetzt angepasst an die Webseite von ProSieben (Galileo), für die einwanfreie Funktion dieses Addons wird das 'plugin.video.joyn' und das 'plugin.video.youtube' benötigt (Manche Streams werden direkt zu JOYN oder YOUTUBE weitergeleitet) !!! *
+- comment: * Addon jetzt angepasst an die Webseite von ProSieben (Galileo), für die einwandfreie Funktion dieses Addons wird das 'plugin.video.joyn' und das 'plugin.video.youtube' benötigt (Manche Streams werden direkt zu JOYN oder YOUTUBE weitergeleitet) !!! *
 		</news>
 	</extension>
 </addon>
