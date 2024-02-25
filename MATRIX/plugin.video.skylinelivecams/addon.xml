@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="plugin.video.skylinelivecams" name="Skyline LiveCams [COLOR FF00EE00](neu)[/COLOR]" version="1.0.1+matrix.1" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="script.module.beautifulsoup4" version="4.9.3"/>
+		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+		<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Live-HD-Kameras aus der ganzen Welt</summary>
+		<description lang="de_DE">Erleben Sie die Welt durch die Panoramafenster von SkylineWebcams.[CR]Entdecken Sie die atemberaubenden Strände oder Bergwelten, die lebendige Kultur und landschaftliche Schönheit vieler Städte in verschiedenen Ländern dieser Welt mit unsereren Live-Webcams.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<summary lang="en_GB">Live HD Cams from the World</summary>
+		<description lang="en_GB">Experience the world through the panoramic windows of SkylineWebcams.[CR]Discover the breathtaking beaches or mountain scenery, the vibrant culture and scenic beauty of many cities in different countries around the world with our Live-Webcams.</description>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<summary lang="fr_FR">Caméras HD en direct de partout dans le monde</summary>
+		<description lang="fr_FR">Découvrez le monde à travers les fenêtres panoramiques de SkylineWebcams.[CR]Découvrez les plages ou les montagnes à couper le souffle, la culture vivante et la beauté des paysages de nombreuses villes dans différents pays du monde grâce à nos webcams en direct.</description>
+		<summary lang="es_ES">Cámaras en vivo de alta definición de todo el mundo</summary>
+		<description lang="es_ES">Experimenta el mundo a través de las ventanas panorámicas de SkylineWebcams[CR]Descubre las impresionantes playas o mundos de montaña, la vibrante cultura y la belleza escénica de muchas ciudades en diferentes países de todo el mundo con nuestras cámaras web en vivo.</description>
+		<summary lang="it_IT">Telecamere HD in diretta da tutto il mondo</summary>
+		<description lang="it_IT">Scoprite il mondo attraverso le finestre panoramiche di SkylineWebcams.[CR]Scoprite le spiagge o le montagne mozzafiato, la cultura vibrante e la bellezza paesaggistica di molte città in diversi paesi del mondo con le nostre webcam dal vivo.</description>
+		<summary lang="el_GR">Ζωντανές κάμερες HD από όλο τον κόσμο</summary>
+		<description lang="el_GR">Ζήστε την εμπειρία του κόσμου μέσα από τα πανοραμικά παράθυρα της SkylineWebcams.[CR]Ανακαλύψτε τις μαγευτικές παραλίες ή τα βουνά, τον ζωντανό πολιτισμό και τη γραφική ομορφιά πολλών πόλεων σε διάφορες χώρες σε όλο τον κόσμο με τις ζωντανές μας κάμερες.</description>
+		<summary lang="pl_PL">Kamery HD na żywo z całego świata</summary>
+		<description lang="pl_PL">Poznaj świat przez panoramiczne okna SkylineWebcams.[CR]Odkryj zapierające dech w piersiach plaże lub góry, tętniącą życiem kulturę i malownicze piękno wielu miast w różnych krajach na całym świecie dzięki naszym kamerom internetowym na żywo.</description>
+		<summary lang="ru_RU">HD-камеры со всего мира</summary>
+		<description lang="ru_RU">Познайте мир через панорамные окна SkylineWebcams.[CR]Откройте для себя захватывающие дух пляжи или горы, яркую культуру и живописную красоту многих городов в разных странах мира с помощью наших веб-камер в реальном времени.</description>
+		<summary lang="hr_HR">HD kamere uživo iz cijelog svijeta</summary>
+		<description lang="hr_HR">Doživite svijet kroz panoramske prozore SkylineWebCams.[CR]Otkrijte prekrasne plaže ili planinske svjetove, živopisnu kulturu i slikovitu ljepotu mnogih gradova u različitim zemljama svijeta pomoću naših web kamera uživo.</description>
+		<summary lang="sl_SI">Kamere HD v živo z vsega sveta</summary>
+		<description lang="sl_SI">Spoznajte svet skozi panoramska okna SkylineWebcams.[CR]Odkrijte dih jemajoče plaže ali gore, živahno kulturo in slikovitost številnih mest v različnih državah po svetu z našimi spletnimi kamerami v živo.</description>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
+		<website>https://www.skylinewebcams.com</website>
+		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.skylinelivecams</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>
+[B][COLOR orangered]Version 1.0.1+matrix.1  (25.02.2024)[/COLOR][/B]
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- Initial Release @realvito
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- added: Rubrik = Zufällige Cam, Neue Cams, Top Cams, Live Cams nach Kategorien und Ländern
+- added: Favoriten-Ordner für persönliche Highlights
+- added: Youtube-Kompatibilität für externe Streams - Diese werden weitergeleitet an das Youtube-Addon
+- comment: * Leider kommt es bei den Direkt-Streams die über den Anbieter 'skylinewebcams.com' laufen manchmal zu Ausfällen (dies ist also KEIN Addon-Fehler) !!! *
+		</news>
+	</extension>
+</addon>
