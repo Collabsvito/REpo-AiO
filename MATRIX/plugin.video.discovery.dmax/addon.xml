@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.2.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.2.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
-		<import addon="inputstream.adaptive" version="2.4.5"/>
+		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="inputstream.adaptive" version="2.4.8"/>
 		<import addon="service.cron.autobiblio" version="2.1.2+matrix.1" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -29,10 +29,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.2.1+matrix.1  (10.09.2023)[/COLOR][/B]
-- fixed: In Kodi Nexus/Omega funktioniert die Sortierung der Episoden nach Datum nicht
-- removed on OMEGA: listitem.setProperty('inputstream.adaptive.manifest_type') = DEPRECATED
-- added: Bibliothek = Thumb für Staffeln und Fanart für Episoden
+[B][COLOR orangered]Version 3.2.2+matrix.1  (28.02.2024)[/COLOR][/B]
+- fixed: Beim Abspielen eines Videos wird nur der 'TVShowTitle' angezeigt und der 'EpisodesTitle' ist nicht sichtbar(Addon-Code Fehler)
+- optimized: Token-Abfrage separiert um fehlerhafte Abfragen zu minimieren
 		</news>
 	</extension>
 </addon>
