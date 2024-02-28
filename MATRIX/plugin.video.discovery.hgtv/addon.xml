@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.1.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.1.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
-		<import addon="inputstream.adaptive" version="2.4.5"/>
+		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="inputstream.adaptive" version="2.4.8"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -28,9 +28,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.1.7+matrix.1  (10.09.2023)[/COLOR][/B]
-- fixed: In Kodi Nexus/Omega funktioniert die Sortierung der Episoden nach Datum nicht
-- removed on OMEGA: listitem.setProperty('inputstream.adaptive.manifest_type') = DEPRECATED
+[B][COLOR orangered]Version 1.1.8+matrix.1  (28.02.2024)[/COLOR][/B]
+- fixed: Beim Abspielen eines Videos wird nur der 'TVShowTitle' angezeigt und der 'EpisodesTitle' ist nicht sichtbar(Addon-Code Fehler)
+- optimized: Token-Abfrage separiert um fehlerhafte Abfragen zu minimieren
 		</news>
 	</extension>
 </addon>
