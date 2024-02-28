@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.filmstarts" name="FILMSTARTS.de" version="1.1.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.filmstarts" name="FILMSTARTS.de" version="1.1.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -27,6 +27,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 1.1.2+matrix.1  (28.02.2024)[/COLOR][/B]
+- fixed: Durch Änderung der Zuordnungen in den 'settings' des Addons kommt es evtl. zu Wiedergabefehlern der Videos
+- fixed: Bei Erstinstallation des Addons werden die Ordner nicht geöffnet (Error Contents: [Errno 2] No such file or directory)
+
 [B][COLOR orangered]Version 1.1.1+matrix.1  (25.02.2024)[/COLOR][/B]
 - fixed: Für fast alle Videos wird 'KEIN TRAILER' angezeigt (Quelltext und Videoabfrage verändert)
 - fixed: Genres, Regisseure und Darsteller der Videos werden nicht angezeigt

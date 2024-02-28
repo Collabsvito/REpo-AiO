@@ -108,11 +108,11 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.2.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.2.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
-		<import addon="inputstream.adaptive" version="2.4.5"/>
+		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="inputstream.adaptive" version="2.4.8"/>
 		<import addon="service.cron.autobiblio" version="2.1.2+matrix.1" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -138,18 +138,17 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.2.1+matrix.1  (10.09.2023)[/COLOR][/B]
-- fixed: In Kodi Nexus/Omega funktioniert die Sortierung der Episoden nach Datum nicht
-- removed on OMEGA: listitem.setProperty('inputstream.adaptive.manifest_type') = DEPRECATED
-- added: Bibliothek = Thumb für Staffeln und Fanart für Episoden
+[B][COLOR orangered]Version 3.2.2+matrix.1  (28.02.2024)[/COLOR][/B]
+- fixed: Beim Abspielen eines Videos wird nur der 'TVShowTitle' angezeigt und der 'EpisodesTitle' ist nicht sichtbar(Addon-Code Fehler)
+- optimized: Token-Abfrage separiert um fehlerhafte Abfragen zu minimieren
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.1.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.1.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
-		<import addon="inputstream.adaptive" version="2.4.5"/>
+		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="inputstream.adaptive" version="2.4.8"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -174,17 +173,17 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.1.7+matrix.1  (10.09.2023)[/COLOR][/B]
-- fixed: In Kodi Nexus/Omega funktioniert die Sortierung der Episoden nach Datum nicht
-- removed on OMEGA: listitem.setProperty('inputstream.adaptive.manifest_type') = DEPRECATED
+[B][COLOR orangered]Version 1.1.8+matrix.1  (28.02.2024)[/COLOR][/B]
+- fixed: Beim Abspielen eines Videos wird nur der 'TVShowTitle' angezeigt und der 'EpisodesTitle' ist nicht sichtbar(Addon-Code Fehler)
+- optimized: Token-Abfrage separiert um fehlerhafte Abfragen zu minimieren
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.1.9+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.2.0+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
-		<import addon="inputstream.adaptive" version="2.4.5"/>
+		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="inputstream.adaptive" version="2.4.8"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -209,9 +208,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.1.9+matrix.1  (10.09.2023)[/COLOR][/B]
-- fixed: In Kodi Nexus/Omega funktioniert die Sortierung der Episoden nach Datum nicht
-- removed on OMEGA: listitem.setProperty('inputstream.adaptive.manifest_type') = DEPRECATED
+[B][COLOR orangered]Version 3.2.0+matrix.1  (28.02.2024)[/COLOR][/B]
+- fixed: Beim Abspielen eines Videos wird nur der 'TVShowTitle' angezeigt und der 'EpisodesTitle' ist nicht sichtbar(Addon-Code Fehler)
+- optimized: Token-Abfrage separiert um fehlerhafte Abfragen zu minimieren
 		</news>
 	</extension>
 </addon>
@@ -303,7 +302,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.filmstarts" name="FILMSTARTS.de" version="1.1.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.filmstarts" name="FILMSTARTS.de" version="1.1.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -331,6 +330,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 1.1.2+matrix.1  (28.02.2024)[/COLOR][/B]
+- fixed: Durch Änderung der Zuordnungen in den 'settings' des Addons kommt es evtl. zu Wiedergabefehlern der Videos
+- fixed: Bei Erstinstallation des Addons werden die Ordner nicht geöffnet (Error Contents: [Errno 2] No such file or directory)
+
 [B][COLOR orangered]Version 1.1.1+matrix.1  (25.02.2024)[/COLOR][/B]
 - fixed: Für fast alle Videos wird 'KEIN TRAILER' angezeigt (Quelltext und Videoabfrage verändert)
 - fixed: Genres, Regisseure und Darsteller der Videos werden nicht angezeigt
