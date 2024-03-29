@@ -352,7 +352,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.galileo.tv" name="Galileo.TV" version="2.0.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.galileo.tv" name="Galileo.TV" version="2.0.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -383,13 +383,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.0.1+matrix.1  (25.02.2024)[/COLOR][/B]
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-- Re-Release @realvito // Nach Abschaltung der offiziellen Webseite von 'Galileo.tv'
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-- added: Alle Rubriken der Startseite in der Übersicht (Browservariante von ProSieben [Galileo])
-- added: Hauptrubriken der Unterordner besonders hervorgehoben
-- comment: * Addon jetzt angepasst an die Webseite von ProSieben (Galileo), für die einwandfreie Funktion dieses Addons wird das 'plugin.video.joyn' und das 'plugin.video.youtube' benötigt (Manche Streams werden direkt zu JOYN oder YOUTUBE weitergeleitet) !!! *
+[B][COLOR orangered]Version 2.0.2+matrix.1  (29.03.2024)[/COLOR][/B]
+- fixed: Links der Seven.One Entertainment Group = JOYN sind nicht abspielbar (404 Client Error: Not Found)
 		</news>
 	</extension>
 </addon>
@@ -495,7 +490,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - NW" version="1.2.0+matrix.1" provider-name="realvito">
+<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - NW" version="1.2.1+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -528,13 +523,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.2.0+matrix.1  (08.03.2024)[/COLOR][/B]
-- fixed: Alle VOD-STREAMS sind nicht mehr abspielbar (Error: 404 - Not Found)
-- fixed: Fehler beim hinzufügen von Serien/Filmen zur KODI-Bibliothek (NameError: name 'trnslation' is not defined)
+[B][COLOR orangered]Version 1.2.1+matrix.1  (29.03.2024)[/COLOR][/B]
+- fixed: Vereinzelt sind in der KODI-Bibliothek gespeicherte Episoden/Filme dieses Addons nicht abspielbar (Playlist Player: skipping unplayable item)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.0.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.0.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -565,9 +559,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.6+matrix.1  (21.01.2024)[/COLOR][/B]
-- fixed: Rubrik: 'Sendungs-Archive' der Unterordner 'Rubriken' produziert einen Fehler (Error Contents: 'name')
-- added: Abhängigkeit 'plugin.video.tvnow.de' zum Abspielen von Links der RTL interactive GmbH (nur für Links die mit 'https://plus.rtl.de' starten)
+[B][COLOR orangered]Version 1.0.7+matrix.1  (29.03.2024)[/COLOR][/B]
+- fixed: Links der Seven.One Entertainment Group = JOYN sind nicht abspielbar (404 Client Error: Not Found)
 		</news>
 	</extension>
 </addon>
@@ -811,7 +804,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.2.4+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.2.5+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -843,11 +836,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.2.4+matrix.1  (21.01.2024)[/COLOR][/B]
-- fixed: Die Rubrik: 'Aktuell Beliebt' kann nicht geöffnet werden (fehlerhafte Links im Quelltext)
-- fixed: Sendungen ohne -Laufzeit und -Bescheibung ausblenden (diese Sendungen haben keinen Abspiellink - 'Quelltextleichen')
-- optimized: Taglines mit besonderer Kennzeichnung dementsprechend darstellen
-- optimized: Alle 'Highlights Rubriken' geändert zu 'Primetime Highlights Rubriken', d.h. gefiltert nach Uhrzeit zwischen 20:15 und 23:58
+[B][COLOR orangered]Version 2.2.5+matrix.1  (29.03.2024)[/COLOR][/B]
+- fixed: Links der Seven.One Entertainment Group = JOYN sind nicht abspielbar (404 Client Error: Not Found)
 		</news>
 	</extension>
 </addon>
