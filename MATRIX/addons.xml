@@ -108,7 +108,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.2.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.2.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -138,16 +138,12 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.2.3+matrix.1  (28.02.2024)[/COLOR][/B]
-- fixed: Serienordner können unter NEXUS/OMEGA nicht geöffnet werden (AttributeError: 'xbmc.InfoTagVideo' object has no attribute 'setTVShowTitle')
-
-[B][COLOR orangered]Version 3.2.2+matrix.1  (28.02.2024)[/COLOR][/B]
-- fixed: Beim Abspielen eines Videos wird nur der 'TVShowTitle' angezeigt und der 'EpisodesTitle' ist nicht sichtbar(Addon-Code Fehler)
-- optimized: Token-Abfrage separiert um fehlerhafte Abfragen zu minimieren
+[B][COLOR orangered]Version 3.2.4+matrix.1  (28.04.2024)[/COLOR][/B]
+- fixed: Sämtliche Videos sind nicht mehr abspielbar (API.v2 zur Abfrage der Videos abgeschaltet, es gibt jetzt nur noch die v3)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.1.9+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.2.0+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -176,16 +172,12 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.1.9+matrix.1  (28.02.2024)[/COLOR][/B]
-- fixed: Serienordner können unter NEXUS/OMEGA nicht geöffnet werden (AttributeError: 'xbmc.InfoTagVideo' object has no attribute 'setTVShowTitle')
-
-[B][COLOR orangered]Version 1.1.8+matrix.1  (28.02.2024)[/COLOR][/B]
-- fixed: Beim Abspielen eines Videos wird nur der 'TVShowTitle' angezeigt und der 'EpisodesTitle' ist nicht sichtbar(Addon-Code Fehler)
-- optimized: Token-Abfrage separiert um fehlerhafte Abfragen zu minimieren
+[B][COLOR orangered]Version 1.2.0+matrix.1  (28.04.2024)[/COLOR][/B]
+- fixed: Sämtliche Videos sind nicht mehr abspielbar (API.v2 zur Abfrage der Videos abgeschaltet, es gibt jetzt nur noch die v3)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.2.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.2.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -214,12 +206,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.2.1+matrix.1  (28.02.2024)[/COLOR][/B]
-- fixed: Serienordner können unter NEXUS/OMEGA nicht geöffnet werden (AttributeError: 'xbmc.InfoTagVideo' object has no attribute 'setTVShowTitle')
-
-[B][COLOR orangered]Version 3.2.0+matrix.1  (28.02.2024)[/COLOR][/B]
-- fixed: Beim Abspielen eines Videos wird nur der 'TVShowTitle' angezeigt und der 'EpisodesTitle' ist nicht sichtbar(Addon-Code Fehler)
-- optimized: Token-Abfrage separiert um fehlerhafte Abfragen zu minimieren
+[B][COLOR orangered]Version 3.2.2+matrix.1  (28.04.2024)[/COLOR][/B]
+- fixed: Sämtliche Videos sind nicht mehr abspielbar (API.v2 zur Abfrage der Videos abgeschaltet, es gibt jetzt nur noch die v3)
 		</news>
 	</extension>
 </addon>
@@ -456,10 +444,10 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.netzkino_de" name="Netzkino [COLOR FF00EE00](light)[/COLOR]" version="3.0.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.netzkino_de" name="Netzkino [COLOR FF00EE00](light)[/COLOR]" version="3.0.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+		<import addon="script.module.requests" version="2.27.0"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -470,11 +458,11 @@
 		<description lang="de_DE">Mit Netzkino legal und kostenlos Spielfilme, Movies, ganze Filme online schauen.[CR]Netzkino bietet nur Gratis-Spielfilme, die lizenzrechtlich geklärt und von den Rechteinhabern ordnungsgemäß erworben wurden.[CR][CR][COLOR FF00EE00]Dieses Addon stellt nur den FREI verfügbaren Inhalt von 'netzkino.de' zur Verfügung ![/COLOR]</description>
 		<description lang="en_GB">Watch feature films, movies and entire films online legally and free of charge with Netzkino.[CR]Netzkino only offers free feature films that have been cleared under licensing law and properly acquired from the rights holders.[CR][CR][COLOR FF00EE00]This Addon provides only the FREE available content of 'netzkino.de' ![/COLOR]</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website>https://www.netzkino.de/</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
@@ -484,9 +472,14 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.6+matrix.1  (10.03.2023)[/COLOR][/B]
-- removed: Schalter = Videos im Format 'mp4/m3u8' oder mit 'inputstream.adaptive' abspielen (Netzkino bietet nur noch einen 'mp4-Stream' an)
-- added: Anpassungen an Änderungen von KODI-Nexus
+[B][COLOR orangered]Version 3.0.7+matrix.1  (28.04.2024)[/COLOR][/B]
+- fixed: IMDb - Bewertung der Filme wird nicht angezeigt, wenn vorhanden
+- fixed: In Kodi Nexus/Omega funktioniert die Sortierung der Filme nach Datum nicht
+- added: Zusätzliche Film-Metadaten aus der Datenbank von 'IMDb' herunterladen (settings | In den Unterrubriken von Genres sehr zeitaufwendig !)
+- added: Schauspielerliste für Filme
+- added: Neue Icons für die Hauptrubriken
+- added: Rubriken = Blockbuster + Kultfilme, Top 20 - Action Klassiker
+- removed: Rubriken = Featured, Top 20 - bewertet auf IMDb (diese ID's funktionieren nicht mehr mit der 'alten' Android-API)
 		</news>
 	</extension>
 </addon>
