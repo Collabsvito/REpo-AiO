@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.sporttotal" name="Sporttotal.TV [COLOR FF00EE00](light)[/COLOR]" version="2.0.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sporttotal" name="Sporttotal.TV [COLOR FF00EE00](light)[/COLOR]" version="2.0.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+		<import addon="script.module.requests" version="2.27.0"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -27,10 +27,15 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.0.1+matrix.1  (03.09.2023)[/COLOR][/B]
-- fixed: Addon neu aufgesetzt mit Anlehnung des Aufbaus und der Struktur an die neue API von sporttotal.TV
-- added: Rubriken = Vor- &amp; Rückschau (Events nach Datum sortiert), Suche...
-- added: Nächste Seite zum weiterblättern (gab es vorher nicht in der API)
+[B][COLOR orangered]Version 2.0.2+matrix.1  (12.05.2024)[/COLOR][/B]
+- fixed: Viele VoD-Streams sind nicht abspielbar, jetzt wird erst der HLS-Stream und danach der MP4-Stream getestet (HTTP Error 500: Internal Server Error)
+- fixed: Zusätzliche Events und die Rubrik = 'Handball' werden nicht in der Startübersicht gelistet (Cloudflare-Problem)
+- fixed: Suchfunktion = Sämtliche gelistete Ordner für Mannschaften zeigen nach anklicken keinen Inhalt, obwohl teilweise vorhanden
+- added: Rubriken = 'LIVE - Alle Sportarten' und 'DEMNÄCHST - Alle Sportarten' in der Startübersicht (Zusammenfassung der LIVE/KOMMENDEN - Events aller Sportarten)
+- added: Festgelegte Ordner/Links des Startmenüs ausblenden, wenn gewünscht (settings)
+- added: Timeshift-Funktion für Live-Streams (vom Provider werden leider nur max. 5 Minuten unterstützt)
+- added: Benutzerdefiniertes Profil des Lieblings-vereins/-wettbewerbes als Addon-Favorit anlegen/speichern (direkt Klick zum Profil des Vereins/Wettbewerbs)
+- added: HOME-BUTTON - Dieser Button ermöglicht es direkt zum Hauptmenü des Addons zurückzukehren ohne dabei jede aufgerufene Seite einer Liste einzeln zurückblättern zu müssen (settings)
 		</news>
 	</extension>
 </addon>
