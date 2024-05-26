@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.2.5+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.2.6+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -15,7 +15,7 @@
 		<description lang="de_DE">Egal ob unterhaltsame Doku-Soaps über schillernde Autotuner oder spannende Survival-Abenteuer von Schatzsuchern und Goldgräbern, bei DMAX wird Fernsehen zum Abenteuer.[CR]DMAX dokumentiert den Job-Alltag hart arbeitender Frauen und Männer in ganz Deutschland, die täglich alles am Laufen halten oder sogar ihr Leben für uns riskieren.[CR]DMAX - Bleibt echt !</description>
 		<description lang="en_GB">Whether entertaining docu-soaps about dazzling car tuners or exciting survival adventures of treasure hunters and gold diggers, on DMAX television becomes an adventure.[CR]DMAX documents the everyday job life of hard-working men and women all over Germany who keep everything going every day or even risk their lives for us.[CR]DMAX - Stay real !</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
@@ -29,6 +29,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 3.2.6+matrix.1  (26.05.2024)[/COLOR][/B]
+- fixed: Bei Auswahl diverser Playerfunktionen während der Wiedergabe z.B. Pause oder schnelles Vorspulen (nicht Suchlauf) wird der Timer für den forcierten Player-Stopp mit einem Fehler abgebrochen !
+- comment: *My Fault - diese Funktionen wurden von mir in der vorherigen Addon-Version v.3.2.5 nicht berücksichtigt !*
+- fixed: Wenn eine Playliste abgespielt wird funktioniert der forcierte Player-Stopp nicht (Funktion: Ab hier wiedergeben und zur Abspielliste hinzufügen)
+
 [B][COLOR orangered]Version 3.2.5+matrix.1  (12.05.2024)[/COLOR][/B]
 - fixed: Sämtliche Videos laufen trotz Laufzeitende endlos weiter (Player-Stop bei Laufzeitende erzwingen - settings)
 - comment: *Leider werden die VoD-Streams von Discovery seit dem Update Ihrer Player-API nicht mehr am Ende der Laufzeit gestoppt, die Ursache dafür ist leider nicht feststellbar !*
