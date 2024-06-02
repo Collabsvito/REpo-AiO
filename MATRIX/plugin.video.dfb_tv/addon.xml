@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.dfb_tv" name="DFB - Sport" version="2.0.8+matrix.1" provider-name="realvito">
+<addon id="plugin.video.dfb_tv" name="DFB - Sport" version="2.0.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="plugin.video.youtube" version="6.8.1+matrix.1" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -12,7 +14,7 @@
 		<description lang="de_DE">Mit fast 7 Millionen Mitgliedern der angeschlossenen Vereine ist der DFB der größte nationale Sport-Fachverband der Welt.[CR]Sehen Sie Zusammenfassungen von Spielen aus dem deutschen Männer- und Frauenfußball, Livestreams, sonstige Videos mit Bezug zum DFB.</description>
 		<description lang="en_GB">With almost 7 million members of affiliated clubs, the DFB is the largest national sports federation in the world.[CR]Watch summaries of German men's and women's football matches, livestreams, other DFB-related videos.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
@@ -26,9 +28,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.0.8+matrix.1  (02.07.2023)[/COLOR][/B]
-- fixed: Manche Videos werden nicht gefunden
-- added: Anpassungen an Änderungen von KODI-Nexus
+[B][COLOR orangered]Version 2.0.9+matrix.1  (02.06.2024)[/COLOR][/B]
+- added: Rubriken = Beach Soccer, Männer - Ligen, Männer-Nationalmannschaft und Frauen - Ligen
+- added: Dynamische Playlisten des 'Deutschen Fußball-Bundes (DFB)' auf Youtube immer aktuell
+- optimized: Mehr Video-Beiträge pro Seite anzeigen (bisher waren es max. 10, jetzt 40)
 		</news>
 	</extension>
 </addon>
