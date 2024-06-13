@@ -75,7 +75,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.dfb_tv" name="DFB - Sport" version="2.0.9+matrix.1" provider-name="realvito">
+<addon id="plugin.video.dfb_tv" name="DFB - Sport" version="2.1.0+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -104,6 +104,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 2.1.0+matrix.1  (13.06.2024)[/COLOR][/B]
+- added: Rubrik = Live-Events und Aktuelles unter 'Weitere Beiträge auf YOUTUBE'
+- removed: Rubrik = LIVESTREAMS (Schon länger werden auf der Webseite des DFB in dieser Rubrik keine Einträge mehr gelistet)
+
 [B][COLOR orangered]Version 2.0.9+matrix.1  (02.06.2024)[/COLOR][/B]
 - added: Rubriken = Beach Soccer, Männer - Ligen, Männer-Nationalmannschaft und Frauen - Ligen
 - added: Dynamische Playlisten des 'Deutschen Fußball-Bundes (DFB)' auf Youtube immer aktuell
