@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.0.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.0.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
-		<import addon="inputstream.adaptive" version="2.4.5"/>
+		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="inputstream.adaptive" version="2.4.8"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -14,7 +14,7 @@
 		<description lang="de_DE">ServusTV ist ein österreichischer Privatfernsehsender.[CR]Von Unterhaltung und Kultur bis Dokus und Sport - ServusTV richtet sich an ein weltoffenes und vielseitig interessiertes Publikum im deutschsprachigen Fernsehraum.</description>
 		<description lang="en_GB">ServusTV is an Austrian private television station.[CR]From entertainment and culture to documentaries and sports - ServusTV is aimed at a cosmopolitan and versatile audience in the German-speaking TV area.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
@@ -28,9 +28,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.7+matrix.1  (26.05.2023)[/COLOR][/B]
-- fixed: Es können keine Sendungen zu den Addon-Favoriten hinzugefügt werden
-- added: Anpassungen an Änderungen von KODI-Nexus
+[B][COLOR orangered]Version 3.0.8+matrix.1  (16.06.2024)[/COLOR][/B]
+- added: Rubrik = ServusTV - On Kanäle mit Epg, sofern vorhanden
+- added: Timeshift-Funktion für Live-Streams unter der Rubrik 'Sport-Programm'
+- optimized: Einstellungsoptionen für das Aktualisierungsintervall des Auth-Tokens
+- removed: Bevorzugtes Livestream-Verfahren in den Einstellungen
 		</news>
 	</extension>
 </addon>
