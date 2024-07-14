@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.2.4+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.2.5+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -28,14 +28,12 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.2.4+matrix.1  (26.05.2024)[/COLOR][/B]
-- fixed: Bei Auswahl diverser Playerfunktionen während der Wiedergabe z.B. Pause oder schnelles Vorspulen (nicht Suchlauf) wird der Timer für den forcierten Player-Stopp mit einem Fehler abgebrochen !
-- comment: *My Fault - diese Funktionen wurden von mir in der vorherigen Addon-Version v.3.2.3 nicht berücksichtigt !*
-- fixed: Wenn eine Playliste abgespielt wird funktioniert der forcierte Player-Stopp nicht (Funktion: Ab hier wiedergeben und zur Abspielliste hinzufügen)
-
-[B][COLOR orangered]Version 3.2.3+matrix.1  (12.05.2024)[/COLOR][/B]
-- fixed: Sämtliche Videos laufen trotz Laufzeitende endlos weiter (Player-Stop bei Laufzeitende erzwingen - settings)
-- comment: *Leider werden die VoD-Streams von Discovery seit dem Update Ihrer Player-API nicht mehr am Ende der Laufzeit gestoppt, die Ursache dafür ist leider nicht feststellbar !*
+[B][COLOR orangered]Version 3.2.5+matrix.1  (14.07.2024)[/COLOR][/B]
+- fixed: Rubrik = Themen kann nicht geöffnet werden (400 Client Error: Bad Request)
+- added: Gesamtanzahl der verfügbaren Videos einer Sendung anzeigen
+- optimized: Genre- und Poster-Image- Anzeige der Sendungen durch zusätzliche Abfrage der zweiten Provider-API
+- removed: Rubrik = Sendungen sortiert nach Beliebtheit (wird von der Provider-API nicht mehr angeboten)
+- removed: Script-Anforderung/Sortierung für den Ordner 'Neue Sendungen' erzwingen (settings - jetzt automatisch)
 		</news>
 	</extension>
 </addon>
