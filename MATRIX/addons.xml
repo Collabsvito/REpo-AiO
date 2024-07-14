@@ -115,7 +115,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.2.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.2.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -145,18 +145,16 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.2.6+matrix.1  (26.05.2024)[/COLOR][/B]
-- fixed: Bei Auswahl diverser Playerfunktionen während der Wiedergabe z.B. Pause oder schnelles Vorspulen (nicht Suchlauf) wird der Timer für den forcierten Player-Stopp mit einem Fehler abgebrochen !
-- comment: *My Fault - diese Funktionen wurden von mir in der vorherigen Addon-Version v.3.2.5 nicht berücksichtigt !*
-- fixed: Wenn eine Playliste abgespielt wird funktioniert der forcierte Player-Stopp nicht (Funktion: Ab hier wiedergeben und zur Abspielliste hinzufügen)
-
-[B][COLOR orangered]Version 3.2.5+matrix.1  (12.05.2024)[/COLOR][/B]
-- fixed: Sämtliche Videos laufen trotz Laufzeitende endlos weiter (Player-Stop bei Laufzeitende erzwingen - settings)
-- comment: *Leider werden die VoD-Streams von Discovery seit dem Update Ihrer Player-API nicht mehr am Ende der Laufzeit gestoppt, die Ursache dafür ist leider nicht feststellbar !*
+[B][COLOR orangered]Version 3.2.7+matrix.1  (14.07.2024)[/COLOR][/B]
+- fixed: Rubrik = Themen kann nicht geöffnet werden (400 Client Error: Bad Request)
+- added: Gesamtanzahl der verfügbaren Videos einer Sendung anzeigen
+- optimized: Genre- und Poster-Image- Anzeige der Sendungen durch zusätzliche Abfrage der zweiten Provider-API
+- removed: Rubrik = Sendungen sortiert nach Beliebtheit (wird von der Provider-API nicht mehr angeboten)
+- removed: Script-Anforderung/Sortierung für den Ordner 'Neue Sendungen' erzwingen (settings - jetzt automatisch)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.2.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.2.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -185,18 +183,16 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.2.2+matrix.1  (26.05.2024)[/COLOR][/B]
-- fixed: Bei Auswahl diverser Playerfunktionen während der Wiedergabe z.B. Pause oder schnelles Vorspulen (nicht Suchlauf) wird der Timer für den forcierten Player-Stopp mit einem Fehler abgebrochen !
-- comment: *My Fault - diese Funktionen wurden von mir in der vorherigen Addon-Version v.1.2.1 nicht berücksichtigt !*
-- fixed: Wenn eine Playliste abgespielt wird funktioniert der forcierte Player-Stopp nicht (Funktion: Ab hier wiedergeben und zur Abspielliste hinzufügen)
-
-[B][COLOR orangered]Version 1.2.1+matrix.1  (12.05.2024)[/COLOR][/B]
-- fixed: Sämtliche Videos laufen trotz Laufzeitende endlos weiter (Player-Stopp bei Laufzeitende erzwingen - settings)
-- comment: *Leider werden die VoD-Streams von Discovery seit dem Update Ihrer Player-API nicht mehr am Ende der Laufzeit gestoppt, die Ursache dafür ist leider nicht feststellbar !*
+[B][COLOR orangered]Version 1.2.3+matrix.1  (14.07.2024)[/COLOR][/B]
+- fixed: Rubrik = Themen kann nicht geöffnet werden (400 Client Error: Bad Request)
+- added: Gesamtanzahl der verfügbaren Videos einer Sendung anzeigen
+- optimized: Genre- und Poster-Image- Anzeige der Sendungen durch zusätzliche Abfrage der zweiten Provider-API
+- removed: Rubrik = Sendungen sortiert nach Beliebtheit (wird von der Provider-API nicht mehr angeboten)
+- removed: Script-Anforderung/Sortierung für den Ordner 'Neue Sendungen' erzwingen (settings - jetzt automatisch)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.2.4+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.2.5+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -225,14 +221,12 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.2.4+matrix.1  (26.05.2024)[/COLOR][/B]
-- fixed: Bei Auswahl diverser Playerfunktionen während der Wiedergabe z.B. Pause oder schnelles Vorspulen (nicht Suchlauf) wird der Timer für den forcierten Player-Stopp mit einem Fehler abgebrochen !
-- comment: *My Fault - diese Funktionen wurden von mir in der vorherigen Addon-Version v.3.2.3 nicht berücksichtigt !*
-- fixed: Wenn eine Playliste abgespielt wird funktioniert der forcierte Player-Stopp nicht (Funktion: Ab hier wiedergeben und zur Abspielliste hinzufügen)
-
-[B][COLOR orangered]Version 3.2.3+matrix.1  (12.05.2024)[/COLOR][/B]
-- fixed: Sämtliche Videos laufen trotz Laufzeitende endlos weiter (Player-Stop bei Laufzeitende erzwingen - settings)
-- comment: *Leider werden die VoD-Streams von Discovery seit dem Update Ihrer Player-API nicht mehr am Ende der Laufzeit gestoppt, die Ursache dafür ist leider nicht feststellbar !*
+[B][COLOR orangered]Version 3.2.5+matrix.1  (14.07.2024)[/COLOR][/B]
+- fixed: Rubrik = Themen kann nicht geöffnet werden (400 Client Error: Bad Request)
+- added: Gesamtanzahl der verfügbaren Videos einer Sendung anzeigen
+- optimized: Genre- und Poster-Image- Anzeige der Sendungen durch zusätzliche Abfrage der zweiten Provider-API
+- removed: Rubrik = Sendungen sortiert nach Beliebtheit (wird von der Provider-API nicht mehr angeboten)
+- removed: Script-Anforderung/Sortierung für den Ordner 'Neue Sendungen' erzwingen (settings - jetzt automatisch)
 		</news>
 	</extension>
 </addon>
@@ -433,9 +427,10 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.myspass_de" name="MySpass" version="4.1.5+matrix.1" provider-name="realvito">
+<addon id="plugin.video.myspass_de" name="MySpass" version="4.1.6+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.27.0"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -446,7 +441,7 @@
 		<description lang="de_DE">Egal ob aktuelle TV Shows wie die Faisal Kawusi Show, LUKE ! Die Woche und ich, PussyTerror TV oder Schlag den Star, ob Kult-TV-Serien wie Ladykracher, Pastewka oder Stromberg - MYSPASS hat es für Dich auf Lager !</description>
 		<description lang="en_GB">No matter if current TV shows like the Faisal Kawusi Show, LUKE ! Die Woche und ich, PussyTerror TV or Schlag den Star, whether cult TV series like Ladykracher, Pastewka or Stromberg - MYSPASS has it in stock for you !</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
@@ -460,10 +455,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 4.1.5+matrix.1  (02.07.2023)[/COLOR][/B]
-- fixed: Manche 'TV - Shows' erzeugen beim Öffnen einen Fehler
-- optimized: Auslesemethode - Sendedatum der Videos
-- added: Anpassungen an Änderungen von KODI-Nexus
+[B][COLOR orangered]Version 4.1.6+matrix.1  (14.07.2024)[/COLOR][/B]
+- fixed: Die Rubriken = 'TV-Shows' und 'Alle Sendungen' können nicht geöffnet werden (Fehler im Quelltext der Webseite)
 		</news>
 	</extension>
 </addon>
