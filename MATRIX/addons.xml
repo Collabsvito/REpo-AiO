@@ -115,7 +115,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.2.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.2.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -145,6 +145,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 3.2.8+matrix.1  (21.07.2024)[/COLOR][/B]
+- fixed: Durch Umstrukturierung der 'settings.xml' der vorherigen Addon-Version funktioniert der forcierte Player-Stopp teilweise nicht - deshalb müssen alle Einstellungen jetzt neu gesetzt werden !
+
 [B][COLOR orangered]Version 3.2.7+matrix.1  (14.07.2024)[/COLOR][/B]
 - fixed: Rubrik = Themen kann nicht geöffnet werden (400 Client Error: Bad Request)
 - added: Gesamtanzahl der verfügbaren Videos einer Sendung anzeigen
@@ -154,7 +157,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.2.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.2.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -183,6 +186,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 1.2.4+matrix.1  (21.07.2024)[/COLOR][/B]
+- fixed: Durch Umstrukturierung der 'settings.xml' der vorherigen Addon-Version funktioniert der forcierte Player-Stopp teilweise nicht - deshalb müssen alle Einstellungen jetzt neu gesetzt werden !
+
 [B][COLOR orangered]Version 1.2.3+matrix.1  (14.07.2024)[/COLOR][/B]
 - fixed: Rubrik = Themen kann nicht geöffnet werden (400 Client Error: Bad Request)
 - added: Gesamtanzahl der verfügbaren Videos einer Sendung anzeigen
@@ -192,7 +198,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.2.5+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.2.6+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -221,6 +227,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 3.2.6+matrix.1  (21.07.2024)[/COLOR][/B]
+- fixed: Durch Umstrukturierung der 'settings.xml' der vorherigen Addon-Version funktioniert der forcierte Player-Stopp teilweise nicht - deshalb müssen alle Einstellungen jetzt neu gesetzt werden !
+
 [B][COLOR orangered]Version 3.2.5+matrix.1  (14.07.2024)[/COLOR][/B]
 - fixed: Rubrik = Themen kann nicht geöffnet werden (400 Client Error: Bad Request)
 - added: Gesamtanzahl der verfügbaren Videos einer Sendung anzeigen
