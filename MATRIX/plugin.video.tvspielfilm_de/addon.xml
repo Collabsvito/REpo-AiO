@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.2.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.2.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -31,11 +31,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.2.6+matrix.1  (03.04.2024)[/COLOR][/B]
+[B][COLOR orangered]Version 2.2.7+matrix.1  (29.09.2024)[/COLOR][/B]
 - fixed: Die Rubrik: 'Aktuell Beliebt' kann nicht geöffnet werden (Quelltext verändert)
-
-[B][COLOR orangered]Version 2.2.5+matrix.1  (29.03.2024)[/COLOR][/B]
-- fixed: Links der Seven.One Entertainment Group = JOYN sind nicht abspielbar (404 Client Error: Not Found)
+- fixed: IMDb-Rating-Infos werden nicht mehr angezeigt
 		</news>
 	</extension>
 </addon>
