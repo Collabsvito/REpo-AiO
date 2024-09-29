@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.galileo.tv" name="Galileo.TV" version="2.0.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.galileo.tv" name="Galileo.TV" version="2.0.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -30,8 +30,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.0.2+matrix.1  (29.03.2024)[/COLOR][/B]
-- fixed: Links der Seven.One Entertainment Group = JOYN sind nicht abspielbar (404 Client Error: Not Found)
+[B][COLOR orangered]Version 2.0.3+matrix.1  (29.09.2024)[/COLOR][/B]
+- fixed: Sämtliche Episodenordner können nicht geöffnet werden (Error Type: class 'KeyError')
+- optimized: Originaltitel von vorhandenen Youtube-Videos anzeigen
 		</news>
 	</extension>
 </addon>
