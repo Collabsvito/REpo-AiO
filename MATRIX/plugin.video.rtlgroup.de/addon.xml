@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - NW" version="1.2.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - NW" version="1.2.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -32,8 +32,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.2.2+matrix.1  (26.05.2024)[/COLOR][/B]
-- fixed: Vereinzelt tritt beim autom. Aktualisieren der KODI-Bibliothek für gespeicherte Episoden/Filme dieses Addons ein OS-Fehler auf (Folder not found)
+[B][COLOR orangered]Version 1.2.3+matrix.1  (05.10.2024)[/COLOR][/B]
+- fixed: Alle VOD-STREAMS sind nicht mehr abspielbar (Error: 400 - Bad Request)
 		</news>
 	</extension>
 </addon>
