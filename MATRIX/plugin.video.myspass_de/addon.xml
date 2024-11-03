@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.myspass_de" name="MySpass" version="4.1.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.myspass_de" name="MySpass" version="5.0.1+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -10,8 +10,8 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">MySpass Mediathek</summary>
 		<summary lang="en_GB">MySpass media library</summary>
-		<description lang="de_DE">Egal ob aktuelle TV Shows wie die Faisal Kawusi Show, LUKE ! Die Woche und ich, PussyTerror TV oder Schlag den Star, ob Kult-TV-Serien wie Ladykracher, Pastewka oder Stromberg - MYSPASS hat es für Dich auf Lager !</description>
-		<description lang="en_GB">No matter if current TV shows like the Faisal Kawusi Show, LUKE ! Die Woche und ich, PussyTerror TV or Schlag den Star, whether cult TV series like Ladykracher, Pastewka or Stromberg - MYSPASS has it in stock for you !</description>
+		<description lang="de_DE">MySpass Stand-up ist der Place to be für alle, die Comedy und Stand-up lieben! Hier findet ihr die besten Comedians Deutschlands, von Felix Lobrecht und Carolin Kebekus über Atze Schröder bis Luke Mockridge![CR]Außerdem gibt es zusätzlich Online Exklusive, Originale und aktuelle Webformate mit etablierten Comedians und Newcomern.</description>
+		<description lang="en_GB">MySpass Stand-up is the place to be for everyone who loves comedy and stand-up! Here you will find the best comedians in Germany, from Felix Lobrecht and Carolin Kebekus to Atze Schröder and Luke Mockridge![CR]There are also online exclusives, originals and current web formats with established comedians and newcomers.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
@@ -27,8 +27,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 4.1.6+matrix.1  (14.07.2024)[/COLOR][/B]
-- fixed: Die Rubriken = 'TV-Shows' und 'Alle Sendungen' können nicht geöffnet werden (Fehler im Quelltext der Webseite)
+[B][COLOR orangered]Version 5.0.1+matrix.1  (03.11.2024)[/COLOR][/B]
+- Komplette Neuauflage des MySpass-Addons nach Webseitenerneuerung (New Initial Release)
+- added: Alle Rubriken der Startseite in der Übersicht (Webversion)
+- added: HLS-Videos mit 'Inputstream.Adaptive' abspielen (settings)
+- comment: *Bei einigen Sendungen die eine Laufzeit von über 90 Min. haben stimmen die Laufzeitangaben nicht (Fehler in den Daten der API) !*
 		</news>
 	</extension>
 </addon>
