@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.bibeltv" name="Bibel.TV" version="2.0.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.bibeltv" name="Bibel.TV" version="3.0.1+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+		<import addon="script.module.requests" version="2.27.0"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -10,10 +10,10 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Der christlich ausgerichtete Free-TV-Sender</summary>
 		<summary lang="en_GB">The Christian-oriented free-TV channel</summary>
-		<description lang="de_DE">bibel.TV ist ein deutschsprachiger Fernsehsender. Als erster christlicher Fernsehsender wurde bibel.TV 2001 gegründet.[CR]Die Verbreitung des christlichen Glaubens steht im Mittelpunkt des Fernsehprogramms, das das gesamte Spektrum journalistischer und unterhaltender Sendeformate abbildet.</description>
-		<description lang="en_GB">bibel.TV is a German language television station. bibel.TV was founded in 2001 as the first Christian television station.[CR]The spreading of the Christian faith is the focus of the television programme, which depicts the entire spectrum of journalistic and entertaining broadcast formats.</description>
+		<description lang="de_DE">Bibel.TV ist ein deutschsprachiger Fernsehsender. Spielfilme, Dokus, Shows und viel Musik erwarten Sie - rund um die Uhr, 7 Tage in der Woche.[CR]Die Verbreitung des christlichen Glaubens steht im Mittelpunkt des Fernsehprogramms von Bibel.TV, das das gesamte Spektrum journalistischer und unterhaltender Sendeformate abbildet.</description>
+		<description lang="en_GB">Bibel.TV is a German-language television channel. Movies, documentaries, shows and lots of music await you - around the clock, 7 days a week.[CR]Spreading the Christian faith is the focus of the television programme of Bibel.TV, which covers the entire spectrum of journalistic and entertaining broadcasting formats.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
@@ -27,14 +27,12 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.0.3+matrix.1  (11.08.2023)[/COLOR][/B]
-- fixed: Seltene Wiedergabefehler
-- added: Serien- und Episodenkennzeichnung im Titel ausblenden (settings)
-- added: Sendezeit und Sendungsbeschreibung für Livestreams
-- added: Anpassungen an Änderungen von KODI - Nexus/Omega
-- optimized: Anzeige über dem Plot (Serie, Folge, Datum) übersichtlicher gestaltet
-- replaced: Livestream 'Bibel TV Musik' ersetzt durch 'Echt Jetzt'
-- removed: Subgenres anzeigen (settings) = gibt es in der API nicht mehr
+[B][COLOR orangered]Version 3.0.1+matrix.1  (03.11.2024)[/COLOR][/B]
+- Komplette Neuauflage des Bibel.TV-Addons nach Webseitenerneuerung (New Initial Release)
+- added: Alle Rubriken der Mediathek in der Übersicht (Androidversion)
+- added: Bonus-Rubrik = Neue Sendungen (diesen Eintrag gibt es nicht in der Webversion/Androidversion)
+- added: Rubriken = Live - Gottesdienste und Live - Streams
+- optimized: Angezeigte Beiträge pro Seite auf 40 Einträge erhöht (das Original zeigt nur max. 20 Beiträge)
 		</news>
 	</extension>
 </addon>
