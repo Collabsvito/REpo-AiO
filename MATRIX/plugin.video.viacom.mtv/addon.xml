@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.viacom.mtv" name="MTV Germany" version="2.0.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.viacom.mtv" name="MTV Germany" version="2.0.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+		<import addon="script.module.requests" version="2.27.0"/>
 		<import addon="script.common.plugin.cache" version="2.6.2+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -11,8 +11,8 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">MTV.de Musik und mehr</summary>
 		<summary lang="en_GB">MTV.de Music and more</summary>
-		<description lang="de_DE">Bei MTV.de findet ihr coolen Content, wie alles rund um Yo! MTV Raps und ganze Folgen eurer liebsten MTV Shows, wie Catfish, Ex on the Beach, Just Tattoo of Us, Geordie Shore und viele mehr.[CR]MTV.de ist die ultimative Quelle für Musik, Lifestyle, Popkultur, Entertainment, Filme und vieles mehr...</description>
-		<description lang="en_GB">At MTV.de you'll find cool content, like everything about Yo! MTV Raps and full episodes of your favourite MTV shows, like Catfish, Ex on the Beach, Just Tattoo of Us, Geordie Shore and many more.[CR]MTV.de is the ultimate source for music, lifestyle, pop culture, entertainment, movies and much more...</description>
+		<description lang="de_DE">[COLOR orangered]- Die Webseite MTV - Deutschland bietet keine Live- und Vodstreams mehr an.[CR]- Addon-Support eingestellt ![/COLOR]</description>
+		<description lang="en_GB">[COLOR orangered]- The Website MTV - Germany no longer offers Live- and Vodstreams[CR]- Addon support discontinued ![/COLOR]</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
@@ -27,10 +27,11 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
+		<lifecyclestate type="broken" lang="de_DE">- Die Webseite MTV - Deutschland bietet keine Live- und Vodstreams mehr an.[CR]- Addon-Support eingestellt !</lifecyclestate>
+		<lifecyclestate type="broken" lang="en_GB">- The Website MTV - Germany no longer offers Live- and Vodstreams[CR]- Addon support discontinued !</lifecyclestate>
 		<news>
-[B][COLOR orangered]Version 2.0.7+matrix.1  (19.11.2023)[/COLOR][/B]
-- fixed: Alle Unterordner des Addons können NICHT geöffnet werden (API des Anbieters verändert)
-- added: Poster-Images für Shows
+[B][COLOR orangered]Version 2.0.8+matrix.1  (03.11.2024)[/COLOR][/B]
+- Die Webseite MTV - Deutschland bietet keine Live- und Vodstreams mehr an.[CR]- Addon-Support eingestellt !
 		</news>
 	</extension>
 </addon>
