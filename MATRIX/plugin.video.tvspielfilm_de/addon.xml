@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.2.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.2.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -17,7 +17,7 @@
 		<description lang="de_DE">In TV SPIELFILM findest Du das beste Programm aus den Mediatheken von vielen TV-Sendern sortiert und übersichtlich. Neben der gezielten Senderauswahl, werden auch die Mediatheken-Tipps nach den Sparten Spielfilme, Serien, Dokus &amp; Polit-Talks, Unterhaltung, Kinderfilme &amp; -serien und Sport angeboten.[CR][CR]     HAVE FUN</description>
 		<description lang="en_GB">In TV SPIELFILM you will find the best programs from the media libraries of many TV stations sorted and clearly arranged. In addition to the targeted channel selection, the media library tips are also offered according to the Categories of feature Movies, Series, Documentaries &amp; Political talks, Entertainment, Children's movies &amp; series and Sports.[CR][CR]     HAVE FUN</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
@@ -31,9 +31,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.2.7+matrix.1  (29.09.2024)[/COLOR][/B]
-- fixed: Die Rubrik: 'Aktuell Beliebt' kann nicht geöffnet werden (Quelltext verändert)
-- fixed: IMDb-Rating-Infos werden nicht mehr angezeigt
+[B][COLOR orangered]Version 2.2.8+matrix.1  (24.11.2024)[/COLOR][/B]
+- fixed: Fast alle Rubriken können nicht geöffnet werden (Quelltext verändert)
+- fixed: Manchmal werden von TV-Spielfilm nur Ausschnitte einer ARD-Sendung verlinkt, obwohl die gesamte Laufzeit der Sendung angezeigt wird (zweite ARD-API-Abfrage für ganze Sendung integriert)
+- removed: Genres aus den Sendungstiteln entfernt, diese werden jetzt nur noch unter den jeweiligen KODI-Skin-Genres gelistet (um überlange Titel zu vermeiden)
 		</news>
 	</extension>
 </addon>
