@@ -116,7 +116,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.2.8+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.2.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -146,19 +146,13 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.2.8+matrix.1  (21.07.2024)[/COLOR][/B]
-- fixed: Durch Umstrukturierung der 'settings.xml' der vorherigen Addon-Version funktioniert der forcierte Player-Stopp teilweise nicht - deshalb müssen alle Einstellungen jetzt neu gesetzt werden !
-
-[B][COLOR orangered]Version 3.2.7+matrix.1  (14.07.2024)[/COLOR][/B]
-- fixed: Rubrik = Themen kann nicht geöffnet werden (400 Client Error: Bad Request)
-- added: Gesamtanzahl der verfügbaren Videos einer Sendung anzeigen
-- optimized: Genre- und Poster-Image- Anzeige der Sendungen durch zusätzliche Abfrage der zweiten Provider-API
-- removed: Rubrik = Sendungen sortiert nach Beliebtheit (wird von der Provider-API nicht mehr angeboten)
-- removed: Script-Anforderung/Sortierung für den Ordner 'Neue Sendungen' erzwingen (settings - jetzt automatisch)
+[B][COLOR orangered]Version 3.2.9+matrix.1  (11.01.2025)[/COLOR][/B]
+- fixed: Fehler bei durch den Benutzer ausgelösten Player-Stopp nach Pausierung eines Videos (Error Type: class 'RuntimeError')
+- optimized: Neue Playerparameter für MPD-Streams in KODI-Omega/Piers
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.2.4+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.2.5+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -187,19 +181,13 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.2.4+matrix.1  (21.07.2024)[/COLOR][/B]
-- fixed: Durch Umstrukturierung der 'settings.xml' der vorherigen Addon-Version funktioniert der forcierte Player-Stopp teilweise nicht - deshalb müssen alle Einstellungen jetzt neu gesetzt werden !
-
-[B][COLOR orangered]Version 1.2.3+matrix.1  (14.07.2024)[/COLOR][/B]
-- fixed: Rubrik = Themen kann nicht geöffnet werden (400 Client Error: Bad Request)
-- added: Gesamtanzahl der verfügbaren Videos einer Sendung anzeigen
-- optimized: Genre- und Poster-Image- Anzeige der Sendungen durch zusätzliche Abfrage der zweiten Provider-API
-- removed: Rubrik = Sendungen sortiert nach Beliebtheit (wird von der Provider-API nicht mehr angeboten)
-- removed: Script-Anforderung/Sortierung für den Ordner 'Neue Sendungen' erzwingen (settings - jetzt automatisch)
+[B][COLOR orangered]Version 1.2.5+matrix.1  (11.01.2025)[/COLOR][/B]
+- fixed: Fehler bei durch den Benutzer ausgelösten Player-Stopp nach Pausierung eines Videos (Error Type: class 'RuntimeError')
+- optimized: Neue Playerparameter für MPD-Streams in KODI-Omega/Piers
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.2.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.2.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -228,15 +216,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.2.6+matrix.1  (21.07.2024)[/COLOR][/B]
-- fixed: Durch Umstrukturierung der 'settings.xml' der vorherigen Addon-Version funktioniert der forcierte Player-Stopp teilweise nicht - deshalb müssen alle Einstellungen jetzt neu gesetzt werden !
-
-[B][COLOR orangered]Version 3.2.5+matrix.1  (14.07.2024)[/COLOR][/B]
-- fixed: Rubrik = Themen kann nicht geöffnet werden (400 Client Error: Bad Request)
-- added: Gesamtanzahl der verfügbaren Videos einer Sendung anzeigen
-- optimized: Genre- und Poster-Image- Anzeige der Sendungen durch zusätzliche Abfrage der zweiten Provider-API
-- removed: Rubrik = Sendungen sortiert nach Beliebtheit (wird von der Provider-API nicht mehr angeboten)
-- removed: Script-Anforderung/Sortierung für den Ordner 'Neue Sendungen' erzwingen (settings - jetzt automatisch)
+[B][COLOR orangered]Version 3.2.7+matrix.1  (11.01.2025)[/COLOR][/B]
+- fixed: Fehler bei durch den Benutzer ausgelösten Player-Stopp nach Pausierung eines Videos (Error Type: class 'RuntimeError')
+- optimized: Neue Playerparameter für MPD-Streams in KODI-Omega/Piers
 		</news>
 	</extension>
 </addon>
@@ -830,6 +812,39 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 - fixed: Shazam = Single Country Charts generates Error on open (Expecting value: line 1)
 - fixed: Spotify = Daily Song Charts, Daily Viral-Charts, Weekly Song Charts, Recommended Charts (KeyError: 'content')
 - removed: Extension point = 'Audio' from 'addon.xml', as KODI has display problems of audio lists with plot (now the Addon only listed under Video-Addons)
+		</news>
+	</extension>
+</addon>
+<addon id="plugin.video.tele5_de" name="TELE 5 Mediathek" version="2.0.8+matrix" provider-name="w4ki, realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.inputstreamhelper" version="0.5.5+matrix.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Filme, Serien und Eigenproduktionen aus der TELE 5-Mediathek</summary>
+		<summary lang="en_GB">Movies, TV shows and in-house productions from the TELE 5 media library</summary>
+		<description lang="de_DE">TELE 5 ist die erste Adresse für Fiction und SciFi im deutschen Free TV und der Spielfilmsender Nr. 1 mit den meisten Filmen überhaupt. Mehr als alle anderen blickt TELE 5 über den Hollywood-Tellerrand hinaus, und präsentiert bislang unentdeckte Filmperlen aus aller Welt. Dabei steht das leidenschaftliche Kuratieren in ausgeprägter Genrevielfalt der Filme besonders im Vordergrund - denn TELE 5 hat Fiction im Blut. Mit kultigen Vorabendserien die fortwährend Verlässlichkeit für alle SciFi-Fans bieten, ist TELE 5 das wahre Home of SciFi im Free TV. Eigenproduktionen made by TELE 5 strotzen vor Humor und Experimentierfreude. Der Individualist unter den TV-Sendern sticht mit starkem Charakter aus der Masse hervor und lädt alle Zuschauer:innen ein, gemeinsame Fernsehmomente zu feiern.</description>
+		<description lang="en_GB">TELE 5 is the top address for fiction and sci-fi on German free TV and the No. 1 feature film channel with the most films ever. More than anyone else, TELE 5 looks beyond Hollywood and presents previously undiscovered film gems from all over the world. In doing so, the passionate curation in distinct genre diversity of films is especially in the foreground - because TELE 5 has fiction in its blood. With cult early-evening series that offer constant reliability for all sci-fi fans, TELE 5 is the true home of sci-fi on free TV. In-house productions made by TELE 5 are bursting with humour and the joy of experimentation. The individualist among the TV stations stands out from the crowd with its strong character and invites all viewers to celebrate shared television moments.</description>
+		<disclaimer lang="de_DE">Die meisten Inhalte sind nur in Deutschland und Österreich verfügbar.</disclaimer>
+		<disclaimer lang="en_GB">Most content is only available in Germany and Austria.</disclaimer>
+		<language>de</language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum></forum>
+		<website>https://tele5.de</website>
+		<email></email>
+		<source>https://gitlab.com/w4ki/plugin.video.tele5_de</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.png</fanart>
+			<clearlogo>resources/media/clearlogo.png</clearlogo>
+		</assets>
+		<news>Version 2.0.8+matrix  (11.01.2025) @realvito
+- fixed: Fehler bei durch den Benutzer ausgelösten Player-Stopp nach Pausierung eines Videos (Error Type: class 'RuntimeError')
+- optimized: Neue Playerparameter für MPD-Streams in KODI-Omega/Piers
 		</news>
 	</extension>
 </addon>
