@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.2.4+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.2.5+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -28,15 +28,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.2.4+matrix.1  (21.07.2024)[/COLOR][/B]
-- fixed: Durch Umstrukturierung der 'settings.xml' der vorherigen Addon-Version funktioniert der forcierte Player-Stopp teilweise nicht - deshalb müssen alle Einstellungen jetzt neu gesetzt werden !
-
-[B][COLOR orangered]Version 1.2.3+matrix.1  (14.07.2024)[/COLOR][/B]
-- fixed: Rubrik = Themen kann nicht geöffnet werden (400 Client Error: Bad Request)
-- added: Gesamtanzahl der verfügbaren Videos einer Sendung anzeigen
-- optimized: Genre- und Poster-Image- Anzeige der Sendungen durch zusätzliche Abfrage der zweiten Provider-API
-- removed: Rubrik = Sendungen sortiert nach Beliebtheit (wird von der Provider-API nicht mehr angeboten)
-- removed: Script-Anforderung/Sortierung für den Ordner 'Neue Sendungen' erzwingen (settings - jetzt automatisch)
+[B][COLOR orangered]Version 1.2.5+matrix.1  (11.01.2025)[/COLOR][/B]
+- fixed: Fehler bei durch den Benutzer ausgelösten Player-Stopp nach Pausierung eines Videos (Error Type: class 'RuntimeError')
+- optimized: Neue Playerparameter für MPD-Streams in KODI-Omega/Piers
 		</news>
 	</extension>
 </addon>
