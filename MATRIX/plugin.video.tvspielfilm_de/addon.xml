@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.2.8+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.2.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -31,10 +31,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.2.8+matrix.1  (24.11.2024)[/COLOR][/B]
-- fixed: Fast alle Rubriken können nicht geöffnet werden (Quelltext verändert)
-- fixed: Manchmal werden von TV-Spielfilm nur Ausschnitte einer ARD-Sendung verlinkt, obwohl die gesamte Laufzeit der Sendung angezeigt wird (zweite ARD-API-Abfrage für ganze Sendung integriert)
-- removed: Genres aus den Sendungstiteln entfernt, diese werden jetzt nur noch unter den jeweiligen KODI-Skin-Genres gelistet (um überlange Titel zu vermeiden)
+[B][COLOR orangered]Version 2.2.9+matrix.1  (19.01.2025)[/COLOR][/B]
+- fixed: Streams vom 'HR-Fernsehen' sind nicht abspielbar
+- fixed: Streams von 'One' in Originalfassung werden nicht abgespielt
+- fixed: Falsche Jahresangabe im 'Sendetermin' bei Sendungen vom Dezember vergangenen Jahres
 		</news>
 	</extension>
 </addon>
