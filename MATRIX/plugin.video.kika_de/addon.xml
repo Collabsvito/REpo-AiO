@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.kika_de" name="KiKA plus" version="3.4.8+matrix.1" provider-name="realvito">
+<addon id="plugin.video.kika_de" name="KiKA plus" version="3.4.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -8,8 +8,8 @@
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">KIKA Mediathek</summary>
-		<summary lang="en_GB">KIKA Mediathek</summary>
+		<summary lang="de_DE">KiKA Mediathek</summary>
+		<summary lang="en_GB">KiKA Mediathek</summary>
 		<description lang="de_DE">Das TV-Programm von KiKA richtet sich mit seinen Filmen, Serien und Sendungen an Kinder im Alter von 3 bis 13 Jahren.[CR]Sowohl Realserien wie "Schloss Einstein" und "Die Pfefferkörner" oder Zeichentrickklassiker aus den 70er und 80er Jahren wie "Wickie", "Nils Holgersson" oder "Die Biene Maja" sind fester Bestandteil von KiKA.</description>
 		<description lang="en_GB">With its films, series and programs, KiKA's TV program is aimed at children aged 3 to 13.[CR]Both reality series like "Schloss Einstein" and "Die Pfefferkörner" and animated classics from the 1970s and 1980s like "Wickie," "Nils Holgersson" and "Die Biene Maja" are fixed components of KiKA.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
@@ -27,9 +27,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.4.8+matrix.1  (31.12.2023)[/COLOR][/B]
-- fixed: Manche Odner lassen sich nicht öffnen (KeyError: 'mediumBrandImageUrl')
-- fixed: In Kodi Nexus/Omega funktioniert die Sortierung der Episoden nach Datum nicht
+[B][COLOR orangered]Version 3.4.9+matrix.1  (02.02.2025)[/COLOR][/B]
+- fixed: Manche Ordner lassen sich nicht öffnen (Error Type: class 'TypeError')
+- added: Anpassungen an Änderungen von KODI-Omega/Piers
 		</news>
 	</extension>
 </addon>
