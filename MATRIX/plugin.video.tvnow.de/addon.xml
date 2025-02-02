@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="plugin.video.tvnow.de" name="RTL+ - Webversion" version="1.0.5+matrix" provider-name="Pati, realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="inputstream.adaptive" version="2.4.8"/>
+		<import addon="script.module.routing" version="0.2.3+matrix.1"/>
+		<import addon="script.module.inputstreamhelper" version="0.5.5+matrix.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Web-Plugin für RTL+ Deutschland</summary>
+		<summary lang="en_GB">Web-Plugin for RTL+ Germany</summary>
+		<description lang="de_DE">Bei RTL+ finden sich viele populäre Formate der deutschsprachigen Fernsehlandschaft. Ob Dschungelcamp, DSDS oder Love Island: RTL+ hat sie alle![CR]Ebenso sehen Sie auf RTL+ einmalige Event-Streams und ein großes Angebot an Live-Kanälen.</description>
+		<description lang="en_GB">RTL+ offers many popular formats from the German-speaking television landscape. Whether it's Dschungelcamp, DSDS or Love Island: RTL+ has them all![CR]You can also watch unique event streams and a wide range of live channels on RTL+.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/thread/57646-release-tvnow-rtl-watchbox-vox-ntv-nowus-rtl2-nitro/</forum>
+		<website>https://plus.rtl.de</website>
+		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.tvnow.de</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>
+[B][COLOR orangered]Version 1.0.5+matrix  (02.02.2025)[/COLOR][/B] by realvito
+- added: Kontextmenü-Eintrag 'Zu RTL+ Watchlist hinzufügen ...' in der Suchfunktion (nur Premium-User)
+- added: 'Premiumkennzeichnung' aller Sendungen auf Basis des Eintrags 'PREMIUM' in der API (nur Anonym-/Free-User)
+- added: Premium(Bezahl)-Inhalte für 'Anonym-/Free-User' ausblenden (settings) [funktioniert nicht bei Staffeln/Monaten - keine Kennzeichnung in der API vorhanden]
+- optimized: Mehr Sendungsinfos anzeigen z.B. Genre, FSK... (so wie in der API vorhanden)
+- optimized: Volumen der zwischengespeicherten Daten extrem reduziert durch Verwendung von 'gzip'
+- updated: Hashwerte
+- removed: Erstausstrahlung anzeigen (settings) [wird jetzt immer angezeigt, sofern vorhanden]
+		</news>
+	</extension>
+</addon>
