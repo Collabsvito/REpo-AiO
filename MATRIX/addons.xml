@@ -853,7 +853,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tvnow.de" name="RTL+ - Webversion" version="1.0.5+matrix" provider-name="Pati, realvito">
+<addon id="plugin.video.tvnow.de" name="RTL+ - Webversion" version="1.0.6+matrix" provider-name="Pati, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -884,6 +884,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 1.0.6+matrix  (03.02.2025)[/COLOR][/B] by realvito
+- fixed: Premium-Watchlist kann nicht geladen werden (Error Type: class 'KeyError')
+- added: Zusätzliche Qualitätsauswahl für TV-Livestreams (settings)
+- comment: *Wegen Umstellung des Formates der 'settings.xml' müssen für 'Premium-User' die Login-Daten leider neu gesetzt werden !*
+
 [B][COLOR orangered]Version 1.0.5+matrix  (02.02.2025)[/COLOR][/B] by realvito
 - added: Kontextmenü-Eintrag 'Zu RTL+ Watchlist hinzufügen ...' in der Suchfunktion (nur Premium-User)
 - added: 'Premiumkennzeichnung' aller Sendungen auf Basis des Eintrags 'PREMIUM' in der API (nur Anonym-/Free-User)
