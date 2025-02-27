@@ -497,7 +497,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - NW" version="1.2.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - NW" version="1.2.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -513,8 +513,8 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Streamingdienst von RTL+ in Deutschland</summary>
 		<summary lang="en_GB">Streamingservice of RTL+ in Germany</summary>
-		<description lang="de_DE">Bei RTL+ (DE) Serien, Shows und Filme online streamen. Schau dir komplette Serien an, fiebere bei deinen liebsten Daily-Soaps mit oder staune bei spannenden Dokumentationen - alles wann und wo du willst auf Abruf.[CR]Viele Inhalte aus dem TV Programm siehst du bei RTL+ sogar schon vor TV-Aussstrahlung !</description>
-		<description lang="en_GB">Stream series, shows and movies online with RTL+ (DE). Watch complete series, enjoy your favorite daily soap operas or marvel at exciting documentaries - all when and where you want on demand.[CR]You can even see a lot of content from the TV program on RTL+ before it is broadcast on TV!</description>
+		<description lang="de_DE">[COLOR orangered]- Die API.v.3 von RTL+ Deutschland wurde abgeschaltet.[CR]- Addon-Support eingestellt ![/COLOR]</description>
+		<description lang="en_GB">[COLOR orangered]- The API.v.3 of RTL+ Germany has been switched off.[CR]- Addon support discontinued ![/COLOR]</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
@@ -529,9 +529,11 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
+		<lifecyclestate type="broken" lang="de_DE">- Die API.v.3 von RTL+ Deutschland wurde abgeschaltet.[CR]- Addon-Support eingestellt !</lifecyclestate>
+		<lifecyclestate type="broken" lang="en_GB">- The API.v.3 of RTL+ Germany has been switched off.[CR]- Addon support discontinued !</lifecyclestate>
 		<news>
-[B][COLOR orangered]Version 1.2.3+matrix.1  (05.10.2024)[/COLOR][/B]
-- fixed: Alle VOD-STREAMS sind nicht mehr abspielbar (Error: 400 - Bad Request)
+[B][COLOR orangered]Version 1.2.4+matrix.1  (27.02.2025)[/COLOR][/B]
+- Die API.v.3 von RTL+ Deutschland wurde abgeschaltet.[CR]- Addon-Support eingestellt !
 		</news>
 	</extension>
 </addon>
@@ -816,7 +818,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tele5_de" name="TELE 5 Mediathek" version="2.0.9+matrix" provider-name="w4ki, realvito">
+<addon id="plugin.video.tele5_de" name="TELE 5 Mediathek" version="2.1.0+matrix" provider-name="w4ki, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.inputstreamhelper" version="0.5.5+matrix.1"/>
@@ -844,12 +846,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<clearlogo>resources/media/clearlogo.png</clearlogo>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.0.9+matrix  (19.01.2025)[/COLOR][/B] @realvito
-- fixed: Falscher Header bei der Streamanforderung
-- added: Rubrik = Neue Sendungen (Filme/Episoden) [listet die neuesten Videos der letzten 3 Tage / 72 Std.]
-- added: Benutzerdefinierte Farbeinstellung zur Unterscheidung zwischen Filmen &amp; Episoden in der neuen Rubrik (settings)
-- added: FSK für Videos, Plot für Serien und Poster-Images für Serien/Filme
-- optimized: Neue Abfrageparameter für den Livestream von Tele 5
+[B][COLOR orangered]Version 2.1.0+matrix  (27.02.2025)[/COLOR][/B] by realvito
+- fixed: Die Serie "Doctor Who" kann nicht geöffnet werden (Error Type: class 'TypeError')
+- fixed: Es werden keine Laufzeiten zu Serien/Filmen angezeigt
 		</news>
 	</extension>
 </addon>
@@ -1007,42 +1006,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 [B][COLOR orangered]Version 1.0.3+matrix.1  (02.07.2023)[/COLOR][/B]
 - fixed: Im Ordner 'DFB-Pokal' wird schon das nächste noch nicht vorhandene Saison-Jahr gelistet
 - added: Anpassungen an Änderungen von KODI-Nexus
-		</news>
-	</extension>
-</addon>
-<addon id="plugin.video.viacom.mtv" name="MTV Germany" version="2.0.8+matrix.1" provider-name="realvito">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.27.0"/>
-		<import addon="script.common.plugin.cache" version="2.6.2+matrix.1"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">MTV.de Musik und mehr</summary>
-		<summary lang="en_GB">MTV.de Music and more</summary>
-		<description lang="de_DE">[COLOR orangered]- Die Webseite MTV - Deutschland bietet keine Live- und Vodstreams mehr an.[CR]- Addon-Support eingestellt ![/COLOR]</description>
-		<description lang="en_GB">[COLOR orangered]- The Website MTV - Germany no longer offers Live- and Vodstreams[CR]- Addon support discontinued ![/COLOR]</description>
-		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
-		<language></language>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
-		<website>https://www.mtv.de/</website>
-		<email></email>
-		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
-		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.viacom.mtv</source>
-		<assets>
-			<icon>resources/media/icon.png</icon>
-			<fanart>resources/media/fanart.jpg</fanart>
-		</assets>
-		<lifecyclestate type="broken" lang="de_DE">- Die Webseite MTV - Deutschland bietet keine Live- und Vodstreams mehr an.[CR]- Addon-Support eingestellt !</lifecyclestate>
-		<lifecyclestate type="broken" lang="en_GB">- The Website MTV - Germany no longer offers Live- and Vodstreams[CR]- Addon support discontinued !</lifecyclestate>
-		<news>
-[B][COLOR orangered]Version 2.0.8+matrix.1  (03.11.2024)[/COLOR][/B]
-- Die Webseite MTV - Deutschland bietet keine Live- und Vodstreams mehr an.[CR]- Addon-Support eingestellt !
 		</news>
 	</extension>
 </addon>

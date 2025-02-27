@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - NW" version="1.2.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - NW" version="1.2.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -15,8 +15,8 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Streamingdienst von RTL+ in Deutschland</summary>
 		<summary lang="en_GB">Streamingservice of RTL+ in Germany</summary>
-		<description lang="de_DE">Bei RTL+ (DE) Serien, Shows und Filme online streamen. Schau dir komplette Serien an, fiebere bei deinen liebsten Daily-Soaps mit oder staune bei spannenden Dokumentationen - alles wann und wo du willst auf Abruf.[CR]Viele Inhalte aus dem TV Programm siehst du bei RTL+ sogar schon vor TV-Aussstrahlung !</description>
-		<description lang="en_GB">Stream series, shows and movies online with RTL+ (DE). Watch complete series, enjoy your favorite daily soap operas or marvel at exciting documentaries - all when and where you want on demand.[CR]You can even see a lot of content from the TV program on RTL+ before it is broadcast on TV!</description>
+		<description lang="de_DE">[COLOR orangered]- Die API.v.3 von RTL+ Deutschland wurde abgeschaltet.[CR]- Addon-Support eingestellt ![/COLOR]</description>
+		<description lang="en_GB">[COLOR orangered]- The API.v.3 of RTL+ Germany has been switched off.[CR]- Addon support discontinued ![/COLOR]</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
@@ -31,9 +31,11 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
+		<lifecyclestate type="broken" lang="de_DE">- Die API.v.3 von RTL+ Deutschland wurde abgeschaltet.[CR]- Addon-Support eingestellt !</lifecyclestate>
+		<lifecyclestate type="broken" lang="en_GB">- The API.v.3 of RTL+ Germany has been switched off.[CR]- Addon support discontinued !</lifecyclestate>
 		<news>
-[B][COLOR orangered]Version 1.2.3+matrix.1  (05.10.2024)[/COLOR][/B]
-- fixed: Alle VOD-STREAMS sind nicht mehr abspielbar (Error: 400 - Bad Request)
+[B][COLOR orangered]Version 1.2.4+matrix.1  (27.02.2025)[/COLOR][/B]
+- Die API.v.3 von RTL+ Deutschland wurde abgeschaltet.[CR]- Addon-Support eingestellt !
 		</news>
 	</extension>
 </addon>
