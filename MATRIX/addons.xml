@@ -705,7 +705,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV [COLOR FF00EE00](light)[/COLOR]" version="2.1.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV [COLOR FF00EE00](light)[/COLOR]" version="2.1.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -733,11 +733,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.1.3+matrix.1  (23.12.2024)[/COLOR][/B]
-- fixed: Manche Streams sind nicht abspielbar (API-Link geändert)
-- added: FREE-ACCOUNT - settings (für die Wiedergabe einiger Streams ist neuerdings ein FREE-ACCOUNT Voraussetzung)
-- optimized: Menu- und Favorit-File
-- comment: *Durch die Strukturänderungen am Menu- und Favorit-File, muss der Menu-File vom Benutzer neu angelegt werden, während der Favorit-File automatisch beim ersten Start des Addons intern umgewandelt wird !*
+[B][COLOR orangered]Version 2.1.4+matrix.1  (09.03.2025)[/COLOR][/B]
+- fixed: Alle Videos sind NICHT abspielbar (Token-Struktur verändert)
+- fixed: Die Video-Ordner für 'LIVE' und 'DEMNÄCHST' in den Sportkanälen können nicht geöffnet werden
+- added: Rubriken = Video - Empfehlungen, Aktuelle Top - Events
+- removed: Rubrik = Neue Videos (nicht mehr in der API vorhanden)
 		</news>
 	</extension>
 </addon>
@@ -852,7 +852,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tvnow.de" name="RTL+ - Webversion" version="1.0.6+matrix" provider-name="Pati, realvito">
+<addon id="plugin.video.tvnow.de" name="RTL+ - Webversion" version="1.0.7+matrix" provider-name="Pati, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -883,19 +883,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.6+matrix  (03.02.2025)[/COLOR][/B] by realvito
-- fixed: Premium-Watchlist kann nicht geladen werden (Error Type: class 'KeyError')
-- added: Zusätzliche Qualitätsauswahl für TV-Livestreams (settings)
-- comment: *Wegen Umstellung des Formates der 'settings.xml' müssen für 'Premium-User' die Login-Daten leider neu gesetzt werden !*
-
-[B][COLOR orangered]Version 1.0.5+matrix  (02.02.2025)[/COLOR][/B] by realvito
-- added: Kontextmenü-Eintrag 'Zu RTL+ Watchlist hinzufügen ...' in der Suchfunktion (nur Premium-User)
-- added: 'Premiumkennzeichnung' aller Sendungen auf Basis des Eintrags 'PREMIUM' in der API (nur Anonym-/Free-User)
-- added: Premium(Bezahl)-Inhalte für 'Anonym-/Free-User' ausblenden (settings) [funktioniert nicht bei Staffeln/Monaten - keine Kennzeichnung in der API vorhanden]
-- optimized: Mehr Sendungsinfos anzeigen z.B. Genre, FSK... (so wie in der API vorhanden)
-- optimized: Volumen der zwischengespeicherten Daten extrem reduziert durch Verwendung von 'gzip'
-- updated: Hashwerte
-- removed: Erstausstrahlung anzeigen (settings) [wird jetzt immer angezeigt, sofern vorhanden]
+[B][COLOR orangered]Version 1.0.7+matrix  (09.03.2025)[/COLOR][/B] by realvito
+- added: Rubrik = Themenwelten
+- added: Benutzerdefinierte Farbeinstellung zur Unterscheidung zwischen Filmen &amp; Serien/Shows in den Rubriken = Empfehlungen/Themenwelten/Suche [Watchlist nur Premium] (settings)
 		</news>
 	</extension>
 </addon>
