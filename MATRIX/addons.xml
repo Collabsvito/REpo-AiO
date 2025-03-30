@@ -36,7 +36,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.bibeltv" name="Bibel.TV" version="3.0.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.bibeltv" name="Bibel.TV" version="3.0.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -64,15 +64,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.2+matrix.1  (07.11.2024)[/COLOR][/B]
-- added: Suchfunktion für die Mediathek
-
-[B][COLOR orangered]Version 3.0.1+matrix.1  (03.11.2024)[/COLOR][/B]
-- Komplette Neuauflage des Bibel.TV-Addons nach Webseitenerneuerung (New Initial Release)
-- added: Alle Rubriken der Mediathek in der Übersicht (Androidversion)
-- added: Bonus-Rubrik = Neue Sendungen (diesen Eintrag gibt es nicht in der Webversion/Androidversion)
-- added: Rubriken = Live - Gottesdienste und Live - Streams
-- optimized: Angezeigte Beiträge pro Seite auf 40 Einträge erhöht (das Original zeigt nur max. 20 Beiträge)
+[B][COLOR orangered]Version 3.0.3+matrix.1  (30.03.2025)[/COLOR][/B]
+- fixed: LIVESTREAMS von Hope-TV, EWTN und K-TV (OpenInputStream - error opening)
+- optimized: Neue Playerparameter für MPD-Streams in KODI-Omega/Piers
 		</news>
 	</extension>
 </addon>
@@ -497,6 +491,43 @@
 		</news>
 	</extension>
 </addon>
+<addon id="plugin.video.rakuten.de" name="RakutenTV German [COLOR FF00EE00](light)[/COLOR]" version="1.0.1+matrix.1" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="inputstream.adaptive" version="19.0.5"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Free-Mediaportal von Rakuten TV</summary>
+		<summary lang="en_GB">Free-Mediaportal of Rakuten TV</summary>
+		<description lang="de_DE">[COLOR yellow]ACHTUNG: Dieser Provider setzt folgende Technologien ein:[/COLOR] ►[COLOR orange]Geoblocking und Blockierung von VoD-DRM-Streams auf diversen Systemen[/COLOR]◄ [COLOR yellow]!!![/COLOR][CR]Rakuten TV umfasst einen AVOD-Dienst (Advertising VOD) mit mehr als 10.000 Titeln, die auf Abruf verfügbar sind, darunter Filme, Dokus und Serien aus Hollywood und von lokalen Studios, sowie der Rakuten Originals Katalog mit exklusiven Inhalten.[CR]Der FAST-Dienst (Free Ad-supported Streaming TV) besteht aus einem umfangreichen Angebot von mehr als 250 kostenlosen linearen Kanälen von globalen Netzwerken, europäischen Top-Sendern und Mediengruppen.[CR][CR][COLOR FF00EE00]Dieses Addon stellt nur den FREI verfügbaren Inhalt von 'rakuten.tv' zur Verfügung ![/COLOR]</description>
+		<description lang="en_GB">[COLOR yellow]ATTENTION: This provider uses the following technologies:[/COLOR] ►[COLOR orange]Geoblocking and blocking of VoD-DRM-Streams on various Systems[/COLOR]◄ [COLOR yellow]!!![/COLOR][CR]Rakuten TV includes an AVOD-Service (Advertising VOD) with more than 10,000 titles available on-demand, including movies, documentaries and series from Hollywood and local studios, as well as the Rakuten Originals catalogue of exclusive content.[CR]The FAST-Service (Free Ad-supported Streaming TV) consists of an extensive range of more than 250 free linear channels from global networks, top European broadcasters and media groups.[CR][CR][COLOR FF00EE00]This Addon provides only the FREE available content of 'rakuten.tv' ![/COLOR]</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
+		<website>https://www.rakuten.tv/</website>
+		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.rakuten.de</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>
+[B][COLOR orangered]Version 1.0.1+matrix.1  (30.03.2025)[/COLOR][/B] Initial-Release
+- added: Rubriken = Eigene Watchlist-RakutenTV, Kostenlose VOD, Genres &amp; Kategorien, Alle Filme, Suchfunktion und TV-Kanäle in der Übersicht (Browservariante)
+- added: Ausführliche Film-Informationen - Kontextmenü
+- added: Auswahl für landesspezifische RakutenTV-Version = Deutschland, Österreich und Schweiz (settings - Geoblocking)
+- added: Sprachauswahl für Audio/Untertitel (settings)
+		</news>
+	</extension>
+</addon>
 <addon id="plugin.video.rtlgroup.de" name="RTLPLUS - NW" version="1.2.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
@@ -889,7 +920,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.2.9+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.3.0+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -921,10 +952,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.2.9+matrix.1  (19.01.2025)[/COLOR][/B]
-- fixed: Streams vom 'HR-Fernsehen' sind nicht abspielbar
-- fixed: Streams von 'One' in Originalfassung werden nicht abgespielt
-- fixed: Falsche Jahresangabe im 'Sendetermin' bei Sendungen vom Dezember vergangenen Jahres
+[B][COLOR orangered]Version 2.3.0+matrix.1  (30.03.2025)[/COLOR][/B]
+- fixed: Viele Streams vom 'ZDF+3' sind nicht abspielbar (neue Webseite)
 		</news>
 	</extension>
 </addon>

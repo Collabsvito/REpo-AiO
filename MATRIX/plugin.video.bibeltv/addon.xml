@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.bibeltv" name="Bibel.TV" version="3.0.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.bibeltv" name="Bibel.TV" version="3.0.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -27,15 +27,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.2+matrix.1  (07.11.2024)[/COLOR][/B]
-- added: Suchfunktion für die Mediathek
-
-[B][COLOR orangered]Version 3.0.1+matrix.1  (03.11.2024)[/COLOR][/B]
-- Komplette Neuauflage des Bibel.TV-Addons nach Webseitenerneuerung (New Initial Release)
-- added: Alle Rubriken der Mediathek in der Übersicht (Androidversion)
-- added: Bonus-Rubrik = Neue Sendungen (diesen Eintrag gibt es nicht in der Webversion/Androidversion)
-- added: Rubriken = Live - Gottesdienste und Live - Streams
-- optimized: Angezeigte Beiträge pro Seite auf 40 Einträge erhöht (das Original zeigt nur max. 20 Beiträge)
+[B][COLOR orangered]Version 3.0.3+matrix.1  (30.03.2025)[/COLOR][/B]
+- fixed: LIVESTREAMS von Hope-TV, EWTN und K-TV (OpenInputStream - error opening)
+- optimized: Neue Playerparameter für MPD-Streams in KODI-Omega/Piers
 		</news>
 	</extension>
 </addon>
