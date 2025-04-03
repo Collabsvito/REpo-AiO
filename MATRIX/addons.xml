@@ -883,11 +883,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tvnow.de" name="RTL+ - Webversion" version="1.0.7+matrix" provider-name="Pati, realvito">
+<addon id="plugin.video.tvnow.de" name="RTL+ - Webversion" version="1.0.8+matrix" provider-name="Pati, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
-		<import addon="inputstream.adaptive" version="2.4.8"/>
+		<import addon="inputstream.adaptive" version="19.0.5"/>
 		<import addon="script.module.routing" version="0.2.3+matrix.1"/>
 		<import addon="script.module.inputstreamhelper" version="0.5.5+matrix.1"/>
 	</requires>
@@ -914,9 +914,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.7+matrix  (09.03.2025)[/COLOR][/B] by realvito
-- added: Rubrik = Themenwelten
-- added: Benutzerdefinierte Farbeinstellung zur Unterscheidung zwischen Filmen &amp; Serien/Shows in den Rubriken = Empfehlungen/Themenwelten/Suche [Watchlist nur Premium] (settings)
+[B][COLOR orangered]Version 1.0.8+matrix  (03.04.2025)[/COLOR][/B] by realvito
+- fixed: Alle VOD-STREAMS sind nicht mehr abspielbar (Neue Stream-Url)
+- added: Rubrik = Themen-Sender (Fast-FREE)
 		</news>
 	</extension>
 </addon>
