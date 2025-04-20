@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.rakuten.de" name="RakutenTV German [COLOR FF00EE00](light)[/COLOR]" version="1.0.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.rakuten.de" name="RakutenTV German [COLOR FF00EE00](light)[/COLOR]" version="1.0.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
 		<import addon="inputstream.adaptive" version="19.0.5"/>
+		<import addon="service.rakuten.epgrefresh" version="1.0.1+matrix.1" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -28,11 +29,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.1+matrix.1  (30.03.2025)[/COLOR][/B] Initial-Release
-- added: Rubriken = Eigene Watchlist-RakutenTV, Kostenlose VOD, Genres &amp; Kategorien, Alle Filme, Suchfunktion und TV-Kanäle in der Übersicht (Browservariante)
-- added: Ausführliche Film-Informationen - Kontextmenü
-- added: Auswahl für landesspezifische RakutenTV-Version = Deutschland, Österreich und Schweiz (settings - Geoblocking)
-- added: Sprachauswahl für Audio/Untertitel (settings)
+[B][COLOR orangered]Version 1.0.2+matrix.1  (20.04.2025)[/COLOR][/B]
+- optimized: Diverse Anpassungen für 'M3U-Listen-Erstellung' (bitte 'm3u' neu erstellen)
 		</news>
 	</extension>
 </addon>
