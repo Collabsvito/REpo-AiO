@@ -110,12 +110,11 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.2.9+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.3.0+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
-		<import addon="inputstream.adaptive" version="2.4.8"/>
-		<import addon="service.cron.autobiblio" version="2.1.2+matrix.1" optional="true"/>
+		<import addon="inputstream.adaptive" version="19.0.5"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -140,9 +139,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.2.9+matrix.1  (11.01.2025)[/COLOR][/B]
-- fixed: Fehler bei durch den Benutzer ausgelösten Player-Stopp nach Pausierung eines Videos (Error Type: class 'RuntimeError')
-- optimized: Neue Playerparameter für MPD-Streams in KODI-Omega/Piers
+[B][COLOR orangered]Version 3.3.0+matrix.1  (20.04.2025)[/COLOR][/B]
+- removed: Funktion = Serie zur Kodi-Bibliothek hinzufügen und Einträge autom. aktualisieren (bitte auf das Addon 'plugin.video.osmosis' ausweichen)
 		</news>
 	</extension>
 </addon>
@@ -491,11 +489,12 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.rakuten.de" name="RakutenTV German [COLOR FF00EE00](light)[/COLOR]" version="1.0.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.rakuten.de" name="RakutenTV German [COLOR FF00EE00](light)[/COLOR]" version="1.0.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
 		<import addon="inputstream.adaptive" version="19.0.5"/>
+		<import addon="service.rakuten.epgrefresh" version="1.0.1+matrix.1" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -520,11 +519,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.1+matrix.1  (30.03.2025)[/COLOR][/B] Initial-Release
-- added: Rubriken = Eigene Watchlist-RakutenTV, Kostenlose VOD, Genres &amp; Kategorien, Alle Filme, Suchfunktion und TV-Kanäle in der Übersicht (Browservariante)
-- added: Ausführliche Film-Informationen - Kontextmenü
-- added: Auswahl für landesspezifische RakutenTV-Version = Deutschland, Österreich und Schweiz (settings - Geoblocking)
-- added: Sprachauswahl für Audio/Untertitel (settings)
+[B][COLOR orangered]Version 1.0.2+matrix.1  (20.04.2025)[/COLOR][/B]
+- optimized: Diverse Anpassungen für 'M3U-Listen-Erstellung' (bitte 'm3u' neu erstellen)
 		</news>
 	</extension>
 </addon>
@@ -568,7 +564,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.0.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.0.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -580,12 +576,12 @@
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">AiO-Mediatheken Spezialitäten</summary>
-		<summary lang="en_GB">AiO Mediatheques Specialities</summary>
+		<summary lang="de_DE">Mediatheken Angebot</summary>
+		<summary lang="en_GB">Mediatheques Offer</summary>
 		<description lang="de_DE">Sendungverpasst.de ist eine Suchmaschine für das Videoangebot der traditionellen deutschen TV-Sender, die jeder von seinem Fernseher kennt.[CR]Angereichert mit redaktionellen Beiträgen, Empfehlungen, Top- und Trend-Listen und Vielem mehr bietet Sendungverpasst.de den idealen Einstiegspunkt, um sich im Dschungel des Web-TV zu orientieren.</description>
 		<description lang="en_GB">Sendungverpasst.de is a search engine for the video offerings of the traditional German TV channels that everyone knows from their TV set.[CR]Enriched with editorial contributions, recommendations, top and trend lists and much more, Sendungverpasst.de offers the ideal entry point for finding your way through the jungle of Web-TV.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
@@ -599,8 +595,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.7+matrix.1  (29.03.2024)[/COLOR][/B]
+[B][COLOR orangered]Version 1.0.8+matrix.1  (20.04.2025)[/COLOR][/B]
+- fixed: Error wenn angeforderter Ordner leer ist (Error Type: class 'UnboundLocalError')
 - fixed: Links der Seven.One Entertainment Group = JOYN sind nicht abspielbar (404 Client Error: Not Found)
+- fixed: Alle Link-Resolver für öffentlich-rechtliche TV-Mediatheken
+- comment * Auf Grund von veränderten Addon-Parametern müssen evtl. angelegte Addon-Favoriten neu erstellt werden ! *
 		</news>
 	</extension>
 </addon>
@@ -701,7 +700,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.spiegel.de" name="DER SPIEGEL" version="3.0.4+matrix.1" provider-name="realvito">
+<addon id="plugin.video.spiegel.de" name="DER SPIEGEL" version="3.0.5+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -716,7 +715,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		<description lang="de_DE">'DER SPIEGEL' zeichnet sich durch schnelles Reagieren auf aktuelle Ereignisse sowie sorgfältig recherchierte investigative Hintergrundgeschichten aus.[CR]Deutschlands führende Nachrichtenseite für alles Wichtige aus Politik, Wirtschaft, Sport, Kultur, Wissenschaft, Technik und mehr.</description>
 		<description lang="en_GB">'DER SPIEGEL' is characterised by quick reactions to current events as well as carefully researched investigative background stories.[CR]Germany's leading news site for everything important from politics, business, sport, culture, science, technology and more.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
@@ -730,9 +729,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.4+matrix.1  (31.12.2023)[/COLOR][/B]
-- fixed: Nervende Meldung: 'DETAILS - ERROR' wenn nur für wenige Beiträge kein Video vorhanden ist (Fehlermeldung jetzt erst ab mind. 15 Server-Fehlern)
-- fixed: Fehlerhafte Beiträge ohne Video/Audio -Stream werden nicht ausgeblendet
+[B][COLOR orangered]Version 3.0.5+matrix.1  (20.04.2025)[/COLOR][/B]
+- fixed: Es werden nicht alle vorhandenen Playlisten von 'Der Spiegel' unter der Rubrik: 'Weitere Beiträge auf YOUTUBE' aufgelistet
+- added: Rubrik = SPIEGEL TV - Reden wir über Geld
+- removed: Rubrik = SPIEGEL TV - Klassiker (nicht mehr vorhanden)
+- optimized: Generiere '.m3u8' Video (falls in den settings ausgewählt), wenn nur '.mp4' Quelle vorhanden ist (auch HLS für Inputstream.Adaptive)
 		</news>
 	</extension>
 </addon>
@@ -920,7 +921,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.3.0+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.3.1+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -952,8 +953,10 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.3.0+matrix.1  (30.03.2025)[/COLOR][/B]
-- fixed: Viele Streams vom 'ZDF+3' sind nicht abspielbar (neue Webseite)
+[B][COLOR orangered]Version 2.3.1+matrix.1  (20.04.2025)[/COLOR][/B]
+- fixed: Bei mehreren Seiten einer Rubrik, wird die nächste Seite nicht mehr automatisch geladen (Quelltext verändert)
+- fixed: Links der Seven.One Entertainment Group = JOYN sind nicht abspielbar (404 Client Error: Not Found)
+- added: Rubriken = Verpasst in den Mediatheken und Vorab in den Mediatheken (jeweils 14 Tage zusammengefasst)
 		</news>
 	</extension>
 </addon>
@@ -1061,7 +1064,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="service.cron.autobiblio" name="Crontab für andere Addons" version="2.1.3+matrix.1" provider-name="realvito">
+<addon id="service.cron.autobiblio" name="Crontab für andere Addons" version="2.1.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
@@ -1072,8 +1075,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Crontab - Aktionssteuerung</summary>
 		<summary lang="en_GB">Crontab - Action control</summary>
-		<description lang="de_DE">Ein Service um regelmäßig (Stunden/Tage) gespeicherte Aktionen (z.B. Aktualisierung der Addon-Medienbibliothek) in anderen Plugins aufzurufen.</description>
-		<description lang="en_GB">A service to call regular (hours/days) stored actions (e.g. update the addon media library) in other plugins.</description>
+		<description lang="de_DE">[COLOR orangered]- Addon-Support eingestellt ![/COLOR]</description>
+		<description lang="en_GB">[COLOR orangered]- Addon support discontinued ![/COLOR]</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
@@ -1087,15 +1090,44 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		<assets>
 			<icon>resources/icon.png</icon>
 		</assets>
+		<lifecyclestate type="broken" lang="de_DE">- Addon-Support eingestellt !</lifecyclestate>
+		<lifecyclestate type="broken" lang="en_GB">- Addon support discontinued !</lifecyclestate>
 		<news>
-[B][COLOR orangered]Version 2.1.3+matrix.1  (26.05.2024)[/COLOR][/B]
-- fixed: Serien/Shows/Filme mit '&amp;' im Titel (z.B. Berlin Tag &amp; Nacht) werden bei der Ordner-Ablage mit dem 'service.cron.autobiblio' in der Kodi-Bibliothek nur mit verkürztem Titel gespeichert (in der Datenbank vom 'service.cron.autobiblio' aber korrekt)
-- fixed: Einige Serien/Shows die mit dem 'service.cron.autobiblio' in der Kodi-Bibliothek gespeichert wurden, werden im 'service.cron.autobiblio' nicht in der Übersicht angezeigt
-- added: Sicherheitsmaßnahme = Popup-Meldung um den ausgewählten Löschvorgang zu bestätigen
-- added: Plot als zusätzliche Übersicht
-- optimized: Code restructuring
-- comment: * Es wird empfohlen die nächste Auffrischung der mit dem 'service.cron.autobiblio' gespeicherten Sendungen in der Kodi-Bibliothek abzuwarten, um danach evtl. durch die Codeveränderungen des 'service.cron.autobiblio' entstandene doppelte Ordner (erkennbar durch abgehackte Titel) von Hand auf dem Betriebssystem zu löschen !!! *
-- comment: * Oder wer eine neue fehlerfreie Kodi-Bibliothek bevorzugt, kann die Datenbank des 'service.cron.autobiblio' über die 'settings' und danach die gespeicherten Ordner von Hand auf dem Betriebssystem löschen !!! *
+[B][COLOR orangered]Version 2.1.4+matrix.1  (20.04.2025)[/COLOR][/B]
+- Addon-Support eingestellt !
+		</news>
+	</extension>
+</addon>
+<addon id="service.rakuten.epgrefresh" name="Rakuten EPG-UPDATER" version="1.0.1+matrix.1" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="script.module.pytz"/>
+	</requires>
+	<extension point="xbmc.service" library="resources/lib/service.py"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">EPG Update - Aktionssteuerung</summary>
+		<summary lang="en_GB">EPG Update - Action control</summary>
+		<description lang="de_DE">[COLOR yellow]ACHTUNG: Wegen der vorausgesetzten Abhängigkeiten, ist für die korrekte Darstellung der EPG Daten unbedingt eine vom Addon:[/COLOR] ►[COLOR chartreuse]plugin.video.rakuten.de[/COLOR]◄ [COLOR yellow]erstellte '.m3u' Datei erforderlich !!![/COLOR][CR]Grabbt automatisch EPG Daten für Rakuten-IPTV der nächsten zwei Tage und erstellt eine 'rakuten_guide*.xml.gz' im benutzerdefinierten Ordner.</description>
+		<description lang="en_GB">[COLOR yellow]ATTENTION: Due to the required dependencies, a '.m3u' file created by the Addon:[/COLOR] ►[COLOR chartreuse]plugin.video.rakuten.de[/COLOR]◄ [COLOR yellow]is absolutely necessary for the correct display of EPG data !!![/COLOR][CR]Grab automatic EPG data for Rakuten-IPTV of the next two days and create a 'rakuten_guide*.xml.gz' in userdefinied folder.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
+		<website></website>
+		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/service.rakuten.epgrefresh</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>
+[B][COLOR orangered]Version 1.0.1+matrix.1  (20.04.2025)[/COLOR][/B] Initial-Release
+- added: Benutzer-Wohnsitz, Dateiname, Datei-Ordner, Updateintervall und manuelles Update (settings)
+- comment: * ACHTUNG: Wegen der vorausgesetzten Abhängigkeiten, ist für die korrekte Darstellung der EPG Daten unbedingt eine vom Addon: 'plugin.video.rakuten.de' erstellte '.m3u' Datei erforderlich !!! *
 		</news>
 	</extension>
 </addon>

@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.2.9+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.3.0+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
-		<import addon="inputstream.adaptive" version="2.4.8"/>
-		<import addon="service.cron.autobiblio" version="2.1.2+matrix.1" optional="true"/>
+		<import addon="inputstream.adaptive" version="19.0.5"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -29,9 +28,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.2.9+matrix.1  (11.01.2025)[/COLOR][/B]
-- fixed: Fehler bei durch den Benutzer ausgelösten Player-Stopp nach Pausierung eines Videos (Error Type: class 'RuntimeError')
-- optimized: Neue Playerparameter für MPD-Streams in KODI-Omega/Piers
+[B][COLOR orangered]Version 3.3.0+matrix.1  (20.04.2025)[/COLOR][/B]
+- removed: Funktion = Serie zur Kodi-Bibliothek hinzufügen und Einträge autom. aktualisieren (bitte auf das Addon 'plugin.video.osmosis' ausweichen)
 		</news>
 	</extension>
 </addon>
