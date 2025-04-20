@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.0.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.0.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -11,12 +11,12 @@
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">AiO-Mediatheken Spezialitäten</summary>
-		<summary lang="en_GB">AiO Mediatheques Specialities</summary>
+		<summary lang="de_DE">Mediatheken Angebot</summary>
+		<summary lang="en_GB">Mediatheques Offer</summary>
 		<description lang="de_DE">Sendungverpasst.de ist eine Suchmaschine für das Videoangebot der traditionellen deutschen TV-Sender, die jeder von seinem Fernseher kennt.[CR]Angereichert mit redaktionellen Beiträgen, Empfehlungen, Top- und Trend-Listen und Vielem mehr bietet Sendungverpasst.de den idealen Einstiegspunkt, um sich im Dschungel des Web-TV zu orientieren.</description>
 		<description lang="en_GB">Sendungverpasst.de is a search engine for the video offerings of the traditional German TV channels that everyone knows from their TV set.[CR]Enriched with editorial contributions, recommendations, top and trend lists and much more, Sendungverpasst.de offers the ideal entry point for finding your way through the jungle of Web-TV.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
@@ -30,8 +30,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.7+matrix.1  (29.03.2024)[/COLOR][/B]
+[B][COLOR orangered]Version 1.0.8+matrix.1  (20.04.2025)[/COLOR][/B]
+- fixed: Error wenn angeforderter Ordner leer ist (Error Type: class 'UnboundLocalError')
 - fixed: Links der Seven.One Entertainment Group = JOYN sind nicht abspielbar (404 Client Error: Not Found)
+- fixed: Alle Link-Resolver für öffentlich-rechtliche TV-Mediatheken
+- comment * Auf Grund von veränderten Addon-Parametern müssen evtl. angelegte Addon-Favoriten neu erstellt werden ! *
 		</news>
 	</extension>
 </addon>
