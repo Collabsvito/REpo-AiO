@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.3.0+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.3.1+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -9,8 +9,8 @@
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">DMAX Mediathek</summary>
-		<summary lang="en_GB">DMAX Mediathek</summary>
+		<summary lang="de_DE">DMAX.de Mediathek</summary>
+		<summary lang="en_GB">DMAX.de Mediathek</summary>
 		<description lang="de_DE">Egal ob unterhaltsame Doku-Soaps über schillernde Autotuner oder spannende Survival-Abenteuer von Schatzsuchern und Goldgräbern, bei DMAX wird Fernsehen zum Abenteuer.[CR]DMAX dokumentiert den Job-Alltag hart arbeitender Frauen und Männer in ganz Deutschland, die täglich alles am Laufen halten oder sogar ihr Leben für uns riskieren.[CR]DMAX - Bleibt echt !</description>
 		<description lang="en_GB">Whether entertaining docu-soaps about dazzling car tuners or exciting survival adventures of treasure hunters and gold diggers, on DMAX television becomes an adventure.[CR]DMAX documents the everyday job life of hard-working men and women all over Germany who keep everything going every day or even risk their lives for us.[CR]DMAX - Stay real !</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
@@ -28,8 +28,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.3.0+matrix.1  (20.04.2025)[/COLOR][/B]
-- removed: Funktion = Serie zur Kodi-Bibliothek hinzufügen und Einträge autom. aktualisieren (bitte auf das Addon 'plugin.video.osmosis' ausweichen)
+[B][COLOR orangered]Version 3.3.1+matrix.1  (25.05.2025)[/COLOR][/B]
+- fixed: Rubrik = Neue Sendungen (Serien), Sortierung nach Datum der neuesten Serien-Episode (absteigend)
 		</news>
 	</extension>
 </addon>
