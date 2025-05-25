@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.dfb_tv" name="DFB - Sport" version="2.1.0+matrix.1" provider-name="realvito">
+<addon id="plugin.video.dfb_tv" name="DFB - Sport" version="2.1.1+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
-		<import addon="plugin.video.youtube" version="6.8.1+matrix.1" optional="true"/>
+		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">Videoportal des DFB</summary>
-		<summary lang="en_GB">Videoportal of the DFB</summary>
+		<summary lang="de_DE">Videoportal des DFB auf Youtube</summary>
+		<summary lang="en_GB">Videoportal of the DFB on Youtube</summary>
 		<description lang="de_DE">Mit fast 7 Millionen Mitgliedern der angeschlossenen Vereine ist der DFB der größte nationale Sport-Fachverband der Welt.[CR]Sehen Sie Zusammenfassungen von Spielen aus dem deutschen Männer- und Frauenfußball, Livestreams, sonstige Videos mit Bezug zum DFB.</description>
 		<description lang="en_GB">With almost 7 million members of affiliated clubs, the DFB is the largest national sports federation in the world.[CR]Watch summaries of German men's and women's football matches, livestreams, other DFB-related videos.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
@@ -28,14 +28,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.1.0+matrix.1  (13.06.2024)[/COLOR][/B]
-- added: Rubrik = Live-Events und Aktuelles unter 'Weitere Beiträge auf YOUTUBE'
-- removed: Rubrik = LIVESTREAMS (Schon länger werden auf der Webseite des DFB in dieser Rubrik keine Einträge mehr gelistet)
-
-[B][COLOR orangered]Version 2.0.9+matrix.1  (02.06.2024)[/COLOR][/B]
-- added: Rubriken = Beach Soccer, Männer - Ligen, Männer-Nationalmannschaft und Frauen - Ligen
-- added: Dynamische Playlisten des 'Deutschen Fußball-Bundes (DFB)' auf Youtube immer aktuell
-- optimized: Mehr Video-Beiträge pro Seite anzeigen (bisher waren es max. 10, jetzt 40)
+[B][COLOR orangered]Version 2.1.1+matrix.1  (25.05.2025)[/COLOR][/B]
+- fixed: Es werden nicht alle vorhandenen Playlisten vom 'DFB' auf YOUTUBE aufgelistet
+- removed: Rubrik = Sämtliche Rubriken der Webseite 'tv.dfb.de' (Die API der Webseite des DFB wurde abgeschaltet und neue Videos werden nur noch auf Youtube gelistet)
+- comment: *Da das Addon jetzt nur noch auf den Beiträgen des 'DFB-Youtube-Kanals' basiert, ist für die Funktionen ein Youtube-API-Key in den settings erforderlich !*
 		</news>
 	</extension>
 </addon>

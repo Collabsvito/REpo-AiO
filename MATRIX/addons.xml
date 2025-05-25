@@ -70,18 +70,18 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.dfb_tv" name="DFB - Sport" version="2.1.0+matrix.1" provider-name="realvito">
+<addon id="plugin.video.dfb_tv" name="DFB - Sport" version="2.1.1+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
-		<import addon="plugin.video.youtube" version="6.8.1+matrix.1" optional="true"/>
+		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">Videoportal des DFB</summary>
-		<summary lang="en_GB">Videoportal of the DFB</summary>
+		<summary lang="de_DE">Videoportal des DFB auf Youtube</summary>
+		<summary lang="en_GB">Videoportal of the DFB on Youtube</summary>
 		<description lang="de_DE">Mit fast 7 Millionen Mitgliedern der angeschlossenen Vereine ist der DFB der größte nationale Sport-Fachverband der Welt.[CR]Sehen Sie Zusammenfassungen von Spielen aus dem deutschen Männer- und Frauenfußball, Livestreams, sonstige Videos mit Bezug zum DFB.</description>
 		<description lang="en_GB">With almost 7 million members of affiliated clubs, the DFB is the largest national sports federation in the world.[CR]Watch summaries of German men's and women's football matches, livestreams, other DFB-related videos.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
@@ -99,18 +99,14 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.1.0+matrix.1  (13.06.2024)[/COLOR][/B]
-- added: Rubrik = Live-Events und Aktuelles unter 'Weitere Beiträge auf YOUTUBE'
-- removed: Rubrik = LIVESTREAMS (Schon länger werden auf der Webseite des DFB in dieser Rubrik keine Einträge mehr gelistet)
-
-[B][COLOR orangered]Version 2.0.9+matrix.1  (02.06.2024)[/COLOR][/B]
-- added: Rubriken = Beach Soccer, Männer - Ligen, Männer-Nationalmannschaft und Frauen - Ligen
-- added: Dynamische Playlisten des 'Deutschen Fußball-Bundes (DFB)' auf Youtube immer aktuell
-- optimized: Mehr Video-Beiträge pro Seite anzeigen (bisher waren es max. 10, jetzt 40)
+[B][COLOR orangered]Version 2.1.1+matrix.1  (25.05.2025)[/COLOR][/B]
+- fixed: Es werden nicht alle vorhandenen Playlisten vom 'DFB' auf YOUTUBE aufgelistet
+- removed: Rubrik = Sämtliche Rubriken der Webseite 'tv.dfb.de' (Die API der Webseite des DFB wurde abgeschaltet und neue Videos werden nur noch auf Youtube gelistet)
+- comment: *Da das Addon jetzt nur noch auf den Beiträgen des 'DFB-Youtube-Kanals' basiert, ist für die Funktionen ein Youtube-API-Key in den settings erforderlich !*
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.3.0+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.3.1+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -120,8 +116,8 @@
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">DMAX Mediathek</summary>
-		<summary lang="en_GB">DMAX Mediathek</summary>
+		<summary lang="de_DE">DMAX.de Mediathek</summary>
+		<summary lang="en_GB">DMAX.de Mediathek</summary>
 		<description lang="de_DE">Egal ob unterhaltsame Doku-Soaps über schillernde Autotuner oder spannende Survival-Abenteuer von Schatzsuchern und Goldgräbern, bei DMAX wird Fernsehen zum Abenteuer.[CR]DMAX dokumentiert den Job-Alltag hart arbeitender Frauen und Männer in ganz Deutschland, die täglich alles am Laufen halten oder sogar ihr Leben für uns riskieren.[CR]DMAX - Bleibt echt !</description>
 		<description lang="en_GB">Whether entertaining docu-soaps about dazzling car tuners or exciting survival adventures of treasure hunters and gold diggers, on DMAX television becomes an adventure.[CR]DMAX documents the everyday job life of hard-working men and women all over Germany who keep everything going every day or even risk their lives for us.[CR]DMAX - Stay real !</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
@@ -139,16 +135,16 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.3.0+matrix.1  (20.04.2025)[/COLOR][/B]
-- removed: Funktion = Serie zur Kodi-Bibliothek hinzufügen und Einträge autom. aktualisieren (bitte auf das Addon 'plugin.video.osmosis' ausweichen)
+[B][COLOR orangered]Version 3.3.1+matrix.1  (25.05.2025)[/COLOR][/B]
+- fixed: Rubrik = Neue Sendungen (Serien), Sortierung nach Datum der neuesten Serien-Episode (absteigend)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.2.5+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.2.6+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
-		<import addon="inputstream.adaptive" version="2.4.8"/>
+		<import addon="inputstream.adaptive" version="19.0.5"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -173,17 +169,16 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.2.5+matrix.1  (11.01.2025)[/COLOR][/B]
-- fixed: Fehler bei durch den Benutzer ausgelösten Player-Stopp nach Pausierung eines Videos (Error Type: class 'RuntimeError')
-- optimized: Neue Playerparameter für MPD-Streams in KODI-Omega/Piers
+[B][COLOR orangered]Version 1.2.6+matrix.1  (25.05.2025)[/COLOR][/B]
+- fixed: Rubrik = Neue Sendungen (Serien), Sortierung nach Datum der neuesten Serien-Episode (absteigend)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.2.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.2.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
-		<import addon="inputstream.adaptive" version="2.4.8"/>
+		<import addon="inputstream.adaptive" version="19.0.5"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -208,9 +203,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.2.7+matrix.1  (11.01.2025)[/COLOR][/B]
-- fixed: Fehler bei durch den Benutzer ausgelösten Player-Stopp nach Pausierung eines Videos (Error Type: class 'RuntimeError')
-- optimized: Neue Playerparameter für MPD-Streams in KODI-Omega/Piers
+[B][COLOR orangered]Version 3.2.8+matrix.1  (25.05.2025)[/COLOR][/B]
+- fixed: Rubrik = Neue Sendungen (Serien), Sortierung nach Datum der neuesten Serien-Episode (absteigend)
 		</news>
 	</extension>
 </addon>
@@ -773,7 +767,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.sporttotal" name="Sporttotal.TV [COLOR FF00EE00](light)[/COLOR]" version="2.0.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sporttotal" name="Sporttotal.TV [COLOR FF00EE00](light)[/COLOR]" version="2.0.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -783,11 +777,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Regionalsport auf Sporttotal.tv</summary>
-		<description lang="de_DE">Neben Livesport erhalten Sportinteressierte emotional aufgeladenen Content, Topspiel-Produktionen, Doku-Serien und vieles mehr. Sporttotal.tv medialisiert Deutschlands Sport und bietet allen Interessierten die Möglichkeit, bei ihrem Lieblingsevent dabei zu sein.[CR]Eine Plattform für Vereine, Sportler, Fans und Sportinteressierte - It's on you ![CR][CR][COLOR FF00EE00]Dieses Addon stellt nur den FREI verfügbaren Inhalt von 'sporttotal.tv' zur Verfügung ![/COLOR]</description>
-		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<summary lang="en_GB">Regionalsport on Sporttotal.tv</summary>
+		<description lang="de_DE">Neben Livesport erhalten Sportinteressierte emotional aufgeladenen Content, Topspiel-Produktionen, Doku-Serien und vieles mehr. Sporttotal.tv medialisiert Deutschlands Sport und bietet allen Interessierten die Möglichkeit, bei ihrem Lieblingsevent dabei zu sein.[CR]Eine Plattform für Vereine, Sportler, Fans und Sportinteressierte - It's on you ![CR][CR][COLOR FF00EE00]Dieses Addon stellt nur den FREI verfügbaren Inhalt von 'sporttotal.tv' zur Verfügung ![/COLOR]</description>
 		<description lang="en_GB">In addition to live sports, sports fans receive emotionally charged content, top match productions, documentary series and much more. Sporttotal.tv medializes Germany's sports and offers all interested people the opportunity to be part of their favorite event.[CR]A platform for clubs, athletes, fans and sports enthusiasts - It's on you ![CR][COLOR FF00EE00]This addon provides only the FREE available content of 'sporttotal.tv' ![/COLOR]</description>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
@@ -801,15 +795,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.0.2+matrix.1  (12.05.2024)[/COLOR][/B]
-- fixed: Viele VoD-Streams sind nicht abspielbar, jetzt wird erst der HLS-Stream und danach der MP4-Stream getestet (HTTP Error 500: Internal Server Error)
-- fixed: Zusätzliche Events und die Rubrik = 'Handball' werden nicht in der Startübersicht gelistet (Cloudflare-Problem)
-- fixed: Suchfunktion = Sämtliche gelistete Ordner für Mannschaften zeigen nach anklicken keinen Inhalt, obwohl teilweise vorhanden
-- added: Rubriken = 'LIVE - Alle Sportarten' und 'DEMNÄCHST - Alle Sportarten' in der Startübersicht (Zusammenfassung der LIVE/KOMMENDEN - Events aller Sportarten)
-- added: Festgelegte Ordner/Links des Startmenüs ausblenden, wenn gewünscht (settings)
-- added: Timeshift-Funktion für Live-Streams (vom Provider werden leider nur max. 5 Minuten unterstützt)
-- added: Benutzerdefiniertes Profil des Lieblings-vereins/-wettbewerbes als Addon-Favorit anlegen/speichern (direkt Klick zum Profil des Vereins/Wettbewerbs)
-- added: HOME-BUTTON - Dieser Button ermöglicht es direkt zum Hauptmenü des Addons zurückzukehren ohne dabei jede aufgerufene Seite einer Liste einzeln zurückblättern zu müssen (settings)
+[B][COLOR orangered]Version 2.0.3+matrix.1  (25.05.2025)[/COLOR][/B]
+- fixed: Start- und Endzeiten der Spiele stimmen nicht mit der mitteleuropäische Zeit (MEZ) überein
+- added: Anpassungen an Änderungen der neuen API.v.3
+- removed: Rubrik = Empfehlungen (Ladezeit für extra Seite dauert zu lange)
+- optimized: STTV-Favoriten
+- comment: *Durch Umstrukturierung der STTV-Favoriten muss diese Datei (falls vorhanden) neu generiert werden, daher findet eine automatische Umwandlung beim ersten Start des Addons statt !*
 		</news>
 	</extension>
 </addon>
