@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.sporttotal" name="Sporttotal.TV [COLOR FF00EE00](light)[/COLOR]" version="2.0.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sporttotal" name="Sporttotal.TV [COLOR FF00EE00](light)[/COLOR]" version="2.0.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -9,11 +9,11 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Regionalsport auf Sporttotal.tv</summary>
-		<description lang="de_DE">Neben Livesport erhalten Sportinteressierte emotional aufgeladenen Content, Topspiel-Produktionen, Doku-Serien und vieles mehr. Sporttotal.tv medialisiert Deutschlands Sport und bietet allen Interessierten die Möglichkeit, bei ihrem Lieblingsevent dabei zu sein.[CR]Eine Plattform für Vereine, Sportler, Fans und Sportinteressierte - It's on you ![CR][CR][COLOR FF00EE00]Dieses Addon stellt nur den FREI verfügbaren Inhalt von 'sporttotal.tv' zur Verfügung ![/COLOR]</description>
-		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<summary lang="en_GB">Regionalsport on Sporttotal.tv</summary>
+		<description lang="de_DE">Neben Livesport erhalten Sportinteressierte emotional aufgeladenen Content, Topspiel-Produktionen, Doku-Serien und vieles mehr. Sporttotal.tv medialisiert Deutschlands Sport und bietet allen Interessierten die Möglichkeit, bei ihrem Lieblingsevent dabei zu sein.[CR]Eine Plattform für Vereine, Sportler, Fans und Sportinteressierte - It's on you ![CR][CR][COLOR FF00EE00]Dieses Addon stellt nur den FREI verfügbaren Inhalt von 'sporttotal.tv' zur Verfügung ![/COLOR]</description>
 		<description lang="en_GB">In addition to live sports, sports fans receive emotionally charged content, top match productions, documentary series and much more. Sporttotal.tv medializes Germany's sports and offers all interested people the opportunity to be part of their favorite event.[CR]A platform for clubs, athletes, fans and sports enthusiasts - It's on you ![CR][COLOR FF00EE00]This addon provides only the FREE available content of 'sporttotal.tv' ![/COLOR]</description>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
@@ -27,15 +27,12 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.0.2+matrix.1  (12.05.2024)[/COLOR][/B]
-- fixed: Viele VoD-Streams sind nicht abspielbar, jetzt wird erst der HLS-Stream und danach der MP4-Stream getestet (HTTP Error 500: Internal Server Error)
-- fixed: Zusätzliche Events und die Rubrik = 'Handball' werden nicht in der Startübersicht gelistet (Cloudflare-Problem)
-- fixed: Suchfunktion = Sämtliche gelistete Ordner für Mannschaften zeigen nach anklicken keinen Inhalt, obwohl teilweise vorhanden
-- added: Rubriken = 'LIVE - Alle Sportarten' und 'DEMNÄCHST - Alle Sportarten' in der Startübersicht (Zusammenfassung der LIVE/KOMMENDEN - Events aller Sportarten)
-- added: Festgelegte Ordner/Links des Startmenüs ausblenden, wenn gewünscht (settings)
-- added: Timeshift-Funktion für Live-Streams (vom Provider werden leider nur max. 5 Minuten unterstützt)
-- added: Benutzerdefiniertes Profil des Lieblings-vereins/-wettbewerbes als Addon-Favorit anlegen/speichern (direkt Klick zum Profil des Vereins/Wettbewerbs)
-- added: HOME-BUTTON - Dieser Button ermöglicht es direkt zum Hauptmenü des Addons zurückzukehren ohne dabei jede aufgerufene Seite einer Liste einzeln zurückblättern zu müssen (settings)
+[B][COLOR orangered]Version 2.0.3+matrix.1  (25.05.2025)[/COLOR][/B]
+- fixed: Start- und Endzeiten der Spiele stimmen nicht mit der mitteleuropäische Zeit (MEZ) überein
+- added: Anpassungen an Änderungen der neuen API.v.3
+- removed: Rubrik = Empfehlungen (Ladezeit für extra Seite dauert zu lange)
+- optimized: STTV-Favoriten
+- comment: *Durch Umstrukturierung der STTV-Favoriten muss diese Datei (falls vorhanden) neu generiert werden, daher findet eine automatische Umwandlung beim ersten Start des Addons statt !*
 		</news>
 	</extension>
 </addon>
