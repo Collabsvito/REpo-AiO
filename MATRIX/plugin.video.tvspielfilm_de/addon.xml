@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.3.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.3.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -31,10 +31,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.3.1+matrix.1  (20.04.2025)[/COLOR][/B]
-- fixed: Bei mehreren Seiten einer Rubrik, wird die nächste Seite nicht mehr automatisch geladen (Quelltext verändert)
-- fixed: Links der Seven.One Entertainment Group = JOYN sind nicht abspielbar (404 Client Error: Not Found)
-- added: Rubriken = Verpasst in den Mediatheken und Vorab in den Mediatheken (jeweils 14 Tage zusammengefasst)
+[B][COLOR orangered]Version 2.3.2+matrix.1  (01.06.2025)[/COLOR][/B]
+- fixed: Die Vorschaubilder der Titel werden nicht mehr angezeigt (neue Struktur)
 		</news>
 	</extension>
 </addon>
