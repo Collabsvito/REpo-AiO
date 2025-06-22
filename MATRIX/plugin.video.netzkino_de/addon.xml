@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.netzkino_de" name="Netzkino [COLOR FF00EE00](light)[/COLOR]" version="3.0.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.netzkino_de" name="Netzkino [COLOR FF00EE00](light)[/COLOR]" version="3.0.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -27,14 +27,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.7+matrix.1  (28.04.2024)[/COLOR][/B]
-- fixed: IMDb - Bewertung der Filme wird nicht angezeigt, wenn vorhanden
-- fixed: In Kodi Nexus/Omega funktioniert die Sortierung der Filme nach Datum nicht
-- added: Zusätzliche Film-Metadaten aus der Datenbank von 'IMDb' herunterladen (settings | In den Unterrubriken von Genres sehr zeitaufwendig !)
-- added: Schauspielerliste für Filme
-- added: Neue Icons für die Hauptrubriken
-- added: Rubriken = Blockbuster + Kultfilme, Top 20 - Action Klassiker
-- removed: Rubriken = Featured, Top 20 - bewertet auf IMDb (diese ID's funktionieren nicht mehr mit der 'alten' Android-API)
+[B][COLOR orangered]Version 3.0.8+matrix.1  (22.06.2025)[/COLOR][/B]
+- added: Rubrik = Featured by Netzkino
+- removed: Rubrik = Exklusiv bei Netzkino und Empfehlungen der Woche (keine Inhalte mehr in der alten API)
+- optimized: Häufig fehlen Poster und Laufzeitangaben in der API, daher werden diese jetzt von 'IMDb' geladen (Voreinstellung aktiviert - settings)
+- comment: * Durch Veränderung der 'Watchlist' Parameter sind alte Einträge nicht mehr kompatibel und werden beim ersten Start des Addons gelöscht ! *
 		</news>
 	</extension>
 </addon>
