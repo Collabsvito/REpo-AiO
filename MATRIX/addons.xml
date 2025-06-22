@@ -295,7 +295,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.filmstarts" name="FILMSTARTS.de" version="1.1.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.filmstarts" name="FILMSTARTS.de" version="1.1.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -307,9 +307,9 @@
 		<summary lang="de_DE">Filme und Serien (Trailer, Making of, Teaser ...)</summary>
 		<summary lang="en_GB">Movies and Series (Trailer, Making of, Teaser ...)</summary>
 		<description lang="de_DE">FILMSTARTS.de ist das führende Online-Magazin rund um das Medium Film. In der FILMSTARTS-Datenbank befinden sich mittlerweile Informationen zu mehr als 70.000 Filmen und Einträge zu über 5.000 TV-Serien, dazu sind viele Trailer sofort verfügbar.[CR]FILMSTARTS.de wurde 2002 durch den Journalisten Carsten Baumgardt und den Programmierer Tobias Leckeband als Portal für die Freunde des guten Films gegründet und gehört heute zu den ersten Adressen unter den Online-Magazinen für Filminteressierte.</description>
-		<description lang="en_GB">FILMSTARTS.de is the leading Online-Magazine for the medium of film. The FILMSTARTS-Database now contains information on more than 70.000 films and entries on over 5.000 TV-Series, plus many trailers are available immediately.[CR]FILMSTARTS.de was founded in 2002 by journalist Carsten Baumgardt and Programmer Tobias Leckeband as a portal for friends of good film and is now one of the top addresses among Online-Magazines for film fans.</description>
+		<description lang="en_GB">FILMSTARTS.de is the leading Online-Magazine for the medium of movie. The FILMSTARTS-Database now contains information on more than 70.000 Movies and entries on over 5.000 TV-Series, plus many trailers are available immediately.[CR]FILMSTARTS.de was founded in 2002 by journalist Carsten Baumgardt and Programmer Tobias Leckeband as a portal for friends of good movies and is now one of the top addresses among Online-Magazines for movie fans.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
@@ -323,16 +323,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.1.2+matrix.1  (28.02.2024)[/COLOR][/B]
-- fixed: Durch Änderung der Zuordnungen in den 'settings' des Addons kommt es evtl. zu Wiedergabefehlern der Videos
-- fixed: Bei Erstinstallation des Addons werden die Ordner nicht geöffnet (Error Contents: [Errno 2] No such file or directory)
-
-[B][COLOR orangered]Version 1.1.1+matrix.1  (25.02.2024)[/COLOR][/B]
-- fixed: Für fast alle Videos wird 'KEIN TRAILER' angezeigt (Quelltext und Videoabfrage verändert)
-- fixed: Genres, Regisseure und Darsteller der Videos werden nicht angezeigt
-- fixed: Für Serien-Videos wird kein Starttermin angezeigt
-- added: Originaltitel, Drehbuch, Produktionsland und FSK für Serien und Filme, Produktionsübersicht für Serien
-- added: Ausführliche Daten und Beschreibungen zu den diversen Trailer-Rubriken
+[B][COLOR orangered]Version 1.1.3+matrix.1  (22.06.2025)[/COLOR][/B]
+- fixed: Rubrik = Filme -> Trailer -> Trailer-Archiv, Serien -> Trailer -> Kommende Serien/Neue Serien-Trailer und Star-Interviews kann nicht geöffnet werden
+- fixed: Alle Trailer sind nicht abspielbar (Quelltext verändert und Trailer zu 'Dailymotion.com' ausgelagert)
+- optimized: Film/Serien Poster -Grösse und -Qualität
 		</news>
 	</extension>
 </addon>
@@ -444,7 +438,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.netzkino_de" name="Netzkino [COLOR FF00EE00](light)[/COLOR]" version="3.0.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.netzkino_de" name="Netzkino [COLOR FF00EE00](light)[/COLOR]" version="3.0.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -472,14 +466,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.7+matrix.1  (28.04.2024)[/COLOR][/B]
-- fixed: IMDb - Bewertung der Filme wird nicht angezeigt, wenn vorhanden
-- fixed: In Kodi Nexus/Omega funktioniert die Sortierung der Filme nach Datum nicht
-- added: Zusätzliche Film-Metadaten aus der Datenbank von 'IMDb' herunterladen (settings | In den Unterrubriken von Genres sehr zeitaufwendig !)
-- added: Schauspielerliste für Filme
-- added: Neue Icons für die Hauptrubriken
-- added: Rubriken = Blockbuster + Kultfilme, Top 20 - Action Klassiker
-- removed: Rubriken = Featured, Top 20 - bewertet auf IMDb (diese ID's funktionieren nicht mehr mit der 'alten' Android-API)
+[B][COLOR orangered]Version 3.0.8+matrix.1  (22.06.2025)[/COLOR][/B]
+- added: Rubrik = Featured by Netzkino
+- removed: Rubrik = Exklusiv bei Netzkino und Empfehlungen der Woche (keine Inhalte mehr in der alten API)
+- optimized: Häufig fehlen Poster und Laufzeitangaben in der API, daher werden diese jetzt von 'IMDb' geladen (Voreinstellung aktiviert - settings)
+- comment: * Durch Veränderung der 'Watchlist' Parameter sind alte Einträge nicht mehr kompatibel und werden beim ersten Start des Addons gelöscht ! *
 		</news>
 	</extension>
 </addon>
@@ -764,11 +755,10 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.7+matrix.1" provider-name="realvito (inspired by L0RE)">
+<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.8+matrix.1" provider-name="realvito (inspired by L0RE)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
-		<import addon="script.common.plugin.cache" version="2.6.2+matrix.1"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -777,8 +767,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Chartplayer für Musikvideos</summary>
 		<summary lang="en_GB">Chartplayer for Musicvideos</summary>
-		<description lang="de_DE">Musiktitel aus verschiedenen Quellen z.B. Beatport, Billboard, iTunes, Officialcharts etc. auswählen und das entsprechende Video über YouTube abspielen.[CR][CR]Für mehr Informationen zu allen Neuerungen siehe - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
-		<description lang="en_GB">Select music titles from various sources e.g. Beatport, Billboard, iTunes, Officialcharts etc. and play the corresponding video via YouTube.[CR][CR]For more information about all new features see - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
+		<description lang="de_DE">Musiktitel aus verschiedenen Quellen und Charts z.B. Beatport, Billboard, Officialcharts, Shazam etc. auswählen und das entsprechende Video automatisch auf YouTube suchen und über das YouTube-Addon abspielen.[CR][CR]     TEST IT AND LIKE IT</description>
+		<description lang="en_GB">Select music titles from various sources and charts e.g. Beatport, Billboard, Officialcharts, Shazam etc. and automatically search for the corresponding video on YouTube and play it via the YouTube-Addon.[CR][CR]     TEST IT AND LIKE IT</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
@@ -794,10 +784,13 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.7+matrix.1  (16.06.2024)[/COLOR][/B]
-- fixed: Shazam = Single Country Charts generates Error on open (Expecting value: line 1)
-- fixed: Spotify = Daily Song Charts, Daily Viral-Charts, Weekly Song Charts, Recommended Charts (KeyError: 'content')
-- removed: Extension point = 'Audio' from 'addon.xml', as KODI has display problems of audio lists with plot (now the Addon only listed under Video-Addons)
+[B][COLOR orangered]Version 3.0.8+matrix.1  (22.06.2025)[/COLOR][/B]
+- fixed: 'OfficialCharts UK' sometimes the artist is not found and an error occurs
+- added: Category = AppleMusic with some lists to choose from
+- removed: Category = iTunes (Api switched off)
+- removed: Category = Spotify (The Public-Categories of the Api are no longer freely available)
+- optimized: Removed dependency and cache of webpages with 'script.common.plugin.cache'
+- comment: * Due to various changes to the 'settings', these are automatically reset when the Addon is started for the first time and the YouTube-API-KEY must be entered again ! *
 		</news>
 	</extension>
 </addon>
