@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.7+matrix.1" provider-name="realvito (inspired by L0RE)">
+<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.8+matrix.1" provider-name="realvito (inspired by L0RE)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
-		<import addon="script.common.plugin.cache" version="2.6.2+matrix.1"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -12,8 +11,8 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Chartplayer für Musikvideos</summary>
 		<summary lang="en_GB">Chartplayer for Musicvideos</summary>
-		<description lang="de_DE">Musiktitel aus verschiedenen Quellen z.B. Beatport, Billboard, iTunes, Officialcharts etc. auswählen und das entsprechende Video über YouTube abspielen.[CR][CR]Für mehr Informationen zu allen Neuerungen siehe - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
-		<description lang="en_GB">Select music titles from various sources e.g. Beatport, Billboard, iTunes, Officialcharts etc. and play the corresponding video via YouTube.[CR][CR]For more information about all new features see - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
+		<description lang="de_DE">Musiktitel aus verschiedenen Quellen und Charts z.B. Beatport, Billboard, Officialcharts, Shazam etc. auswählen und das entsprechende Video automatisch auf YouTube suchen und über das YouTube-Addon abspielen.[CR][CR]     TEST IT AND LIKE IT</description>
+		<description lang="en_GB">Select music titles from various sources and charts e.g. Beatport, Billboard, Officialcharts, Shazam etc. and automatically search for the corresponding video on YouTube and play it via the YouTube-Addon.[CR][CR]     TEST IT AND LIKE IT</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
@@ -29,10 +28,13 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.7+matrix.1  (16.06.2024)[/COLOR][/B]
-- fixed: Shazam = Single Country Charts generates Error on open (Expecting value: line 1)
-- fixed: Spotify = Daily Song Charts, Daily Viral-Charts, Weekly Song Charts, Recommended Charts (KeyError: 'content')
-- removed: Extension point = 'Audio' from 'addon.xml', as KODI has display problems of audio lists with plot (now the Addon only listed under Video-Addons)
+[B][COLOR orangered]Version 3.0.8+matrix.1  (22.06.2025)[/COLOR][/B]
+- fixed: 'OfficialCharts UK' sometimes the artist is not found and an error occurs
+- added: Category = AppleMusic with some lists to choose from
+- removed: Category = iTunes (Api switched off)
+- removed: Category = Spotify (The Public-Categories of the Api are no longer freely available)
+- optimized: Removed dependency and cache of webpages with 'script.common.plugin.cache'
+- comment: * Due to various changes to the 'settings', these are automatically reset when the Addon is started for the first time and the YouTube-API-KEY must be entered again ! *
 		</news>
 	</extension>
 </addon>
