@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.galileo.tv" name="Galileo.TV" version="2.0.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.galileo.tv" name="Galileo.TV" version="2.0.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -13,8 +13,8 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Videoportal von Galileo auf ProSieben</summary>
 		<summary lang="en_GB">Videoportal of Galileo on ProSieben</summary>
-		<description lang="de_DE">GALILEO liefert relevantes Wissen mit Aha-Effekt. Immer auf den Punkt gebracht. Immer mit klarem Mehrwert - und das jeden Tag.[CR]Willkommen im echten Leben * Smartes Alltags-Know-how, * coole Gadgets – und * Lifehacks, die dich wirklich voranbringen.</description>
-		<description lang="en_GB">GALILEO delivers relevant knowledge with an aha effect. Always to the point. Always with clear added value - and every day.[CR]Welcome to real life * Smart everyday know-how, * cool gadgets - and * lifehacks that really get you ahead.</description>
+		<description lang="de_DE">[COLOR orangered]- Die Webseite 'https://www.prosieben.de' bietet keine VoD-Streams für die Sendungen von 'Galileo' mehr an.[CR]- Addon-Support eingestellt ![/COLOR]</description>
+		<description lang="en_GB">[COLOR orangered]- The Website 'https://www.prosieben.de' no longer offers VoD-Streams for the programs of 'Galileo'.[CR]- Addon support discontinued ![/COLOR]</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
@@ -29,10 +29,11 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
+		<lifecyclestate type="broken" lang="de_DE">- Die Webseite 'https://www.prosieben.de' bietet keine VoD-Streams für die Sendungen von 'Galileo' mehr an.[CR]- Addon-Support eingestellt !</lifecyclestate>
+		<lifecyclestate type="broken" lang="en_GB">- The Website 'https://www.prosieben.de' no longer offers VoD-Streams for the programs of 'Galileo'.[CR]- Addon support discontinued ![/COLOR]</lifecyclestate>
 		<news>
-[B][COLOR orangered]Version 2.0.3+matrix.1  (29.09.2024)[/COLOR][/B]
-- fixed: Sämtliche Episodenordner können nicht geöffnet werden (Error Type: class 'KeyError')
-- optimized: Originaltitel von vorhandenen Youtube-Videos anzeigen
+[B][COLOR orangered]Version 2.0.4+matrix.1  (27.07.2025)[/COLOR][/B]
+- Die Webseite 'https://www.prosieben.de' bietet keine VoD-Streams für die Sendungen von 'Galileo' mehr an.[CR]- Addon-Support eingestellt !
 		</news>
 	</extension>
 </addon>
