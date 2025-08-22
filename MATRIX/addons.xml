@@ -519,7 +519,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.0.8+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.0.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -550,11 +550,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.8+matrix.1  (20.04.2025)[/COLOR][/B]
-- fixed: Error wenn angeforderter Ordner leer ist (Error Type: class 'UnboundLocalError')
-- fixed: Links der Seven.One Entertainment Group = JOYN sind nicht abspielbar (404 Client Error: Not Found)
-- fixed: Alle Link-Resolver für öffentlich-rechtliche TV-Mediatheken
-- comment * Auf Grund von veränderten Addon-Parametern müssen evtl. angelegte Addon-Favoriten neu erstellt werden ! *
+[B][COLOR orangered]Version 1.0.9+matrix.1  (22.08.2025)[/COLOR][/B]
+- fixed: Einige Streams vom 'ZDF+3' sind nicht abspielbar (Error: Der Provider 'www.zdfheute.de' wird z.Zt. nicht unterstützt)
 		</news>
 	</extension>
 </addon>
