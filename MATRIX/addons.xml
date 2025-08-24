@@ -555,20 +555,20 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.0.9+matrix.1" provider-name="realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.1.0+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
-		<import addon="inputstream.adaptive" version="2.4.8"/>
+		<import addon="inputstream.adaptive" version="19.0.5"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">ServusTV Mediathek</summary>
-		<summary lang="en_GB">ServusTV Mediathek</summary>
-		<description lang="de_DE">ServusTV ist ein österreichischer Privatfernsehsender.[CR]Von Unterhaltung und Kultur bis Dokus und Sport - ServusTV richtet sich an ein weltoffenes und vielseitig interessiertes Publikum im deutschsprachigen Fernsehraum.</description>
-		<description lang="en_GB">ServusTV is an Austrian private television station.[CR]From entertainment and culture to documentaries and sports - ServusTV is aimed at a cosmopolitan and versatile audience in the German-speaking TV area.</description>
+		<summary lang="en_GB">ServusTV Media-Library</summary>
+		<description lang="de_DE">ServusTV ist ein österreichischer Privatfernsehsender.[CR]Neben einem breiten Sportprogramm erwarten Sie die bewegendsten Nachrichten, Bilder und Meinungen aus Österreich und der Welt. Wir beleuchten verschiedene Blickwinkel, lassen Experten zu Wort kommen und regen mit spannenden Talkshows zum Nachdenken an.</description>
+		<description lang="en_GB">ServusTV is an Austrian private television station.[CR]In addition to a broad sports programme, you can expect the most moving news, images and opinions from Austria and the world. We shed light on different perspectives, let experts have their say and stimulate thought with exciting talk shows.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
@@ -584,22 +584,23 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.9+matrix.1  (18.06.2024)[/COLOR][/B]
-- fixed: Manche Ordner können auf KODI > 19 nicht geöffnet werden
-
-[B][COLOR orangered]Version 3.0.8+matrix.1  (16.06.2024)[/COLOR][/B]
-- added: Rubrik = ServusTV - On Kanäle mit Epg, sofern vorhanden
-- added: Timeshift-Funktion für Live-Streams unter der Rubrik 'Sport-Programm'
-- optimized: Einstellungsoptionen für das Aktualisierungsintervall des Auth-Tokens
-- removed: Bevorzugtes Livestream-Verfahren in den Einstellungen
+[B][COLOR orangered]Version 3.10+matrix.1  (24.08.2025)[/COLOR][/B]
+- changed: Addon neu aufgesetzt mit Anlehnung des Aufbaus und der Struktur an die Web-API von ServusTV (liefert mehr Metadaten als die Android-API)
+- added: Rubriken = Startseite, Sport-Programm, Sport, Mediathek, die Servus-Welt, Filme, Neue Videos, Suche und ServusTV - TV Kanäle
+- added: Archiv-Rubriken = Alle Videos, Ganze Sendungen, Einzelbeiträge und Übertragungen
+- added: Neue TV-Kanäle mit EPG (sofern vorhanden)
+- added: Timeshift-Funktion zu-/ab-schaltbar für Live-Events (settings)
+- added: Wohnsitz des Benutzers = Deutschland, Österreich und Schweiz (settings)
+- comment * Auf Grund von veränderten Addon-Parametern müssen evtl. angelegte Addon-Favoriten neu erstellt werden ! *
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.skylinelivecams" name="Skyline LiveCams [COLOR FF00EE00](neu)[/COLOR]" version="1.0.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.skylinelivecams" name="Skyline LiveCams" version="1.0.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
-		<import addon="script.module.beautifulsoup4" version="4.9.3"/>
+		<import addon="inputstream.ffmpegdirect" version="19.0.3"/>
+		<import addon="script.module.beautifulsoup4" version="4.12.0"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -611,7 +612,7 @@
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<summary lang="en_GB">Live HD Cams from the World</summary>
 		<description lang="en_GB">Experience the world through the panoramic windows of SkylineWebcams.[CR]Discover the breathtaking beaches or mountain scenery, the vibrant culture and scenic beauty of many cities in different countries around the world with our Live-Webcams.</description>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<summary lang="fr_FR">Caméras HD en direct de partout dans le monde</summary>
 		<description lang="fr_FR">Découvrez le monde à travers les fenêtres panoramiques de SkylineWebcams.[CR]Découvrez les plages ou les montagnes à couper le souffle, la culture vivante et la beauté des paysages de nombreuses villes dans différents pays du monde grâce à nos webcams en direct.</description>
 		<summary lang="es_ES">Cámaras en vivo de alta definición de todo el mundo</summary>
@@ -641,14 +642,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.1+matrix.1  (25.02.2024)[/COLOR][/B]
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-- Initial Release @realvito
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-- added: Rubrik = Zufällige Cam, Neue Cams, Top Cams, Live Cams nach Kategorien und Ländern
-- added: Favoriten-Ordner für persönliche Highlights
-- added: Youtube-Kompatibilität für externe Streams - Diese werden weitergeleitet an das Youtube-Addon
-- comment: * Leider kommt es bei den Direkt-Streams die über den Anbieter 'skylinewebcams.com' laufen manchmal zu Ausfällen (dies ist also KEIN Addon-Fehler) !!! *
+[B][COLOR orangered]Version 1.0.2+matrix.1  (24.08.2025)[/COLOR][/B]
+- fixed: Bei längerer Verweildauer innerhalb eines Ordners sind 'DIREKT-STREAMS' (nicht YouTube-Streams) von 'skylinewebcams.com' nicht mehr abspielbar
+- fixed: Bei Auswahl der Rubrik = 'Zufällige Live Cam' wird nach benutzerdefiniertem Beenden des Streams erneut ein Stream abgespielt
+- added: Fehlende Länderflaggen
+- comment * Auf Grund von veränderten Addon-Parametern müssen evtl. angelegte Addon-Favoriten neu erstellt werden ! *
 		</news>
 	</extension>
 </addon>
@@ -722,6 +720,41 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 - fixed: Die Video-Ordner für 'LIVE' und 'DEMNÄCHST' in den Sportkanälen können nicht geöffnet werden
 - added: Rubriken = Video - Empfehlungen, Aktuelle Top - Events
 - removed: Rubrik = Neue Videos (nicht mehr in der API vorhanden)
+		</news>
+	</extension>
+</addon>
+<addon id="plugin.video.sporteurope.tv" name="SPORTEUROPE.TV [COLOR FF00EE00](light)[/COLOR]" version="3.0.1+matrix.1" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.27.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Amateursport - Wettbewerbe</summary>
+		<summary lang="en_GB">Amateur Sports - Competitions</summary>
+		<description lang="de_DE">SPORTEUROPE.TV ist der vom Deutschen Olympischen Sportbund (DOSB) im Jahr 2014 gegründete Online-Sportsender. Dem User stehen auf der Plattform über ca. 5.000 Stunden On – demand – Videos zur Auswahl.[CR]Zudem gibt es verschiedene Livestreams zu vielen Sportarten wie Handball, Basketball, Eishockey und Volleyball auf SPORTEUROPE.TV.[CR][CR][COLOR FF00EE00]Dieses Addon stellt nur den FREI verfügbaren Inhalt von 'sporteurope.tv' zur Verfügung ![/COLOR]</description>
+		<description lang="en_GB">SPORTEUROPE.TV is the online sports channel founded by the German Olympic Sports Confederation (DOSB) in year 2014. The user can choose from over approx. 5.000 hours of On – demand – Videos on the platform.[CR]In addition, there are various live streams for many sports such as handball, basketball, ice hockey and volleyball on SPORTEUROPE.TV.[CR][COLOR FF00EE00]This Addon only provides the FREE available content of 'sporteurope.tv' ![/COLOR]</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
+		<website>https://sporteurope.tv/</website>
+		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.sporteurope.tv</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>
+[B][COLOR orangered]Version 3.0.1+matrix.1  (24.08.2025)[/COLOR][/B] - ReRelease
+- changed: Plugin-Pfad mit dieser Neuauflage (old=plugin.video.sportdeutschland_tv -> new=plugin.video.sporteurope.tv)
+- changed: Der Name des Addons lautet jetzt: 'SPORTEUROPE.TV' (vorher: Sportdeutschland.TV)
+- changed: Anpassungen des Addons an die neue Provider-URL/API (https://sporteurope.tv/)
 		</news>
 	</extension>
 </addon>
@@ -835,7 +868,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tvnow.de" name="RTL+ - Webversion" version="1.0.8+matrix" provider-name="Pati, realvito">
+<addon id="plugin.video.tvnow.de" name="RTL+ - Webversion" version="1.0.9+matrix" provider-name="Pati, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -866,13 +899,13 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.8+matrix  (03.04.2025)[/COLOR][/B] by realvito
-- fixed: Alle VOD-STREAMS sind nicht mehr abspielbar (Neue Stream-Url)
-- added: Rubrik = Themen-Sender (Fast-FREE)
+[B][COLOR orangered]Version 1.0.9+matrix  (24.08.2025)[/COLOR][/B] by realvito
+- added: Rubrik = Sport
+- updated: Hashwerte
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.3.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.3.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -904,8 +937,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.3.2+matrix.1  (01.06.2025)[/COLOR][/B]
-- fixed: Die Vorschaubilder der Titel werden nicht mehr angezeigt (neue Struktur)
+[B][COLOR orangered]Version 2.3.3+matrix.1  (24.08.2025)[/COLOR][/B]
+- fixed: Einige Streams vom 'ZDF+3' sind nicht abspielbar (Error: Der Provider 'www.zdfheute.de' wird z.Zt. nicht unterstützt)
+- fixed: FSK, Regisseur und Schauspieler werden nicht angezeigt (Quelltext verändert)
 		</news>
 	</extension>
 </addon>

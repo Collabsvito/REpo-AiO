@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.0.9+matrix.1" provider-name="realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.1.0+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
-		<import addon="inputstream.adaptive" version="2.4.8"/>
+		<import addon="inputstream.adaptive" version="19.0.5"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">ServusTV Mediathek</summary>
-		<summary lang="en_GB">ServusTV Mediathek</summary>
-		<description lang="de_DE">ServusTV ist ein österreichischer Privatfernsehsender.[CR]Von Unterhaltung und Kultur bis Dokus und Sport - ServusTV richtet sich an ein weltoffenes und vielseitig interessiertes Publikum im deutschsprachigen Fernsehraum.</description>
-		<description lang="en_GB">ServusTV is an Austrian private television station.[CR]From entertainment and culture to documentaries and sports - ServusTV is aimed at a cosmopolitan and versatile audience in the German-speaking TV area.</description>
+		<summary lang="en_GB">ServusTV Media-Library</summary>
+		<description lang="de_DE">ServusTV ist ein österreichischer Privatfernsehsender.[CR]Neben einem breiten Sportprogramm erwarten Sie die bewegendsten Nachrichten, Bilder und Meinungen aus Österreich und der Welt. Wir beleuchten verschiedene Blickwinkel, lassen Experten zu Wort kommen und regen mit spannenden Talkshows zum Nachdenken an.</description>
+		<description lang="en_GB">ServusTV is an Austrian private television station.[CR]In addition to a broad sports programme, you can expect the most moving news, images and opinions from Austria and the world. We shed light on different perspectives, let experts have their say and stimulate thought with exciting talk shows.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
@@ -28,14 +28,14 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.9+matrix.1  (18.06.2024)[/COLOR][/B]
-- fixed: Manche Ordner können auf KODI > 19 nicht geöffnet werden
-
-[B][COLOR orangered]Version 3.0.8+matrix.1  (16.06.2024)[/COLOR][/B]
-- added: Rubrik = ServusTV - On Kanäle mit Epg, sofern vorhanden
-- added: Timeshift-Funktion für Live-Streams unter der Rubrik 'Sport-Programm'
-- optimized: Einstellungsoptionen für das Aktualisierungsintervall des Auth-Tokens
-- removed: Bevorzugtes Livestream-Verfahren in den Einstellungen
+[B][COLOR orangered]Version 3.10+matrix.1  (24.08.2025)[/COLOR][/B]
+- changed: Addon neu aufgesetzt mit Anlehnung des Aufbaus und der Struktur an die Web-API von ServusTV (liefert mehr Metadaten als die Android-API)
+- added: Rubriken = Startseite, Sport-Programm, Sport, Mediathek, die Servus-Welt, Filme, Neue Videos, Suche und ServusTV - TV Kanäle
+- added: Archiv-Rubriken = Alle Videos, Ganze Sendungen, Einzelbeiträge und Übertragungen
+- added: Neue TV-Kanäle mit EPG (sofern vorhanden)
+- added: Timeshift-Funktion zu-/ab-schaltbar für Live-Events (settings)
+- added: Wohnsitz des Benutzers = Deutschland, Österreich und Schweiz (settings)
+- comment * Auf Grund von veränderten Addon-Parametern müssen evtl. angelegte Addon-Favoriten neu erstellt werden ! *
 		</news>
 	</extension>
 </addon>
