@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tvnow.de" name="RTL+ - Webversion" version="1.0.8+matrix" provider-name="Pati, realvito">
+<addon id="plugin.video.tvnow.de" name="RTL+ - Webversion" version="1.0.9+matrix" provider-name="Pati, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -30,9 +30,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.8+matrix  (03.04.2025)[/COLOR][/B] by realvito
-- fixed: Alle VOD-STREAMS sind nicht mehr abspielbar (Neue Stream-Url)
-- added: Rubrik = Themen-Sender (Fast-FREE)
+[B][COLOR orangered]Version 1.0.9+matrix  (24.08.2025)[/COLOR][/B] by realvito
+- added: Rubrik = Sport
+- updated: Hashwerte
 		</news>
 	</extension>
 </addon>
