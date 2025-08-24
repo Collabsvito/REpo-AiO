@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.skylinelivecams" name="Skyline LiveCams [COLOR FF00EE00](neu)[/COLOR]" version="1.0.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.skylinelivecams" name="Skyline LiveCams" version="1.0.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
-		<import addon="script.module.beautifulsoup4" version="4.9.3"/>
+		<import addon="inputstream.ffmpegdirect" version="19.0.3"/>
+		<import addon="script.module.beautifulsoup4" version="4.12.0"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -15,7 +16,7 @@
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<summary lang="en_GB">Live HD Cams from the World</summary>
 		<description lang="en_GB">Experience the world through the panoramic windows of SkylineWebcams.[CR]Discover the breathtaking beaches or mountain scenery, the vibrant culture and scenic beauty of many cities in different countries around the world with our Live-Webcams.</description>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<summary lang="fr_FR">Caméras HD en direct de partout dans le monde</summary>
 		<description lang="fr_FR">Découvrez le monde à travers les fenêtres panoramiques de SkylineWebcams.[CR]Découvrez les plages ou les montagnes à couper le souffle, la culture vivante et la beauté des paysages de nombreuses villes dans différents pays du monde grâce à nos webcams en direct.</description>
 		<summary lang="es_ES">Cámaras en vivo de alta definición de todo el mundo</summary>
@@ -45,14 +46,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.1+matrix.1  (25.02.2024)[/COLOR][/B]
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-- Initial Release @realvito
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-- added: Rubrik = Zufällige Cam, Neue Cams, Top Cams, Live Cams nach Kategorien und Ländern
-- added: Favoriten-Ordner für persönliche Highlights
-- added: Youtube-Kompatibilität für externe Streams - Diese werden weitergeleitet an das Youtube-Addon
-- comment: * Leider kommt es bei den Direkt-Streams die über den Anbieter 'skylinewebcams.com' laufen manchmal zu Ausfällen (dies ist also KEIN Addon-Fehler) !!! *
+[B][COLOR orangered]Version 1.0.2+matrix.1  (24.08.2025)[/COLOR][/B]
+- fixed: Bei längerer Verweildauer innerhalb eines Ordners sind 'DIREKT-STREAMS' (nicht YouTube-Streams) von 'skylinewebcams.com' nicht mehr abspielbar
+- fixed: Bei Auswahl der Rubrik = 'Zufällige Live Cam' wird nach benutzerdefiniertem Beenden des Streams erneut ein Stream abgespielt
+- added: Fehlende Länderflaggen
+- comment * Auf Grund von veränderten Addon-Parametern müssen evtl. angelegte Addon-Favoriten neu erstellt werden ! *
 		</news>
 	</extension>
 </addon>
