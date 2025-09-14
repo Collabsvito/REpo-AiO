@@ -411,7 +411,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.myspass_de" name="MySpass" version="5.0.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.myspass_de" name="MySpass" version="5.0.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -439,12 +439,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 5.0.2+matrix.1  (19.01.2025)[/COLOR][/B]
-- fixed: Beim ersten öffnen des Addons wird vereinzelt ein Fehler angezeigt (Error Type: class 'FileNotFoundError')
-- fixed: Die Rubrik = Alle Sendungen lässt sich nicht öffnen (Error Type: class 'TypeError')
-- fixed: Der Titel der jeweiligen TV-Show wird unter „Empfehlungen“ nicht angezeigt
-- fixed: Manchmal wird die Episodennummer nicht angezeigt (wird jetzt angezeigt, sofern in der API vorhanden)
-- fixed: Die installierte Inpustream-Addonversion wird nicht richtig erkannt und es kommt daher vereinzelt zu Wiedergabefehlern
+[B][COLOR orangered]Version 5.0.3+matrix.1  (14.09.2025)[/COLOR][/B]
+- fixed: Die Rubrik = Empfehlungen lässt sich nicht öffnen (Error Type: class 'TypeError')
+- fixed: Einige Sendungen die nur 'Clips' enthalten (keine Full_Episodes vorhanden) werden nicht geöffnet
+- added: Rubrik = Alle Sendungen (im Web unter Video)
+- removed: Rubrik = Weitere Sendungen
 		</news>
 	</extension>
 </addon>
@@ -796,7 +795,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.8+matrix.1" provider-name="realvito (inspired by L0RE)">
+<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.9+matrix.1" provider-name="realvito (inspired by L0RE)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -825,13 +824,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.8+matrix.1  (22.06.2025)[/COLOR][/B]
-- fixed: 'OfficialCharts UK' sometimes the artist is not found and an error occurs
-- added: Category = AppleMusic with some lists to choose from
-- removed: Category = iTunes (Api switched off)
-- removed: Category = Spotify (The Public-Categories of the Api are no longer freely available)
-- optimized: Removed dependency and cache of webpages with 'script.common.plugin.cache'
-- comment: * Due to various changes to the 'settings', these are automatically reset when the Addon is started for the first time and the YouTube-API-KEY must be entered again ! *
+[B][COLOR orangered]Version 3.0.9+matrix.1  (14.09.2025)[/COLOR][/B]
+- fixed: 'Apple Music' Auth-Token not found and subfolders cannot be opened (Error: APPLEMUSIC - COULD NOT FIND TOKEN)
+- fixed: Billboard-Videolists, artists are not displayed correctly
+- fixed: „Title Case“-Formatting for 'German umlauts' (ÄÖÜäöüß)
+- removed: Billboard archive sorted by year, now only last year is displayed (years no longer accessible)
 		</news>
 	</extension>
 </addon>
