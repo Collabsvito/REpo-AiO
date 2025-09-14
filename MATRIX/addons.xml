@@ -1012,41 +1012,6 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.weltderwunder" name="Welt der Wunder" version="3.0.4+matrix.1" provider-name="realvito">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">Welt der Wunder auf YOUTUBE</summary>
-		<summary lang="en_GB">Welt der Wunder on YOUTUBE</summary>
-		<description lang="de_DE">[COLOR orangered]- Es werden selten neue Video-Beiträge angeboten.[CR]- Addon-Support eingestellt ![/COLOR]</description>
-		<description lang="en_GB">[COLOR orangered]- New video contributions are rarely offered.[CR]- Addon support discontinued ![/COLOR]</description>
-		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
-		<language></language>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
-		<website>https://www.weltderwunder.de</website>
-		<email></email>
-		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
-		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.weltderwunder</source>
-		<assets>
-			<icon>resources/media/icon.png</icon>
-			<fanart>resources/media/fanart.jpg</fanart>
-		</assets>
-		<lifecyclestate type="broken" lang="de_DE">- Es werden selten neue Video-Beiträge angeboten.[CR]- Addon-Support eingestellt !</lifecyclestate>
-		<lifecyclestate type="broken" lang="en_GB">- New video contributions are rarely offered.[CR]- Addon support discontinued !</lifecyclestate>
-		<news>
-[B][COLOR orangered]Version 3.0.4+matrix.1  (01.06.2025)[/COLOR][/B]
-- Es werden selten neue Video-Beiträge angeboten.[CR]- Addon-Support eingestellt !
-		</news>
-	</extension>
-</addon>
 <addon id="service.rakuten.epgrefresh" name="Rakuten EPG-UPDATER" version="1.0.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
