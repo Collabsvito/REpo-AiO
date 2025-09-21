@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.audio.lippewelle.fm" name="Radio-Lippewelle [COLOR FF00EE00]FM[/COLOR]" version="1.0.6+matrix.1" provider-name="realvito">
+<addon id="plugin.audio.lippewelle.fm" name="Radio-Lippewelle [COLOR FF00EE00]FM[/COLOR]" version="1.0.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.27.0"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>audio</provides>
@@ -13,26 +14,27 @@
 		<description lang="de_DE">Radio Lippe Welle Hamm ist das Lokalradio für die Stadt Hamm.[CR]Hier erfahrt ihr, was in Hamm geht. Wir geben euch Tipps für tagsüber oder abends, drinnen oder draußen.[CR]Mit der Lippewelle geht's vor die Tür.</description>
 		<description lang="en_GB">Radio Lippe Welle Hamm is the local radio for the city of Hamm.[CR]Here you can find out what's going on in Hamm. We give you tips for day or evening, indoors or outdoors.[CR]With the Lippewelle it goes outdoors.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website>https://www.lippewelle.de</website>
 		<email></email>
 		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
 		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.audio.lippewelle.fm</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
-			<fanart>resources/media/fanart.jpg</fanart>
+			<fanart>resources/media/fanart_green.png</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 1.0.6+matrix.1  (07.12.2021)[/COLOR][/B][CR]
-- fixed: Teilweise werden die Lauzeiten der Podcasts nicht angezeigt obwohl vorhanden
-- fixed: Keine Titelanzeige in den Rubriken Guter Stoff+Beste Gäste
-- optimized: Mehr und längere Beschreibungen anzeigen
-- optimized: Auslesemethode der Laufzeit von Audio/Podcast
-- added: Podcasts = Heimspiel - Musik von hier, Midlife Party, Expertenrunde reloaded
-- removed: Podcasts = Traumberufe, Bühne frei!, Unter der Haube, Corona und jetzt
+		<news>
+[B][COLOR orangered]Version 1.0.7+matrix.1  (21.09.2025)[/COLOR][/B]
+- fixed: Viele Ordner zeigen keinen Inhalt
+- optimized: Beschreibungen der einzelnen Rubriken anzeigen
+- optimized: Multi-Abfrage der Metadaten mittels 'concurrent.futures'
+- added: Während der Wiedergabe von Radio-Sendern RDS-Daten anzeigen (sofern vorhanden)
+- added: Rubriken = Aktuelle Nachrichten, Atzes Kaltstart, Die Welt in 30 Sekunden, Nelson Müllers Kitchen Club und Stars zu Gast
+- removed: Rubriken = addON - Gaming News, Corona Update - Der Podcast, Hammer Geschichten, Hausbesuch, Heimspiel - Musik von hier, Guter Stoff, Midlife Party, Serie: Schützenfest-ABC und Sommer bei uns
 		</news>
 	</extension>
 </addon>
@@ -978,10 +980,11 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.vfb_stuttgart" name="VfB-Stuttgart TV" version="1.0.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.vfb_stuttgart" name="VfB-Stuttgart TV" version="1.0.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="plugin.video.youtube" version="6.8.1+matrix.1" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -992,7 +995,7 @@
 		<description lang="de_DE">Alle Bundesligaspiele des VfB-Stuttgart nach Schlusspfiff in voller Länge und im Highlights-Schnitt.[CR]Exklusive Interviews und die Pressekonferenzen. Laufend neue Facts und Features des Vereins.</description>
 		<description lang="en_GB">All Bundesliga matches of the VfB-Stuttgart after the final whistle in full length and in highlights-editing.[CR]Exclusive interviews and the press conferences. Ongoing new facts and features of the club.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
@@ -1006,9 +1009,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.3+matrix.1  (02.07.2023)[/COLOR][/B]
-- fixed: Im Ordner 'DFB-Pokal' wird schon das nächste noch nicht vorhandene Saison-Jahr gelistet
-- added: Anpassungen an Änderungen von KODI-Nexus
+[B][COLOR orangered]Version 1.0.4+matrix.1  (21.09.2025)[/COLOR][/B]
+- fixed: Keine Ordner in der Startübersicht vorhanden
+- added: Rubriken = Saison: Europacup und Supercup, Junioren: NLZ Torparade und Youth League, Frauen: 2. Bundesliga und Regionalliga Süd
+- added: Dynamische Playlisten von 'VfB Stuttgart (VfB-TV)' auf YouTube immer aktuell
+- comment: * Aufgrund diverser Änderungen an den „Addon-Einstellungen“ werden diese beim ersten Start des Addons automatisch zurückgesetzt und evtl. vorhandene Account-Daten müssen erneut eingegeben werden! *
 		</news>
 	</extension>
 </addon>
