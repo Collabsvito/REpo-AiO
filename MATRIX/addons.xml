@@ -868,7 +868,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tvnow.de" name="RTL+ - Webversion" version="1.0.9+matrix" provider-name="Pati, realvito">
+<addon id="plugin.video.tvnow.de" name="RTL+ - Webversion" version="1.1.0+matrix" provider-name="Pati, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -899,9 +899,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.9+matrix  (24.08.2025)[/COLOR][/B] by realvito
-- added: Rubrik = Sport
-- updated: Hashwerte
+[B][COLOR orangered]Version 1.1.0+matrix  (28.09.2025)[/COLOR][/B] by realvito
+- added: Timeshift-Funktion zu-/ab-schaltbar für TV-Live und EventStreams (settings: default=abgeschaltet)
 		</news>
 	</extension>
 </addon>
