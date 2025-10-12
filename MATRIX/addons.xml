@@ -72,7 +72,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.dfb_tv" name="DFB - Sport" version="2.1.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.dfb_tv" name="DFB - Sport" version="2.1.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -101,10 +101,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.1.1+matrix.1  (25.05.2025)[/COLOR][/B]
-- fixed: Es werden nicht alle vorhandenen Playlisten vom 'DFB' auf YOUTUBE aufgelistet
-- removed: Rubrik = Sämtliche Rubriken der Webseite 'tv.dfb.de' (Die API der Webseite des DFB wurde abgeschaltet und neue Videos werden nur noch auf Youtube gelistet)
-- comment: *Da das Addon jetzt nur noch auf den Beiträgen des 'DFB-Youtube-Kanals' basiert, ist für die Funktionen ein Youtube-API-Key in den settings erforderlich !*
+[B][COLOR orangered]Version 2.1.2+matrix.1  (12.10.2025)[/COLOR][/B]
+- fixed: Manche Streams in der Rubrik = 'Live-Events und Aktuelles' sind nicht abspielbar (Error: 401)
 		</news>
 	</extension>
 </addon>
