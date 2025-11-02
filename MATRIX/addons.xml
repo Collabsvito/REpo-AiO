@@ -208,7 +208,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.euronews_com" name="euronews.com" version="2.3.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.euronews_com" name="euronews.com" version="2.3.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -255,34 +255,25 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.3.7+matrix.1  (30.07.2025)[/COLOR][/B]
-- added: Neue Bilder mit Text im Ordner 'ALLE PROGRAMME'
-- added: Rubrik = 'ALLE VIDEOS' im Ordner 'ALLE PROGRAMME' (auf der Webseite gelistet unter Videos)
-- added: Sprache = 'Polnisch' als Auswahl und Übersetzung
-- comment: * Durch das Hinzufügen der Sprache 'Polnisch' haben sich die Zuordnungen in den Einstellungen des Addons verändert, daher müssen diese beim ersten Start nach dem Update neu gesetzt werden ! *
-
-[B][COLOR orangered]Version 2.3.6+matrix.1  (27.07.2025)[/COLOR][/B]
-- fixed: Alle Unterordner in der zweiten Ansicht zeigen keine Beiträge mehr an (die Funktionen der Euronews-Webseite sind hauptsächlich nur noch in JAVA-Script)
-- added: Rubrik = 'ALLE PROGRAMME' im Startmenü
-- removed: Rubrik = 'Extra-Berichterstattung' (in der Android-App/-API nicht vorhanden)
-- comment: * Da Euronews in der Webversion sämtliche Weiterleitungen jetzt nur noch per JAVA-Script tätigt, übernimmt das Addon nur noch die Haupt-/Unter-Kategorien von der Webseite und alles weitere wird über die Android-API abgefragt ! *
+[B][COLOR orangered]Version 2.3.8+matrix.1  (02.11.2025)[/COLOR][/B]
+- fixed: YouTube-Url-Check zur Überprüfung ob YouTube-ID abspielbar ist (Neue Url)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.fernsehkritik_tv" name="Massengeschmack [COLOR FF00EE00](light)[/COLOR]" version="2.2.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.fernsehkritik_tv" name="Massengeschmack [COLOR FF00EE00](light)[/COLOR]" version="2.2.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+		<import addon="script.module.requests" version="2.27.0"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">Das satirisch-kritische TV Magazin</summary>
-		<summary lang="en_GB">The satirical-critical TV Magazin</summary>
-		<description lang="de_DE">Am 5. August 2013 startete Massengeschmack mit den Magazinen Fernsehkritik-TV, Pantoffelkino (als Pantoffel-TV) und Pressesch(l)au. Fernsehkritik-TV und die neuen Formate wurden mit Start von Massengeschmack in dem neu gemieteten Alsterfilm-Studio in Hamburg-Wandsbek produziert.[CR][CR][COLOR FF00EE00]Dieses Addon stellt nur den FREI verfügbaren Inhalt von 'massengeschmack.tv' zur Verfügung ![/COLOR]</description>
-		<description lang="en_GB">On August 5, 2013 Massengeschmack started with the magazines Fernsehkritik-TV, Pantoffelkino (as Pantoffel-TV) and Pressesch(l)au. Fernsehkritik-TV and the new formats were produced with the start of Massengeschmack in the newly rented Alsterfilm-Studio in Hamburg-Wandsbek.[CR][CR][COLOR FF00EE00]This Addon provides only the FREE available content of 'massengeschmack.tv' ![/COLOR]</description>
+		<summary lang="de_DE">Satirisch und kritische TV-Magazine</summary>
+		<summary lang="en_GB">Satirical and critical TV-Magazines</summary>
+		<description lang="de_DE">Am 5. August 2013 startete Massengeschmack mit den Magazinen Fernsehkritik-TV, Pantoffelkino (als Pantoffel-TV) und Pressesch(l)au. Fernsehkritik-TV und die neuen Formate werden seit dem Start von Massengeschmack in dem Alsterfilm-Studio in Hamburg-Wandsbek produziert.[CR][CR][COLOR FF00EE00]Dieses Addon stellt nur den FREI verfügbaren Inhalt von 'massengeschmack.tv' zur Verfügung ![/COLOR]</description>
+		<description lang="en_GB">On August 5, 2013 Massengeschmack started with the magazines Fernsehkritik-TV, Pantoffelkino (as Pantoffel-TV) and Pressesch(l)au. Fernsehkritik-TV and the new formats have been produced at the Alsterfilm-Studio in Hamburg-Wandsbek since the launch of Massengeschmack.[CR][CR][COLOR FF00EE00]This Addon provides only the FREE available content of 'massengeschmack.tv' ![/COLOR]</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<language></language>
@@ -298,9 +289,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.2.7+matrix.1  (17.09.2023)[/COLOR][/B]
-- added: Sendungen im Startmenü nach Name sortieren
-- fixed: Dynamische Playlisten von 'Massengeschmack.TV' auf Youtube können nicht geöffnet werden (Error Type: class 'json.decoder.JSONDecodeError')
+[B][COLOR orangered]Version 2.2.8+matrix.1  (02.11.2025)[/COLOR][/B]
+- fixed: Dynamische Playlisten von 'Massengeschmack.TV' auf YouTube werden nicht mehr angezeigt (Zusatz-Modul: Scrapetube entfernt - jetzt direkte Abfrage über YouTube-API.v.3)
+- optimized: Addon-Code cleanup
 		</news>
 	</extension>
 </addon>
@@ -483,7 +474,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.rakuten.de" name="RakutenTV German [COLOR FF00EE00](light)[/COLOR]" version="1.0.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.rakuten.de" name="RakutenTV German [COLOR FF00EE00](light)[/COLOR]" version="1.0.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -513,8 +504,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.2+matrix.1  (20.04.2025)[/COLOR][/B]
-- optimized: Diverse Anpassungen für 'M3U-Listen-Erstellung' (bitte 'm3u' neu erstellen)
+[B][COLOR orangered]Version 1.0.3+matrix.1  (02.11.2025)[/COLOR][/B]
+- fixed: Die Abfrage für GEO-CID und Landesflagge funktioniert nicht mehr (Erro: 401 - Unauthorized)
+- fixed: Unter der Rubrik = 'Kostenlose VOD-Auswahl' werden nicht alle Kategorien gelistet (Neue Url)
+- added: LiveTV EPG-FIX für evtl. defekte JSON-Daten - thanks @fds97AVVS
+- added: Betiebssystem-Auswahl zum Abspielen von VoD-Streams = Windows/Android mit veränderten Requests-Parametern (settings - Android only not rooted) - thanks @ostvanc für die Unterstützung
 		</news>
 	</extension>
 </addon>
