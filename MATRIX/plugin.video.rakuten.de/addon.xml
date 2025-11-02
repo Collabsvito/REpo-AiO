@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.rakuten.de" name="RakutenTV German [COLOR FF00EE00](light)[/COLOR]" version="1.0.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.rakuten.de" name="RakutenTV German [COLOR FF00EE00](light)[/COLOR]" version="1.0.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -29,8 +29,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.2+matrix.1  (20.04.2025)[/COLOR][/B]
-- optimized: Diverse Anpassungen für 'M3U-Listen-Erstellung' (bitte 'm3u' neu erstellen)
+[B][COLOR orangered]Version 1.0.3+matrix.1  (02.11.2025)[/COLOR][/B]
+- fixed: Die Abfrage für GEO-CID und Landesflagge funktioniert nicht mehr (Error: 401 - Unauthorized)
+- fixed: Unter der Rubrik = 'Kostenlose VOD-Auswahl' werden nicht alle Kategorien gelistet (Neue Url)
+- added: LiveTV EPG-FIX für evtl. defekte JSON-Daten - thanks @fds97AVVS
+- added: Betriebssystem-Auswahl zum Abspielen von VoD-Streams = Windows/Android mit veränderten Requests-Parametern (settings - Android only not rooted) - thanks @ostvanc für die Unterstützung
 		</news>
 	</extension>
 </addon>

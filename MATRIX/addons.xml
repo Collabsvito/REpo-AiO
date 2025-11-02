@@ -505,10 +505,10 @@
 		</assets>
 		<news>
 [B][COLOR orangered]Version 1.0.3+matrix.1  (02.11.2025)[/COLOR][/B]
-- fixed: Die Abfrage für GEO-CID und Landesflagge funktioniert nicht mehr (Erro: 401 - Unauthorized)
+- fixed: Die Abfrage für GEO-CID und Landesflagge funktioniert nicht mehr (Error: 401 - Unauthorized)
 - fixed: Unter der Rubrik = 'Kostenlose VOD-Auswahl' werden nicht alle Kategorien gelistet (Neue Url)
 - added: LiveTV EPG-FIX für evtl. defekte JSON-Daten - thanks @fds97AVVS
-- added: Betiebssystem-Auswahl zum Abspielen von VoD-Streams = Windows/Android mit veränderten Requests-Parametern (settings - Android only not rooted) - thanks @ostvanc für die Unterstützung
+- added: Betriebssystem-Auswahl zum Abspielen von VoD-Streams = Windows/Android mit veränderten Requests-Parametern (settings - Android only not rooted) - thanks @ostvanc für die Unterstützung
 		</news>
 	</extension>
 </addon>
