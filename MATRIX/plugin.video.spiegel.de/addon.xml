@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.spiegel.de" name="DER SPIEGEL" version="3.0.5+matrix.1" provider-name="realvito">
+<addon id="plugin.video.spiegel.de" name="DER SPIEGEL" version="3.0.6+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -28,11 +28,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.5+matrix.1  (20.04.2025)[/COLOR][/B]
-- fixed: Es werden nicht alle vorhandenen Playlisten von 'Der Spiegel' unter der Rubrik: 'Weitere Beiträge auf YOUTUBE' aufgelistet
-- added: Rubrik = SPIEGEL TV - Reden wir über Geld
-- removed: Rubrik = SPIEGEL TV - Klassiker (nicht mehr vorhanden)
-- optimized: Generiere '.m3u8' Video (falls in den settings ausgewählt), wenn nur '.mp4' Quelle vorhanden ist (auch HLS für Inputstream.Adaptive)
+[B][COLOR orangered]Version 3.0.6+matrix.1  (24.11.2025)[/COLOR][/B]
+- fixed: Die Rubrik = 'SPIEGEL TV für ARTE Re:' kann nicht geöffnet werden (IndexError: list index out of range)
+- fixed: Es werden nur max. 31 Dynamische Playlisten von 'Der Spiegel' auf YouTube gelistet (Zusatz-Modul: Scrapetube entfernt - jetzt direkte Abfrage über YouTube-API.v.3)
+- added: Rubrik = 'SPIEGEL TV - Alle Beiträge' (letzte Kategorie, so wie im Web gelistet)
 		</news>
 	</extension>
 </addon>
