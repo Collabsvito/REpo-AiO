@@ -510,7 +510,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.1.0+matrix.1" provider-name="realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.1.1+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -520,8 +520,8 @@
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">ServusTV Mediathek</summary>
-		<summary lang="en_GB">ServusTV Media-Library</summary>
+		<summary lang="de_DE">Web-Plugin für ServusTV</summary>
+		<summary lang="en_GB">Web-Plugin for ServusTV</summary>
 		<description lang="de_DE">ServusTV ist ein österreichischer Privatfernsehsender.[CR]Neben einem breiten Sportprogramm erwarten Sie die bewegendsten Nachrichten, Bilder und Meinungen aus Österreich und der Welt. Wir beleuchten verschiedene Blickwinkel, lassen Experten zu Wort kommen und regen mit spannenden Talkshows zum Nachdenken an.</description>
 		<description lang="en_GB">ServusTV is an Austrian private television station.[CR]In addition to a broad sports programme, you can expect the most moving news, images and opinions from Austria and the world. We shed light on different perspectives, let experts have their say and stimulate thought with exciting talk shows.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
@@ -539,14 +539,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.10+matrix.1  (24.08.2025)[/COLOR][/B]
-- changed: Addon neu aufgesetzt mit Anlehnung des Aufbaus und der Struktur an die Web-API von ServusTV (liefert mehr Metadaten als die Android-API)
-- added: Rubriken = Startseite, Sport-Programm, Sport, Mediathek, die Servus-Welt, Filme, Neue Videos, Suche und ServusTV - TV Kanäle
-- added: Archiv-Rubriken = Alle Videos, Ganze Sendungen, Einzelbeiträge und Übertragungen
-- added: Neue TV-Kanäle mit EPG (sofern vorhanden)
-- added: Timeshift-Funktion zu-/ab-schaltbar für Live-Events (settings)
-- added: Wohnsitz des Benutzers = Deutschland, Österreich und Schweiz (settings)
-- comment * Auf Grund von veränderten Addon-Parametern müssen evtl. angelegte Addon-Favoriten neu erstellt werden ! *
+[B][COLOR orangered]Version 3.1.1+matrix.1  (24.11.2025)[/COLOR][/B]
+- fixed: Einige Event-Ordner können nicht geöffnet oder Events können nicht abgespielt werden (Neue Url zur Überprüfung)
+- fixed: Die Rubrik = 'ServusTV - TV Kanäle' kann manchmal nicht geöffnet werden (KeyError: 'title')
+- added: Zusätzliche GEO-CID Überprüfung mit 'https://api.ipapi.is/'
 		</news>
 	</extension>
 </addon>
@@ -605,7 +601,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.spiegel.de" name="DER SPIEGEL" version="3.0.5+matrix.1" provider-name="realvito">
+<addon id="plugin.video.spiegel.de" name="DER SPIEGEL" version="3.0.6+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -634,11 +630,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.5+matrix.1  (20.04.2025)[/COLOR][/B]
-- fixed: Es werden nicht alle vorhandenen Playlisten von 'Der Spiegel' unter der Rubrik: 'Weitere Beiträge auf YOUTUBE' aufgelistet
-- added: Rubrik = SPIEGEL TV - Reden wir über Geld
-- removed: Rubrik = SPIEGEL TV - Klassiker (nicht mehr vorhanden)
-- optimized: Generiere '.m3u8' Video (falls in den settings ausgewählt), wenn nur '.mp4' Quelle vorhanden ist (auch HLS für Inputstream.Adaptive)
+[B][COLOR orangered]Version 3.0.6+matrix.1  (24.11.2025)[/COLOR][/B]
+- fixed: Die Rubrik = 'SPIEGEL TV für ARTE Re:' kann nicht geöffnet werden (IndexError: list index out of range)
+- fixed: Es werden nur max. 31 Dynamische Playlisten von 'Der Spiegel' auf YouTube gelistet (Zusatz-Modul: Scrapetube entfernt - jetzt direkte Abfrage über YouTube-API.v.3)
+- added: Rubrik = 'SPIEGEL TV - Alle Beiträge' (letzte Kategorie, so wie im Web gelistet)
 		</news>
 	</extension>
 </addon>
@@ -971,7 +966,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="service.rakuten.epgrefresh" name="Rakuten EPG-UPDATER" version="1.0.2+matrix.1" provider-name="realvito">
+<addon id="service.rakuten.epgrefresh" name="Rakuten EPG-UPDATER" version="1.0.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -998,8 +993,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.2+matrix.1  (02.05.2025)[/COLOR][/B]
-- fixed: Datetime-Format-Umwandlung fehlerhaft (Exception im LOG)
+[B][COLOR orangered]Version 1.0.3+matrix.1  (24.11.2025)[/COLOR][/B]
+- added: Separates Reparatur-Intervall nur für defekte EPG-Daten (erneutes Herunterladen nach 8 Std. anstatt benutzerdefiniert festgelegtem Intervall)
 		</news>
 	</extension>
 </addon>
