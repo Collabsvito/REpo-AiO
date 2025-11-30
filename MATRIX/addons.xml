@@ -637,43 +637,6 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.sportdeutschland_tv" name="Sportdeutschland.TV (old-broken)" version="2.1.5+matrix.1" provider-name="realvito">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.27.0"/>
-		<import addon="plugin.video.sporteurope.tv" version="3.0.1+matrix.1"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">Amateursport - Wettbewerbe</summary>
-		<summary lang="en_GB">Amateur Sports - Competitions</summary>
-		<description lang="de_DE">[COLOR orangered]- Dieses Addon bekommt einen neuen Pfad im KODI-Verzeichnis ![CR]- Der neue Pfad lautet: 'plugin.video.sporteurope.tv'.[CR][CR]- Bitte das neue Addon mit der Version-No. 3.0.1+matrix.1 AKTIVIEREN.[CR]- Danach dieses Addon mit der Version-No. 2.1.5+matrix.1 DEINSTALLIEREN.[/COLOR]</description>
-		<description lang="en_GB">[COLOR orangered]- This Addon gets a new path in the KODI directory ![CR]- The new Path named: 'plugin.video.sporteurope.tv'.[CR][CR]- Please ACTIVATE the new Addon with the Version-No. 3.0.1+matrix.1.[CR]- After that UNINSTALL this Addon with the Version-No. 2.1.5+matrix.1.[/COLOR]</description>
-		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
-		<language></language>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
-		<website>https://sportdeutschland.tv/</website>
-		<email></email>
-		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
-		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.sportdeutschland_tv</source>
-		<assets>
-			<icon>resources/media/icon.png</icon>
-			<fanart>resources/media/fanart.jpg</fanart>
-		</assets>
-		<lifecyclestate type="broken">
-- Dieses Addon bekommt einen neuen Pfad im KODI-Verzeichnis ![CR]- Der neue Pfad lautet: 'plugin.video.sporteurope.tv'.
-		</lifecyclestate>
-		<news>
-[B][COLOR orangered]Version 2.1.5+matrix.1  (24.08.2025)[/COLOR][/B]
-- Dieses Addon bekommt einen neuen Pfad im KODI-Verzeichnis ![CR]- Der neue Pfad lautet: 'plugin.video.sporteurope.tv'.[CR][CR]- Bitte das neue Addon mit der Version-No. 3.0.1+matrix.1 AKTIVIEREN.[CR]- Danach dieses Addon mit der Version-No. 2.1.5+matrix.1 DEINSTALLIEREN.
-		</news>
-	</extension>
-</addon>
 <addon id="plugin.video.sporteurope.tv" name="SPORTEUROPE.TV [COLOR FF00EE00](light)[/COLOR]" version="3.0.1+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
