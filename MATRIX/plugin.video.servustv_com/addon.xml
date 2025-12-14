@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.1.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.1.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -28,10 +28,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.1.1+matrix.1  (24.11.2025)[/COLOR][/B]
-- fixed: Einige Event-Ordner können nicht geöffnet oder Events können nicht abgespielt werden (Neue Url zur Überprüfung)
-- fixed: Die Rubrik = 'ServusTV - TV Kanäle' kann manchmal nicht geöffnet werden (KeyError: 'title')
-- added: Zusätzliche GEO-CID Überprüfung mit 'https://api.ipapi.is/'
+[B][COLOR orangered]Version 3.1.2+matrix.1  (14.12.2025)[/COLOR][/B]
+- fixed: Live- und TV-Kanäle werden in den Unterordnern nicht ausgeblendet
+- fixed: Häufig auftretender Fehler beim öffnen der Rubrik = 'ServusTV - TV Kanäle' (IndexError: list index out of range)
+- optimized: EPG für 'ServusTV - TV Kanäle' - neue Guide-Url und bessere Verarbeitungsstruktur der ausgelesenen Daten
 		</news>
 	</extension>
 </addon>
