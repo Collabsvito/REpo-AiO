@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.audio.lippewelle.fm" name="Radio-Lippewelle [COLOR FF00EE00]FM[/COLOR]" version="1.0.7+matrix.1" provider-name="realvito">
+<addon id="plugin.audio.lippewelle.fm" name="Radio-Lippewelle [COLOR FF00EE00]FM[/COLOR]" version="1.0.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -28,17 +28,14 @@
 			<fanart>resources/media/fanart_green.png</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.7+matrix.1  (21.09.2025)[/COLOR][/B]
-- fixed: Viele Ordner zeigen keinen Inhalt
-- optimized: Beschreibungen der einzelnen Rubriken anzeigen
-- optimized: Multi-Abfrage der Metadaten mittels 'concurrent.futures'
-- added: Während der Wiedergabe von Radio-Sendern RDS-Daten anzeigen (sofern vorhanden)
-- added: Rubriken = Aktuelle Nachrichten, Atzes Kaltstart, Die Welt in 30 Sekunden, Nelson Müllers Kitchen Club und Stars zu Gast
-- removed: Rubriken = addON - Gaming News, Corona Update - Der Podcast, Hammer Geschichten, Hausbesuch, Heimspiel - Musik von hier, Guter Stoff, Midlife Party, Serie: Schützenfest-ABC und Sommer bei uns
+[B][COLOR orangered]Version 1.0.8+matrix.1  (14.12.2025)[/COLOR][/B]
+- fixed: Viele Ordner zeigen keinen Inhalt (Webseite verändert)
+- fixed: Manche Radio-Sender sind nicht abspielbar (Links teilweise verändert)
+- added: Rubriken = ATZE - Wat ne Woche, Von Null auf Potting und Herbst dich nicht so mit Lisa Feller
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.bibeltv" name="Bibel.TV" version="3.0.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.bibeltv" name="Bibel.TV" version="3.0.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -66,9 +63,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.3+matrix.1  (30.03.2025)[/COLOR][/B]
-- fixed: LIVESTREAMS von Hope-TV, EWTN und K-TV (OpenInputStream - error opening)
-- optimized: Neue Playerparameter für MPD-Streams in KODI-Omega/Piers
+[B][COLOR orangered]Version 3.0.4+matrix.1  (14.12.2025)[/COLOR][/B]
+- fixed: In der Rubrik = 'Neue Sendungen' und 'Letzte Chance' wird der 'TvShowTitle' teilweise nicht angezeigt
+- optimized: EPG für 'Livestreams' - bessere Verarbeitungsstruktur der ausgelesenen Daten und übersichtlicheres EPG-Format
 		</news>
 	</extension>
 </addon>
@@ -510,7 +507,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.1.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.1.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -539,10 +536,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.1.1+matrix.1  (24.11.2025)[/COLOR][/B]
-- fixed: Einige Event-Ordner können nicht geöffnet oder Events können nicht abgespielt werden (Neue Url zur Überprüfung)
-- fixed: Die Rubrik = 'ServusTV - TV Kanäle' kann manchmal nicht geöffnet werden (KeyError: 'title')
-- added: Zusätzliche GEO-CID Überprüfung mit 'https://api.ipapi.is/'
+[B][COLOR orangered]Version 3.1.2+matrix.1  (14.12.2025)[/COLOR][/B]
+- fixed: Live- und TV-Kanäle werden in den Unterordnern nicht ausgeblendet
+- fixed: Häufig auftretender Fehler beim öffnen der Rubrik = 'ServusTV - TV Kanäle' (IndexError: list index out of range)
+- optimized: EPG für 'ServusTV - TV Kanäle' - neue Guide-Url und bessere Verarbeitungsstruktur der ausgelesenen Daten
 		</news>
 	</extension>
 </addon>
