@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.spiegel.de" name="DER SPIEGEL" version="3.0.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.spiegel.de" name="DER SPIEGEL" version="3.0.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -28,10 +28,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.6+matrix.1  (24.11.2025)[/COLOR][/B]
-- fixed: Die Rubrik = 'SPIEGEL TV für ARTE Re:' kann nicht geöffnet werden (IndexError: list index out of range)
-- fixed: Es werden nur max. 31 Dynamische Playlisten von 'Der Spiegel' auf YouTube gelistet (Zusatz-Modul: Scrapetube entfernt - jetzt direkte Abfrage über YouTube-API.v.3)
-- added: Rubrik = 'SPIEGEL TV - Alle Beiträge' (letzte Kategorie, so wie im Web gelistet)
+[B][COLOR orangered]Version 3.0.7+matrix.1  (03.02.2026)[/COLOR][/B]
+- fixed: Unterordner der Rubrik = 'Thema: SPIEGEL TV' können nicht geöffnet werden (Quelltext der Webseite verändert)
 		</news>
 	</extension>
 </addon>
