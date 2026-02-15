@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="plugin.video.artetv.de" name="ARTE.TV" version="2.0.1+matrix.1" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.27.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Videoportal von ARTE (DE/FR)</summary>
+		<description lang="de_DE">Das ARTE Programmangebot umfasst Spiel- und Fernsehfilme, Serien, Dokumentationen, Nachrichten und Info-Magazine sowie Konzerte und Bühnenkunst. Dabei steht ARTE für Perspektiven jenseits nationaler Sichtweisen und spiegelt die kulturelle Vielfalt Europas wider.[CR]Zu der klassischen Fernsehausstrahlung auf Deutsch und Französisch tritt die Mediathek als eigenständige Plattform auf.</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<summary lang="en_GB">Videoportal of ARTE (DE/FR)</summary>
+		<description lang="en_GB">ARTE's programming includes feature films and television films, series, documentaries, news and information magazines, as well as concerts and performing arts. ARTE stands for perspectives beyond national viewpoints and reflects Europe's cultural diversity.[CR]In addition to traditional television broadcasting in German and French, the media library is an independent platform.</description>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
+		<summary lang="fr_FR">Vidéoportail d'ARTE (DE/FR)</summary>
+		<description lang="fr_FR">La programmation d'ARTE comprend des films, des téléfilms, des séries, des documentaires, des journaux télévisés et des magazines d'information, ainsi que des concerts et des arts de la scène. ARTE offre ainsi des perspectives qui dépassent les points de vue nationaux et reflète la diversité culturelle de l'Europe.[CR]En plus de la diffusion télévisée classique en allemand et en français, la médiathèque constitue une plateforme indépendante.</description>
+		<disclaimer lang="fr_FR">Le contenu présenté par cet addon n'est pas hébergé ou distribué par les créateurs de l'addon, et ces derniers n'ont aucune relation avec les fournisseurs de ce contenu.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
+		<website>https://www.arte.tv/</website>
+		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.artetv.de</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>
+[B][COLOR orangered]Version 2.0.1+matrix.1  (15.02.2026)[/COLOR][/B] - ReRelease
+- changed: Plugin-Pfad mit dieser Neuauflage (old=plugin.video.tyl0re.arte -> new=plugin.video.artetv.de)
+- changed: Addon komplett überarbeitet mit Anlehnung des Aufbaus und der Struktur an die API.v.4 von arte.tv
+- fixed: Einige Ordnerzuweisungen stimmen inhaltlich nicht oder Ordner können teilweise nicht geöffnet werden
+- fixed: Diverse Sortiermethoden werden auch bei gemischten Ordnern (Videos/Ordner) angezeigt
+- added: Ausführliche Video-Informationen - Kontextmenü = Produktionsjahr, Produktionsland, Schauspieler, Regisseur, Drehbuch und erw. Plot - wenn verfügbar
+- removed: Rubrik = Videos sortiert nach Laufzeit (nicht mehr in der API vorhanden)
+- comment: * Leider stimmt der 'TvShowTitle' nicht immer, da ARTE für diesen leider kein grundsätzliches Prinzip (sequenziell ist es der 'TvShowTitle' oder der 'Title') in der API festgelegt hat ! *
+		</news>
+	</extension>
+</addon>
