@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.3.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.3.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
-		<import addon="plugin.video.tyl0re.arte" optional="true"/>
+		<import addon="plugin.video.artetv.de" optional="true"/>
 		<import addon="plugin.video.joyn" optional="true"/>
 		<import addon="plugin.video.servustv_com" optional="true"/>
 		<import addon="plugin.video.tele5_de" optional="true"/>
@@ -31,9 +31,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.3.3+matrix.1  (24.08.2025)[/COLOR][/B]
-- fixed: Einige Streams vom 'ZDF+3' sind nicht abspielbar (Error: Der Provider 'www.zdfheute.de' wird z.Zt. nicht unterstützt)
-- fixed: FSK, Regisseur und Schauspieler werden nicht angezeigt (Quelltext verändert)
+[B][COLOR orangered]Version 2.3.4+matrix.1  (15.02.2026)[/COLOR][/B]
+- changed: Abhängigkeit old='plugin.video.tyl0re.arte' -> new='plugin.video.artetv.de' zum Abspielen von arte.tv Links
 		</news>
 	</extension>
 </addon>
