@@ -1,21 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tyl0re.arte" name="ARTE.TV" version="1.1.3+matrix.1" provider-name="L0RE, realvito">
+<addon id="plugin.video.tyl0re.arte" name="ARTE.TV (old-broken)" version="1.1.4+matrix.1" provider-name="L0RE, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="plugin.video.artetv.de" version="2.0.1+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Videoportal von ARTE (DE/FR)</summary>
-		<description lang="de_DE">Mediathek und Livestream - Schwerpunkte sind Kultur, Europa und die Vermittlung von Informationen aus vorzugsweise ungewöhnlichen Perspektiven.[CR]Reportagen, Serien, Filme, Dokus, Magazine - Die Programme von ARTE online auf arte.tv.</description>
+		<description lang="de_DE">[COLOR orangered]- Dieses Addon bekommt einen neuen Pfad im KODI-Verzeichnis ![CR]- Der neue Pfad lautet: 'plugin.video.artetv.de'.[CR][CR]- Bitte das neue Addon mit der Version-No. 2.0.1+matrix.1 AKTIVIEREN.[CR]- Danach dieses Addon mit der Version-No. 1.1.4+matrix.1 DEINSTALLIEREN.[/COLOR]</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<summary lang="en_GB">Videoportal of ARTE (DE/FR)</summary>
-		<description lang="en_GB">Media library and Livestream - focus is Culture, Europe and the transmission of information from preferably unusual Perspectives.[CR]Reports, Series, Movies, Documentaries, Magazines - The programs of ARTE online on arte.tv.</description>
+		<description lang="en_GB">[COLOR orangered]- This Addon gets a new path in the KODI directory ![CR]- The new Path named: 'plugin.video.artetv.de'.[CR][CR]- Please ACTIVATE the new Addon with the Version-No. 2.0.1+matrix.1.[CR]- After that UNINSTALL this Addon with the Version-No. 1.1.4+matrix.1.[/COLOR]</description>
 		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
 		<summary lang="fr_FR">Vidéoportail d'ARTE (DE/FR)</summary>
-		<description lang="fr_FR">Médiathèque et Livestream - L'accent est mis sur la culture, l'Europe et la transmission d'informations sous des perspectives de préférence inhabituelles.[CR]Reportages, séries, films, documentaires, magazines - Les programmes d'ARTE en ligne sur arte.tv.</description>
+		<description lang="fr_FR">[COLOR orangered]- This Addon gets a new path in the KODI directory ![CR]- The new Path named: 'plugin.video.artetv.de'.[CR][CR]- Please ACTIVATE the new Addon with the Version-No. 2.0.1+matrix.1.[CR]- After that UNINSTALL this Addon with the Version-No. 1.1.4+matrix.1.[/COLOR]</description>
 		<disclaimer lang="fr_FR">L'auteur n'héberge ni ne distribue aucun des contenus affichés par cet addon. L'auteur n'a aucune affiliation avec les fournisseurs de contenu.</disclaimer>
 		<language></language>
 		<platform>all</platform>
@@ -29,10 +30,12 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
+		<lifecyclestate type="broken">
+- Dieses Addon bekommt einen neuen Pfad im KODI-Verzeichnis ![CR]- Der neue Pfad lautet: 'plugin.video.artetv.de'.
+		</lifecyclestate>
 		<news>
-[B][COLOR orangered]Version 1.1.3+matrix.1  (26.05.2023)[/COLOR][/B] by realvito
-- fixed: Manchmal wird nicht automatisch die höchste Auflösung eines Streams ausgewählt
-- added: Anpassungen an Änderungen von KODI-Nexus
+[B][COLOR orangered]Version 1.1.4+matrix.1  (15.02.2026)[/COLOR][/B]
+- Dieses Addon bekommt einen neuen Pfad im KODI-Verzeichnis ![CR]- Der neue Pfad lautet: 'plugin.video.artetv.de'.[CR][CR]- Bitte das neue Addon mit der Version-No. 2.0.1+matrix.1 AKTIVIEREN.[CR]- Danach dieses Addon mit der Version-No. 1.1.4+matrix.1 DEINSTALLIEREN.
 		</news>
 	</extension>
 </addon>
