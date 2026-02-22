@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tele5_de" name="TELE 5 Mediathek" version="2.1.0+matrix" provider-name="w4ki, realvito">
+<addon id="plugin.video.tele5_de" name="TELE 5 Mediathek" version="2.1.1+matrix" provider-name="w4ki, realvito">
 	<requires>
-		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.27.0"/>
 		<import addon="script.module.inputstreamhelper" version="0.5.5+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="addon.py">
@@ -17,19 +18,21 @@
 		<language>de</language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum></forum>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
 		<website>https://tele5.de</website>
 		<email></email>
-		<source>https://gitlab.com/w4ki/plugin.video.tele5_de</source>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.tele5_de</source>
 		<assets>
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.png</fanart>
 			<clearlogo>resources/media/clearlogo.png</clearlogo>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.1.0+matrix  (27.02.2025)[/COLOR][/B] by realvito
-- fixed: Die Serie "Doctor Who" kann nicht geöffnet werden (Error Type: class 'TypeError')
-- fixed: Es werden keine Laufzeiten zu Serien/Filmen angezeigt
+[B][COLOR orangered]Version 2.1.1+matrix  (22.02.2026)[/COLOR][/B] by realvito
+- fixed: Mehrere Ordner können nicht geöffnet werden (zweite Provider-API stark verändert)
+- optimized: Abfrage und Ausgabe des API-Json-Formats jetzt direkt über das 'requests Modul'
+- optimized: Reduzierung der Provider-Requests durch zeitliche Zwischenspeicherung des Tokens
 		</news>
 	</extension>
 </addon>
