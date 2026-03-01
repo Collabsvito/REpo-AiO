@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.2.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.2.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -28,9 +28,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.2.7+matrix.1  (22.02.2026)[/COLOR][/B]
-- fixed: Mehrere Ordner können nicht geöffnet werden (zweite Provider-API stark verändert)
-- removed: Rubrik = Themen (Genreeinträge sind in der neuen Provider-API nur in der Episodenübersicht vorhanden)
+[B][COLOR orangered]Version 1.2.8+matrix.1  (01.03.2026)[/COLOR][/B]
+- fixed: Vereinzelt wird bei Serien kein Bild und keine Beschreibung angezeigt, obwohl diese nach Überprüfung doch vorhanden sind (Beim Ableich der zwei API-Listen des Providers stimmt entweder der 'slug'- oder der 'showId'-Eintrag nicht überein)
+- RE-added: Rubrik = Themen
+- comment: *Auf vielfachen Wunsch und nach ausführlichen Tests ist es mir gelungen wieder ein Genre-Konstrukt auf Basis der API-'Aurora' von Discovery aufzubauen und in das Addon zu integrieren !*
 		</news>
 	</extension>
 </addon>
