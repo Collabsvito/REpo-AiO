@@ -411,7 +411,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.myspass_de" name="MySpass" version="5.0.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.myspass_de" name="MySpass" version="5.0.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -439,11 +439,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 5.0.3+matrix.1  (14.09.2025)[/COLOR][/B]
-- fixed: Die Rubrik = Empfehlungen lässt sich nicht öffnen (Error Type: class 'TypeError')
-- fixed: Einige Sendungen die nur 'Clips' enthalten (keine Full_Episodes vorhanden) werden nicht geöffnet
-- added: Rubrik = Alle Sendungen (im Web unter Video)
-- removed: Rubrik = Weitere Sendungen
+[B][COLOR orangered]Version 5.0.4+matrix.1  (19.04.2026)[/COLOR][/B]
+- fixed: Die Rubrik = Empfehlungen zeigt keinen Inhalt, obwohl dieser vorhanden ist
+- fixed: Falscher Abspiel-Parameter für Inputstream.Adaptive (manchmal ist die Wiedergabe fehlerhaft)
 		</news>
 	</extension>
 </addon>
@@ -521,7 +519,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.1.0+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.1.1+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -552,8 +550,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.1.0+matrix.1  (15.02.2026)[/COLOR][/B]
-- changed: Abhängigkeit old='plugin.video.tyl0re.arte' -> new='plugin.video.artetv.de' zum Abspielen von arte.tv Links
+[B][COLOR orangered]Version 1.1.1+matrix.1  (19.04.2026)[/COLOR][/B]
+- fixed: Viele Ordner zeigen keinen Inhalt, obwohl dieser vorhanden ist (Diverse Veränderungen der JSON-Strukturen)
+- fixed: Einige Streams ohne Laufzeitangabe sind nicht abspielbar (Zusätzliche Abfrage mittels JSON-Slug)
 		</news>
 	</extension>
 </addon>
