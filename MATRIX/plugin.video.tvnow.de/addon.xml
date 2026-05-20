@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tvnow.de" name="RTL+ - Webversion" version="1.1.1+matrix" provider-name="Pati, realvito">
+<addon id="plugin.video.tvnow.de" name="RTL+ - Webversion" version="1.1.2+matrix" provider-name="Pati, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -13,8 +13,8 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Web-Plugin für RTL+ Deutschland</summary>
 		<summary lang="en_GB">Web-Plugin for RTL+ Germany</summary>
-		<description lang="de_DE">Bei RTL+ finden sich viele populäre Formate der deutschsprachigen Fernsehlandschaft. Ob Dschungelcamp, DSDS oder Love Island: RTL+ hat sie alle![CR]Ebenso sehen Sie auf RTL+ einmalige Event-Streams und ein großes Angebot an Live-Kanälen.</description>
-		<description lang="en_GB">RTL+ offers many popular formats from the German-speaking television landscape. Whether it's Dschungelcamp, DSDS or Love Island: RTL+ has them all![CR]You can also watch unique event streams and a wide range of live channels on RTL+.</description>
+		<description lang="de_DE">[COLOR orangered]- Die API-'streamingtech.de' von RTL+ Deutschland wurde abgeschaltet.[CR]- Addon-Support eingestellt ![/COLOR]</description>
+		<description lang="en_GB">[COLOR orangered]- The API-'streamingtech.de' of RTL+ Germany has been switched off.[CR]- Addon support discontinued ![/COLOR]</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
@@ -29,10 +29,11 @@
 			<icon>resources/media/icon.png</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
+		<lifecyclestate type="broken" lang="de_DE">- Die API-'streamingtech.de' von RTL+ Deutschland wurde abgeschaltet.[CR]- Addon-Support eingestellt !</lifecyclestate>
+		<lifecyclestate type="broken" lang="en_GB">- The API-'streamingtech.de' of RTL+ Germany has been switched off.[CR]- Addon support discontinued !</lifecyclestate>
 		<news>
-[B][COLOR orangered]Version 1.1.1+matrix  (28.09.2025)[/COLOR][/B] by realvito
-- fixed: Wenn 'TokenRenewFailed' im LOG auftaucht ist ein erneuter Login nicht möglich (ERROR: navigation.py has no command self.login())
-- added: Timeshift-Funktion zu-/ab-schaltbar für TV-Live und EventStreams (settings: default=abgeschaltet)
+[B][COLOR orangered]Version 1.1.2+matrix  (20.05.2026)[/COLOR][/B]
+- Die API-'streamingtech.de' von RTL+ Deutschland wurde abgeschaltet.[CR]- Addon-Support eingestellt !
 		</news>
 	</extension>
 </addon>
