@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.3.0+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.3.1+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -28,10 +28,12 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.3.0+matrix.1  (01.03.2026)[/COLOR][/B]
-- fixed: Vereinzelt wird bei Serien kein Bild und keine Beschreibung angezeigt, obwohl diese nach Überprüfung doch vorhanden sind (Beim Ableich der zwei API-Listen des Providers stimmt entweder der 'slug'- oder der 'showId'-Eintrag nicht überein)
-- RE-added: Rubrik = Themen
-- comment: *Auf vielfachen Wunsch und nach ausführlichen Tests ist es mir gelungen wieder ein Genre-Konstrukt auf Basis der API-'Aurora' von Discovery aufzubauen und in das Addon zu integrieren !*
+[B][COLOR orangered]Version 3.3.1+matrix.1  (24.05.2026)[/COLOR][/B]
+- fixed: Fast alle Ordner zeigen keinen Inhalt mehr an (eine von zwei gleichzeitig laufenden Provider-API's abgeschaltet)
+► [B]comment:[/B] Veränderungen bedingt durch den Wegall einer der beiden Provider-API's:
+- [B]1.[/B] Im Addon angelegte Favoriten sind nicht mehr mit der jetzigen API-Schnittstelle konform und müssen leider erneut angelegt werden !
+- [B]2.[/B] Der 'Gesehen-Status' aller Sendungen des Addons ist auch nicht mehr mit der jetzigen API-Schnittstelle konform und geht verloren !
+- [B]3.[/B] Durch zurzeit extrem lange Antwortzeiten des Provider-Servers (teilweise über 20 Sek.) kann es häufiger zu Fehlermeldungen im Addon kommen ! ◄
 		</news>
 	</extension>
 </addon>
