@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.netzkino_de" name="Netzkino [COLOR FF00EE00](light)[/COLOR]" version="3.0.8+matrix.1" provider-name="realvito">
+<addon id="plugin.video.netzkino_de" name="Netzkino [COLOR FF00EE00](light)[/COLOR]" version="3.0.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -27,11 +27,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.8+matrix.1  (22.06.2025)[/COLOR][/B]
-- added: Rubrik = Featured by Netzkino
-- removed: Rubrik = Exklusiv bei Netzkino und Empfehlungen der Woche (keine Inhalte mehr in der alten API)
-- optimized: Häufig fehlen Poster und Laufzeitangaben in der API, daher werden diese jetzt von 'IMDb' geladen (Voreinstellung aktiviert - settings)
-- comment: * Durch Veränderung der 'Watchlist' Parameter sind alte Einträge nicht mehr kompatibel und werden beim ersten Start des Addons gelöscht ! *
+[B][COLOR orangered]Version 3.0.9+matrix.1  (24.05.2026)[/COLOR][/B]
+- fixed: Zusätzliche Film-Metadaten aus der Datenbank von 'IMDb' werden nicht geladen (Abfrage-Url wird mittels AWS WAF-Validierung geblockt)
+- added: Url-Check für die Rubriken der Startübersicht des Addons, nicht verfügbare Urls werden ausgeblendet
+- optimized: Hintergrundabfrage mit 'concurrent.futures' von 'IMDb' Metadaten (Geschwindigkeit verbessert)
 		</news>
 	</extension>
 </addon>
