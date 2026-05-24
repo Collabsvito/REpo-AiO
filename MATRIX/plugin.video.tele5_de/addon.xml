@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tele5_de" name="TELE 5 Mediathek" version="2.1.2+matrix" provider-name="w4ki, realvito">
+<addon id="plugin.video.tele5_de" name="TELE 5 Mediathek" version="2.1.3+matrix" provider-name="w4ki, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
-		<import addon="script.module.inputstreamhelper" version="0.5.5+matrix.1"/>
+		<import addon="inputstream.adaptive" version="19.0.5"/>
 	</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
+	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -29,9 +29,13 @@
 			<clearlogo>resources/media/clearlogo.png</clearlogo>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.1.2+matrix  (01.03.2026)[/COLOR][/B] by realvito
-- fixed: Vereinzelt wird bei Serien/Filmen kein Bild und keine Beschreibung angezeigt, obwohl diese nach Überprüfung doch vorhanden sind (Beim Ableich der zwei API-Listen des Providers stimmt entweder der 'slug'- oder der 'showId'-Eintrag nicht überein)
-- comment: *In den Rubriken = Spielfilme/Serien/Eigenproduk- und Sonderedi-tionen wird in der letzten Sortierung die Einstellung : Liste-> Datum-> Absteigend empfohlen, um die neuesten Einträge der Liste oben anzuzeigen !*
+[B][COLOR orangered]Version 2.1.3+matrix  (24.05.2026)[/COLOR][/B]
+- fixed: Fast alle Ordner zeigen keinen Inhalt mehr an (eine von zwei gleichzeitig laufenden Provider-API's abgeschaltet)
+- added: Rubrik = Letzte Chance (Filme/Episoden) [listet die bald endenden Videos der nächsten 3 Tage / 72 Std.]
+- removed: Rubrik = Eigenproduktionen und Sondereditionen (nicht mehr gelistet in Provider-API)
+► [B]comment:[/B] Veränderungen bedingt durch den Wegall einer der beiden Provider-API's:
+- [B]1.[/B] Der 'Gesehen-Status' aller Sendungen des Addons ist durch veränderte IDs nicht mehr mit der jetzigen API-Schnittstelle konform und geht verloren !
+- [B]2.[/B] Durch zurzeit extrem lange Antwortzeiten des Provider-Servers (teilweise über 20 Sek.) kann es häufiger zu Fehlermeldungen im Addon kommen ! ◄
 		</news>
 	</extension>
 </addon>
