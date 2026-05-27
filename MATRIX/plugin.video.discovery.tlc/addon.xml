@@ -30,13 +30,12 @@
 		<news>
 [B][COLOR orangered]Version 3.3.2+matrix.1  (26.05.2026)[/COLOR][/B]
 - fixed: Möglicherweise werden im Addon nicht alle verfügbaren Sendungen gelistet (Provider hat Abfrage-URL verändert)
-
 [B][COLOR orangered]Version 3.3.1+matrix.1  (24.05.2026)[/COLOR][/B]
 - fixed: Fast alle Ordner zeigen keinen Inhalt mehr an (eine von zwei gleichzeitig laufenden Provider-API's abgeschaltet)
-► [B]comment:[/B] Veränderungen bedingt durch den Wegfall einer der beiden Provider-API's:
+- [B]comment:[/B] Veränderungen bedingt durch den Wegfall einer der beiden Provider-API's:
 - [B]1.[/B] Im Addon angelegte Favoriten sind nicht mehr mit der jetzigen API-Schnittstelle konform und müssen leider erneut angelegt werden !
 - [B]2.[/B] Der 'Gesehen-Status' aller Sendungen des Addons ist auch nicht mehr mit der jetzigen API-Schnittstelle konform und geht verloren !
-- [B]3.[/B] Durch zurzeit extrem lange Antwortzeiten des Provider-Servers (teilweise über 20 Sek.) kann es häufiger zu Fehlermeldungen im Addon kommen ! ◄
+- [B]3.[/B] Durch zurzeit extrem lange Antwortzeiten des Provider-Servers (teilweise über 20 Sek.) kann es häufiger zu Fehlermeldungen im Addon kommen !
 		</news>
 	</extension>
 </addon>
