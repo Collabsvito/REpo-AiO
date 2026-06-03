@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.dfb_tv" name="DFB - Sport" version="2.1.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.dfb_tv" name="DFB - Sport" version="2.1.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -9,8 +9,8 @@
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">Videoportal des DFB auf Youtube</summary>
-		<summary lang="en_GB">Videoportal of the DFB on Youtube</summary>
+		<summary lang="de_DE">Videoportal des DFB auf YouTube</summary>
+		<summary lang="en_GB">Videoportal of the DFB on YouTube</summary>
 		<description lang="de_DE">Mit fast 7 Millionen Mitgliedern der angeschlossenen Vereine ist der DFB der größte nationale Sport-Fachverband der Welt.[CR]Sehen Sie Zusammenfassungen von Spielen aus dem deutschen Männer- und Frauenfußball, Livestreams, sonstige Videos mit Bezug zum DFB.</description>
 		<description lang="en_GB">With almost 7 million members of affiliated clubs, the DFB is the largest national sports federation in the world.[CR]Watch summaries of German men's and women's football matches, livestreams, other DFB-related videos.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
@@ -28,8 +28,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.1.2+matrix.1  (12.10.2025)[/COLOR][/B]
-- fixed: Manche Streams in der Rubrik = 'Live-Events und Aktuelles' sind nicht abspielbar (Error: 401)
+[B][COLOR orangered]Version 2.1.3+matrix.1  (02.06.2026)[/COLOR][/B]
+- fixed: Die Rubrik = 'Live-Events und Aktuelles' kann nicht geöffnet werden (Seitenstruktur auf YouTube verändert)
+- optimized: ScrapeTube-Script zum auswerten der Video Inhalte
 		</news>
 	</extension>
 </addon>
