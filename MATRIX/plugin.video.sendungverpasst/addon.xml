@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.1.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.1.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
 		<import addon="plugin.video.artetv.de" optional="true"/>
 		<import addon="plugin.video.joyn" optional="true"/>
-		<import addon="plugin.video.tvnow.de" optional="true"/>
+		<import addon="plugin.video.rtlplus" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -30,9 +30,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.1.1+matrix.1  (19.04.2026)[/COLOR][/B]
-- fixed: Viele Ordner zeigen keinen Inhalt, obwohl dieser vorhanden ist (Diverse Veränderungen der JSON-Strukturen)
-- fixed: Einige Streams ohne Laufzeitangabe sind nicht abspielbar (Zusätzliche Abfrage mittels JSON-Slug)
+[B][COLOR orangered]Version 1.1.2+matrix.1  (14.06.2026)[/COLOR][/B]
+- fixed: Vereinzelt werden ZDF-Videos nicht abgespielt (Quelltext verändert)
+- added: HOME-BUTTON - Dieser Button ermöglicht es, direkt zum Hauptmenü des Addons zurückzukehren, ohne dabei jede aufgerufene Seite einer Liste einzeln zurückblättern zu müssen (settings)
+- added: Abhängigkeit 'plugin.video.rtlplus' zum Abspielen von Links der RTL interactive GmbH
+- removed: Abhängigkeit "plugin.video.tvnow.de" zum Abspielen von RTLPLUS-Links
 		</news>
 	</extension>
 </addon>
