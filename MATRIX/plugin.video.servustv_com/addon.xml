@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.1.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.1.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -9,10 +9,10 @@
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">Web-Plugin für ServusTV</summary>
-		<summary lang="en_GB">Web-Plugin for ServusTV</summary>
-		<description lang="de_DE">ServusTV ist ein österreichischer Privatfernsehsender.[CR]Neben einem breiten Sportprogramm erwarten Sie die bewegendsten Nachrichten, Bilder und Meinungen aus Österreich und der Welt. Wir beleuchten verschiedene Blickwinkel, lassen Experten zu Wort kommen und regen mit spannenden Talkshows zum Nachdenken an.</description>
-		<description lang="en_GB">ServusTV is an Austrian private television station.[CR]In addition to a broad sports programme, you can expect the most moving news, images and opinions from Austria and the world. We shed light on different perspectives, let experts have their say and stimulate thought with exciting talk shows.</description>
+		<summary lang="de_DE">Streaming-Plattform von ServusTV</summary>
+		<summary lang="en_GB">Streaming-Platform of ServusTV</summary>
+		<description lang="de_DE">ServusTV ist ein österreichischer Privatfernsehsender.[CR]Ob packender Fußball, rasanter Motorsport, großes Tennis, begeisternder Wintersport, ausdauernder Radsport oder präzises Golfspiel – ServusTV On ist das Ticket zum besten Live-Sport. Des weiteren runden Dokumentationen, Filme und Talkshows das Angebot der frei verfügbaren Inhalte ab.</description>
+		<description lang="en_GB">ServusTV is an Austrian private television station.[CR]Whether it’s thrilling football, fast-paced motor racing, top-class tennis, exhilarating winter sports, endurance cycling or precision golf – ServusTV On is your ticket to the best live sport. The range of free-to-air content is further complemented by documentaries, movies and talk shows.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
@@ -28,10 +28,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.1.2+matrix.1  (14.12.2025)[/COLOR][/B]
-- fixed: Live- und TV-Kanäle werden in den Unterordnern nicht ausgeblendet
-- fixed: Häufig auftretender Fehler beim öffnen der Rubrik = 'ServusTV - TV Kanäle' (IndexError: list index out of range)
-- optimized: EPG für 'ServusTV - TV Kanäle' - neue Guide-Url und bessere Verarbeitungsstruktur der ausgelesenen Daten
+[B][COLOR orangered]Version 3.1.3+matrix.1  (14.06.2026)[/COLOR][/B] - ReRelease
+- changed: Addon neu geschrieben mit Anpassung an die neue Web-API von ServusTV
+- added: Rubrik = FIFA WM 2026, Sendungen, Themen und beliebte Shows
+- optimized: Schnellerer Ordneraufbau durch neue *asynchrone* Abfragemethode der URLS
+- removed: Einträge, welche nicht mehr in der aktuellen API vorkommen
 		</news>
 	</extension>
 </addon>
