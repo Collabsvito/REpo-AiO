@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tele5_de" name="TELE 5 Mediathek" version="2.1.5+matrix" provider-name="w4ki, realvito">
+<addon id="plugin.video.tele5_de" name="TELE 5 Mediathek" version="2.1.6+matrix" provider-name="w4ki, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -29,6 +29,10 @@
 			<clearlogo>resources/media/clearlogo.png</clearlogo>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 2.1.6+matrix  (12.07.2026)[/COLOR][/B]
+- fixed: Bilder für Serien/Filme werden nicht mehr angezeigt (Provider hat Bilder-Links base64 codiert)
+- added: In den Rubriken = 'Neue Sendungen/Letzte Chance' Anordnung des Titels + Serientitels selbst bestimmen (settings)
+
 [B][COLOR orangered]Version 2.1.5+matrix  (05.07.2026)[/COLOR][/B]
 - Endfassung des Addons nach API-Umstellung
 - added: In den Rubriken = 'Neue Sendungen/Letzte Chance' den Serientitel auch im Titel anzeigen (settings)
