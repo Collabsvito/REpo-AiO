@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.3.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.3.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -28,6 +28,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 1.3.2+matrix.1  (12.07.2026)[/COLOR][/B]
+- fixed: Bilder für Serien werden nicht mehr angezeigt (Provider hat Bilder-Links base64 codiert)
+- added: In der Rubrik = 'Neue Sendungen (Episoden)' Anordnung des Titels + Serientitels selbst bestimmen (settings)
+
 [B][COLOR orangered]Version 1.3.1+matrix.1  (05.07.2026)[/COLOR][/B]
 - Endfassung des Addons nach API-Umstellung
 - fixed: In der Rubrik = 'Neue Sendungen (Serien)' werden nicht alle Serien mit neuen Episoden der letzten sieben Tage angezeigt
