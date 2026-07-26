@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.skylinelivecams" name="Skyline LiveCams" version="1.0.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.skylinelivecams" name="Skyline LiveCams" version="1.0.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -46,11 +46,12 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.2+matrix.1  (24.08.2025)[/COLOR][/B]
-- fixed: Bei längerer Verweildauer innerhalb eines Ordners sind 'DIREKT-STREAMS' (nicht YouTube-Streams) von 'skylinewebcams.com' nicht mehr abspielbar
-- fixed: Bei Auswahl der Rubrik = 'Zufällige Live Cam' wird nach benutzerdefiniertem Beenden des Streams erneut ein Stream abgespielt
+[B][COLOR orangered]Version 1.0.3+matrix.1  (26.07.2026)[/COLOR][/B]
+- fixed: Fast alle Rubriken können nicht geöffnet werden (Quelltext verändert)
+- added: Wiedergabe-Methode der Skyline-Direktstreams kann in den Einstellungen des Addons ausgewählt werden (FFmpeg oder Default)
 - added: Fehlende Länderflaggen
-- comment * Auf Grund von veränderten Addon-Parametern müssen evtl. angelegte Addon-Favoriten neu erstellt werden ! *
+- optimized: Reduzierung des Addon-Cachevolumens durch Umstellung des caching auf 'gzip'
+- reduced: *asynchrone* Abfragemethode begrenzt auf max. 40 Einträge pro Seite (Skyline blockiert Mehrfachabfragen neuerdings häufig mit einem ERROR: 503)
 		</news>
 	</extension>
 </addon>
