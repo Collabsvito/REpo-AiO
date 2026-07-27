@@ -608,7 +608,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.skylinelivecams" name="Skyline LiveCams" version="1.0.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.skylinelivecams" name="Skyline LiveCams" version="1.0.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -655,6 +655,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 1.0.4+matrix.1  (27.07.2026)[/COLOR][/B]
+- fixed: Alle Rubriken können nicht geöffnet werden (Error: 'str' object has no attribute 'get')
+- comment * Im Addon angelegte Favoriten sind nicht mehr mit dem jetzigen Addon-Code konform und müssen leider erneut angelegt werden ! *
+
 [B][COLOR orangered]Version 1.0.3+matrix.1  (26.07.2026)[/COLOR][/B]
 - fixed: Fast alle Rubriken können nicht geöffnet werden (Quelltext verändert)
 - added: Wiedergabe-Methode der Skyline-Direktstreams kann in den Einstellungen des Addons ausgewählt werden (FFmpeg oder Default)
