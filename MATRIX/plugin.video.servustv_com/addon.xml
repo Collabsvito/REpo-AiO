@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.1.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.1.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -28,11 +28,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.1.3+matrix.1  (14.06.2026)[/COLOR][/B] - ReRelease
-- changed: Addon neu geschrieben mit Anpassung an die neue Web-API von ServusTV
-- added: Rubrik = FIFA WM 2026, Sendungen, Themen und beliebte Shows
-- optimized: Schnellerer Ordneraufbau durch neue *asynchrone* Abfragemethode der URLS
-- removed: Einträge, welche nicht mehr in der aktuellen API vorkommen
+[B][COLOR orangered]Version 3.1.4+matrix.1  (06.08.2026)[/COLOR][/B]
+- fixed: Die Abfrage für GEO-CID und Landesflagge mit 'https://api.ipapi.is/' funktioniert nicht mehr (Neue Url zur Überprüfung)
 		</news>
 	</extension>
 </addon>
