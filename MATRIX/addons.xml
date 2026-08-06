@@ -140,7 +140,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.3.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.3.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -169,19 +169,16 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 3.3.8+matrix.1  (06.08.2026)[/COLOR][/B]
+- fixed: 'SERIEN-SPECIALS' werden nicht angezeigt
+
 [B][COLOR orangered]Version 3.3.7+matrix.1  (12.07.2026)[/COLOR][/B]
 - fixed: Bilder für Serien werden nicht mehr angezeigt (Provider hat Bilder-Links base64 codiert)
 - added: In der Rubrik = 'Neue Sendungen (Episoden)' Anordnung des Titels + Serientitels selbst bestimmen (settings)
-
-[B][COLOR orangered]Version 3.3.6+matrix.1  (05.07.2026)[/COLOR][/B]
-- Endfassung des Addons nach API-Umstellung
-- fixed: In der Rubrik = 'Neue Sendungen (Serien)' werden nicht alle Serien mit neuen Episoden der letzten sieben Tage angezeigt
-- fixed: In der Rubrik = 'Neue Sendungen (Episoden)' wird nur maximal eine neue Episode einer Serie gelistet, auch wenn mehrere neue Episoden existieren
-- added: In der Rubrik = 'Neue Sendungen (Episoden)' den Serientitel auch im Titel anzeigen (settings)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.3.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.3.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -210,19 +207,16 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 1.3.3+matrix.1  (06.08.2026)[/COLOR][/B]
+- fixed: 'SERIEN-SPECIALS' werden nicht angezeigt
+
 [B][COLOR orangered]Version 1.3.2+matrix.1  (12.07.2026)[/COLOR][/B]
 - fixed: Bilder für Serien werden nicht mehr angezeigt (Provider hat Bilder-Links base64 codiert)
 - added: In der Rubrik = 'Neue Sendungen (Episoden)' Anordnung des Titels + Serientitels selbst bestimmen (settings)
-
-[B][COLOR orangered]Version 1.3.1+matrix.1  (05.07.2026)[/COLOR][/B]
-- Endfassung des Addons nach API-Umstellung
-- fixed: In der Rubrik = 'Neue Sendungen (Serien)' werden nicht alle Serien mit neuen Episoden der letzten sieben Tage angezeigt
-- fixed: In der Rubrik = 'Neue Sendungen (Episoden)' wird nur maximal eine neue Episode einer Serie gelistet, auch wenn mehrere neue Episoden existieren
-- added: In der Rubrik = 'Neue Sendungen (Episoden)' den Serientitel auch im Titel anzeigen (settings)
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.3.4+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.3.5+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -251,15 +245,12 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 3.3.5+matrix.1  (06.08.2026)[/COLOR][/B]
+- fixed: 'SERIEN-SPECIALS' werden nicht angezeigt
+
 [B][COLOR orangered]Version 3.3.4+matrix.1  (12.07.2026)[/COLOR][/B]
 - fixed: Bilder für Serien werden nicht mehr angezeigt (Provider hat Bilder-Links base64 codiert)
 - added: In der Rubrik = 'Neue Sendungen (Episoden)' Anordnung des Titels + Serientitels selbst bestimmen (settings)
-
-[B][COLOR orangered]Version 3.3.3+matrix.1  (05.07.2026)[/COLOR][/B]
-- Endfassung des Addons nach API-Umstellung
-- fixed: In der Rubrik = 'Neue Sendungen (Serien)' werden nicht alle Serien mit neuen Episoden der letzten sieben Tage angezeigt
-- fixed: In der Rubrik = 'Neue Sendungen (Episoden)' wird nur maximal eine neue Episode einer Serie gelistet, auch wenn mehrere neue Episoden existieren
-- added: In der Rubrik = 'Neue Sendungen (Episoden)' den Serientitel auch im Titel anzeigen (settings)
 		</news>
 	</extension>
 </addon>
@@ -571,7 +562,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.1.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.1.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -600,11 +591,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.1.3+matrix.1  (14.06.2026)[/COLOR][/B] - ReRelease
-- changed: Addon neu geschrieben mit Anpassung an die neue Web-API von ServusTV
-- added: Rubrik = FIFA WM 2026, Sendungen, Themen und beliebte Shows
-- optimized: Schnellerer Ordneraufbau durch neue *asynchrone* Abfragemethode der URLS
-- removed: Einträge, welche nicht mehr in der aktuellen API vorkommen
+[B][COLOR orangered]Version 3.1.4+matrix.1  (06.08.2026)[/COLOR][/B]
+- fixed: Die Abfrage für GEO-CID und Landesflagge mit 'https://api.ipapi.is/' funktioniert nicht mehr (Neue Url zur Überprüfung)
 		</news>
 	</extension>
 </addon>
@@ -809,7 +797,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tele5_de" name="TELE 5 Mediathek" version="2.1.8+matrix" provider-name="w4ki, realvito">
+<addon id="plugin.video.tele5_de" name="TELE 5 Mediathek" version="2.1.9+matrix" provider-name="w4ki, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -839,15 +827,16 @@
 			<clearlogo>resources/media/clearlogo.png</clearlogo>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 2.1.9+matrix  (06.08.2026)[/COLOR][/B]
+- fixed: Rubrik = 'Letzte Chance' kann nicht geöffnet werden (TypeError: 'NoneType' object is not subscriptable)
+- fixed: 'SERIEN-SPECIALS' werden nicht angezeigt (z.Zt. 'Doctor Who')
+- fixed: Neuerdings werden TRAILER auch gelistet
+
 [B][COLOR orangered]Version 2.1.8+matrix  (26.07.2026)[/COLOR][/B]
 - added: Rubrik = 'Spielfilme' vorsortiert nach aktuellem Onlinedatum
 
 [B][COLOR orangered]Version 2.1.7+matrix  (21.07.2026)[/COLOR][/B]
 - fixed: Fast alle Rubriken können nicht geöffnet werden (KeyError: item)
-
-[B][COLOR orangered]Version 2.1.6+matrix  (12.07.2026)[/COLOR][/B]
-- fixed: Bilder für Serien/Filme werden nicht mehr angezeigt (Provider hat Bilder-Links base64 codiert)
-- added: In den Rubriken = 'Neue Sendungen/Letzte Chance' Anordnung des Titels + Serientitels selbst bestimmen (settings)
 		</news>
 	</extension>
 </addon>
