@@ -1,10 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.rakuten.de" name="RakutenTV German [COLOR FF00EE00](light)[/COLOR]" version="1.0.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.rakuten.de" name="RakutenTV German [COLOR FF00EE00](light)[/COLOR]" version="1.0.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="script.module.certifi" version="2023.5.7"/>
+		<import addon="script.module.chardet" version="5.1.0"/>
+		<import addon="script.module.idna" version="3.4.0"/>
+		<import addon="script.module.urllib3" version="2.2.3"/>
 		<import addon="inputstream.adaptive" version="19.0.5"/>
-		<import addon="service.rakuten.epgrefresh" version="1.0.1+matrix.1" optional="true"/>
+		<import addon="service.rakuten.epgrefresh" version="1.0.3+matrix.1" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -29,11 +32,12 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.3+matrix.1  (02.11.2025)[/COLOR][/B]
-- fixed: Die Abfrage für GEO-CID und Landesflagge funktioniert nicht mehr (Error: 401 - Unauthorized)
-- fixed: Unter der Rubrik = 'Kostenlose VOD-Auswahl' werden nicht alle Kategorien gelistet (Neue Url)
-- added: LiveTV EPG-FIX für evtl. defekte JSON-Daten - thanks @fds97AVVS
-- added: Betriebssystem-Auswahl zum Abspielen von VoD-Streams = Windows/Android mit veränderten Requests-Parametern (settings - Android only not rooted) - thanks @ostvanc für die Unterstützung
+[B][COLOR orangered]Version 1.0.4+matrix.1  (23.08.2026)[/COLOR][/B]
+- fixed: Die Abfrage für GEO-CID und Landesflagge mit 'https://api.ipapi.is/' funktioniert nicht mehr (Neue URL zur Überprüfung)
+- fixed: Manche Ordner unter 'Genres &amp; Kategorien' zeigen keinen Inhalt an
+- fixed: Bei vereinzelten VOD-Serien funktioniert die Anzeige der Episoden nicht (UnboundLocalError: local variable 'audio_titles' referenced ...)
+- fixed: Die Ordner unter der Rubrik 'TV - Kanäle' können nicht geöffnet werden (exception.invalid_per_page)
+- added: Rubrik = 'Alle TV-Serien'
 		</news>
 	</extension>
 </addon>

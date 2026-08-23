@@ -486,12 +486,15 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.rakuten.de" name="RakutenTV German [COLOR FF00EE00](light)[/COLOR]" version="1.0.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.rakuten.de" name="RakutenTV German [COLOR FF00EE00](light)[/COLOR]" version="1.0.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="script.module.certifi" version="2023.5.7"/>
+		<import addon="script.module.chardet" version="5.1.0"/>
+		<import addon="script.module.idna" version="3.4.0"/>
+		<import addon="script.module.urllib3" version="2.2.3"/>
 		<import addon="inputstream.adaptive" version="19.0.5"/>
-		<import addon="service.rakuten.epgrefresh" version="1.0.1+matrix.1" optional="true"/>
+		<import addon="service.rakuten.epgrefresh" version="1.0.3+matrix.1" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -516,11 +519,12 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.3+matrix.1  (02.11.2025)[/COLOR][/B]
-- fixed: Die Abfrage für GEO-CID und Landesflagge funktioniert nicht mehr (Error: 401 - Unauthorized)
-- fixed: Unter der Rubrik = 'Kostenlose VOD-Auswahl' werden nicht alle Kategorien gelistet (Neue Url)
-- added: LiveTV EPG-FIX für evtl. defekte JSON-Daten - thanks @fds97AVVS
-- added: Betriebssystem-Auswahl zum Abspielen von VoD-Streams = Windows/Android mit veränderten Requests-Parametern (settings - Android only not rooted) - thanks @ostvanc für die Unterstützung
+[B][COLOR orangered]Version 1.0.4+matrix.1  (23.08.2026)[/COLOR][/B]
+- fixed: Die Abfrage für GEO-CID und Landesflagge mit 'https://api.ipapi.is/' funktioniert nicht mehr (Neue URL zur Überprüfung)
+- fixed: Manche Ordner unter 'Genres &amp; Kategorien' zeigen keinen Inhalt an
+- fixed: Bei vereinzelten VOD-Serien funktioniert die Anzeige der Episoden nicht (UnboundLocalError: local variable 'audio_titles' referenced ...)
+- fixed: Die Ordner unter der Rubrik 'TV - Kanäle' können nicht geöffnet werden (exception.invalid_per_page)
+- added: Rubrik = 'Alle TV-Serien'
 		</news>
 	</extension>
 </addon>
@@ -656,10 +660,13 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.spiegel.de" name="DER SPIEGEL" version="3.0.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.spiegel.de" name="DER SPIEGEL" version="3.0.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="script.module.certifi" version="2023.5.7"/>
+		<import addon="script.module.chardet" version="5.1.0"/>
+		<import addon="script.module.idna" version="3.4.0"/>
+		<import addon="script.module.urllib3" version="2.2.3"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -685,8 +692,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.7+matrix.1  (03.02.2026)[/COLOR][/B]
-- fixed: Unterordner der Rubrik = 'Thema: SPIEGEL TV' können nicht geöffnet werden (Quelltext der Webseite verändert)
+[B][COLOR orangered]Version 3.0.8+matrix.1  (23.08.2026)[/COLOR][/B]
+- fixed: Fehler nach Abspielen eines Videos beim Neuaufbau des letzten Ordners
+- added: Sortierung der Beiträge nach Datum oder Webseiten-Standard (settings)
+- optimized: Addon-Code komplett überarbeitet
+- removed: Qualitätsauswahl für 'mp4-Streams' (meist wird nur ein Stream angeboten)
 		</news>
 	</extension>
 </addon>
@@ -953,18 +963,21 @@
 		</news>
 	</extension>
 </addon>
-<addon id="service.rakuten.epgrefresh" name="Rakuten EPG-UPDATER" version="1.0.3+matrix.1" provider-name="realvito">
+<addon id="service.rakuten.epgrefresh" name="Rakuten EPG-UPDATER" version="1.0.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="script.module.certifi" version="2023.5.7"/>
+		<import addon="script.module.chardet" version="5.1.0"/>
+		<import addon="script.module.idna" version="3.4.0"/>
+		<import addon="script.module.urllib3" version="2.2.3"/>
 		<import addon="script.module.pytz"/>
 	</requires>
 	<extension point="xbmc.service" library="resources/lib/service.py"/>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">EPG Update - Aktionssteuerung</summary>
 		<summary lang="en_GB">EPG Update - Action control</summary>
-		<description lang="de_DE">[COLOR yellow]ACHTUNG: Wegen der vorausgesetzten Abhängigkeiten, ist für die korrekte Darstellung der EPG Daten unbedingt eine vom Addon:[/COLOR] ►[COLOR chartreuse]plugin.video.rakuten.de[/COLOR]◄ [COLOR yellow]erstellte '.m3u' Datei erforderlich !!![/COLOR][CR]Grabbt automatisch EPG Daten für Rakuten-IPTV der nächsten zwei Tage und erstellt eine 'rakuten_guide*.xml.gz' im benutzerdefinierten Ordner.</description>
-		<description lang="en_GB">[COLOR yellow]ATTENTION: Due to the required dependencies, a '.m3u' file created by the Addon:[/COLOR] ►[COLOR chartreuse]plugin.video.rakuten.de[/COLOR]◄ [COLOR yellow]is absolutely necessary for the correct display of EPG data !!![/COLOR][CR]Grab automatic EPG data for Rakuten-IPTV of the next two days and create a 'rakuten_guide*.xml.gz' in userdefinied folder.</description>
+		<description lang="de_DE">[COLOR yellow]ACHTUNG: Wegen der vorausgesetzten Abhängigkeiten, ist für die korrekte Darstellung der EPG Daten unbedingt eine vom Addon:[/COLOR] ►[COLOR chartreuse]plugin.video.rakuten.de[/COLOR]◄ [COLOR yellow]erstellte '.m3u' Datei erforderlich !!![/COLOR][CR]Grabbt automatisch EPG Daten für Rakuten-IPTV der nächsten 1 bis max. 4 Tage und erstellt eine 'rakuten_guide*.xml.gz' im benutzerdefinierten Ordner.</description>
+		<description lang="en_GB">[COLOR yellow]ATTENTION: Due to the required dependencies, a '.m3u' file created by the Addon:[/COLOR] ►[COLOR chartreuse]plugin.video.rakuten.de[/COLOR]◄ [COLOR yellow]is absolutely necessary for the correct display of EPG data !!![/COLOR][CR]Automatically retrieves EPG Data for Rakuten IPTV for the next 1 to a maximum of 4 days and creates a 'rakuten_guide*.xml.gz' file in the user-defined folder.</description>
 		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
 		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
 		<language></language>
@@ -980,8 +993,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.3+matrix.1  (24.11.2025)[/COLOR][/B]
-- added: Separates Reparatur-Intervall nur für defekte EPG-Daten (erneutes Herunterladen nach 8 Std. anstatt benutzerdefiniert festgelegtem Intervall)
+[B][COLOR orangered]Version 1.0.4+matrix.1  (23.08.2026)[/COLOR][/B]
+- fixed: Seit kurzem werden EPG-Requests mit mehr als 50 Einträgen pro abgefragter Seite geblockt (HTTPError: 400 Client Error Bad Request)
+- added: Update-Intervall erhöht auf max. 4 Tage - default 2 Tage (settings)
 		</news>
 	</extension>
 </addon>
