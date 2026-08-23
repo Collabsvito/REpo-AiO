@@ -735,41 +735,6 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.sporttotal" name="Sporttotal.TV [COLOR FF00EE00](light)[/COLOR]" version="2.0.4+matrix.1" provider-name="realvito">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.27.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">Regionalsport auf Sporttotal.tv</summary>
-		<summary lang="en_GB">Regionalsport on Sporttotal.tv</summary>
-		<description lang="de_DE">[COLOR orangered]- Der Provider Sporttotal.tv ist insolvent und die Webseite 'https://www.sporttotal.tv' wurde abgeschaltet.[CR]- Addon-Support eingestellt ![/COLOR]</description>
-		<description lang="en_GB">[COLOR orangered]- The provider Sporttotal.tv has gone into administration and the Website 'https://www.sporttotal.tv' has been taken offline.[CR]- Addon support discontinued ![/COLOR]</description>
-		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
-		<language></language>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
-		<website>https://www.sporttotal.tv</website>
-		<email></email>
-		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
-		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.sporttotal</source>
-		<assets>
-			<icon>resources/media/icon.png</icon>
-			<fanart>resources/media/fanart.jpg</fanart>
-		</assets>
-		<lifecyclestate type="broken" lang="de_DE">- Der Provider Sporttotal.tv ist insolvent und die Webseite 'https://www.sporttotal.tv' wurde abgeschaltet.[CR]- Addon-Support eingestellt !</lifecyclestate>
-		<lifecyclestate type="broken" lang="en_GB">- The provider Sporttotal.tv has gone into administration and the Website 'https://www.sporttotal.tv' has been taken offline.[CR]- Addon support discontinued !</lifecyclestate>
-		<news>
-[B][COLOR orangered]Version 2.0.4+matrix.1  (20.05.2026)[/COLOR][/B]
-- Der Provider Sporttotal.tv ist insolvent und die Webseite 'https://www.sporttotal.tv' wurde abgeschaltet.[CR]- Addon-Support eingestellt !
-		</news>
-	</extension>
-</addon>
 <addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.9+matrix.1" provider-name="realvito (inspired by L0RE)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
@@ -847,44 +812,6 @@
 
 [B][COLOR orangered]Version 2.1.7+matrix  (21.07.2026)[/COLOR][/B]
 - fixed: Fast alle Rubriken können nicht geöffnet werden (KeyError: item)
-		</news>
-	</extension>
-</addon>
-<addon id="plugin.video.tvnow.de" name="RTL+ - Webversion" version="1.1.2+matrix" provider-name="Pati, realvito">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.27.0"/>
-		<import addon="inputstream.adaptive" version="19.0.5"/>
-		<import addon="script.module.routing" version="0.2.3+matrix.1"/>
-		<import addon="script.module.inputstreamhelper" version="0.5.5+matrix.1"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">Web-Plugin für RTL+ Deutschland</summary>
-		<summary lang="en_GB">Web-Plugin for RTL+ Germany</summary>
-		<description lang="de_DE">[COLOR orangered]- Die API-'streamingtech.de' von RTL+ Deutschland wurde abgeschaltet.[CR]- Addon-Support eingestellt ![/COLOR]</description>
-		<description lang="en_GB">[COLOR orangered]- The API-'streamingtech.de' of RTL+ Germany has been switched off.[CR]- Addon support discontinued ![/COLOR]</description>
-		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
-		<language></language>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/thread/57646-release-tvnow-rtl-watchbox-vox-ntv-nowus-rtl2-nitro/</forum>
-		<website>https://plus.rtl.de</website>
-		<email></email>
-		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
-		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.tvnow.de</source>
-		<assets>
-			<icon>resources/media/icon.png</icon>
-			<fanart>resources/media/fanart.jpg</fanart>
-		</assets>
-		<lifecyclestate type="broken" lang="de_DE">- Die API-'streamingtech.de' von RTL+ Deutschland wurde abgeschaltet.[CR]- Addon-Support eingestellt !</lifecyclestate>
-		<lifecyclestate type="broken" lang="en_GB">- The API-'streamingtech.de' of RTL+ Germany has been switched off.[CR]- Addon support discontinued !</lifecyclestate>
-		<news>
-[B][COLOR orangered]Version 1.1.2+matrix  (20.05.2026)[/COLOR][/B]
-- Die API-'streamingtech.de' von RTL+ Deutschland wurde abgeschaltet.[CR]- Addon-Support eingestellt !
 		</news>
 	</extension>
 </addon>
