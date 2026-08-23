@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.spiegel.de" name="DER SPIEGEL" version="3.0.7+matrix.1" provider-name="realvito">
+<addon id="plugin.video.spiegel.de" name="DER SPIEGEL" version="3.0.8+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="script.module.certifi" version="2023.5.7"/>
+		<import addon="script.module.chardet" version="5.1.0"/>
+		<import addon="script.module.idna" version="3.4.0"/>
+		<import addon="script.module.urllib3" version="2.2.3"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -28,8 +31,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.7+matrix.1  (03.02.2026)[/COLOR][/B]
-- fixed: Unterordner der Rubrik = 'Thema: SPIEGEL TV' können nicht geöffnet werden (Quelltext der Webseite verändert)
+[B][COLOR orangered]Version 3.0.8+matrix.1  (23.08.2026)[/COLOR][/B]
+- fixed: Fehler nach Abspielen eines Videos beim Neuaufbau des letzten Ordners
+- added: Sortierung der Beiträge nach Datum oder Webseiten-Standard (settings)
+- optimized: Addon-Code komplett überarbeitet
+- removed: Qualitätsauswahl für 'mp4-Streams' (meist wird nur ein Stream angeboten)
 		</news>
 	</extension>
 </addon>
