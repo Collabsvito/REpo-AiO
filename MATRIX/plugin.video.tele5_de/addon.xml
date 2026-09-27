@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.tele5_de" name="TELE 5 Mediathek" version="2.1.9+matrix" provider-name="w4ki, realvito">
+<addon id="plugin.video.tele5_de" name="TELE 5 Mediathek" version="2.2.0+matrix" provider-name="w4ki, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="script.module.certifi" version="2023.5.7"/>
+		<import addon="script.module.chardet" version="5.1.0"/>
+		<import addon="script.module.idna" version="3.4.0"/>
+		<import addon="script.module.urllib3" version="2.2.3"/>
 		<import addon="inputstream.adaptive" version="19.0.5"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -29,16 +32,9 @@
 			<clearlogo>resources/media/clearlogo.png</clearlogo>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.1.9+matrix  (06.08.2026)[/COLOR][/B]
-- fixed: Rubrik = 'Letzte Chance' kann nicht geöffnet werden (TypeError: 'NoneType' object is not subscriptable)
-- fixed: 'SERIEN-SPECIALS' werden nicht angezeigt (z.Zt. 'Doctor Who')
-- fixed: Neuerdings werden TRAILER auch gelistet
-
-[B][COLOR orangered]Version 2.1.8+matrix  (26.07.2026)[/COLOR][/B]
-- added: Rubrik = 'Spielfilme' vorsortiert nach aktuellem Onlinedatum
-
-[B][COLOR orangered]Version 2.1.7+matrix  (21.07.2026)[/COLOR][/B]
-- fixed: Fast alle Rubriken können nicht geöffnet werden (KeyError: item)
+[B][COLOR orangered]Version 2.2.0+matrix  (27.09.2026)[/COLOR][/B]
+- fixed: Es werden nicht alle Serien/Filme aufgelistet (In der Tele5-Mediathek fehlen vereinzelt Einträge, daher zusätzliche API-Abfrage unter der Web-Rubrik: Serien/Filme hinzugefügt)
+- added: Neues und schnelleres 'requests.modul' integriert
 		</news>
 	</extension>
 </addon>
