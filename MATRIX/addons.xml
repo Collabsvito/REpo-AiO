@@ -563,10 +563,13 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.1.4+matrix.1" provider-name="realvito">
+<addon id="plugin.video.servustv_com" name="ServusTV.com" version="3.1.5+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="script.module.certifi" version="2023.5.7"/>
+		<import addon="script.module.chardet" version="5.1.0"/>
+		<import addon="script.module.idna" version="3.4.0"/>
+		<import addon="script.module.urllib3" version="2.2.3"/>
 		<import addon="inputstream.adaptive" version="19.0.5"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -592,8 +595,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.1.4+matrix.1  (06.08.2026)[/COLOR][/B]
-- fixed: Die Abfrage für GEO-CID und Landesflagge mit 'https://api.ipapi.is/' funktioniert nicht mehr (Neue Url zur Überprüfung)
+[B][COLOR orangered]Version 3.1.5+matrix.1  (27.09.2026)[/COLOR][/B]
+- fixed: Event-Streams sind nicht mehr abspielbar - Error 404 (Neue Player-URL nur für Event-Streams)
+- added: Neues und schnelleres 'requests.modul' integriert
 		</news>
 	</extension>
 </addon>
