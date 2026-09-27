@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.3.8+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.3.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="script.module.certifi" version="2023.5.7"/>
+		<import addon="script.module.chardet" version="5.1.0"/>
+		<import addon="script.module.idna" version="3.4.0"/>
+		<import addon="script.module.urllib3" version="2.2.3"/>
 		<import addon="inputstream.adaptive" version="19.0.5"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -28,12 +31,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.3.8+matrix.1  (06.08.2026)[/COLOR][/B]
-- fixed: 'SERIEN-SPECIALS' werden nicht angezeigt
-
-[B][COLOR orangered]Version 3.3.7+matrix.1  (12.07.2026)[/COLOR][/B]
-- fixed: Bilder für Serien werden nicht mehr angezeigt (Provider hat Bilder-Links base64 codiert)
-- added: In der Rubrik = 'Neue Sendungen (Episoden)' Anordnung des Titels + Serientitels selbst bestimmen (settings)
+[B][COLOR orangered]Version 3.3.9+matrix.1  (27.09.2026)[/COLOR][/B]
+- added: Neues und schnelleres 'requests.modul' integriert
 		</news>
 	</extension>
 </addon>

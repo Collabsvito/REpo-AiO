@@ -140,10 +140,13 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.3.8+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.dmax" name="DMAX Mediathek" version="3.3.9+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="script.module.certifi" version="2023.5.7"/>
+		<import addon="script.module.chardet" version="5.1.0"/>
+		<import addon="script.module.idna" version="3.4.0"/>
+		<import addon="script.module.urllib3" version="2.2.3"/>
 		<import addon="inputstream.adaptive" version="19.0.5"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -169,19 +172,18 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.3.8+matrix.1  (06.08.2026)[/COLOR][/B]
-- fixed: 'SERIEN-SPECIALS' werden nicht angezeigt
-
-[B][COLOR orangered]Version 3.3.7+matrix.1  (12.07.2026)[/COLOR][/B]
-- fixed: Bilder für Serien werden nicht mehr angezeigt (Provider hat Bilder-Links base64 codiert)
-- added: In der Rubrik = 'Neue Sendungen (Episoden)' Anordnung des Titels + Serientitels selbst bestimmen (settings)
+[B][COLOR orangered]Version 3.3.9+matrix.1  (27.09.2026)[/COLOR][/B]
+- added: Neues und schnelleres 'requests.modul' integriert
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.3.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.hgtv" name="HGTV Mediathek" version="1.3.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="script.module.certifi" version="2023.5.7"/>
+		<import addon="script.module.chardet" version="5.1.0"/>
+		<import addon="script.module.idna" version="3.4.0"/>
+		<import addon="script.module.urllib3" version="2.2.3"/>
 		<import addon="inputstream.adaptive" version="19.0.5"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -207,19 +209,18 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.3.3+matrix.1  (06.08.2026)[/COLOR][/B]
-- fixed: 'SERIEN-SPECIALS' werden nicht angezeigt
-
-[B][COLOR orangered]Version 1.3.2+matrix.1  (12.07.2026)[/COLOR][/B]
-- fixed: Bilder für Serien werden nicht mehr angezeigt (Provider hat Bilder-Links base64 codiert)
-- added: In der Rubrik = 'Neue Sendungen (Episoden)' Anordnung des Titels + Serientitels selbst bestimmen (settings)
+[B][COLOR orangered]Version 1.3.4+matrix.1  (27.09.2026)[/COLOR][/B]
+- added: Neues und schnelleres 'requests.modul' integriert
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.3.5+matrix.1" provider-name="realvito">
+<addon id="plugin.video.discovery.tlc" name="TLC Mediathek" version="3.3.6+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="script.module.certifi" version="2023.5.7"/>
+		<import addon="script.module.chardet" version="5.1.0"/>
+		<import addon="script.module.idna" version="3.4.0"/>
+		<import addon="script.module.urllib3" version="2.2.3"/>
 		<import addon="inputstream.adaptive" version="19.0.5"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -245,12 +246,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.3.5+matrix.1  (06.08.2026)[/COLOR][/B]
-- fixed: 'SERIEN-SPECIALS' werden nicht angezeigt
-
-[B][COLOR orangered]Version 3.3.4+matrix.1  (12.07.2026)[/COLOR][/B]
-- fixed: Bilder für Serien werden nicht mehr angezeigt (Provider hat Bilder-Links base64 codiert)
-- added: In der Rubrik = 'Neue Sendungen (Episoden)' Anordnung des Titels + Serientitels selbst bestimmen (settings)
+[B][COLOR orangered]Version 3.3.6+matrix.1  (27.09.2026)[/COLOR][/B]
+- added: Neues und schnelleres 'requests.modul' integriert
 		</news>
 	</extension>
 </addon>
@@ -772,10 +769,13 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tele5_de" name="TELE 5 Mediathek" version="2.1.9+matrix" provider-name="w4ki, realvito">
+<addon id="plugin.video.tele5_de" name="TELE 5 Mediathek" version="2.2.0+matrix" provider-name="w4ki, realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="script.module.certifi" version="2023.5.7"/>
+		<import addon="script.module.chardet" version="5.1.0"/>
+		<import addon="script.module.idna" version="3.4.0"/>
+		<import addon="script.module.urllib3" version="2.2.3"/>
 		<import addon="inputstream.adaptive" version="19.0.5"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -802,16 +802,9 @@
 			<clearlogo>resources/media/clearlogo.png</clearlogo>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.1.9+matrix  (06.08.2026)[/COLOR][/B]
-- fixed: Rubrik = 'Letzte Chance' kann nicht geöffnet werden (TypeError: 'NoneType' object is not subscriptable)
-- fixed: 'SERIEN-SPECIALS' werden nicht angezeigt (z.Zt. 'Doctor Who')
-- fixed: Neuerdings werden TRAILER auch gelistet
-
-[B][COLOR orangered]Version 2.1.8+matrix  (26.07.2026)[/COLOR][/B]
-- added: Rubrik = 'Spielfilme' vorsortiert nach aktuellem Onlinedatum
-
-[B][COLOR orangered]Version 2.1.7+matrix  (21.07.2026)[/COLOR][/B]
-- fixed: Fast alle Rubriken können nicht geöffnet werden (KeyError: item)
+[B][COLOR orangered]Version 2.2.0+matrix  (27.09.2026)[/COLOR][/B]
+- fixed: Es werden nicht alle Serien/Filme aufgelistet (In der Tele5-Mediathek fehlen vereinzelt Einträge, daher zusätzliche API-Abfrage unter der Web-Rubrik: Serien/Filme hinzugefügt)
+- added: Neues und schnelleres 'requests.modul' integriert
 		</news>
 	</extension>
 </addon>
@@ -853,7 +846,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.vfb_stuttgart" name="VfB-Stuttgart TV" version="1.0.4+matrix.1" provider-name="realvito">
+<addon id="plugin.video.vfb_stuttgart" name="VfB-Stuttgart TV" version="1.0.5+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -882,11 +875,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.4+matrix.1  (21.09.2025)[/COLOR][/B]
-- fixed: Keine Ordner in der Startübersicht vorhanden
-- added: Rubriken = Saison: Europacup und Supercup, Junioren: NLZ Torparade und Youth League, Frauen: 2. Bundesliga und Regionalliga Süd
-- added: Dynamische Playlisten von 'VfB Stuttgart (VfB-TV)' auf YouTube immer aktuell
-- comment: * Aufgrund diverser Änderungen an den „Addon-Einstellungen“ werden diese beim ersten Start des Addons automatisch zurückgesetzt und evtl. vorhandene Account-Daten müssen erneut eingegeben werden! *
+[B][COLOR orangered]Version 1.0.5+matrix.1  (27.09.2026)[/COLOR][/B]
+- fixed: In der Rubrik = 'Saison -> Europacup' werden die Spieltage nicht gelistet
+- fixed: Alle Videos können nicht mehr abgespielt werden (Abfrage und Provider verändert)
+- fixed: Die Rubrik = 'YOUTUBE -> Live-Events und Aktuelles' kann nicht geöffnet werden (Seitenstruktur auf YouTube verändert)
+- optimized: ScrapeTube-Script zum auswerten der YouTube-Video-Inhalte
 		</news>
 	</extension>
 </addon>
