@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.vfb_stuttgart" name="VfB-Stuttgart TV" version="1.0.4+matrix.1" provider-name="realvito">
+<addon id="plugin.video.vfb_stuttgart" name="VfB-Stuttgart TV" version="1.0.5+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -28,11 +28,11 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.0.4+matrix.1  (21.09.2025)[/COLOR][/B]
-- fixed: Keine Ordner in der Startübersicht vorhanden
-- added: Rubriken = Saison: Europacup und Supercup, Junioren: NLZ Torparade und Youth League, Frauen: 2. Bundesliga und Regionalliga Süd
-- added: Dynamische Playlisten von 'VfB Stuttgart (VfB-TV)' auf YouTube immer aktuell
-- comment: * Aufgrund diverser Änderungen an den „Addon-Einstellungen“ werden diese beim ersten Start des Addons automatisch zurückgesetzt und evtl. vorhandene Account-Daten müssen erneut eingegeben werden! *
+[B][COLOR orangered]Version 1.0.5+matrix.1  (27.09.2026)[/COLOR][/B]
+- fixed: In der Rubrik = 'Saison -> Europacup' werden die Spieltage nicht gelistet
+- fixed: Alle Videos können nicht mehr abgespielt werden (Abfrage und Provider verändert)
+- fixed: Die Rubrik = 'YOUTUBE -> Live-Events und Aktuelles' kann nicht geöffnet werden (Seitenstruktur auf YouTube verändert)
+- optimized: ScrapeTube-Script zum auswerten der YouTube-Video-Inhalte
 		</news>
 	</extension>
 </addon>
