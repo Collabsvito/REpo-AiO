@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.sporteurope.tv" name="SPORTEUROPE.TV [COLOR FF00EE00](light)[/COLOR]" version="3.0.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sporteurope.tv" name="SPORTEUROPE.TV [COLOR FF00EE00](light)[/COLOR]" version="3.0.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="script.module.certifi" version="2023.5.7"/>
+		<import addon="script.module.chardet" version="5.1.0"/>
+		<import addon="script.module.idna" version="3.4.0"/>
+		<import addon="script.module.urllib3" version="2.2.3"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -27,10 +30,12 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.1+matrix.1  (24.08.2025)[/COLOR][/B] - ReRelease
-- changed: Plugin-Pfad mit dieser Neuauflage (old=plugin.video.sportdeutschland_tv -> new=plugin.video.sporteurope.tv)
-- changed: Der Name des Addons lautet jetzt: 'SPORTEUROPE.TV' (vorher: Sportdeutschland.TV)
-- changed: Anpassungen des Addons an die neue Provider-URL/API (https://sporteurope.tv/)
+[B][COLOR orangered]Version 3.0.2+matrix.1  (04.10.2026)[/COLOR][/B]
+- fixed: Fast alle Ordner lassen sich nicht mehr öffnen (Provider-API stark verändert)
+- fixed: Sämtliche Videos sind nicht mehr abspielbar (neue API zur Abfrage der Videos)
+- added: Neues und schnelleres 'requests.modul' integriert
+- removed: Account-Login für den Free-Account (wird für FREE-Videos nicht mehr benötigt)
+- comment: *Im Addon angelegte Menüs und Favoriten sind nicht mehr mit der jetzigen API-Schnittstelle konform und müssen leider erneut angelegt werden !*
 		</news>
 	</extension>
 </addon>
