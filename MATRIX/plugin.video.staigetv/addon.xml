@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="plugin.video.staigetv" name="Staige.TV [COLOR FF00EE00](light)[/COLOR]" version="1.0.1+matrix.1" provider-name="realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.certifi" version="2023.5.7"/>
+		<import addon="script.module.chardet" version="5.1.0"/>
+		<import addon="script.module.idna" version="3.4.0"/>
+		<import addon="script.module.urllib3" version="2.2.3"/>
+		<import addon="script.module.dateutil" version="2.8.2"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Regionalsport auf Staige.tv</summary>
+		<summary lang="en_GB">Regionalsport on Staige.tv</summary>
+		<description lang="de_DE">Als Vorreiter im europäischen Markt ermöglicht Staige.tv mit Ihrer Livestreaming-Funktion Amateurvereinen, ihre Spiele live zu übertragen. Das Streaming-Portal Staige.tv bietet Sportfans Zugriff auf über 80.000 Events – live und on-demand.[CR]Eine Plattform für Vereine, Sportler, Fans und Sportinteressierte - It's on you ![CR][CR][COLOR FF00EE00]Dieses Addon stellt nur den FREI verfügbaren Inhalt von 'staige.tv' zur Verfügung ![/COLOR]</description>
+		<description lang="en_GB">As a pioneer in the European market, Staige.tv enables amateur clubs to broadcast their matches live using its live streaming feature. The Staige.tv streaming portal offers sports fans access to over 80.000 events – live and on demand.[CR]A platform for clubs, athletes, fans and sports enthusiasts - It's on you ![CR][COLOR FF00EE00]This Addon only provides the FREE available content of 'staige.tv' ![/COLOR]</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
+		<website>https://staige.tv</website>
+		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.staigetv</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>
+[B][COLOR orangered]Version 1.0.1+matrix.1  (04.10.2026)[/COLOR][/B] - Initial Release
+- added: Rubriken = 'LIVE ÜBERTRAGUNGEN' und 'EVENTS DEMNÄCHST' in der Startübersicht, sofern Inhalte in diesen Ordnern vorhanden sind
+- added: Rubriken = Letzte Begegnungen, Vereine, Wettbewerbe, Länder, Städte, Sportarten, Vor- &amp; Rückschau und Suchfunktion
+- added: Bestimmte Ordner des Startmenüs ausblenden, wenn gewünscht (settings)
+- added: Benutzerdefiniertes Profil des Lieblings-Vereins/Wettbewerbes als Addon-Favorit speichern (direkt Klick zum Profil des Vereins/Wettbewerbs)
+- added: HOME-BUTTON im Kontextmenü - Dieser Button ermöglicht es direkt zum Hauptmenü des Addons zurückzukehren, ohne dabei jede aufgerufene Seite einer Liste einzeln zurückblättern zu müssen (settings)
+- added: Neues und schnelleres 'requests.modul' integriert
+		</news>
+	</extension>
+</addon>
