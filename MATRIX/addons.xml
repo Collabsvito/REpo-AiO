@@ -251,11 +251,14 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.euronews_com" name="euronews.com" version="2.4.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.euronews_com" name="euronews.com" version="2.4.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.27.0"/>
-		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
+		<import addon="script.module.certifi" version="2023.5.7"/>
+		<import addon="script.module.chardet" version="5.1.0"/>
+		<import addon="script.module.idna" version="3.10.0"/>
+		<import addon="script.module.urllib3" version="2.2.3"/>
+		<import addon="plugin.video.youtube" version="7.0.3+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -298,12 +301,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.4.1+matrix.1  (03.06.2026)[/COLOR][/B]
-- fixed: Sendungen der Sprachen Arabisch, Englisch und Persisch sind nicht abrufbar
-
-[B][COLOR orangered]Version 2.4.0+matrix.1  (29.05.2026)[/COLOR][/B]
-- fixed: Auf manchen Betriebssystemen tritt erneut der ERROR 406 auf (Euronews setzt für Linux basierende Systeme andere User-Agenten voraus)
-- added: Einstellung für User-Agenten (Standard=automatisch, Windows- oder Linux-basiert)
+[B][COLOR orangered]Version 2.4.2+matrix.1  (11.10.2026)[/COLOR][/B]
+- fixed: Wenn KODI neu installiert ist, kann es vorkommen, dass das euronews-Addon nicht geöffnet werden kann (SyntaxError: Non-UTF-8 code starting with...)
+- fixed: euronews - LIVESTREAMS funktionieren nicht mehr (Url-Error: 406)
+- optimized: 'Accept-Language' im Header hinzugefügt, um den noch vereinzelt auftretenden ERROR 406 zu eliminieren
 		</news>
 	</extension>
 </addon>
@@ -525,7 +526,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.1.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.1.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -556,10 +557,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.1.3+matrix.1  (19.07.2026)[/COLOR][/B]
-- fixed: In der Rubrik = 'Sendungen von A-Z -> Serien-Liste -> Inhalte' werden viele identische Sendungen mehrfach angezeigt (Veränderung der JSON-Struktur dieser Rubrik)
-- fixed: In der Rubrik = 'Sendungen von A-Z -> Serien-Liste -> Inhalte -> Nächste Seite' wird immer derselbe Inhalt gezeigt (falsche Weiterleitung)
-- fixed: In der Rubrik = 'Sendungen von A-Z -> Serien-Liste -> Inhalte' fehlt im Kontextmenü der Eintrag 'MEHR DAVON ANZEIGEN', um weitere Inhalte einer Serie abzurufen
+[B][COLOR orangered]Version 1.1.4+matrix.1  (11.10.2026)[/COLOR][/B]
+- fixed: In der Rubrik = 'Sendungen von A-Z' lassen sich vereinzelt Buchstabenordner nicht öffnen (LocalError: cannot access local variable 'station')
 		</news>
 	</extension>
 </addon>
@@ -741,11 +740,11 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.9+matrix.1" provider-name="realvito (inspired by L0RE)">
+<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.1.0+matrix.1" provider-name="realvito (inspired by L0RE)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
-		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
+		<import addon="plugin.video.youtube" version="7.0.3+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -770,11 +769,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.9+matrix.1  (14.09.2025)[/COLOR][/B]
-- fixed: 'Apple Music' Auth-Token not found and subfolders cannot be opened (Error: APPLEMUSIC - COULD NOT FIND TOKEN)
-- fixed: Billboard-Videolists, artists are not displayed correctly
-- fixed: „Title Case“-Formatting for 'German umlauts' (ÄÖÜäöüß)
-- removed: Billboard archive sorted by year, now only last year is displayed (years no longer accessible)
+[B][COLOR orangered]Version 3.1.0+matrix.1  (11.10.2026)[/COLOR][/B]
+- fixed: once again 'Apple Music' Auth-Token not found and subfolders cannot be opened (Error: APPLEMUSIC - COULD NOT FIND TOKEN)
+- fixed: all Folder under 'Beatport' won't open (403 Client Error: Forbidden)
+- removed: Category = Shazam (The public categories of 'Apple Music' and 'Shazam' are no longer different, so simply select the 'Apple Music' Addon-category)
 		</news>
 	</extension>
 </addon>

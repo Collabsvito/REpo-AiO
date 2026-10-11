@@ -1,9 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.euronews_com" name="euronews.com" version="2.4.1+matrix.1" provider-name="realvito">
+<addon id="plugin.video.euronews_com" name="euronews.com" version="2.4.2+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.27.0"/>
-		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
+		<import addon="script.module.certifi" version="2023.5.7"/>
+		<import addon="script.module.chardet" version="5.1.0"/>
+		<import addon="script.module.idna" version="3.10.0"/>
+		<import addon="script.module.urllib3" version="2.2.3"/>
+		<import addon="plugin.video.youtube" version="7.0.3+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -46,12 +49,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.4.1+matrix.1  (03.06.2026)[/COLOR][/B]
-- fixed: Sendungen der Sprachen Arabisch, Englisch und Persisch sind nicht abrufbar
-
-[B][COLOR orangered]Version 2.4.0+matrix.1  (29.05.2026)[/COLOR][/B]
-- fixed: Auf manchen Betriebssystemen tritt erneut der ERROR 406 auf (Euronews setzt für Linux basierende Systeme andere User-Agenten voraus)
-- added: Einstellung für User-Agenten (Standard=automatisch, Windows- oder Linux-basiert)
+[B][COLOR orangered]Version 2.4.2+matrix.1  (11.10.2026)[/COLOR][/B]
+- fixed: Wenn KODI neu installiert ist, kann es vorkommen, dass das euronews-Addon nicht geöffnet werden kann (SyntaxError: Non-UTF-8 code starting with...)
+- fixed: euronews - LIVESTREAMS funktionieren nicht mehr (Url-Error: 406)
+- optimized: 'Accept-Language' im Header hinzugefügt, um den noch vereinzelt auftretenden ERROR 406 zu eliminieren
 		</news>
 	</extension>
 </addon>
