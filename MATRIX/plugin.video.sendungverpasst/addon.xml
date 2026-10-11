@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.1.3+matrix.1" provider-name="realvito">
+<addon id="plugin.video.sendungverpasst" name="Sendungverpasst - MediathekFundus" version="1.1.4+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -30,10 +30,8 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.1.3+matrix.1  (19.07.2026)[/COLOR][/B]
-- fixed: In der Rubrik = 'Sendungen von A-Z -> Serien-Liste -> Inhalte' werden viele identische Sendungen mehrfach angezeigt (Veränderung der JSON-Struktur dieser Rubrik)
-- fixed: In der Rubrik = 'Sendungen von A-Z -> Serien-Liste -> Inhalte -> Nächste Seite' wird immer derselbe Inhalt gezeigt (falsche Weiterleitung)
-- fixed: In der Rubrik = 'Sendungen von A-Z -> Serien-Liste -> Inhalte' fehlt im Kontextmenü der Eintrag 'MEHR DAVON ANZEIGEN', um weitere Inhalte einer Serie abzurufen
+[B][COLOR orangered]Version 1.1.4+matrix.1  (11.10.2026)[/COLOR][/B]
+- fixed: In der Rubrik = 'Sendungen von A-Z' lassen sich vereinzelt Buchstabenordner nicht öffnen (LocalError: cannot access local variable 'station')
 		</news>
 	</extension>
 </addon>
