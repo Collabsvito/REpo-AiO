@@ -35,7 +35,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.artetv.de" name="ARTE.TV" version="2.0.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.artetv.de" name="ARTE.TV" version="2.0.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -66,8 +66,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.0.2+matrix.1  (07.06.2026)[/COLOR][/B]
-- fixed: Sämtliche Ordner können nicht geöffnet werden (404 Client Error: Not Found)
+[B][COLOR orangered]Version 2.0.3+matrix.1  (08.11.2026)[/COLOR][/B]
+- fixed: Vereinzelt kann ein Ordner im Addon nicht geöffnet werden
+- fixed: Es werden keine 'mp4' Streams gefunden (404 Client Error: Not Found)
 		</news>
 	</extension>
 </addon>
@@ -343,7 +344,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.filmstarts" name="FILMSTARTS.de" version="1.1.6+matrix.1" provider-name="realvito">
+<addon id="plugin.video.filmstarts" name="FILMSTARTS.de" version="1.1.7+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -371,14 +372,10 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 1.1.6+matrix.1  (26.10.2026)[/COLOR][/B]
-- fixed: Bei eingestellter 'Stream-Auflösung = Automatisch höchste Qualität' wird ein Fehler produziert (KeyError: 'url')
-
-[B][COLOR orangered]Version 1.1.5+matrix.1  (23.10.2026)[/COLOR][/B]
-- fixed: Alle Rubriken zeigen keine Inhalte an (Quelltext verändert)
-- fixed: Requests Error 429 - Too Many Requests
-- fixed: Film/Serien-Poster in den Archiven haben teilweise sehr schlechte Auflösung
-- added: Inputstream.FFmpegDirect zur Trailer-Wiedergabe mit diversen Einstellmöglichkeiten (Inputstream.Adaptive hatte häufig keinen Ton bei der Wiedergabe)
+[B][COLOR orangered]Version 1.1.7+matrix.1  (08.11.2026)[/COLOR][/B]
+- fixed: Die Trailerwiedergabe wird durch einen Fehler abgebrochen (Error Type: JSONDecodeError)
+- added: Mehrere zusätzliche Fehlermeldungen für Streams von Dailymotion
+- optimized: Addon-Einträge jetzt auch für KODI -Widgets und -Favoriten kompatibel
 		</news>
 	</extension>
 </addon>
@@ -859,12 +856,13 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.3.5+matrix.1" provider-name="realvito">
+<addon id="plugin.video.tvspielfilm_de" name="TV Spielfilm - MediathekenTipps" version="2.3.6+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
 		<import addon="plugin.video.artetv.de" optional="true"/>
 		<import addon="plugin.video.joyn" optional="true"/>
+		<import addon="plugin.video.rtlplus" optional="true"/>
 		<import addon="plugin.video.servustv_com" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -890,10 +888,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.3.5+matrix.1  (19.07.2026)[/COLOR][/B]
-- fixed: Vereinzelt werden ZDF-Videos nicht abgespielt (Quelltext verändert)
-- optimized: *asynchrone* Abfragemethode beschleunigt durch HTTPAdapter-Stapelverarbeitung vom requests-modul
-- removed: Resolver zum Abspielen von Tele5-Links (gibt es nicht mehr bei TvSpielfilm)
+[B][COLOR orangered]Version 2.3.6+matrix.1  (08.11.2026)[/COLOR][/B]
+- fixed: Fast alle Rubriken können nicht geöffnet werden (Quelltext verändert)
+- added: Abhängigkeit 'plugin.video.rtlplus' zum Abspielen von Links der RTL interactive GmbH
 		</news>
 	</extension>
 </addon>

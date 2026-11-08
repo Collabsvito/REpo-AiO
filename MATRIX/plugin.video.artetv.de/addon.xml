@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<addon id="plugin.video.artetv.de" name="ARTE.TV" version="2.0.2+matrix.1" provider-name="realvito">
+<addon id="plugin.video.artetv.de" name="ARTE.TV" version="2.0.3+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -30,8 +30,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 2.0.2+matrix.1  (07.06.2026)[/COLOR][/B]
-- fixed: Sämtliche Ordner können nicht geöffnet werden (404 Client Error: Not Found)
+[B][COLOR orangered]Version 2.0.3+matrix.1  (08.11.2026)[/COLOR][/B]
+- fixed: Vereinzelt kann ein Ordner im Addon nicht geöffnet werden
+- fixed: Es werden keine 'mp4' Streams gefunden (404 Client Error: Not Found)
 		</news>
 	</extension>
 </addon>
