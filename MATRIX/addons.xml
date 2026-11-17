@@ -599,7 +599,7 @@
 		</news>
 	</extension>
 </addon>
-<addon id="plugin.video.skylinelivecams" name="Skyline LiveCams" version="1.0.5+matrix.1" provider-name="realvito">
+<addon id="plugin.video.skylinelivecams" name="Skyline LiveCams" version="1.0.6+matrix.1" provider-name="realvito">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
@@ -646,6 +646,9 @@
 			<fanart>resources/media/fanart.jpg</fanart>
 		</assets>
 		<news>
+[B][COLOR orangered]Version 1.0.6+matrix.1  (17.11.2026)[/COLOR][/B]
+- fixed: Auf Android/Linux-Systemen fehlen häufig Einträge in den Ordnern (ERROR 429: Too Many Requests)
+
 [B][COLOR orangered]Version 1.0.5+matrix.1  (15.11.2026)[/COLOR][/B]
 - fixed: Alle Rubriken zeigen keine Inhalte an (Quelltext verändert)
 - added: Diverse 'Metropole' nach Auswahl eines Landes unter der Rubrik 'Live Cams nach Ländern'
